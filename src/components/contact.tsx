@@ -27,8 +27,8 @@ const validationSchema = Yup.object({
 });
 
 export default function ContactSection({ viewPage }: Props) {
-  const [toastVisible, setToastVisible] = useState(false);
-  const [toastMessage, setToastMessage] = useState("");
+  const [toastVisible, setToastVisible] = useState<boolean>(false);
+  const [toastMessage, setToastMessage] = useState<string>("");
   const [toastType, setToastType] = useState<"success" | "warning" | "error">(
     "success"
   );
@@ -71,9 +71,9 @@ export default function ContactSection({ viewPage }: Props) {
         setToastType("warning");
         setToastMessage(result.message || "Hubo un error");
       }
-    } catch (error) {
+    } catch (error: any) {
       setToastType("error");
-      setToastMessage("Ocurrió un error inesperado.");
+      setToastMessage(error);
     }
 
     setToastVisible(true);

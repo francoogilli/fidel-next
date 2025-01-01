@@ -2,6 +2,7 @@ import CreditCardIcon from "../icons/creditCard";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
+import Image from "next/image";
 
 export default function Functionalities() {
   const items = [
@@ -90,8 +91,9 @@ export default function Functionalities() {
               key={index}
               className="bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start"
             >
-              <img
+              <Image
                 src={item.imgSrc}
+                alt={item.title}
                 className="w-full h-40 xl:h-[12rem] object-cover rounded-md"
               />
               <h3 className="mt-4 text-lg xl:text-xl font-medium text-left text-gray-700">
@@ -111,7 +113,8 @@ export default function Functionalities() {
               key={index}
               className="bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start"
             >
-              <img
+              <Image
+                alt={item.title}
                 src={item.imgSrc}
                 className="w-full h-56 xl:h-[16.8rem] object-cover rounded-md"
               />
@@ -128,7 +131,8 @@ export default function Functionalities() {
         {/* Tercer Renglón: Primera Columna 3/4 */}
         <div className="grid grid-cols-1 md:grid-cols-10 gap-6">
           <div className="col-span-10 md:col-span-6 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start">
-            <img
+            <Image
+              alt={items[5].title}
               src={items[5].imgSrc}
               className="w-full h-64 xl:h-[19.2rem] object-cover rounded-md"
             />
@@ -140,7 +144,8 @@ export default function Functionalities() {
             </p>
           </div>
           <div className="col-span-10 md:col-span-4 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start">
-            <img
+            <Image
+              alt={items[6].title}
               src={items[6].imgSrc}
               className="w-full h-64 xl:h-[19.2rem] object-cover rounded-md"
             />
@@ -156,7 +161,8 @@ export default function Functionalities() {
         {/* Cuarto Renglón: Segunda Columna 3/4 */}
         <div className="grid grid-cols-1 md:grid-cols-10 gap-6">
           <div className="col-span-10 md:col-span-4 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start">
-            <img
+            <Image
+              alt={items[7].title}
               src={items[7].imgSrc}
               className="w-full h-64 xl:h-[19.2rem] object-cover rounded-md"
             />
@@ -168,7 +174,8 @@ export default function Functionalities() {
             </p>
           </div>
           <div className="col-span-10 md:col-span-6 bg-[#F8FCFA] border border-[#edf3f2] hover:scale-105 duration-700 rounded-2xl p-4 flex flex-col items-start">
-            <img
+            <Image
+              alt={items[8].title}
               src={items[8].imgSrc}
               className="w-full h-64 xl:h-[19.2rem] object-cover rounded-md"
             />

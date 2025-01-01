@@ -1,11 +1,12 @@
 "use client";
 
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import UsersGroup from "../icons/user-group";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import Star from "../icons/star";
 import GradientLine from "./gradientLine";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -110,7 +111,7 @@ export default function Customers() {
           onMouseLeave={handleMouseUp}
         >
           <div className="relative w-full">
-            <img
+            <Image
               src={testimonials[activeIndex].image}
               alt={testimonials[activeIndex].name}
               draggable="false"
