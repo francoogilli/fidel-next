@@ -9,7 +9,7 @@ interface ContactProperties {
 
 export async function createHubSpotContact(properties: ContactProperties) {
   const API_URL = "https://api.hubapi.com/crm/v3/objects/contacts";
-  const TOKEN = process.env.HUBSPOT_API_TOKEN; // Usa la variable de entorno
+  const TOKEN = process.env.HUBSPOT_API_TOKEN;
 
   if (!TOKEN) {
     throw new Error("Falta el token de HubSpot. Verifica las variables de entorno.");
@@ -26,7 +26,7 @@ export async function createHubSpotContact(properties: ContactProperties) {
     });
 
     if (response.status === 409) {
-      return { success: false, message: "El contacto ya está guardado." };
+      return { success: false, message: "Ya hemos recibido tu mensaje." };
     }
 
     if (!response.ok) {
