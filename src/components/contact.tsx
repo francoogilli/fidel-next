@@ -61,7 +61,7 @@ export default function ContactSection({ viewPage }: Props) {
     publicidad: "",
   });
   const handleSubmit = async (values: Contact) => {
-    debugger
+    debugger;
     try {
       const result = await createHubSpotContact({ ...values });
       if (result.success) {
@@ -71,9 +71,14 @@ export default function ContactSection({ viewPage }: Props) {
         setToastType("warning");
         setToastMessage(result.message || "Hubo un error");
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       setToastType("error");
-      setToastMessage(error);
+
+      if (error instanceof Error) {
+        setToastMessage(error.message);
+      } else {
+        setToastMessage("Ha ocurrido un error desconocido.");
+      }
     }
 
     setToastVisible(true);
