@@ -15,6 +15,10 @@ import DangerIcon from "../icons/danger";
 import { ModalScheduleMeet } from "./modalScheduleMeet";
 import { Contact } from "@/api/types";
 import { createHubSpotContact } from "@/api/hubspot";
+import { div } from "motion/react-client";
+import CheckToast from "@/icons/checkToast";
+import Exclamation from "@/icons/exclamation";
+import ExclamationError from "@/icons/exclamationError";
 interface Props {
   viewPage?: boolean;
 }
@@ -33,27 +37,6 @@ export default function ContactSection({ viewPage }: Props) {
     "success"
   );
 
-  const toastConfig = {
-    success: {
-      icon: (
-        <CheckSquareIcon className="size-9 text-[#34ff30]" strokeWidth="1.8" />
-      ),
-      bgColor: "bg-gradient-to-tr from-[#1C1C1C] via-[#1C1C1C] to-[#404040]",
-      textColor: "text-[#f0f0f0]",
-    },
-    warning: {
-      icon: <DangerIcon className="size-9 text-[#fff86e]" strokeWidth="1.8" />,
-      bgColor: "bg-gradient-to-tr from-[#1C1C1C] via-[#1C1C1C] to-[#000]",
-      textColor: "text-[#f0f0f0]",
-    },
-    error: {
-      icon: (
-        <CheckSquareIcon className="size-9 text-[#ff3030]" strokeWidth="1.8" />
-      ),
-      bgColor: "bg-gradient-to-tr from-[#400000] via-[#400000] to-[#800000]",
-      textColor: "text-[#ffe6e6]",
-    },
-  };
   const [values] = useState<Contact>({
     firstname: "",
     email: "",
@@ -61,12 +44,11 @@ export default function ContactSection({ viewPage }: Props) {
     publicidad: "",
   });
   const handleSubmit = async (values: Contact) => {
-    debugger;
     try {
       const result = await createHubSpotContact({ ...values });
       if (result.success) {
         setToastType("success");
-        setToastMessage("Contacto creado con éxito.");
+        setToastMessage("Tu mensaje se ha enviado correctamente.");
       } else {
         setToastType("warning");
         setToastMessage(result.message || "Hubo un error");
@@ -89,16 +71,37 @@ export default function ContactSection({ viewPage }: Props) {
     <div className="max-w-7xl xl:max-w-[90rem] mb-8 mx-auto px-4 md:px-3">
       {toastVisible && (
         <div
-          id="toast-simple"
-          className={`flex items-center w-full ${toastConfig[toastType].bgColor} ${toastConfig[toastType].textColor} max-w-xs p-2 space-x-4 divide-x rounded-xl divide-[#c1c1c1] fixed top-5 right-5 z-50`}
-          role="alert"
+          className={`flex fixed shadow-xl top-0 right-0 m-4 flex-grow flex-row w-[27rem] py-3 px-4 gap-x-1 rounded-[20px] items-center ${
+            toastType === "success"
+              ? "text-[#1ee474] bg-[#02140A]"
+              : toastType === "warning"
+              ? "text-[#66AAF9] bg-[#000C19]"
+              : "text-[#f54141] bg-[#180202]"
+          } z-50`}
         >
-          {toastConfig[toastType].icon}
           <div
-            className="pl-4 text-sm font-semibold"
-            style={{ fontFamily: "Satoshi" }}
+            className={`flex-none relative ml-1 size-[3rem] rounded-full grid place-items-center ${
+              toastType === "success"
+                ? "bg-[#095028] border border-[#166438]"
+                : toastType === "warning"
+                ? "bg-[#002E62] border border-[#21538c]"
+                : "bg-[#610707] border border-[#751d1d]"
+            } shadow-sm`}
           >
-            {toastMessage}
+            {toastType === "success" && (
+              <CheckToast className="fill-current size-9 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            )}
+            {toastType === "warning" && (
+              <Exclamation className="fill-current size-9 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            )}
+            {toastType === "error" && (
+              <ExclamationError className="fill-current size-9 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            )}
+          </div>
+          <div className="flex flex-col h-full min-h-14 ms-2 flex-grow justify-center items-start">
+            <div className="text-base pl-2 font-sans w-full font-medium leading-5 text-inherit">
+              {toastMessage}
+            </div>
           </div>
         </div>
       )}
@@ -122,15 +125,9 @@ export default function ContactSection({ viewPage }: Props) {
       ) : (
         <div className="pt-10"></div>
       )}
-      <h3
-        className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-3 md:my-8 pb-1 tracking-tight"
-        style={{ fontFamily: "Plus Jakarta Sans" }}
-      >
+      <h3 className="font-sans animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-3 md:my-8 pb-1 tracking-tight">
         ¿Tenes preguntas?
-        <span
-          className="italic text-4xl md:text-[3.25rem] xl:text-[3.5rem] tracking-wide"
-          style={{ fontFamily: "instrument-serif" }}
-        >
+        <span className="font-instrument italic text-4xl md:text-[3.25rem] xl:text-[3.5rem] tracking-wide">
           {" "}
           Contáctanos
         </span>
