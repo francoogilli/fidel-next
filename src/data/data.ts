@@ -18,7 +18,7 @@ export interface AccordionItem {
   id: number;
   title: string;
   content: string;
-  icon: React.ComponentType<object>;
+  icon: React.ComponentType<{ className?: string }>;
 }
 
 export const accordionData: AccordionItem[] = [
