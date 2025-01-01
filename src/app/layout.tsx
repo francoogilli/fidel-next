@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins, Plus_Jakarta_Sans, Instrument_Serif  } from "next/font/google";
+import { Poppins, Plus_Jakarta_Sans  } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
-});
-const instrumentSerif = Instrument_Serif({
-  subsets: ['latin'],
-  weight: ['400'],
-  style: ['normal', 'italic'],
 });
 
 const poppins = Poppins({

@@ -16,6 +16,7 @@ import CashIcon from "@/icons/cash";
 import StonksIcon from "@/icons/stonks";
 import ThunderIcon from "@/icons/thunder";
 import Check from "@/icons/checkIcon";
+import Link from "next/link";
 interface Props {
   viewComparison?: boolean;
 }
@@ -230,7 +231,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   )}
                 </React.Fragment>
               ))}
-              <a
+              <Link
                 href="/"
                 style={{ fontFamily: "Plus Jakarta Sans", marginTop: "60px" }}
                 className={`${
@@ -241,7 +242,7 @@ export default function PricingCard({ viewComparison }: Props) {
               >
                 Elegir plan
                 <DoubleChevron className="size-4" strokeWidth="2.2" />
-              </a>
+              </Link>
             </ul>
           </motion.div>
         ))}

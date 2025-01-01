@@ -47,13 +47,13 @@ export default function Header() {
       <div className="mx-auto w-full max-w-5xl px-6 md:max-w-7xl xl:max-w-[90rem]">
         <div className="bg-white absolute left-0 top-0 z-20 flex w-full flex-col items-center md:hidden">
           <div className="flex w-full items-center px-6 py-4">
-            <a
+            <Link
               href="/"
               className="flex gap-x-2 justify-center items-center auto font-medium"
             >
               <img src="/fidel1.svg" className="w-10" alt="Logo Fidel" />
               Fidel
-            </a>
+            </Link>
             <button onClick={toggleMenu} className="flex flex-auto justify-end">
               {isMenuOpen ? <CrossMenuIcon /> : <MenuHamburgerIcon />}
             </button>
@@ -101,7 +101,7 @@ export default function Header() {
         </div>
         <div className="mx-auto hidden pt-1 h-[58px] w-full items-center justify-between transition duration-500 ease-in-out md:flex">
           <div className="flex lg:w-[225px]">
-            <a
+            <Link
               href="/"
               className="flex justify-center items-center space-x-2 outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 py-1"
             >
@@ -109,7 +109,7 @@ export default function Header() {
               <p className="text-base font-semibold pt-0.5 text-[#101010]">
                 Fidel
               </p>
-            </a>
+            </Link>
           </div>
           <div className="relative pr-20">
             <ul className="flex items-center text-[13px] font-medium">

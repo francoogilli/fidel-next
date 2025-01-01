@@ -42,12 +42,12 @@ export default function Customers() {
     }
   };
 
-  const handleMouseDown = (e: { clientX: SetStateAction<number> }) => {
+  const handleMouseDown = (e: React.MouseEvent) => {
     setStartX(e.clientX);
     setIsDragging(true);
   };
 
-  const handleMouseMove = (e: { clientX: any }) => {
+  const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging) return;
 
     const currentX = e.clientX;
