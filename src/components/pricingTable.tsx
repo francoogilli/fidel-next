@@ -92,7 +92,7 @@ export default function PricingTable() {
     }
   };
 
-  const renderFeatureValue = (value: any) =>
+  const renderFeatureValue = (value: boolean | string | number) =>
     typeof value === "boolean" ? (
       <motion.span
         className="text-xl"
