@@ -94,6 +94,8 @@ export default function Functionalities() {
               <Image
                 src={item.imgSrc}
                 alt={item.title}
+                width={300}
+                height={300}
                 className="w-full h-40 xl:h-[12rem] object-cover rounded-md"
               />
               <h3 className="mt-4 text-lg xl:text-xl font-medium text-left text-gray-700">
@@ -116,6 +118,8 @@ export default function Functionalities() {
               <Image
                 alt={item.title}
                 src={item.imgSrc}
+                width={300}
+                height={300}
                 className="w-full h-56 xl:h-[16.8rem] object-cover rounded-md"
               />
               <h3 className="mt-4 text-lg xl:text-xl font-medium text-left text-gray-700">
@@ -134,6 +138,8 @@ export default function Functionalities() {
             <Image
               alt={items[5].title}
               src={items[5].imgSrc}
+              width={800}
+              height={500}
               className="w-full h-64 xl:h-[19.2rem] object-cover rounded-md"
             />
             <h3 className="mt-4 text-lg xl:text-xl font-medium text-left text-gray-700">
@@ -147,6 +153,8 @@ export default function Functionalities() {
             <Image
               alt={items[6].title}
               src={items[6].imgSrc}
+              width={800}
+              height={500}
               className="w-full h-64 xl:h-[19.2rem] object-cover rounded-md"
             />
             <h3 className="mt-4 text-lg xl:text-xl font-medium text-left text-gray-700">
@@ -164,6 +172,8 @@ export default function Functionalities() {
             <Image
               alt={items[7].title}
               src={items[7].imgSrc}
+              width={800}
+              height={500}
               className="w-full h-64 xl:h-[19.2rem] object-cover rounded-md"
             />
             <h3 className="mt-4 text-lg xl:text-xl font-medium text-left text-gray-700">
@@ -177,6 +187,8 @@ export default function Functionalities() {
             <Image
               alt={items[8].title}
               src={items[8].imgSrc}
+              width={800}
+              height={400}
               className="w-full h-64 xl:h-[19.2rem] object-cover rounded-md"
             />
             <h3 className="mt-4 text-lg xl:text-xl font-medium text-left text-gray-700">

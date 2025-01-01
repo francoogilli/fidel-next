@@ -114,6 +114,8 @@ export default function Customers() {
             <Image
               src={testimonials[activeIndex].image}
               alt={testimonials[activeIndex].name}
+              width={500}
+              height={300}
               draggable="false"
               className="w-full h-96 xl:h-[26.5rem] object-cover rounded-[1.8rem] border-[5px] border-[#a6faa5d8] hover:border-[#79f277d0] duration-300"
             />
