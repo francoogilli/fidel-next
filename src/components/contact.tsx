@@ -40,15 +40,20 @@ export default function ContactSection({ viewPage }: Props) {
     phone: "",
     publicidad: "",
   });
-  const handleSubmit = async (values: Contact) => {
+  const handleSubmit = async (
+    values: Contact,
+    { resetForm }: { resetForm: () => void }
+  ) => {
     try {
       const result = await createHubSpotContact({ ...values });
       if (result.success) {
         setToastType("success");
         setToastMessage("Tu mensaje se ha enviado correctamente.");
+        resetForm();
       } else {
         setToastType("warning");
         setToastMessage(result.message || "Hubo un error");
+        resetForm();
       }
     } catch (error: unknown) {
       setToastType("error");
