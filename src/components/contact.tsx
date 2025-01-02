@@ -24,7 +24,7 @@ const validationSchema = Yup.object({
   firstname: Yup.string().required("El nombre es requerido"),
   email: Yup.string().email("Email inválido").required("El email es requerido"),
   phone: Yup.string().required("El teléfono es requerido"),
-  publicidad: Yup.string().required("El mensaje es requerido"),
+  text: Yup.string().required("El mensaje es requerido"),
 });
 
 export default function ContactSection({ viewPage }: Props) {
@@ -38,14 +38,21 @@ export default function ContactSection({ viewPage }: Props) {
     firstname: "",
     email: "",
     phone: "",
-    publicidad: "",
+    publicidad: "Reel Joa",
+    text: "",
   });
   const handleSubmit = async (
     values: Contact,
     { resetForm }: { resetForm: () => void }
   ) => {
+    const { firstname, email, phone, publicidad } = values;
     try {
-      const result = await createHubSpotContact({ ...values });
+      const result = await createHubSpotContact({
+        firstname,
+        email,
+        phone,
+        publicidad,
+      });
       if (result.success) {
         setToastType("success");
         setToastMessage("Tu mensaje se ha enviado correctamente.");
@@ -258,10 +265,10 @@ export default function ContactSection({ viewPage }: Props) {
                 <textarea
                   rows={4}
                   className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] xl:placeholder:text-[14px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
-                  name="publicidad"
+                  name="text"
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  value={values.publicidad}
+                  value={values.text}
                   placeholder="Hola, quisiera saber más sobre..."
                 />
               </div>

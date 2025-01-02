@@ -3,6 +3,7 @@ export interface Contact {
     email: string;
     phone: string;
     publicidad: string;
+    text: string;
   }
   
   export interface PostRequest {
