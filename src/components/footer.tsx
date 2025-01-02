@@ -78,8 +78,8 @@ export default function Footer() {
       </div>
       <div className="px-2 md:px-24">
         <hr className="border border-[#242424]" />
-        <div className="flex justify-center items-center space-y-3.5 pt-3.5 text-sm text-[#7d7d7d]">
-          <p>© 2024 Fidel. Un producto de Trizap</p>
+        <div className="flex justify-center items-center space-y-3.5 pt-3.5 xl:pt-7 xl:pb-2 text-sm xl:text-base text-[#7d7d7d]">
+          <p>© {new Date().getFullYear()} Fidel. Un producto de Trizap</p>
         </div>
       </div>
     </footer>
