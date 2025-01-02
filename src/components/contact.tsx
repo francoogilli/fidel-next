@@ -77,7 +77,7 @@ export default function ContactSection({ viewPage }: Props) {
             toastType === "success"
               ? "text-[#1ee474] bg-[#02140A]"
               : toastType === "warning"
-              ? "text-[#66AAF9] bg-[#000C19]"
+              ? "text-[#ffffff] bg-[#000C19]"
               : "text-[#f54141] bg-[#180202]"
           } z-50`}
         >
@@ -86,7 +86,7 @@ export default function ContactSection({ viewPage }: Props) {
               toastType === "success"
                 ? "bg-[#095028] border border-[#166438]"
                 : toastType === "warning"
-                ? "bg-[#002E62] border border-[#21538c]"
+                ? "bg-[#27272A] border border-[#49494d]"
                 : "bg-[#610707] border border-[#751d1d]"
             } shadow-sm`}
           >
