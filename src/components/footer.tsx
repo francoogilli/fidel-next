@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { socialLinks, appLinks, footerLinks } from "../data/data";
 import Download from "../icons/download";
 
@@ -79,7 +80,17 @@ export default function Footer() {
       <div className="px-2 md:px-24">
         <hr className="border border-[#242424]" />
         <div className="flex justify-center items-center space-y-3.5 pt-3.5 xl:pt-7 xl:pb-2 text-sm xl:text-base text-[#7d7d7d]">
-          <p>© {new Date().getFullYear()} Fidel. Un producto de Trizap</p>
+          <p>
+            © {new Date().getFullYear()} Fidel. Un producto de{" "}
+            <Link
+              className="font-sans text-[#b4b4b4] hover:text-[#cecece] font-medium transition-colors duration-300"
+              href="https://www.instagram.com/trizapsoftware/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Trizap
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
