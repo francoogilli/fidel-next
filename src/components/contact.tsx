@@ -77,7 +77,7 @@ export default function ContactSection({ viewPage }: Props) {
   };
 
   return (
-    <div className="max-w-7xl xl:max-w-[90rem] mb-8 mx-auto px-4 md:px-3">
+    <div className="max-w-7xl xl:max-w-[90rem] mb-16 xl:mb-28 mx-auto px-4 md:px-3">
       {toastVisible && (
         <div
           className={`flex fixed shadow-xl top-0 right-0 m-4 flex-grow flex-row w-[27rem] py-3 px-4 gap-x-1 rounded-[20px] items-center ${
