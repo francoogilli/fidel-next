@@ -42,7 +42,7 @@ export default function Footer() {
               Organiza tu empresa. Simplifica tu vida.
             </p>
             <span className="font-sans text-[15px] font-medium text-[#B5B3AD]">
-              © 2025. Un producto de{" "}
+              © {new Date().getFullYear()}. Un producto de{" "}
               <a
                 href="https://www.instagram.com/trizapsoftware/"
                 target="_blank"
