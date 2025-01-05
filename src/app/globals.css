@@ -57,33 +57,18 @@ body {
   will-change: transform;
 }
 
-/* Estilo para navegadores que soportan scrollbar personalizado */
-::-webkit-scrollbar {
-  width: 8px; /* Ancho de la barra */
-  height: 8px; /* Altura de la barra (para desplazamiento horizontal) */
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
 }
 
-::-webkit-scrollbar-track {
-  background: #e3e3e3; /* Color del fondo de la barra */
+* {
+  font-variant-ligatures: none;
+  -webkit-tap-highlight-color: transparent;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(214, 214, 214) transparent;
 }
-
-::-webkit-scrollbar-thumb {
-  background: #c8c8c8; /* Color degradado del "pulgar" */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #afafaf; /* Color degradado del "pulgar" */
-}
-
-/* Opcional: Para ocultar la barra en elementos específicos */
-.hidden-scrollbar {
-  scrollbar-width: none; /* Para Firefox */
-  -ms-overflow-style: none; /* Para Internet Explorer y Edge */
-}
-
-.hidden-scrollbar::-webkit-scrollbar {
-  display: none; /* Para Chrome, Safari y Opera */
-}
-
-
-
