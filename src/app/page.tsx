@@ -8,6 +8,7 @@ import Mobile from "@/components/mobile";
 import PricingCard from "@/components/pricingCard";
 import { QuestionsAnswers } from "@/components/questionAnswers";
 import Recommend from "@/components/recommend";
+import Ventajas from "@/components/ventajas";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <Customers />
       <Functionalities />
       <PricingCard viewComparison />
-      <Advantages />
+      <Ventajas />
       <Mobile />
       <Integration />
       <Recommend />
