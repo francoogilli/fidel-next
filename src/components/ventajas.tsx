@@ -2,16 +2,8 @@
 
 import { motion } from "framer-motion";
 import AdvantagesIcon from "../icons/advantages";
-import CashIcon from "../icons/cash";
-import ChartIcon from "../icons/chart";
-import PackageIcon from "../icons/package";
-import ReceiptIcon from "../icons/receipt";
-import ShoppingBagIcon from "../icons/shopping-bag";
-import ShoppingCartIcon from "../icons/shopping-cart";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
-import { TruckDeliveryIcon } from "../icons/truck-delivery";
-import UsersIcon from "../icons/users";
 import GradientLine from "./gradientLine";
 
 export default function Ventajas() {
