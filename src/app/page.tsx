@@ -1,4 +1,3 @@
-import Advantages from "@/components/advantages";
 import ContactSection from "@/components/contact";
 import Customers from "@/components/customers";
 import Functionalities from "@/components/functionalities";
