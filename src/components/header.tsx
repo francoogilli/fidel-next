@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="relative z-50 w-full max-w-[90rem] mx-auto flex-none text-sm/6 font-semibold text-slate-900">
       <nav
@@ -66,6 +68,7 @@ export default function Header() {
           <button
             type="button"
             className="-my-1 -mr-1 ml-6 flex size-8 items-center justify-center lg:hidden"
+            onClick={() => setIsOpen(true)}
           >
             <span className="sr-only">Open navigation</span>
             <svg viewBox="0 0 24 24" className="size-6 stroke-slate-900">
@@ -77,6 +80,66 @@ export default function Header() {
               ></path>
             </svg>
           </button>
+          {isOpen && (
+            <div
+              className="fixed inset-0 z-50 overflow-hidden lg:hidden"
+              role="dialog"
+              aria-modal="true"
+            >
+              <div
+                className="absolute inset-0 bg-slate-900/25 backdrop-blur-xs"
+                onClick={() => setIsOpen(false)}
+              ></div>
+              <div className="fixed inset-0 flex items-start justify-end overflow-y-auto">
+                <div className="min-h-full w-[min(20rem,calc(100vw-calc(var(--spacing)*10)))] bg-white ring-1 shadow-2xl ring-black/10 p-6 relative">
+                  <button
+                    type="button"
+                    className="absolute top-5 right-6 flex items-center justify-center size-8"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="sr-only">Cerrar navegación</span>
+                    <svg
+                      className="h-3.5 w-3.5 stroke-slate-900"
+                      fill="none"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L14 14M14 0L0 14"></path>
+                    </svg>
+                  </button>
+                  <nav className="divide-y divide-slate-900/10 text-base text-slate-900">
+                    <div className="py-6">
+                      <a className="block py-2 font-semibold" href="/">
+                        Inicio
+                      </a>
+                      <a
+                        className="block py-2 font-semibold"
+                        href="/funcionalidades"
+                      >
+                        Funcionalidades
+                      </a>
+                      <a className="block py-2 font-semibold" href="/planes">
+                        Planes
+                      </a>
+                      <a className="block py-2 font-semibold" href="/contacto">
+                        Contacto
+                      </a>
+                    </div>
+                    <div className="py-6">
+                      <a
+                        className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-[#282828] text-white hover:bg-[#1f1f1f] w-full"
+                        href="/#"
+                      >
+                        Ingresar
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-slate-900/15 lg:pl-8">
             <Link href="/login">Sign in</Link>
             <Link
