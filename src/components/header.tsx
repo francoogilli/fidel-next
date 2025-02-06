@@ -110,29 +110,29 @@ export default function Header() {
                   </button>
                   <nav className="divide-y divide-slate-900/10 text-base text-slate-900">
                     <div className="py-6">
-                      <a className="block py-2 font-semibold" href="/">
+                      <Link className="block py-2 font-semibold" href="/">
                         Inicio
-                      </a>
+                      </Link>
                       <a
                         className="block py-2 font-semibold"
                         href="/funcionalidades"
                       >
                         Funcionalidades
                       </a>
-                      <a className="block py-2 font-semibold" href="/planes">
+                      <Link className="block py-2 font-semibold" href="/planes">
                         Planes
-                      </a>
-                      <a className="block py-2 font-semibold" href="/contacto">
+                      </Link>
+                      <Link className="block py-2 font-semibold" href="/contacto">
                         Contacto
-                      </a>
+                      </Link>
                     </div>
                     <div className="py-6">
-                      <a
+                      <Link
                         className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-[#282828] text-white hover:bg-[#1f1f1f] w-full"
                         href="/#"
                       >
                         Ingresar
-                      </a>
+                      </Link>
                     </div>
                   </nav>
                 </div>
