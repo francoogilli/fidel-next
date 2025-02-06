@@ -81,11 +81,11 @@ export default function Header() {
           <div className="hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-slate-900/15 lg:pl-8">
             <a href="/login">Sign in</a>
             <a
-              className="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-zinc-900 text-white hover:bg-slate-700 -my-2.5 ml-8"
+              className="inline-flex justify-center rounded-xl text-sm font-medium py-2.5 px-4 bg-[#333333] text-white hover:bg-slate-700 -my-2.5 ml-8"
               href="/all-access"
             >
               <span className="flex items-center gap-1">
-                Ingresar <span aria-hidden="true"><ArrowRight className="size-4"/></span>
+                Ingresar 
               </span>
             </a>
           </div>
