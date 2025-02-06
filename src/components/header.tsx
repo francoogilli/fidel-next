@@ -1,6 +1,7 @@
 "use client";
 
 import ArrowRight from "@/icons/arrowRight";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -11,14 +12,14 @@ export default function Header() {
       >
         <div className="relative flex items-center py-[1.4rem]">
           <div className="absolute inset-x-0 bottom-0 h-px bg-slate-900/5"></div>
-          <a className="flex-none text-slate-900" href="/">
+          <Link className="flex-none text-slate-900" href="/">
             <span className="sr-only">Tailwind UI</span>
             <div className="flex items-center gap-x-2.5">
               <img src="/fidel1.svg" className="w-12" alt="Logo Fidel" />
               <span className="text-xl">Fidel</span>
             </div>
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="group -my-2 ml-6 hidden items-center gap-2 rounded-full bg-white/25 hover:bg-[#101010] duration-500 px-3 py-2 text-xs text-slate-900 hover:text-[#ededed] ring-1 ring-black/[0.08] ring-inset hover:bg-white/50 hover:ring-black/[0.13] sm:flex md:ml-8  min-[80rem]:flex"
           >
@@ -50,20 +51,20 @@ export default function Header() {
             >
               <path d="M.2.24A.75.75 0 0 1 1.26.2l3.5 3.25a.75.75 0 0 1 0 1.1L1.26 7.8A.75.75 0 0 1 .24 6.7L3.148 4 .24 1.3A.75.75 0 0 1 .2.24Z"></path>
             </svg>
-          </a>
+          </Link>
           <div className="ml-auto hidden font-sans font-semibold lg:flex lg:items-center">
-            <a href="/">Inicio</a>
-            <a className="ml-8" href="/funcionalidades">
+            <Link href="/">Inicio</Link>
+            <Link className="ml-8" href="/funcionalidades">
               Funcionalidades
-            </a>
-            <a className="ml-8" href="/planes">
+            </Link>
+            <Link className="ml-8" href="/planes">
               Planes
-            </a>
-            <a className="ml-8" href="/contacto">
+            </Link>
+            <Link className="ml-8" href="/contacto">
               Contacto
-            </a>
+            </Link>
           </div>
-          
+
           <button
             type="button"
             className="-my-1 -mr-1 ml-6 flex size-8 items-center justify-center lg:hidden"
@@ -79,15 +80,13 @@ export default function Header() {
             </svg>
           </button>
           <div className="hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-slate-900/15 lg:pl-8">
-            <a href="/login">Sign in</a>
-            <a
+            <Link href="/login">Sign in</Link>
+            <Link
               className="inline-flex justify-center rounded-xl text-sm font-medium py-2.5 px-4 bg-[#333333] text-white hover:bg-slate-700 -my-2.5 ml-8"
               href="/all-access"
             >
-              <span className="flex items-center gap-1">
-                Ingresar 
-              </span>
-            </a>
+              <span className="flex items-center gap-1">Ingresar</span>
+            </Link>
           </div>
         </div>
       </nav>
