@@ -1,140 +1,96 @@
 "use client";
-import { useEffect, useState } from "react";
-import CrossMenuIcon from "@/icons/crossMenu";
-import MenuHamburgerIcon from "@/icons/menu-hamburger";
-import { navLinks } from "@/data/data";
-import Link from "next/link";
+
+import ArrowRight from "@/icons/arrowRight";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
-
   return (
-    <header
-      className={`fixed  top-0 w-full z-40 justify-center items-center bg-white border-b border-[#fcfcfc] transition-transform duration-300 ease-in-out ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
-      <div className="mx-auto w-full max-w-5xl px-6 md:max-w-7xl xl:max-w-[90rem]">
-        <div className="bg-white absolute left-0 top-0 z-20 flex w-full flex-col items-center md:hidden">
-          <div className="flex w-full items-center px-6 py-4">
-            <Link
-              href="/"
-              className="flex gap-x-2 justify-center items-center auto font-medium"
-            >
-              <img src="/fidel1.svg" className="w-10" alt="Logo Fidel" />
-              Fidel
-            </Link>
-            <button onClick={toggleMenu} className="flex flex-auto justify-end">
-              {isMenuOpen ? <CrossMenuIcon /> : <MenuHamburgerIcon />}
-            </button>
-          </div>
-          {isMenuOpen && (
-            <div className="overflow-y-auto overflow-x-hidden h-[calc(100vh-72px)] flex w-full py-4">
-              <div className="relative">
-                <div className="absolute top-0 left-0 min-h-full px-6 w-screen">
-                  <a
-                    href="#"
-                    className="font-sans bg-zinc-800 tracking-tighter text-[#fff] font-bold inline-flex items-center justify-center border select-none relative cursor-pointer disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200 bg-slate-3 border-slate-6 text-slate-12 hover:bg-slate-4 dark:hover:bg-slate-4 focus-visible:ring-2 focus-visible:ring-slate-7 focus-visible:outline-none focus-visible:bg-slate-4 disabled:hover:bg-slate-4 text-base h-11 pl-4 pr-4 rounded-xl gap-2 mb-4 w-full"
-                  >
-                    Ingresar
-                  </a>
-                  <a
-                    href="#"
-                    className="font-sans bg-[#fafafa] tracking-tighter font-semibold inline-flex items-center justify-center border select-none relative cursor-pointer disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200 bg-slate-3 border-slate-6 text-slate-12 hover:bg-slate-4 dark:hover:bg-slate-4 focus-visible:ring-2 focus-visible:ring-slate-7 focus-visible:outline-none focus-visible:bg-slate-4 disabled:hover:bg-slate-4 text-base h-11 pl-4 pr-4 rounded-xl gap-2 mb-4 w-full"
-                  >
-                    Conocer planes
-                  </a>
-                  <ul className="mt-4">
-                    {navLinks.map((link, index) => (
-                      <li
-                        key={link.href}
-                        className={`mb-4 ${
-                          index < navLinks.length - 1
-                            ? "border-b border-zinc-200"
-                            : ""
-                        } pb-4`}
-                      >
-                        <Link
-                          href={link.href}
-                          className="block md:text-base font-medium text-slate-900"
-                          onClick={closeMenu}
-                        >
-                          {link.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+    <header className="relative z-50 w-full max-w-[90rem] mx-auto flex-none text-sm/6 font-semibold text-slate-900">
+      <nav
+        aria-label="Global"
+        className="max-w-container mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div className="relative flex items-center py-[1.4rem]">
+          <div className="absolute inset-x-0 bottom-0 h-px bg-slate-900/5"></div>
+          <a className="flex-none text-slate-900" href="/">
+            <span className="sr-only">Tailwind UI</span>
+            <div className="flex items-center gap-x-2.5">
+              <img src="/fidel1.svg" className="w-12" alt="Logo Fidel" />
+              <span className="text-xl">Fidel</span>
             </div>
-          )}
-        </div>
-        <div className="mx-auto hidden pt-1 h-[58px] w-full items-center justify-between transition duration-500 ease-in-out md:flex">
-          <div className="flex lg:w-[225px]">
-            <Link
-              href="/"
-              className="flex justify-center items-center space-x-2 outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-7 py-1"
+          </a>
+          <a
+            href="#"
+            className="group -my-2 ml-6 hidden items-center gap-2 rounded-full bg-white/25 hover:bg-[#101010] duration-500 px-3 py-2 text-xs text-slate-900 hover:text-[#ededed] ring-1 ring-black/[0.08] ring-inset hover:bg-white/50 hover:ring-black/[0.13] sm:flex md:ml-8  min-[80rem]:flex"
+          >
+            <svg className="size-4 fill-[#e7d800]" viewBox="0 0 24 24">
+              <path
+                fillRule="evenodd"
+                d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                clipRule="evenodd"
+              ></path>
+            </svg>
+            <span className="font-semibold">¡Conoce lo NUEVO de Fidel!</span>
+            <svg
+              width="2"
+              height="2"
+              aria-hidden="true"
+              className="fill-slate-900 group-hover:fill-[#efefef]"
             >
-              <img src="/fidel1.svg" className="w-11" alt="Logo Fidel" />
-              <p className="text-base font-semibold pt-0.5 text-[#101010]">
-                Fidel
-              </p>
-            </Link>
+              <circle cx="1" cy="1" r="1"></circle>
+            </svg>
+            <span className="font-medium">
+              <span>Mas info</span>
+            </span>
+            <svg
+              viewBox="0 0 5 8"
+              className="h-2 w-[5px] fill-black/30 group-hover:fill-[#efefef]"
+              fillRule="evenodd"
+              clipRule="evenodd"
+              aria-hidden="true"
+            >
+              <path d="M.2.24A.75.75 0 0 1 1.26.2l3.5 3.25a.75.75 0 0 1 0 1.1L1.26 7.8A.75.75 0 0 1 .24 6.7L3.148 4 .24 1.3A.75.75 0 0 1 .2.24Z"></path>
+            </svg>
+          </a>
+          <div className="ml-auto hidden font-sans font-semibold lg:flex lg:items-center">
+            <a href="/">Inicio</a>
+            <a className="ml-8" href="/funcionalidades">
+              Funcionalidades
+            </a>
+            <a className="ml-8" href="/planes">
+              Planes
+            </a>
+            <a className="ml-8" href="/contacto">
+              Contacto
+            </a>
           </div>
-          <div className="relative pr-20">
-            <ul className="flex items-center text-[13px] font-medium">
-              {navLinks.map((link) => (
-                <Link key={link.href} href={link.href}>
-                  <li className="hover:bg-[#00000007] text-black flex justify-center items-center gap-x-1.5 transition duration-300 cursor-pointer border border-none hover:border-[#e7e7e7] px-5 py-2 rounded-xl">
-                    {link.icon && (
-                      <link.icon className="w-4 pb-0.5" strokeWidth="1.6" />
-                    )}
-                    {link.label}
-                  </li>
-                </Link>
-              ))}
-            </ul>
-          </div>
-          <div className="flex gap-2">
+          
+          <button
+            type="button"
+            className="-my-1 -mr-1 ml-6 flex size-8 items-center justify-center lg:hidden"
+          >
+            <span className="sr-only">Open navigation</span>
+            <svg viewBox="0 0 24 24" className="size-6 stroke-slate-900">
+              <path
+                d="M3.75 12h16.5M3.75 6.75h16.5M3.75 17.25h16.5"
+                fill="none"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              ></path>
+            </svg>
+          </button>
+          <div className="hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-slate-900/15 lg:pl-8">
+            <a href="/login">Sign in</a>
             <a
-              href=""
-              className="text-[13px] py-2 px-6 font-normal bg-zinc-800 text-white inline-flex items-center justify-center select-none rounded-xl"
+              className="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-zinc-900 text-white hover:bg-slate-700 -my-2.5 ml-8"
+              href="/all-access"
             >
-              Ingresar
+              <span className="flex items-center gap-1">
+                Ingresar <span aria-hidden="true"><ArrowRight className="size-4"/></span>
+              </span>
             </a>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
   );
 }
