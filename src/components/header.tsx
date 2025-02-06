@@ -1,6 +1,5 @@
 "use client";
 
-import ArrowRight from "@/icons/arrowRight";
 import Link from "next/link";
 
 export default function Header() {
