@@ -9,10 +9,9 @@ export default function Header() {
         aria-label="Global"
         className="max-w-container mx-auto px-4 sm:px-6 lg:px-8"
       >
-        <div className="relative flex items-center py-[1.4rem]">
+        <div className="relative flex justify-between items-center py-[1.4rem]">
           <div className="absolute inset-x-0 bottom-0 h-px bg-slate-900/5"></div>
           <Link className="flex-none text-slate-900" href="/">
-            <span className="sr-only">Tailwind UI</span>
             <div className="flex items-center gap-x-2.5">
               <img src="/fidel1.svg" className="w-12" alt="Logo Fidel" />
               <span className="text-xl">Fidel</span>
@@ -81,7 +80,7 @@ export default function Header() {
           <div className="hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-slate-900/15 lg:pl-8">
             <Link href="/login">Sign in</Link>
             <Link
-              className="inline-flex justify-center rounded-xl text-sm font-medium py-2.5 px-4 bg-[#333333] text-white hover:bg-slate-700 -my-2.5 ml-8"
+              className="inline-flex justify-center rounded-xl text-sm font-medium py-2.5 px-4 bg-[#282828] text-white hover:bg-[#1f1f1f] -my-2.5 ml-8"
               href="/all-access"
             >
               <span className="flex items-center gap-1">Ingresar</span>
