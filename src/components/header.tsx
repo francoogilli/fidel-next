@@ -21,7 +21,7 @@ export default function Header() {
           </Link>
           <Link
             href="#"
-            className="group -my-2 ml-6 hidden items-center gap-2 rounded-full bg-white/25 hover:bg-[#101010] duration-500 px-3 py-2 text-xs text-slate-900 hover:text-[#ededed] ring-1 ring-black/[0.08] ring-inset hover:bg-white/50 hover:ring-black/[0.13] sm:flex md:ml-8  min-[80rem]:flex"
+            className="group -my-2 ml-6 hidden items-center gap-2 rounded-full bg-[#262626] hover:bg-[#151515] duration-500 px-3 py-2 text-xs text-[#ffffff] ring-1 ring-black/[0.08] ring-inset hover:bg-white/50 hover:ring-black/[0.13] sm:flex md:ml-8  min-[80rem]:flex"
           >
             <svg className="size-4 fill-[#55e700]" viewBox="0 0 24 24">
               <path
@@ -44,7 +44,7 @@ export default function Header() {
             </span>
             <svg
               viewBox="0 0 5 8"
-              className="h-2 w-[5px] fill-black/30 group-hover:fill-[#efefef]"
+              className="h-2 w-[5px] fill-[#efefef]"
               fillRule="evenodd"
               clipRule="evenodd"
               aria-hidden="true"
