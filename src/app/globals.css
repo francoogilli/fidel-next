@@ -69,6 +69,6 @@ html {
 * {
   font-variant-ligatures: none;
   -webkit-tap-highlight-color: transparent;
-  scrollbar-width: thin;
+  scrollbar-width: auto;
   scrollbar-color: rgb(214, 214, 214) transparent;
 }
