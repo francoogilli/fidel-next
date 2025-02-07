@@ -96,7 +96,7 @@ export default function Recommend() {
             amigos y familiares.
           </p>
           <p className="font-medium text-[#434343] xl:text-lg text-center">
-            Gana <span className="font-bold text-black">$10.000</span> por cada
+            Gana <span className="font-bold text-black">$25.000</span> por cada
             persona que se suscriba usando tu enlace.
           </p>
           <Link href="/terms">
@@ -175,7 +175,7 @@ export default function Recommend() {
             amigos y familiares.
           </p>
           <p className="font-medium text-sm text-[#434343] text-center">
-            Gana <span className="font-bold text-black">$10.000</span> por cada
+            Gana <span className="font-bold text-black">$25.000</span> por cada
             persona que se suscriba usando tu enlace.
           </p>
           <Link href="/terms">
@@ -256,7 +256,7 @@ export default function Recommend() {
             ¡Referi y gana!
           </p>
           <p className="font-medium text-xs text-[#434343] text-center pb-2">
-            Gana <span className="font-bold text-black">$10.000</span> por cada
+            Gana <span className="font-bold text-black">$25.000</span> por cada
             persona que se suscriba usando tu enlace.
           </p>
           <Link href="/terms">
