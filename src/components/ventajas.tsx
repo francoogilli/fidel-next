@@ -119,7 +119,7 @@ export default function Ventajas() {
                 </div>
                 <img
                   className="h-[min(192px,40cqw)] object-cover mt-16"
-                  src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
+                  src="https://tailwindui.com/plus-assets/img/component-images/bento-03-security.png"
                   alt=""
                 />
               </div>
