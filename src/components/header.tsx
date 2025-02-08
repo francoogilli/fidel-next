@@ -21,7 +21,7 @@ export default function Header() {
           </Link>
           <Link
             href="#"
-            className="group -my-2 ml-6 hidden items-center gap-2 rounded-full bg-[#262626] hover:bg-[#484848] duration-500 px-3 py-2 text-xs text-[#ffffff] ring-1 ring-black/[0.08] ring-inset hover:bg-white/50 hover:ring-black/[0.13] sm:flex md:ml-8  min-[80rem]:flex"
+            className="group -my-2 ml-6 hidden items-center gap-2 rounded-full bg-[#262626] hover:bg-[#474747] duration-500 px-3 py-2 text-xs text-[#ffffff] ring-1 ring-black/[0.08] ring-inset hover:bg-white/50 hover:ring-black/[0.13] sm:flex md:ml-8  min-[80rem]:flex"
           >
             <svg className="size-4 fill-[#55e700]" viewBox="0 0 24 24">
               <path
@@ -37,11 +37,8 @@ export default function Header() {
               aria-hidden="true"
               className="fill-slate-900 group-hover:fill-[#efefef]"
             >
-              <circle cx="1" cy="1" r="1"></circle>
             </svg>
-            <span className="font-medium">
-              <span>Mas info</span>
-            </span>
+            
             <svg
               viewBox="0 0 5 8"
               className="h-2 w-[5px] fill-[#efefef]"
