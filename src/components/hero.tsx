@@ -24,13 +24,13 @@ export default function Hero() {
       >
         <div className="flex-1 text-center lg:text-left pt-0 md:pt-[0rem] lg:pt-[3.2rem]">
           <motion.h2
-            className="font-bold text-[#252525] text-4xl md:text-6xl lg:text-[5rem] lg:leading-[1.1em] xl:text-[5.6rem] xl:leading-[1.2em] tracking-tighter"
+            className="font-bold text-[#252525] text-4xl md:text-6xl lg:text-6xl lg:leading-[1.1em] xl:text-7xl xl:leading-[1.2em] tracking-tighter"
             style={{ fontFamily: "Plus Jakarta Sans" }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Organiza tu empresa, en un solo lugar.
+            Gestionar tu negocio no tiene que ser complicado.
           </motion.h2>
 
           <motion.div
@@ -39,12 +39,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <h4
-              className="font-satoshi text-[#5c5c5c] lg:w-auto mx-auto lg:mx-0 text-base lg:text-lg leading-[1.4em] font-medium"
-            >
-              Optimiza cada operación y toma decisiones más inteligentes para
-              impulsar la gestión de tu negocio. Potencia tus procesos para
-              llevar tu empresa más lejos.
+            <h4 className="font-sans text-[#5c5c5c] lg:w-auto mx-auto lg:mx-0 text-base lg:text-lg leading-[1.4em] font-medium">
+              Imaginá un software que ordena, ahorra tiempo y te ayuda a tomar
+              decisiones con claridad. Eso es Fidel: simple, poderoso y fácil de
+              usar. Crecé sin obstáculos y de manera sostenible, con las
+              herramientas adecuadas para cada etapa de tu negocio.
             </h4>
           </motion.div>
 
@@ -56,19 +55,19 @@ export default function Hero() {
           >
             <div className="flex flex-col md:flex-row md:space-x-3 mx-auto lg:mx-0 justify-center lg:justify-start items-center text-center space-y-2 md:space-y-0">
               <motion.button
-                className="bg-[#5fff5c] tracking-tighter md:tracking-normal text-[#171717] justify-center w-auto gap-2 font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fafafa] hover:border-[#dfffdf] transition-all duration-700"
+                className="bg-[#5fff5c] hover:bg-[#31de2e] tracking-tighter md:tracking-normal text-[#171717] justify-center w-auto gap-2 font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fafafa] hover:border-[#dfffdf] transition-all duration-700"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
                 <SparklesIcon className="size-4 md:size-5" />
-                Empezar ahora
+                ¡Probá una demo!
               </motion.button>
               <Link href="/planes">
                 <motion.button
-                  className="bg-[#fafafa] tracking-tighter md:tracking-normal text-[#171717] gap-2 justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#ffffff] md:border-[#fafafa] hover:border-[#efefef] transition-all duration-700"
+                  className="bg-[#fafafa] hover:bg-[#ffffff] tracking-tighter md:tracking-normal text-[#171717] gap-2 justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#ffffff] md:border-[#fafafa] hover:border-[#efefef] transition-all duration-700"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
                 >
                   <CreditCardIcon className="size-4 md:size-5" />
-                  Conocer planes
+                  Mirá nuestros planes
                 </motion.button>
               </Link>
             </div>
