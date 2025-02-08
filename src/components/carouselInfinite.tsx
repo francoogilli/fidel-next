@@ -28,7 +28,7 @@ const FeatureItem: React.FC<{
     <span className="md:text-base text-center text-xs pt-4 max-w-[12rem] flex justify-center items-center text-gray-800 font-normal">
       {text}
     </span>
-    <a href="#" className="pt-3 flex justify-center items-center gap-2">
+    <span className="pt-3 flex justify-center items-center gap-2">
       Ver más{" "}
       <span className="border border-[#191919] group-hover:bg-black rounded-full p-0.5">
         <svg
@@ -43,7 +43,7 @@ const FeatureItem: React.FC<{
           <path d="M8.75 4c0-.41421-.33579-.75-.75-.75s-.75.33579-.75.75v3.25H4c-.41421 0-.75.33579-.75.75s.33579.75.75.75h3.25V12c0 .4142.33579.75.75.75s.75-.3358.75-.75V8.75H12c.4142 0 .75-.33579.75-.75s-.3358-.75-.75-.75H8.75V4Z" />
         </svg>
       </span>
-    </a>
+    </span>
   </li>
 );
 
