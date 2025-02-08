@@ -13,12 +13,12 @@ export default function Home() {
     <>
       <div className="backgroundImage"></div>
       <Hero />
-      <Customers />
       <Functionalities />
       <PricingCard viewComparison />
       <Ventajas />
       <Mobile />
       <Recommend />
+      <Customers />
       <QuestionsAnswers />
       <ContactSection />
     </>
