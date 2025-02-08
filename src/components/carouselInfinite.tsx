@@ -87,7 +87,7 @@ const CarouselInfinite: React.FC = () => {
   return (
     <div className="relative font-inter antialiased overflow-hidden">
       <main className="relative flex flex-col justify-center">
-        <div className="w-full max-w-6xl mx-auto px-4 md:px-0 py-3 bg-gray-50 relative">
+        <div className="w-full max-w-5xl xl:max-w-7xl mx-auto px-4 md:px-0 py-3 bg-gray-50 relative">
           <div className="absolute top-0 left-0 h-full w-16 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
           <div className="absolute top-0 right-0 h-full w-16 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
           <div className="w-full inline-flex flex-nowrap overflow-hidden">
