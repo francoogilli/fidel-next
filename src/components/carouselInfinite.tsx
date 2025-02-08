@@ -15,7 +15,7 @@ const FeatureItem: React.FC<{
   isBlurred: boolean;
 }> = ({ icon, text, onHover, isBlurred }) => (
   <li
-    className={`flex flex-col justify-between items-center w-[15rem] h-[12rem] py-5 gap-x-1 bg-[#ffffff] border border-[#e5e5e5] rounded-3xl transition-all duration-300 ${
+    className={`flex flex-col justify-between group cursor-pointer items-center w-[15rem] h-[12rem] py-5 gap-x-1 bg-[#ffffff] border border-[#e5e5e5] rounded-3xl transition-all duration-300 ${
       isBlurred ? "blur-sm opacity-50" : "blur-none opacity-100"
     }`}
     onMouseEnter={() => onHover(true)}
@@ -25,7 +25,7 @@ const FeatureItem: React.FC<{
     <span className="md:text-base text-center text-xs pt-4 max-w-[12rem] flex justify-center items-center text-gray-800 font-normal">
       {text}
     </span>
-    <a href="#" className="pt-3 group flex justify-center items-center gap-2">
+    <a href="#" className="pt-3 flex justify-center items-center gap-2">
       Ver más{" "}
       <span className="border border-[#191919] group-hover:bg-black rounded-full p-0.5">
         <svg

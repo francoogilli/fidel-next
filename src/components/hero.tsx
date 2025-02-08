@@ -107,19 +107,6 @@ export default function Hero() {
           videoUrl="https://www.youtube.com/embed/WO2b03Zdu4Q?autoplay=1"
         />
       </motion.div>
-      <motion.div
-        className="md:py-7 pt-4"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1 }}
-      >
-        <h4
-          className="font-satoshi text-center text-sm md:text-base font-medium text-[#5e5e5e] pb-4"
-        >
-          Conoce nuestras funcionalidades
-        </h4>
-        <CarouselInfinite />
-      </motion.div>
     </>
   );
 }
