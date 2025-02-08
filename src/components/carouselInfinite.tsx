@@ -157,7 +157,7 @@ const CarouselInfinite: React.FC = () => {
         onOpenChange={onOpenChange}
       >
         <ModalContent>
-          {(onClose) => (
+          {() => (
             <>
               <ModalBody className="p-10">
                 <div className="flex justify-center items-center gap-2 pb-6">
