@@ -6,7 +6,6 @@ import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
 import PlayIcon from "../icons/play";
 import Link from "next/link";
-import CarouselInfinite from "./carouselInfinite";
 import Modal from "./modal";
 
 export default function Hero() {
