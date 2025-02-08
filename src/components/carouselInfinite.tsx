@@ -159,7 +159,7 @@ const CarouselInfinite: React.FC = () => {
         <ModalContent>
           {() => (
             <>
-              <ModalBody className="p-10">
+              <ModalBody className="p-20">
                 <div className="flex justify-center items-center gap-2 pb-6">
                   {selectedFeature?.icon}
                   <h3 className=" text-3xl md:text-4xl xl:text-5xl font-sans font-bold">
