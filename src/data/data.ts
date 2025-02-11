@@ -76,10 +76,21 @@ interface Benefit {
 interface PricingCardProps {
   name: string;
   popular?: boolean;
-  iconPro?:boolean;
+  iconPro?: boolean;
   price: number;
   bestOption: string;
   benefits: Benefit[];
+}
+
+interface BenefitInfo {
+  text: string;
+}
+interface PricingCard {
+  name: string;
+  popular?: boolean;
+  price: number;
+  bestOption: string;
+  benefits: BenefitInfo[];
 }
 
 export const pricingComparison: PricingCardProps[] = [
@@ -327,6 +338,98 @@ export const pricingComparison: PricingCardProps[] = [
   },
 ];
 
+export const pricingInfo: PricingCard[] = [
+  {
+    name: "Básico",
+    price: 37000,
+    bestOption: "emprendedores y comercios que buscan facturar y organizarse.",
+    benefits: [
+      {
+        text: "Facturación rápida y fácil",
+      },
+      {
+        text: "Clientes organizados",
+      },
+      {
+        text: "Control básico de stock",
+      },
+      {
+        text: "Cuentas claras",
+      },
+      {
+        text: "Reportes esenciales",
+      },
+    ],
+  },
+  {
+    name: "Inicial",
+    price: 50000,
+    popular: true,
+    bestOption: "empresas que buscan automatización y ahorro de tiempo.",
+    benefits: [
+      {
+        text: "Todo lo del Plan Básico +",
+      },
+      {
+        text: "Stock avanzado y depósitos",
+      },
+      {
+        text: "Compras y proveedores",
+      },
+      {
+        text: "Finanzas integradas",
+      },
+      {
+        text: "Reportes avanzados",
+      },
+    ],
+  },
+  {
+    name: "Intermedio",
+    price: 68000,
+    bestOption: "empresas que buscan automatización y ahorro de tiempo.",
+    benefits: [
+      {
+        text: "Todo lo del Plan Básico +",
+      },
+      {
+        text: "Stock avanzado y depósitos",
+      },
+      {
+        text: "Compras y proveedores",
+      },
+      {
+        text: "Finanzas integradas",
+      },
+      {
+        text: "Reportes avanzados",
+      },
+    ],
+  },
+  {
+    name: "Avanzado",
+    price: 88000,
+    bestOption: "emprendedores y comercios que buscan facturar y organizarse.",
+    benefits: [
+      {
+        text: "Todo lo del Intermedio +",
+      },
+      {
+        text: "Stock avanzado y depósitos",
+      },
+      {
+        text: "Compras y proveedores",
+      },
+      {
+        text: "Finanzas integradas",
+      },
+      {
+        text: "Reportes avanzados",
+      },
+    ],
+  },
+];
+
 export const pricingData: PricingCardProps[] = [
   {
     name: "Básico",
@@ -457,7 +560,7 @@ export const pricingData: PricingCardProps[] = [
   },
   {
     name: "Avanzado",
-    price: 88000, 
+    price: 88000,
     bestOption: "grandes empresas",
     iconPro: true,
     benefits: [
@@ -586,10 +689,14 @@ export const termsData = {
 };
 
 export const navLinks = [
-  { href: "/", label: "Inicio", icon:HomeIcon },
-  { href: "/funcionalidades", label: "Funcionalidades", icon:FunctionalitiesIcon },
-  { href: "/planes", label: "Planes", icon:CreditCardIcon },
-  { href: "/contacto", label: "Contacto", icon:MailIcon },
+  { href: "/", label: "Inicio", icon: HomeIcon },
+  {
+    href: "/funcionalidades",
+    label: "Funcionalidades",
+    icon: FunctionalitiesIcon,
+  },
+  { href: "/planes", label: "Planes", icon: CreditCardIcon },
+  { href: "/contacto", label: "Contacto", icon: MailIcon },
 ];
 
 export const headerData = {

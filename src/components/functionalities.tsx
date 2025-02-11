@@ -6,7 +6,7 @@ import GradientLine from "./gradientLine";
 
 export default function Functionalities() {
   return (
-    <>
+    <div className="pb-44">
       <div className="flex justify-center items-center gap-x-2.5">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
@@ -39,6 +39,6 @@ export default function Functionalities() {
       <div className="pt-10">
         <CarouselInfinite />
       </div>
-    </>
+    </div>
   );
 }
