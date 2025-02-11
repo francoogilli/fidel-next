@@ -141,13 +141,14 @@ export default function PricingCard({ viewComparison }: Props) {
                 {pricing.benefits.map((benefit, index) => (
                   <React.Fragment key={index}>
                     <li className="flex items-center space-x-2 justify-between">
-                      <div className="flex items-center justify-center gap-x-2 pb-2.5">
+                      <div className="flex items-center justify-center gap-x-3 pb-2.5">
                         <div className="flex items-center justify-center size-6 bg-[#3d3d3d] rounded-lg">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 256 256"
                             focusable="false"
                             color="rgb(255, 255, 255)"
+                            aria-hidden="true"
                             className="select-none size-3 inline-block fill-white text-white flex-shrink-0"
                           >
                             <g color="rgb(255, 255, 255)">
