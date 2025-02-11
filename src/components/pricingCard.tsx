@@ -25,7 +25,7 @@ export default function PricingCard({ viewComparison }: Props) {
   };
 
   return (
-    <div className="border-y-8 border-[#e8e8e8]">
+    <div className="border-y-8 border-[#dfdfdf]">
       <div className="w-full bg-[#121212] border-y-8 border-[#313131] text-white">
         <div className="max-w-7xl xl:max-w-[90rem] mx-auto mt-24 mb-0 md:mb-10 px-4">
           {!viewComparison ? (
