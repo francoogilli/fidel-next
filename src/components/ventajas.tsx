@@ -81,7 +81,7 @@ export default function Ventajas() {
                   <p className="mt-2 text-4xl pb-3 font-extrabold tracking-tight text-[#141414] max-lg:text-center">
                     Asesoría personalizada con personas. (no bots{" "}
                     <span className="inline-flex">
-                      <img src="/emoji.png" className="size-7 translate-y-1" />
+                      <img src="/emoji.png" className="size-6 translate-y-0.5" />
                     </span>
                     )
                   </p>
