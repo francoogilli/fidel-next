@@ -390,7 +390,7 @@ export const pricingInfo: PricingCard[] = [
     bestOption: "empresas que buscan automatización y ahorro de tiempo.",
     benefits: [
       {
-        text: "Todo lo del Plan Básico +",
+        text: "Todo lo del Plan Inicial +",
       },
       {
         text: "Stock avanzado y depósitos",
