@@ -9,6 +9,7 @@ import ThreeStripesRight from "@/icons/threeStripesRight";
 import CreditCardIcon from "@/icons/creditCard";
 import ThunderIcon from "@/icons/thunder";
 import Link from "next/link";
+import ArrowUpIcon from "@/icons/arrow-up";
 interface Props {
   viewComparison?: boolean;
 }
@@ -168,9 +169,10 @@ export default function PricingCard({ viewComparison }: Props) {
                     pricing.popular === true
                       ? "bg-[#ffffff] hover:bg-[#efefef] text-[#191919]"
                       : "bg-[#313131] hover:bg-[#333333] text-[#fafafa]"
-                  } w-[12.5rem] xl:w-[13.8rem] mx-auto flex justify-center tracking-wide items-center gap-x-1 font-semibold rounded-xl text-sm xl:text-base px-5 py-3 mb-6 text-center transition-all duration-200`}
+                  } w-[12.5rem] xl:w-[13.8rem] mx-auto flex justify-center tracking-wide items-center gap-x-2 font-semibold rounded-xl text-sm xl:text-base px-5 py-3 mb-6 text-center transition-all duration-200`}
                 >
                   Elegir plan
+                  <ArrowUpIcon className="size-4"/>
                 </Link>
               </motion.div>
             ))}
