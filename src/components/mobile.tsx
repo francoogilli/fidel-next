@@ -18,14 +18,14 @@ export default function Mobile() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2"
+          className="flex items-center rounded-full bg-[#f6f6f6] px-4 xl:px-5 py-2"
         >
-          <MobileIcon className="size-4 md:size-4 text-[#f5f5f5]" />
+          <MobileIcon className="size-4 md:size-4 text-[#121212]" />
           <h2
-            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
+            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#121212]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Aplicación Mobile
+            App Mobile
           </h2>
         </motion.div>
         <ThreeStripesRight />

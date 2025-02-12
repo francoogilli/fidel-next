@@ -10,10 +10,10 @@ export default function Functionalities() {
       <div className="flex justify-center items-center gap-x-2.5">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
-        <div className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2 animation-1">
-          <CreditCardIcon className="size-4 md:size-5 text-[#f5f5f5]" />
+        <div className="flex items-center rounded-full bg-[#f6f6f6] px-4 xl:px-5 py-2 animation-1">
+          <CreditCardIcon className="size-4 md:size-5 text-[#121212]" />
           <h2
-            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
+            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#121212]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Funcionalidades

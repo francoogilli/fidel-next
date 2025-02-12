@@ -13,14 +13,14 @@ export default function Ventajas() {
         <GradientLine direction="left" />
         <ThreeStripesLeft />
         <motion.div
-          className="flex items-center rounded-full bg-[#333333] px-4 xl:px-5 py-2"
+          className="flex items-center rounded-full bg-[#f6f6f6] px-4 xl:px-5 py-2"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
         >
-          <AdvantagesIcon className="size-4 text-[#f5f5f5]" />
+          <AdvantagesIcon className="size-4 text-[#121212]" />
           <h2
-            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#f5f5f5]"
+            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#121212]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             Ventajas
