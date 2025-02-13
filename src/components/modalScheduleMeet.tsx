@@ -24,7 +24,7 @@ export const ModalScheduleMeet: React.FC = () => {
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <Dialog.Trigger className="group flex justify-center items-center bg-[#007bffb9] hover:bg-[#2872c2] text-white text-sm xl:text-base font-semibold rounded-2xl px-4 py-3 transition-colors duration-500">
+      <Dialog.Trigger className="group flex justify-center items-center bg-[#1a1a1aeb] hover:bg-[#2b2b2beb] text-white text-sm xl:text-base font-medium rounded-xl px-4 py-3 transition-colors duration-500">
         Agendar Reunión
       </Dialog.Trigger>
       <Dialog.Portal forceMount>
