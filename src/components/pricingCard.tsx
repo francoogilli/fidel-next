@@ -77,8 +77,8 @@ export default function PricingCard({ viewComparison }: Props) {
                   className="text-base xl:text-lg px-5 text-[#ffffff] font-medium"
                   style={{ fontFamily: "Satoshi" }}
                 >
-                  <span className="text-[#b0b0b0]">«</span> Todos los planes
-                  incluyen <span className="text-[#b0b0b0]">»</span>
+                  <span className="text-[#646464]">«</span> Todos los planes
+                  incluyen <span className="text-[#646464]">»</span>
                 </h4>
               </div>
               <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2 pb-14">
