@@ -31,10 +31,8 @@ export const QuestionsAnswers = () => {
         <ThreeStripesRight />
         <GradientLine weight="1.5px" direction="right" />
       </div>
-      <h3
-        className="font-satoshi animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
-      >
-       No te quedes con las dudas
+      <h3 className="font-satoshi animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight">
+        No te quedes con las dudas
       </h3>
       <h4
         className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[19rem] md:w-[25rem] xl:w-[27rem] mx-auto pb-0 md:pb-9"
@@ -62,34 +60,38 @@ export const QuestionsAnswers = () => {
                     {item.title}
                   </span>
                 </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="3.3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={`size-4 md:size-5 transition-transform duration-300 ${
-                    openIndex === index ? "rotate-135" : "rotate-90"
-                  }`}
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  {openIndex === index ? (
-                    <path d="M5 12h14" />
-                  ) : (
-                    <>
-                      <path d="M12 5l0 14" />
-                      <path d="M5 12l14 0" />
-                    </>
-                  )}
-                </svg>
+                <div className="bg-[#f6f6f67e] rounded-lg p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`size-4 md:size-5 transition-transform duration-300 ${
+                      openIndex === index ? "rotate-135" : "rotate-90"
+                    }`}
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    {openIndex === index ? (
+                      <path d="M5 12h14" />
+                    ) : (
+                      <>
+                        <path d="M12 5l0 14" />
+                        <path d="M5 12l14 0" />
+                      </>
+                    )}
+                  </svg>
+                </div>
               </button>
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? "max-h-screen pb-4 px-5 bg-[#fff]" : "max-h-0"
+                  openIndex === index
+                    ? "max-h-screen pb-4 px-5 bg-[#fff]"
+                    : "max-h-0"
                 }`}
               >
                 <p
