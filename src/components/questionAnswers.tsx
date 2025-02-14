@@ -34,34 +34,29 @@ export const QuestionsAnswers = () => {
       <h3
         className="font-satoshi animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
       >
-        Preguntas,
-        <span className="font-instrument italic text-4xl md:text-[3.25rem] xl:text-[3.5rem] tracking-wide">
-          {" "}
-          respuestas.
-        </span>
+       No te quedes con las dudas
       </h3>
       <h4
         className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[19rem] md:w-[25rem] xl:w-[27rem] mx-auto pb-0 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
       >
-        ¿Todavía tenes preguntas? Contacta a nuestro soporte, disponible durante
+        ¿Todavía tenes preguntas? Contacta a nuestro equipo, disponible durante
         la semana.
       </h4>
-      <div className="space-y-4">
+      <div className="space-y-3">
         {accordionData.map((item, index) => {
           const IconComponent = item.icon; // Obtiene el componente de ícono
 
           return (
             <div
               key={item.id}
-              className="mx-auto max-w-[56rem] xl:max-w-[67rem] border border-[#e9e9e9] rounded-xl overflow-hidden"
+              className="mx-auto max-w-[56rem] xl:max-w-[67rem] border border-[#e9e9e9] rounded-3xl overflow-hidden"
             >
               <button
                 onClick={() => handleToggle(index)}
                 className="w-full px-5 py-5 bg-[#ffffff] text-left font-medium flex items-center justify-between"
               >
                 <span className="flex items-center">
-                  <IconComponent className="mr-3 size-5" />
                   <span
                     className="text-sm md:text-[1.0625rem] xl:text-lg font-medium"
                     style={{ fontFamily: "Satoshi" }}
@@ -96,7 +91,7 @@ export const QuestionsAnswers = () => {
               </button>
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? "max-h-screen pb-4 px-5" : "max-h-0"
+                  openIndex === index ? "max-h-screen pb-4 px-5 bg-[#fff]" : "max-h-0"
                 }`}
               >
                 <p
