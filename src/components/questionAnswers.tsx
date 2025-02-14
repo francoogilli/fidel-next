@@ -45,12 +45,10 @@ export const QuestionsAnswers = () => {
       </h4>
       <div className="space-y-3">
         {accordionData.map((item, index) => {
-          const IconComponent = item.icon; // Obtiene el componente de ícono
-
           return (
             <div
               key={item.id}
-              className="mx-auto max-w-[56rem] xl:max-w-[67rem] border border-[#e9e9e9] rounded-3xl overflow-hidden"
+              className="mx-auto max-w-[56rem] xl:max-w-[67rem] border border-[#efefef] rounded-3xl overflow-hidden"
             >
               <button
                 onClick={() => handleToggle(index)}
