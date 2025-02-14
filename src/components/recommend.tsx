@@ -26,7 +26,7 @@ export default function Recommend() {
         <GradientLine weight="1.5px" direction="right" />
       </div>
 
-      <div className="bg-gradient-to-r md:bg-gradient-to-br from-[#ffffff24] via-[#ffeca956] to-[#ffffff24] max-w-[78.5rem] xl:max-w-[90rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
+      <div className="bg-gradient-to-r border border-[#ffebebd4] md:bg-gradient-to-br from-[#f3d1a424] via-[#FCFBF9] to-[#f3d1a424] max-w-[78.5rem] xl:max-w-[90rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
         <div className="hidden lg:block relative p-10">
           <img
             src="coin4.png"
