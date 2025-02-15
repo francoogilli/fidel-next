@@ -203,7 +203,7 @@ export default function PricingCard({ viewComparison }: Props) {
             </div>
           </div>
         </div>
-        <p className="text-[#fddb54] flex justify-center items-center gap-x-2 text-center font-medium text-sm mt-11 mb-8 md:mb-20">
+        <p className="text-[#fddb54] bg-[#2626265d] p-4 rounded-medium mx-auto w-fit flex justify-center items-center gap-x-2 text-center font-medium text-sm mt-11 mb-8 md:mb-20">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
