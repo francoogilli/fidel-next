@@ -336,7 +336,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
                 <button
                   type="submit"
-                  className="group flex justify-center items-center bg-[#abff98] hover:bg-[#87fa6d] w-full text-[#000000] text-sm xl:text-base font-semibold rounded-xl px-5 py-3.5 transition-colors duration-500"
+                  className="group flex justify-center items-center bg-[#d2fac9] hover:bg-[#87fa6d] w-full text-[#000000] text-sm xl:text-base font-semibold rounded-xl px-5 py-3.5 transition-colors duration-500"
                 >
                   Enviar mensaje
                 </button>
