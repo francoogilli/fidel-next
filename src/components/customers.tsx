@@ -1,68 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import UsersGroup from "../icons/user-group";
 import ThreeStripesRight from "../icons/threeStripesRight";
-import Star from "../icons/star";
 import GradientLine from "./gradientLine";
-import Image from "next/image";
-
-const testimonials = [
-  {
-    name: "María López",
-    role: "CEO en TechSolutions",
-    text: "Fidel nos ayudó a transformar completamente la manera en que gestionamos nuestra empresa. La automatización y las herramientas son excelentes. Desde que implementamos su sistema, hemos logrado una reducción del 40% en nuestros tiempos operativos y hemos incrementado nuestra capacidad de análisis financiero. Además, el equipo de soporte siempre está disponible y dispuesto a ayudarnos.",
-    image: "https://via.placeholder.com/500x300/ecfeef/000000?text=1",
-    rating: 5,
-  },
-  {
-    name: "Juan Pérez",
-    role: "Gerente de Operaciones en AgroTech",
-    text: "Con Fidel, hemos reducido significativamente el tiempo dedicado a tareas administrativas. ¡Totalmente recomendado! Antes dedicábamos horas a procesos manuales que ahora se completan en minutos. Esto nos ha permitido enfocarnos en áreas estratégicas de la empresa, como mejorar la logística y el servicio al cliente. La plataforma es intuitiva y fácil de usar, incluso para quienes no tienen experiencia técnica.",
-    image: "https://via.placeholder.com/500x300/ecfeef/000000?text=2",
-    rating: 4,
-  },
-  {
-    name: "Lucía García",
-    role: "Fundadora de MarketNow",
-    text: "Implementar Fidel fue la mejor decisión para nuestro negocio. Su soporte y funcionalidades son inigualables. Nos impresionó la personalización que ofrecen, adaptándose perfectamente a las necesidades específicas de nuestra empresa. Ahora, nuestro equipo está más organizado, y hemos logrado un aumento del 25% en productividad. Recomendamos Fidel a cualquier empresa que busque optimizar su gestión.",
-    image: "https://via.placeholder.com/500x300/ecfeef/000000?text=3",
-    rating: 5,
-  },
-];
 
 export default function Customers() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [startX, setStartX] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
-
-  const handleSlideChange = (newIndex: number) => {
-    if (newIndex >= 0 && newIndex < testimonials.length) {
-      setActiveIndex(newIndex);
-    }
-  };
-
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging) return;
-
-    const currentX = e.clientX;
-    const deltaX = currentX - startX;
-
-    if (deltaX > 50) {
-      handleSlideChange(activeIndex - 1);
-      setIsDragging(false);
-    } else if (deltaX < -50) {
-      handleSlideChange(activeIndex + 1);
-      setIsDragging(false);
-    }
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
   return (
     <div className="max-w-7xl xl:max-w-[90rem] mx-auto px-4 md:px-6 pt-4 ">
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
