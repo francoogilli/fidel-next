@@ -47,7 +47,7 @@ export default function Customers() {
             alt=""
           />
           <figure className="mt-10">
-            <blockquote className="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+            <blockquote className="text-center text-xl/8 font-semibold text-[#2b2b2b] sm:text-2xl/9">
               <p>
                 “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 expedita voluptas culpa sapiente alias molestiae. Numquam
