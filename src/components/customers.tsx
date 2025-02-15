@@ -43,10 +43,6 @@ export default function Customers() {
     }
   };
 
-  const handleMouseDown = (e: React.MouseEvent) => {
-    setStartX(e.clientX);
-    setIsDragging(true);
-  };
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging) return;
@@ -68,8 +64,7 @@ export default function Customers() {
   };
 
   return (
-    <div className="max-w-7xl xl:max-w-[90rem] mx-auto px-4 md:px-6 pt-4 pb-20">
-      {/* Header */}
+    <div className="max-w-7xl xl:max-w-[90rem] mx-auto px-4 md:px-6 pt-4 ">
       <div className="flex justify-center items-center gap-x-2.5 pt-20 pb-4">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
@@ -86,88 +81,59 @@ export default function Customers() {
         <GradientLine direction="right" />
       </div>
 
-      {/* Title */}
       <h3
-        className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
+        className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8  tracking-tight"
         style={{ fontFamily: "Plus Jakarta Sans" }}
       >
-        Lo que nuestros clientes dicen.
+        Se dice de Fidel
       </h3>
       <h4
-        className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[16rem] md:w-[24rem] xl:w-[30rem] mx-auto pb-0 md:pb-9"
+        className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[16rem] md:w-[24rem] xl:w-[30rem] mx-auto"
         style={{ fontFamily: "Satoshi" }}
       >
         Descubri cómo Fidel transformo sus negocios.
       </h4>
 
-      {/* Testimonials */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-2 items-center">
-        {/* Image */}
-        <div
-          className="md:col-span-5 col-span-12 order-2 md:order-1 flex justify-center"
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
-        >
-          <div className="relative w-full">
-            <Image
-              src={testimonials[activeIndex].image}
-              alt={testimonials[activeIndex].name}
-              width={500}
-              height={300}
-              draggable="false"
-              className="w-full h-96 xl:h-[26.5rem] object-cover rounded-[1.8rem] border-[5px] border-[#a6faa5d8] hover:border-[#79f277d0] duration-300"
-            />
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleSlideChange(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === activeIndex
-                      ? "bg-blue-600 scale-110"
-                      : "bg-gray-300"
-                  }`}
-                ></button>
-              ))}
-            </div>
-          </div>
+      <section className="relative isolate overflow-hidden bg-[#FCFBF9] px-6 py-24 sm:py-28 lg:px-8">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-100),white)] opacity-20"></div>
+        <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-[#FCFBF9] ring-1 shadow-xl shadow-indigo-600/10 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+        <div className="mx-auto max-w-2xl lg:max-w-4xl">
+          <img
+            className="mx-auto h-12"
+            src="https://tailwindui.com/plus-assets/img/logos/workcation-logo-indigo-600.svg"
+            alt=""
+          />
+          <figure className="mt-10">
+            <blockquote className="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+              <p>
+                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                expedita voluptas culpa sapiente alias molestiae. Numquam
+                corrupti in laborum sed rerum et corporis.”
+              </p>
+            </blockquote>
+            <figcaption className="mt-10">
+              <img
+                className="mx-auto size-10 rounded-full"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+              <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+                <div className="font-semibold text-gray-900">Judith Black</div>
+                <svg
+                  viewBox="0 0 2 2"
+                  width="3"
+                  height="3"
+                  aria-hidden="true"
+                  className="fill-gray-900"
+                >
+                  <circle cx="1" cy="1" r="1" />
+                </svg>
+                <div className="text-gray-600">CEO of Workcation</div>
+              </div>
+            </figcaption>
+          </figure>
         </div>
-
-        {/* Testimonial */}
-        <div className="md:col-span-7 col-span-12 order-1 md:order-2">
-          <div className="rounded-2xl p-8 bg-white">
-            <h3
-              className="text-2xl xl:text-3xl font-semibold"
-              style={{ fontFamily: "Satoshi" }}
-            >
-              {testimonials[activeIndex].name}
-            </h3>
-            <p className="text-sm xl:text-base text-gray-500">
-              {testimonials[activeIndex].role}
-            </p>
-            <div className="flex mt-2 space-x-0.5">
-              {Array.from({ length: testimonials[activeIndex].rating }).map(
-                (_, i) => (
-                  <Star key={i} className="text-[#efeb23] size-4 xl:size-5" />
-                )
-              )}
-            </div>
-            <p
-              className="mt-4 text-[#666666] font-medium text-lg xl:text-xl"
-              style={{ fontFamily: "Satoshi" }}
-            >
-              {testimonials[activeIndex].text}
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Gradient Divider */}
-      <div className="mt-12">
-        <GradientLine direction="right" />
-      </div>
+      </section>
     </div>
   );
 }
