@@ -15,6 +15,9 @@ import Exclamation from "@/icons/exclamation";
 import ExclamationError from "@/icons/exclamationError";
 import { Input } from "@heroui/input";
 import { Select, SelectItem } from "@heroui/select";
+import UsersIconIndividual from "../icons/user";
+import PhoneIcon from "../icons/phone";
+import MessageIcon from "../icons/message";
 interface Props {
   viewPage?: boolean;
 }
@@ -286,6 +289,12 @@ export default function ContactSection({ viewPage }: Props) {
                       value={values.firstname}
                       onChange={handleChange}
                       onBlur={handleBlur}
+                      startContent={
+                        <UsersIconIndividual
+                          className="size-[1.1rem] text-[#5e5e5e] mr-1"
+                          strokeWidth="2"
+                        />
+                      }
                       labelPlacement="outside"
                       placeholder="Ingrese su nombre completo"
                     />
@@ -303,6 +312,12 @@ export default function ContactSection({ viewPage }: Props) {
                       disableSelectorIconRotation
                       className="w-full"
                       label="Rubro"
+                      startContent={
+                        <MessageIcon
+                          className="size-[1rem] text-[#5e5e5e] mr-1"
+                          strokeWidth="2"
+                        />
+                      }
                       labelPlacement="outside"
                       placeholder="Selecciona tu rubro"
                     >
@@ -327,6 +342,12 @@ export default function ContactSection({ viewPage }: Props) {
                       onChange={handleChange}
                       onBlur={handleBlur}
                       labelPlacement="outside"
+                      startContent={
+                        <MessageIcon
+                          className="size-[1rem] text-[#5e5e5e] mr-1"
+                          strokeWidth="2"
+                        />
+                      }
                       value={values.email}
                       placeholder="Ingrese su email"
                       type="email"
@@ -348,6 +369,12 @@ export default function ContactSection({ viewPage }: Props) {
                       onChange={handleChange}
                       value={values.phone}
                       onBlur={handleBlur}
+                      startContent={
+                        <PhoneIcon
+                          className="size-[1rem] text-[#5e5e5e] mr-1"
+                          strokeWidth="2"
+                        />
+                      }
                       labelPlacement="outside"
                       placeholder="Ingrese su telefono"
                     />
