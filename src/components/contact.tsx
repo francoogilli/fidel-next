@@ -7,15 +7,14 @@ import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
 import * as Yup from "yup";
 import { useState } from "react";
-import UsersIconIndividual from "../icons/user";
-import PhoneIcon from "../icons/phone";
-import MessageIcon from "../icons/message";
 import { ModalScheduleMeet } from "./modalScheduleMeet";
 import { Contact } from "@/api/types";
 import { createHubSpotContact } from "@/api/hubspot";
 import CheckToast from "@/icons/checkToast";
 import Exclamation from "@/icons/exclamation";
 import ExclamationError from "@/icons/exclamationError";
+import { Input } from "@heroui/input";
+import { Select, SelectItem } from "@heroui/select";
 interface Props {
   viewPage?: boolean;
 }
@@ -24,7 +23,6 @@ const validationSchema = Yup.object({
   firstname: Yup.string().required("El nombre es requerido"),
   email: Yup.string().email("Email inválido").required("El email es requerido"),
   phone: Yup.string().required("El teléfono es requerido"),
-  text: Yup.string().required("El mensaje es requerido"),
 });
 
 export default function ContactSection({ viewPage }: Props) {
@@ -33,6 +31,66 @@ export default function ContactSection({ viewPage }: Props) {
   const [toastType, setToastType] = useState<"success" | "warning" | "error">(
     "success"
   );
+
+  const items = [
+    { key: "aberturas", label: "Aberturas" },
+    { key: "accesorios_celulares", label: "Accesorios para Celulares" },
+    { key: "agro", label: "Agro" },
+    { key: "apicolas", label: "Apícolas" },
+    { key: "bicicleteria", label: "Bicicletería" },
+    { key: "calzados", label: "Calzados" },
+    { key: "comex", label: "Comex" },
+    { key: "constructora", label: "Constructora" },
+    { key: "concesionarias", label: "Concesionarias" },
+    { key: "cosmeticos_perfumeria", label: "Cosméticos y Perfumería" },
+    {
+      key: "delicatessen_regionales",
+      label: "Delicatessen y Productos Regionales",
+    },
+    { key: "descartables_cotillon", label: "Descartables y Cotillón" },
+    { key: "dietetica", label: "Dietética" },
+    {
+      key: "distribuidora_carnes",
+      label: "Distribuidoras de Carnes y Avícolas",
+    },
+    {
+      key: "distribuidora_comestibles",
+      label: "Distribuidora Comestibles, Lácteos y Bebidas",
+    },
+    {
+      key: "distribuidora_ferreteria",
+      label: "Distribuidora de Ferretería y Afines",
+    },
+    { key: "drugstore", label: "Drugstore" },
+    { key: "electricidad", label: "Electricidad" },
+    { key: "eventos", label: "Eventos" },
+    { key: "ferreteria_corralon", label: "Ferretería y Corralón" },
+    { key: "fiambrerias", label: "Fiambrerías" },
+    { key: "hogar_muebles_deco", label: "Hogar, Muebles y Deco" },
+    { key: "industria", label: "Industria" },
+    { key: "indumentaria_uniformes", label: "Indumentaria y Uniformes" },
+    { key: "informatica", label: "Informática" },
+    { key: "insumos_medicos", label: "Insumos Médicos" },
+    { key: "joyeria", label: "Joyería" },
+    { key: "jugueteria_pañalera", label: "Juguetería y Pañalera" },
+    { key: "librerias_artisticas", label: "Librerías y Artísticas" },
+    { key: "limpieza", label: "Limpieza" },
+    { key: "marmoleria", label: "Marmolería" },
+    { key: "merceria", label: "Mercería" },
+    { key: "pet_shop", label: "Pet Shop" },
+    { key: "pintureria", label: "Pinturería" },
+    { key: "piscinas_energia", label: "Piscinas y Energía Sustentable" },
+    { key: "polirubros", label: "Polirubros" },
+    { key: "repuestos_autos_motos", label: "Repuestos Automotor y Motos" },
+    { key: "seguridad_industrial", label: "Seguridad Industrial" },
+    { key: "servicio_autos_motos", label: "Servicio Automotor y Motos" },
+    { key: "servicios", label: "Servicios" },
+    { key: "servicios_hidraulicos", label: "Servicios Hidráulicos" },
+    { key: "sistemas_seguridad", label: "Sistemas de Seguridad" },
+    { key: "transporte_logistica", label: "Transporte / Logística" },
+    { key: "vidrieria_cristaleria", label: "Vidriería y Cristalería" },
+    { key: "vivero", label: "Vivero" },
+  ];
 
   const [values] = useState<Contact>({
     firstname: "",
@@ -220,25 +278,16 @@ export default function ContactSection({ viewPage }: Props) {
 
               <div className="space-y-6">
                 <div className="flex flex-col">
-                  <label className="text-xs xl:text-sm font-medium mb-2.5">
-                    Nombre y Apellido
-                  </label>
                   <div className="relative w-full">
-                    <div className="absolute inset-y-0 left-3 flex items-center">
-                      <UsersIconIndividual
-                        className="size-[1.1rem] text-[#A0A0A0]"
-                        strokeWidth="2"
-                      />
-                      <span className="w-[1px] lg:w-[2px] h-3 bg-[#eaeaea] mx-2"></span>
-                    </div>
-                    <input
-                      type="text"
-                      className="w-full bg-[#ffffff] border border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] xl:placeholder:text-[14px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                    <Input
+                      key="outside"
                       name="firstname"
+                      label="Nombre y Apellido"
+                      value={values.firstname}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      value={values.firstname}
-                      placeholder="Nombre y Apellido"
+                      labelPlacement="outside"
+                      placeholder="Ingrese su nombre completo"
                     />
                   </div>
                   {errors.firstname && touched.firstname && (
@@ -249,25 +298,38 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
 
                 <div className="flex flex-col">
-                  <label className="text-xs xl:text-sm font-medium mb-2.5">
-                    Email
-                  </label>
                   <div className="relative w-full">
-                    <div className="absolute inset-y-0 left-3 flex items-center">
-                      <MailIcon
-                        className="size-[1.1rem] text-[#A0A0A0]"
-                        strokeWidth="2"
-                      />
-                      <span className="w-[1px] lg:w-[2px] h-3 bg-[#eaeaea] mx-2"></span>
+                    <Select
+                      disableSelectorIconRotation
+                      className="w-full"
+                      label="Rubro"
+                      labelPlacement="outside"
+                      placeholder="Selecciona tu rubro"
+                    >
+                      {items.map((items) => (
+                        <SelectItem key={items.key}>{items.label}</SelectItem>
+                      ))}
+                    </Select>
+                  </div>
+                  {errors.publicidad && touched.publicidad && (
+                    <div className="text-red-500 text-xs xl:text-sm pt-2 pl-0.5">
+                      {errors.publicidad}
                     </div>
-                    <input
-                      type="text"
-                      className="w-full bg-[#ffffff] border border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] xl:placeholder:text-[14px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                  )}
+                </div>
+
+                <div className="flex flex-col">
+                  <div className="relative w-full">
+                    <Input
+                      key="outside"
                       name="email"
+                      label="Email"
                       onChange={handleChange}
                       onBlur={handleBlur}
+                      labelPlacement="outside"
                       value={values.email}
-                      placeholder="nombre@correo.com"
+                      placeholder="Ingrese su email"
+                      type="email"
                     />
                   </div>
                   {errors.email && touched.email && (
@@ -278,25 +340,16 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
 
                 <div className="flex flex-col">
-                  <label className="text-xs xl:text-sm font-medium mb-2.5">
-                    Telefono
-                  </label>
                   <div className="relative w-full">
-                    <div className="absolute inset-y-0 left-3 flex items-center">
-                      <PhoneIcon
-                        className="size-[1.1rem] text-[#A0A0A0]"
-                        strokeWidth="2"
-                      />
-                      <span className="w-[1px] lg:w-[2px] h-3 bg-[#eaeaea] mx-2"></span>
-                    </div>
-                    <input
-                      type="text"
-                      className="w-full bg-[#ffffff] border border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] xl:placeholder:text-[14px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
+                    <Input
+                      key="outside"
                       name="phone"
+                      label="Telefono"
                       onChange={handleChange}
-                      onBlur={handleBlur}
                       value={values.phone}
-                      placeholder="Numero de telefono"
+                      onBlur={handleBlur}
+                      labelPlacement="outside"
+                      placeholder="Ingrese su telefono"
                     />
                   </div>
                   {errors.phone && touched.phone && (
@@ -306,34 +359,6 @@ export default function ContactSection({ viewPage }: Props) {
                   )}
                 </div>
 
-                <div className="flex flex-col">
-                  <label className="text-xs xl:text-sm font-medium mb-2.5">
-                    Contanos sobre tu negocio
-                  </label>
-                  <div className="relative w-full">
-                    <div className="absolute pt-[.9375rem] left-3 flex items-center">
-                      <MessageIcon
-                        className="size-3 md:size-4 text-[#A0A0A0]"
-                        strokeWidth="2.2"
-                      />
-                      <span className="w-[1px] lg:w-[2px] h-3 bg-[#eaeaea] mx-2"></span>
-                    </div>
-                    <textarea
-                      rows={1}
-                      className="w-full bg-[#FBFCFC] border-2 border-[#F3F3F3] rounded-[.625rem] text-[13px] p-3 lg:pl-12 pl-9 placeholder:text-[#A0A0A0] text-[#3e3e3e] placeholder:text-[13px] xl:placeholder:text-[14px] placeholder:px-0.5 focus:border-[#646464] focus:placeholder:text-[#bebebe] transition duration-500 focus:outline-none"
-                      name="text"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.text}
-                      placeholder="Hola, quisiera saber más sobre..."
-                    />
-                  </div>
-                  {errors.publicidad && touched.publicidad && (
-                    <div className="text-red-500 text-xs xl:text-sm pt-2 pl-0.5">
-                      {errors.publicidad}
-                    </div>
-                  )}
-                </div>
                 <button
                   type="submit"
                   className="group flex justify-center items-center bg-[#d2fac9] hover:bg-[#87fa6d] w-full text-[#000000] text-sm xl:text-base font-semibold rounded-xl px-5 py-3.5 transition-colors duration-500"
