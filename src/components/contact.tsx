@@ -279,7 +279,7 @@ export default function ContactSection({ viewPage }: Props) {
                 </div>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-7">
                 <div className="flex flex-col">
                   <div className="relative w-full">
                     <Input
