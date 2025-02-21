@@ -4,7 +4,7 @@ interface ContactProperties {
   firstname: string;
   email: string;
   phone?: string;
-  publicidad: string;
+  llamada: string;
 }
 
 export async function createHubSpotContact(properties: ContactProperties) {

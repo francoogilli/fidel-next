@@ -2,7 +2,7 @@ export interface Contact {
     firstname: string;
     email: string;
     phone: string;
-    publicidad: string;
+    llamada: string;
     text: string;
   }
   

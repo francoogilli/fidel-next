@@ -36,83 +36,70 @@ export default function ContactSection({ viewPage }: Props) {
   );
 
   const items = [
-    { key: "aberturas", label: "Aberturas" },
-    { key: "accesorios_celulares", label: "Accesorios para Celulares" },
-    { key: "agro", label: "Agro" },
-    { key: "apicolas", label: "Apícolas" },
-    { key: "bicicleteria", label: "Bicicletería" },
-    { key: "calzados", label: "Calzados" },
-    { key: "comex", label: "Comex" },
-    { key: "constructora", label: "Constructora" },
-    { key: "concesionarias", label: "Concesionarias" },
-    { key: "cosmeticos_perfumeria", label: "Cosméticos y Perfumería" },
-    {
-      key: "delicatessen_regionales",
-      label: "Delicatessen y Productos Regionales",
-    },
-    { key: "descartables_cotillon", label: "Descartables y Cotillón" },
-    { key: "dietetica", label: "Dietética" },
-    {
-      key: "distribuidora_carnes",
-      label: "Distribuidoras de Carnes y Avícolas",
-    },
-    {
-      key: "distribuidora_comestibles",
-      label: "Distribuidora Comestibles, Lácteos y Bebidas",
-    },
-    {
-      key: "distribuidora_ferreteria",
-      label: "Distribuidora de Ferretería y Afines",
-    },
-    { key: "drugstore", label: "Drugstore" },
-    { key: "electricidad", label: "Electricidad" },
-    { key: "eventos", label: "Eventos" },
-    { key: "ferreteria_corralon", label: "Ferretería y Corralón" },
-    { key: "fiambrerias", label: "Fiambrerías" },
-    { key: "hogar_muebles_deco", label: "Hogar, Muebles y Deco" },
-    { key: "industria", label: "Industria" },
-    { key: "indumentaria_uniformes", label: "Indumentaria y Uniformes" },
-    { key: "informatica", label: "Informática" },
-    { key: "insumos_medicos", label: "Insumos Médicos" },
-    { key: "joyeria", label: "Joyería" },
-    { key: "jugueteria_pañalera", label: "Juguetería y Pañalera" },
-    { key: "librerias_artisticas", label: "Librerías y Artísticas" },
-    { key: "limpieza", label: "Limpieza" },
-    { key: "marmoleria", label: "Marmolería" },
-    { key: "merceria", label: "Mercería" },
-    { key: "pet_shop", label: "Pet Shop" },
-    { key: "pintureria", label: "Pinturería" },
-    { key: "piscinas_energia", label: "Piscinas y Energía Sustentable" },
-    { key: "polirubros", label: "Polirubros" },
-    { key: "repuestos_autos_motos", label: "Repuestos Automotor y Motos" },
-    { key: "seguridad_industrial", label: "Seguridad Industrial" },
-    { key: "servicio_autos_motos", label: "Servicio Automotor y Motos" },
-    { key: "servicios", label: "Servicios" },
-    { key: "servicios_hidraulicos", label: "Servicios Hidráulicos" },
-    { key: "sistemas_seguridad", label: "Sistemas de Seguridad" },
-    { key: "transporte_logistica", label: "Transporte / Logística" },
-    { key: "vidrieria_cristaleria", label: "Vidriería y Cristalería" },
-    { key: "vivero", label: "Vivero" },
+    { key: "Aberturas", label: "Aberturas" },
+    { key: "Accesorios para Celulares", label: "Accesorios para Celulares" },
+    { key: "Agro", label: "Agro" },
+    { key: "Apícolas", label: "Apícolas" },
+    { key: "Calzados", label: "Calzados" },
+    { key: "Comex", label: "Comex" },
+    { key: "Constructora", label: "Constructora" },
+    { key: "Concesionarias", label: "Concesionarias" },
+    { key: "Cosméticos y Perfumería", label: "Cosméticos y Perfumería" },
+    { key: "Delicatessen", label: "Delicatessen" },
+    { key: "Descartables y Cotillón", label: "Descartables y Cotillón" },
+    { key: "Dietética", label: "Dietética" },
+    { key: "Distribuidoras de Carnes y Avícolas", label: "Distribuidoras de Carnes y Avícolas" },
+    { key: "Distribuidora Comestibles, Lácteos y Bebidas", label: "Distribuidora Comestibles, Lácteos y Bebidas" },
+    { key: "Distribuidora de Ferretería y Afines", label: "Distribuidora de Ferretería y Afines" },
+    { key: "Drugstore", label: "Drugstore" },
+    { key: "Electricidad", label: "Electricidad" },
+    { key: "Eventos", label: "Eventos" },
+    { key: "Ferretería y Corralón", label: "Ferretería y Corralón" },
+    { key: "Fiambrerías", label: "Fiambrerías" },
+    { key: "Hogar, Muebles y Deco", label: "Hogar, Muebles y Deco" },
+    { key: "Industria", label: "Industria" },
+    { key: "Indumentaria y Uniformes", label: "Indumentaria y Uniformes" },
+    { key: "Informática", label: "Informática" },
+    { key: "Insumos Médicos", label: "Insumos Médicos" },
+    { key: "Joyería", label: "Joyería" },
+    { key: "Juguetería y Pañalera", label: "Juguetería y Pañalera" },
+    { key: "Librerías y Artísticas", label: "Librerías y Artísticas" },
+    { key: "Limpieza", label: "Limpieza" },
+    { key: "Marmolería", label: "Marmolería" },
+    { key: "Mercería", label: "Mercería" },
+    { key: "Pet Shop", label: "Pet Shop" },
+    { key: "Pinturería", label: "Pinturería" },
+    { key: "Piscinas y Energía Sustentable", label: "Piscinas y Energía Sustentable" },
+    { key: "Polirubros", label: "Polirubros" },
+    { key: "Repuestos Automotor y Motos", label: "Repuestos Automotor y Motos" },
+    { key: "Seguridad Industrial", label: "Seguridad Industrial" },
+    { key: "Servicio Automotor y Motos", label: "Servicio Automotor y Motos" },
+    { key: "Servicios", label: "Servicios" },
+    { key: "Servicios Hidráulicos", label: "Servicios Hidráulicos" },
+    { key: "Sistemas de Seguridad", label: "Sistemas de Seguridad" },
+    { key: "Transporte / Logística", label: "Transporte / Logística" },
+    { key: "Vidriería y Cristalería", label: "Vidriería y Cristalería" },
+    { key: "Vivero", label: "Vivero" },
   ];
 
   const [values] = useState<Contact>({
     firstname: "",
     email: "",
     phone: "",
-    publicidad: "Reel Joa",
+    llamada: "",
     text: "",
   });
   const handleSubmit = async (
     values: Contact,
     { resetForm }: { resetForm: () => void }
   ) => {
-    const { firstname, email, phone, publicidad } = values;
+    const { firstname, email, phone, llamada } = values;
     try {
       const result = await createHubSpotContact({
         firstname,
         email,
         phone,
-        publicidad,
+        llamada,
       });
       if (result.success) {
         setToastType("success");
@@ -311,7 +298,9 @@ export default function ContactSection({ viewPage }: Props) {
                     <Select
                       disableSelectorIconRotation
                       className="w-full"
+                      name="llamada"
                       label="Rubro"
+                      onChange={handleChange}
                       startContent={
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -342,9 +331,9 @@ export default function ContactSection({ viewPage }: Props) {
                       ))}
                     </Select>
                   </div>
-                  {errors.publicidad && touched.publicidad && (
+                  {errors.llamada && touched.llamada && (
                     <div className="text-red-500 text-xs xl:text-sm pt-2 pl-0.5">
-                      {errors.publicidad}
+                      {errors.llamada}
                     </div>
                   )}
                 </div>
