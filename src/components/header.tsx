@@ -137,8 +137,7 @@ export default function Header() {
             </div>
           )}
 
-          <div className="hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-slate-900/15 lg:pl-8">
-            <Link href="/login">Sign in</Link>
+          <div className="hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-slate-900/15">
             <Link
               className="inline-flex justify-center rounded-xl text-sm font-medium py-2.5 px-4 bg-[#282828] text-white hover:bg-[#1f1f1f] -my-2.5 ml-8"
               href="/all-access"
