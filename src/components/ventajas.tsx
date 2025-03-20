@@ -45,7 +45,80 @@ export default function Ventajas() {
             segura y sin complicaciones, con el mejor respaldo y un equipo para
             ayudarte.
           </h4>
-          <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-4 md:gap-[0.01px]">
+            <div className="col-span-1 w-full aspect-square order-1 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
+              <div className="p-10 text-center sm:text-left mt-auto">
+                <div className="inline-flex items-center justify-center size-14 text-xl rounded-xl bg-gray-100 text-[#121212] font-bold mb-4">
+                  1
+                </div>
+                <h2 className="text-3xl font-sans font-bold text-gray-800 mb-4">
+                  Gestión en la nube, sin límites de lugar ni horario.
+                </h2>
+                <p className="text-gray-500 text-base">
+                  Fidel funciona 100% en la nube: sin instalaciones, sin
+                  descargas, sin complicaciones. Accedé a toda la información
+                  desde tu PC, tablet o celular, estés donde estés, las 24
+                  horas.
+                </p>
+              </div>
+            </div>
+            <div className="col-span-1 w-full hidden md:flex aspect-square order-4 md:order-none border bg-[#F7F7F7] border-[#e9e9e9d3] rounded-[32px] items-center justify-center">
+              <img
+                className="w-[26.5rem] mx-auto object-cover mt-20 "
+                src="/mesage.png"
+                alt=""
+              />
+            </div>
+            <div className="col-span-1 w-full aspect-square order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
+              <div className="p-10 text-center sm:text-left mt-auto">
+                <div className="inline-flex items-center justify-center size-14 text-xl rounded-xl bg-gray-100 text-[#121212] font-bold mb-4">
+                  3
+                </div>
+                <h2 className="text-3xl font-sans font-bold text-gray-800 mb-4">
+                  Actualizaciones automáticas y todos tus datos seguros.
+                </h2>
+                <p className="text-gray-500 text-base">
+                  No te preocupes por actualizaciones ni pierdas tiempo
+                  instalando versiones nuevas: todo se actualiza
+                  automáticamente. Además, tenemos servidores con todas las
+                  medidas de seguridad, para que trabajes con total
+                  tranquilidad.
+                </p>
+              </div>
+            </div>
+            <div className="col-span-1 w-full aspect-square hidden md:flex order-2 md:order-none border border-[#e9e9e9d3] bg-[#F7F7F7] rounded-[32px] items-center justify-center">
+              <img
+                className="h-[min(192px,40cqw)] object-cover mt-16"
+                src="https://tailwindui.com/plus-assets/img/component-images/bento-03-security.png"
+                alt=""
+              />
+            </div>
+            <div className="col-span-1 w-full aspect-square order-3 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
+              <div className="p-10 text-center sm:text-left mt-auto">
+                <div className="inline-flex items-center justify-center size-14 text-xl rounded-xl bg-gray-100 text-[#121212] font-bold mb-4">
+                  2
+                </div>
+                <h2 className="text-3xl font-sans font-bold text-gray-800 mb-4">
+                  Asesoría personalizada con personas. (no bots ).
+                </h2>
+                <p className="text-gray-500 text-base">
+                  Olvídate de respuestas automáticas y chats eternos con bots
+                  que no entienden lo que buscás. En Fidel, hablamos tu idioma y
+                  te acompañamos en cada paso con un equipo real, listo para
+                  resolver cualquier duda.
+                </p>
+              </div>
+            </div>
+            <div className="col-span-1 w-full aspect-square hidden md:flex order-6 md:order-none border bg-[#F7F7F7] border-[#e9e9e9d3] rounded-[32px] items-center justify-center">
+              <img
+                className="h-[min(192px,40cqw)] object-cover mt-16"
+                src="https://tailwindui.com/plus-assets/img/component-images/bento-03-security.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          {/* <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
             <div className="relative lg:row-span-2">
               <div className="absolute inset-px rounded-2xl bg-gradient-to-b from-[#ffffff] via-[#f8f8f8] to-[#F7F7F7] lg:rounded-l-[2rem]"></div>
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
@@ -81,7 +154,10 @@ export default function Ventajas() {
                   <p className="mt-2 text-4xl pb-3 font-extrabold tracking-tight text-[#141414] max-lg:text-center">
                     Asesoría personalizada con personas. (no bots{" "}
                     <span className="inline-flex">
-                      <img src="/emoji.png" className="size-6 translate-y-0.5" />
+                      <img
+                        src="/emoji.png"
+                        className="size-6 translate-y-0.5"
+                      />
                     </span>
                     )
                   </p>
@@ -125,7 +201,7 @@ export default function Ventajas() {
               </div>
               <div className="pointer-events-none absolute inset-px rounded-2xl ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
