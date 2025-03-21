@@ -126,7 +126,7 @@ export default function AppMobile() {
               </div>
             ))}
             <div className="bg-[#81fa68] rounded-xl flex justify-center items-center">
-              <div className="w-full sm:w-auto bg-[#81fa68] text-white py-5 px-7 rounded-xl text-sm font-normal flex items-center justify-center gap-2">
+              <div className="w-full sm:w-auto text-white py-5 px-7 rounded-xl text-sm font-normal flex items-center justify-center gap-2">
                 Lorem ipsum dolor sit amet.
                 <div className="bg-white rounded-full p-0.5">
                   <ArrowUpIcon className="size-4 text-black" />
@@ -134,7 +134,7 @@ export default function AppMobile() {
               </div>
             </div>
             <div className="bg-[#81fa68] rounded-xl flex justify-center items-center">
-              <div className="w-full sm:w-auto bg-[#81fa68] text-white py-5 px-7 rounded-xl text-sm font-normal flex items-center justify-center gap-2">
+              <div className="w-full sm:w-auto text-white py-5 px-7 rounded-xl text-sm font-normal flex items-center justify-center gap-2">
                 Lorem ipsum dolor sit amet.
                 <div className="bg-white rounded-full p-0.5">
                   <ArrowUpIcon className="size-4 rotate-90 text-black" />
