@@ -51,7 +51,7 @@ export default function Ventajas() {
                 <div className="inline-flex items-center justify-center size-14 text-xl rounded-xl bg-gray-100 text-[#121212] font-bold mb-4">
                   1
                 </div>
-                <h2 className="text-3xl font-sans font-bold text-gray-800 mb-4">
+                <h2 className="text-[33px] leading-[2.3rem] font-sans font-bold text-gray-800 mb-4">
                   Gestión en la nube, sin límites de lugar ni horario.
                 </h2>
                 <p className="text-gray-500 text-base">
@@ -74,7 +74,7 @@ export default function Ventajas() {
                 <div className="inline-flex items-center justify-center size-14 text-xl rounded-xl bg-gray-100 text-[#121212] font-bold mb-4">
                   3
                 </div>
-                <h2 className="text-3xl font-sans font-bold text-gray-800 mb-4">
+                <h2 className="text-[33px] leading-[2.3rem] font-sans font-bold text-gray-800 mb-4">
                   Actualizaciones automáticas y todos tus datos seguros.
                 </h2>
                 <p className="text-gray-500 text-base">
@@ -98,7 +98,7 @@ export default function Ventajas() {
                 <div className="inline-flex items-center justify-center size-14 text-xl rounded-xl bg-gray-100 text-[#121212] font-bold mb-4">
                   2
                 </div>
-                <h2 className="text-3xl font-sans font-bold text-gray-800 mb-4">
+                <h2 className="text-[33px] leading-[2.3rem] tracking-tight font-sans font-bold text-gray-800 mb-4">
                   Asesoría personalizada con personas. (no bots ).
                 </h2>
                 <p className="text-gray-500 text-base">
