@@ -125,16 +125,16 @@ export default function AppMobile() {
                 <p className="text-[#6b6b6b] font-medium">{item.text}</p>
               </div>
             ))}
-            <div className="bg-[#24d708c1] rounded-xl flex justify-center items-center">
-              <div className="w-full sm:w-auto bg-[#58E043] text-white py-5 px-7 rounded-xl text-sm font-normal flex items-center justify-center gap-2">
+            <div className="bg-[#81fa68] rounded-xl flex justify-center items-center">
+              <div className="w-full sm:w-auto bg-[#81fa68] text-white py-5 px-7 rounded-xl text-sm font-normal flex items-center justify-center gap-2">
                 Lorem ipsum dolor sit amet.
                 <div className="bg-white rounded-full p-0.5">
                   <ArrowUpIcon className="size-4 text-black" />
                 </div>
               </div>
             </div>
-            <div className="bg-[#24d708c1] rounded-xl flex justify-center items-center">
-              <div className="w-full sm:w-auto bg-[#58E043] text-white py-5 px-7 rounded-xl text-sm font-normal flex items-center justify-center gap-2">
+            <div className="bg-[#81fa68] rounded-xl flex justify-center items-center">
+              <div className="w-full sm:w-auto bg-[#81fa68] text-white py-5 px-7 rounded-xl text-sm font-normal flex items-center justify-center gap-2">
                 Lorem ipsum dolor sit amet.
                 <div className="bg-white rounded-full p-0.5">
                   <ArrowUpIcon className="size-4 rotate-90 text-black" />
