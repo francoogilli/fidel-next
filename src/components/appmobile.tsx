@@ -130,34 +130,47 @@ export default function AppMobile() {
               Stock y precios actualizados en tiempo real.
             </h2>
 
-            <div className="space-y-6">
-              <div className="flex gap-3">
-                <div className="mt-1">
-                  <ChevronIcon className="h-5 w-5 text-gray-600" />
+            <div className="space-y-5">
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <CoinIcon className="size-6 text-gray-600" />
                 </div>
-                <div>
-                  <h3 className="font-medium text-gray-800 mb-1">
-                    Activity Tracking
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Consultá stock en tiempo real para evitar ventas fallidas.
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    We explore how embracing diversity fosters innovation,
-                    enhances sustainable growth.
-                  </p>
                 </div>
               </div>
 
-              <div className="flex gap-3">
-                <div className="mt-1">
-                  <ArrowUpIcon className="h-5 w-5 text-gray-600" />
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <ArrowUpIcon className="size-6 text-gray-600" />
                 </div>
-                <div>
-                  <h3 className="font-medium text-gray-800 mb-1">
-                    Various Documents & Files
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Revisá listas de precios siempre actualizadas.
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    Effortlessly manage multiple documents and files in one
-                    place.
-                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <CoinIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Visualizá imágenes de productos para evitar confusiones.
+                  </h3>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <ArrowUpIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Todo el pedido se sincroniza automáticamente con Fidel.
+                  </h3>
                 </div>
               </div>
             </div>
