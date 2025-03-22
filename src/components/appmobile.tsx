@@ -60,42 +60,56 @@ export default function AppMobile() {
         registrar cobranzas en el momento, sin tener que volver a la oficina.
       </motion.h4>
 
-      <div className="bg-gradient-to-tr from-[#F2F0FD] to-[#E5F8F4] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden">
+      <div className="bg-gradient-to-tr from-[#F2F0FD] to-[#E9F9F6] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column */}
           <div>
-            <h2 className="text-[33px] font-sans font-bold text-gray-800 mb-6">
+            <h2 className="text-[35px] font-sans font-bold text-gray-800 mb-9">
               Tomá pedidos en segundos.
             </h2>
 
-            <div className="space-y-6">
-              <div className="flex gap-3">
-                <div className="mt-1">
-                  <CoinIcon className="h-5 w-5 text-gray-600" />
+            <div className="space-y-5">
+              <div className="flex items-center gap-3">
+                <div className=" bg-white p-1.5 rounded-lg">
+                  <CoinIcon className="size-6 text-gray-600" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-800 mb-1">
-                    Alerts & Schedules
+                  <h3 className="font-semibold text-lg font-sans text-gray-800 mb-1">
+                    Agregá productos al pedido de tu cliente con solo unos
+                    clics.
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    Stay organized with smart reminders and automated routines
-                    for daily productivity.
-                  </p>
                 </div>
               </div>
 
-              <div className="flex gap-3">
-                <div className="mt-1">
-                  <ArrowUpIcon className="h-5 w-5 text-gray-600" />
+              <div className="flex items-center gap-3">
+                <div className=" bg-white p-1.5 rounded-lg">
+                  <ArrowUpIcon className="size-6 text-gray-600" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-gray-800 mb-1">
-                    Customization & Design
+                  <h3 className="font-semibold text-lg font-sans text-gray-800 mb-1">
+                    Copiá pedidos anteriores y editalos rápidamente.
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    Personalize your experience with custom themes, layouts, and
-                    styling options.
-                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className=" bg-white p-1.5 rounded-lg">
+                  <CoinIcon className="size-6 text-gray-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg font-sans text-gray-800 mb-1">
+                    Visualizá imágenes de productos para evitar confusiones.
+                  </h3>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className=" bg-white p-1.5 rounded-lg">
+                  <ArrowUpIcon className="size-6 text-gray-600" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg font-sans text-gray-800 mb-1">
+                    Todo el pedido se sincroniza automáticamente con Fidel.
+                  </h3>
                 </div>
               </div>
             </div>
