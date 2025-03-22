@@ -60,7 +60,7 @@ export default function AppMobile() {
         registrar cobranzas en el momento, sin tener que volver a la oficina.
       </motion.h4>
 
-      <div className="bg-[#EFF2FB] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden">
+      <div className="bg-gradient-to-tr from-[#F2F0FD] to-[#E5F8F4] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column */}
           <div>
