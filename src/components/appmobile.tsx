@@ -5,15 +5,9 @@ import MobileIcon from "../icons/mobile";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
-import Image from "next/image";
-import ShoppingCart from "@/icons/shopping-cart";
-import Package from "@/icons/package";
 import ArrowUpIcon from "@/icons/arrow-up";
-import ShareIcon from "@/icons/share";
 import ChevronIcon from "@/icons/chevron";
-import Calendar from "@/icons/calendar";
 import CoinIcon from "@/icons/coin";
-import PlayStore from "@/icons/playstore";
 
 export default function AppMobile() {
   return (
@@ -173,7 +167,7 @@ export default function AppMobile() {
           </svg>
           Disponible para iOS
         </button>
-        <button className="bg-[#ededed57] font-medium border border-[#e6eee6] text-[#000000] px-6 py-3.5 rounded-xl text-sm flex items-center gap-2">
+        <button className="bg-[#ededed57] font-medium border border-[#e6eee6] text-[#000000] px-5 py-3.5 rounded-xl text-sm flex items-center gap-2">
           <svg
             className="size-5"
             aria-hidden="true"
