@@ -119,7 +119,7 @@ export default function AppMobile() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-bl to-[#fcf8f7] from-[#f0f9e6] mt-7 rounded-[35px] py-16 pr-16 pl-8 ">
+      <div className="bg-gradient-to-bl to-[#fcf8f7] from-[#f0f9e6] mt-7 mb-7 rounded-[35px] py-16 pr-16 pl-8 ">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column - Project Card */}
           <img src="b.jpg" alt="" />
@@ -159,6 +159,125 @@ export default function AppMobile() {
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
                     Visualizá imágenes de productos para evitar confusiones.
+                  </h3>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <ArrowUpIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Todo el pedido se sincroniza automáticamente con Fidel.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gradient-to-tr from-[#F2F0FD] to-[#E9F9F6] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Left Column */}
+          <div>
+            <h2 className="text-[33px] tracking-tight font-sans font-bold text-gray-800 mb-9">
+              Controlá tus cuentas y pagos al instante.
+            </h2>
+
+            <div className="space-y-5">
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <CoinIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Conocé el saldo disponible de cada cliente antes de cerrar
+                    la venta.
+                  </h3>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <ArrowUpIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Generá e imprimí recibos provisorios en segundos.
+                  </h3>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <CoinIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Agilizá la gestión de cobranzas sin errores.
+                  </h3>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <ArrowUpIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Toda la información se guarda en Fidel para su gestión
+                    administrativa.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Cards */}
+          <img src="a.jpg" alt="" />
+        </div>
+      </div>
+
+      <div className="bg-gradient-to-bl to-[#fcf8f7] from-[#f0f9e6] mt-7 mb-7 rounded-[35px] py-16 pr-12 pl-8 ">
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Left Column - Project Card */}
+          <img src="b.jpg" alt="" />
+          {/* Right Column - Features */}
+          <div>
+            <h2 className="text-[33px] tracking-tighter font-sans font-bold text-gray-800 mb-6">
+              Compartí detalles del pedido por WhatsApp.
+            </h2>
+
+            <div className="space-y-5">
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <CoinIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Enviá un resumen detallado del pedido a tu cliente.
+                  </h3>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <ArrowUpIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Evitá errores de comunicación.
+                  </h3>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <CoinIcon className="size-6 text-gray-600" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
+                    Todo queda documentado y accesible en la app.
                   </h3>
                 </div>
               </div>
