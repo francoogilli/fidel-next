@@ -7,6 +7,7 @@ import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
 import ArrowUpIcon from "@/icons/arrow-up";
 import CoinIcon from "@/icons/coin";
+import RefreshIcon from "@/icons/refresh";
 
 export default function AppMobile() {
   return (
@@ -70,7 +71,22 @@ export default function AppMobile() {
             <div className="space-y-5">
               <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <CoinIcon className="size-6 text-gray-600" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="size-6 text-gray-600"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 5l0 14" />
+                    <path d="M5 12l14 0" />
+                  </svg>
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
@@ -82,7 +98,22 @@ export default function AppMobile() {
 
               <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <ArrowUpIcon className="size-6 text-gray-600" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="size-6 text-gray-600"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+                    <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
+                  </svg>
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
@@ -93,7 +124,27 @@ export default function AppMobile() {
 
               <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <CoinIcon className="size-6 text-gray-600" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="size-6 text-gray-600"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M15 8h.01" />
+                    <path d="M6 13l2.644 -2.644a1.21 1.21 0 0 1 1.712 0l3.644 3.644" />
+                    <path d="M13 13l1.644 -1.644a1.21 1.21 0 0 1 1.712 0l1.644 1.644" />
+                    <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
+                    <path d="M4 16v2a2 2 0 0 0 2 2h2" />
+                    <path d="M16 4h2a2 2 0 0 1 2 2v2" />
+                    <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
+                  </svg>
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
@@ -103,7 +154,7 @@ export default function AppMobile() {
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <ArrowUpIcon className="size-6 text-gray-600" />
+                  <RefreshIcon className="size-6 text-gray-600" />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
