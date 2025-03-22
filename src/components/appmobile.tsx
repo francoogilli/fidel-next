@@ -6,7 +6,6 @@ import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
 import ArrowUpIcon from "@/icons/arrow-up";
-import ChevronIcon from "@/icons/chevron";
 import CoinIcon from "@/icons/coin";
 
 export default function AppMobile() {
