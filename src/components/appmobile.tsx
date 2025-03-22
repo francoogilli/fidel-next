@@ -5,8 +5,6 @@ import MobileIcon from "../icons/mobile";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
-import ArrowUpIcon from "@/icons/arrow-up";
-import CoinIcon from "@/icons/coin";
 import RefreshIcon from "@/icons/refresh";
 import CheckIcon from "@/icons/check";
 import CloudIcon from "@/icons/cloud";
