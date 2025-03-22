@@ -390,7 +390,22 @@ export default function AppMobile() {
             <div className="space-y-5">
               <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <CoinIcon className="size-6 text-gray-600" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="size-6 text-gray-600"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                  </svg>
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
@@ -401,7 +416,23 @@ export default function AppMobile() {
 
               <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <ArrowUpIcon className="size-6 text-gray-600" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="size-6 text-gray-600"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                    <path d="M12 8v3" />
+                    <path d="M12 14v.01" />
+                  </svg>
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
@@ -412,7 +443,23 @@ export default function AppMobile() {
 
               <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <CoinIcon className="size-6 text-gray-600" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="size-6 text-gray-600"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+                    <path d="M11 4h2" />
+                    <path d="M12 17v.01" />
+                  </svg>
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
@@ -422,7 +469,7 @@ export default function AppMobile() {
               </div>
               <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <ArrowUpIcon className="size-6 text-gray-600" />
+                  <RefreshIcon className="size-6 text-gray-600" />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
