@@ -99,7 +99,7 @@ export default function Recommend() {
             Gana <span className="font-bold text-black">$25.000</span> por cada
             persona que se suscriba usando tu enlace.
           </p>
-          <Link href="/terms">
+          <Link href="#">
             <button className="flex justify-center items-center gap-x-2 mx-auto bg-[#212121] text-white font-normal rounded-[1.1rem] text-sm xl:text-base px-7 xl:px-8 py-3 mt-5 text-center border-4 border-[#FFF6D8] hover:border-[#ffc6c6] transition-all duration-700">
               Descubri más
               <ArrowUpIcon className="size-4" />
@@ -178,7 +178,7 @@ export default function Recommend() {
             Gana <span className="font-bold text-black">$25.000</span> por cada
             persona que se suscriba usando tu enlace.
           </p>
-          <Link href="/terms">
+          <Link href="#">
             <button className="flex justify-center items-center mx-auto text-xs bg-[#212121] gap-x-1.5  text-white font-normal rounded-2xl px-7 py-3 mt-5 text-center">
               Descubri más
               <ArrowUpIcon className="size-4" />
@@ -259,7 +259,7 @@ export default function Recommend() {
             Gana <span className="font-bold text-black">$25.000</span> por cada
             persona que se suscriba usando tu enlace.
           </p>
-          <Link href="/terms">
+          <Link href="#">
             <button className="flex justify-center items-center mx-auto px-7 py-4 mt-5 w-full text-sm bg-[#212121] text-white gap-x-1.5 font-normal rounded-[0.875rem] text-center">
               Descubri más
               <ArrowUpIcon className="size-4" />
