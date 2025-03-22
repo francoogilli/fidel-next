@@ -152,52 +152,51 @@ export default function AppMobile() {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-  <button className="w-full max-w-[250px] bg-gradient-to-l from-[#191919] to-[#414141] text-white px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="209"
-      height="256"
-      viewBox="0 0 814 1000"
-      className="size-5"
-    >
-      <path
-        fill="#fff"
-        d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"
-      />
-    </svg>
-    Disponible para iOS
-  </button>
-  <button className="w-full max-w-[250px] bg-[#ededed57] font-medium border border-[#e6eee6] text-[#000000] px-5 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
-    <svg
-      className="size-5"
-      aria-hidden="true"
-      viewBox="0 0 40 40"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path fill="none" d="M0,0h40v40H0V0z"></path>
-      <g>
-        <path
-          d="M19.7,19.2L4.3,35.3c0,0,0,0,0,0c0.5,1.7,2.1,3,4,3c0.8,0,1.5-0.2,2.1-0.6l0,0l17.4-9.9L19.7,19.2z"
-          fill="#EA4335"
-        ></path>
-        <path
-          d="M35.3,16.4L35.3,16.4l-7.5-4.3l-8.4,7.4l8.5,8.3l7.5-4.2c1.3-0.7,2.2-2.1,2.2-3.6C37.5,18.5,36.6,17.1,35.3,16.4z"
-          fill="#FBBC04"
-        ></path>
-        <path
-          d="M4.3,4.7C4.2,5,4.2,5.4,4.2,5.8v28.5c0,0.4,0,0.7,0.1,1.1l16-15.7L4.3,4.7z"
-          fill="#4285F4"
-        ></path>
-        <path
-          d="M19.8,20l8-7.9L10.5,2.3C9.9,1.9,9.1,1.7,8.3,1.7c-1.9,0-3.6,1.3-4,3c0,0,0,0,0,0L19.8,20z"
-          fill="#34A853"
-        ></path>
-      </g>
-    </svg>
-    Disponible para Android
-  </button>
-</div>
-
+        <button className="w-full max-w-[250px] bg-gradient-to-l from-[#191919] to-[#414141] text-white px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="209"
+            height="256"
+            viewBox="0 0 814 1000"
+            className="size-5"
+          >
+            <path
+              fill="#fff"
+              d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"
+            />
+          </svg>
+          Disponible para iOS
+        </button>
+        <button className="w-full max-w-[250px] bg-[#ededed57] font-medium border border-[#e6eee6] text-[#000000] px-5 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
+          <svg
+            className="size-5"
+            aria-hidden="true"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none" d="M0,0h40v40H0V0z"></path>
+            <g>
+              <path
+                d="M19.7,19.2L4.3,35.3c0,0,0,0,0,0c0.5,1.7,2.1,3,4,3c0.8,0,1.5-0.2,2.1-0.6l0,0l17.4-9.9L19.7,19.2z"
+                fill="#EA4335"
+              ></path>
+              <path
+                d="M35.3,16.4L35.3,16.4l-7.5-4.3l-8.4,7.4l8.5,8.3l7.5-4.2c1.3-0.7,2.2-2.1,2.2-3.6C37.5,18.5,36.6,17.1,35.3,16.4z"
+                fill="#FBBC04"
+              ></path>
+              <path
+                d="M4.3,4.7C4.2,5,4.2,5.4,4.2,5.8v28.5c0,0.4,0,0.7,0.1,1.1l16-15.7L4.3,4.7z"
+                fill="#4285F4"
+              ></path>
+              <path
+                d="M19.8,20l8-7.9L10.5,2.3C9.9,1.9,9.1,1.7,8.3,1.7c-1.9,0-3.6,1.3-4,3c0,0,0,0,0,0L19.8,20z"
+                fill="#34A853"
+              ></path>
+            </g>
+          </svg>
+          Disponible para Android
+        </button>
+      </div>
     </div>
   );
 }
