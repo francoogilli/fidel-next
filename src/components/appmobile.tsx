@@ -70,11 +70,11 @@ export default function AppMobile() {
 
             <div className="space-y-5">
               <div className="flex items-center gap-3">
-                <div className=" bg-white p-1.5 rounded-lg">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
                   <CoinIcon className="size-6 text-gray-600" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-lg font-sans text-gray-800 mb-1">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
                     Agregá productos al pedido de tu cliente con solo unos
                     clics.
                   </h3>
@@ -82,32 +82,32 @@ export default function AppMobile() {
               </div>
 
               <div className="flex items-center gap-3">
-                <div className=" bg-white p-1.5 rounded-lg">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
                   <ArrowUpIcon className="size-6 text-gray-600" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-lg font-sans text-gray-800 mb-1">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
                     Copiá pedidos anteriores y editalos rápidamente.
                   </h3>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className=" bg-white p-1.5 rounded-lg">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
                   <CoinIcon className="size-6 text-gray-600" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-lg font-sans text-gray-800 mb-1">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
                     Visualizá imágenes de productos para evitar confusiones.
                   </h3>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className=" bg-white p-1.5 rounded-lg">
+                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
                   <ArrowUpIcon className="size-6 text-gray-600" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-lg font-sans text-gray-800 mb-1">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg font-sans text-gray-800">
                     Todo el pedido se sincroniza automáticamente con Fidel.
                   </h3>
                 </div>
