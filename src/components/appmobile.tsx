@@ -47,7 +47,7 @@ export default function AppMobile() {
         </h3>
       </motion.div>
       <motion.h4
-        className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium md:w-[55%] mx-auto pb-0 md:pb-9"
+        className="text-center text-sm md:text-lg text-[#5c5c5c] font-medium md:w-[55%] mx-auto pb-6 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
