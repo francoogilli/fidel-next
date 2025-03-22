@@ -99,7 +99,7 @@ export default function Ventajas() {
                   2
                 </div>
                 <h2 className="text-[33px] leading-[2.3rem] tracking-tight font-sans font-bold text-gray-800 mb-4">
-                  Asesoría personalizada con personas. (no bots ).
+                  Asesoría personalizada con personas (no bots ).
                 </h2>
                 <p className="text-gray-500 text-base">
                   Olvídate de respuestas automáticas y chats eternos con bots
