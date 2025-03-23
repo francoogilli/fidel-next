@@ -60,7 +60,13 @@ export default function AppMobile() {
         registrar cobranzas en el momento, sin tener que volver a la oficina.
       </motion.h4>
 
-      <div className="bg-gradient-to-tr from-[#F2F0FD] to-[#E9F9F6] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-tr from-[#F2F0FD] to-[#E9F9F6] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden"
+      >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column */}
           <div>
@@ -168,9 +174,15 @@ export default function AppMobile() {
           {/* Right Column - Cards */}
           <img src="a.jpg" alt="" />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="bg-gradient-to-bl to-[#fcf8f7] from-[#f0f9e6] mt-7 mb-7 rounded-[35px] py-16 pr-16 pl-8 ">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-bl to-[#fcf8f7] from-[#f0f9e6] mt-7 mb-7 rounded-[35px] py-16 pr-16 pl-8 "
+      >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column - Project Card */}
           <img src="b.jpg" alt="" />
@@ -281,9 +293,15 @@ export default function AppMobile() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="bg-gradient-to-tr from-[#F2F0FD] to-[#E9F9F6] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-tr from-[#F2F0FD] to-[#E9F9F6] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden"
+      >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column */}
           <div>
@@ -373,9 +391,15 @@ export default function AppMobile() {
           {/* Right Column - Cards */}
           <img src="a.jpg" alt="" />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="bg-gradient-to-bl to-[#fcf8f7] from-[#f0f9e6] mt-7 mb-7 rounded-[35px] py-16 pr-12 pl-8 ">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="bg-gradient-to-bl to-[#fcf8f7] from-[#f0f9e6] mt-7 mb-7 rounded-[35px] py-16 pr-12 pl-8 "
+      >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column - Project Card */}
           <img src="b.jpg" alt="" />
@@ -478,7 +502,7 @@ export default function AppMobile() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
         <button className="w-full max-w-[250px] bg-gradient-to-l from-[#191919] to-[#414141] text-white px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
