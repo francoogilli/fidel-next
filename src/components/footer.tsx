@@ -52,7 +52,7 @@ export default function Footer() {
               <Link
                 href="https://www.instagram.com/fidelsistema"
                 target="_blank"
-                className="text-[#272727] hover:text-zinc-900"
+                className="text-[#272727] mt-0.5 hover:text-zinc-900"
               >
                 <Instagram />
                 <span className="sr-only">Instagram</span>
