@@ -17,7 +17,7 @@ const FeatureItem: React.FC<{
   onClick: () => void;
 }> = ({ icon, text, onHover, isBlurred, onClick }) => (
   <li
-    className={`flex flex-col justify-between group cursor-pointer items-center w-[15rem] h-[12rem] py-5 gap-x-1 bg-[#FCFBF9] border border-[#e5e5e5] rounded-3xl transition-all duration-300 ${
+    className={`flex flex-col justify-between group cursor-pointer items-center w-[12rem] h-[10rem] md:w-[15rem] md:h-[12rem] py-3 md:py-5 gap-x-1 bg-[#FCFBF9] border border-[#e5e5e5] rounded-3xl transition-all duration-300 ${
       isBlurred ? "blur-sm opacity-50" : "blur-none opacity-100"
     }`}
     onClick={onClick}
@@ -25,19 +25,19 @@ const FeatureItem: React.FC<{
     onMouseLeave={() => onHover(false)}
   >
     {icon}
-    <span className="md:text-base text-center text-xs pt-4 max-w-[12rem] flex justify-center items-center text-gray-800 font-normal">
+    <span className="text-xs md:text-base text-center pt-2 md:pt-4 max-w-[10rem] md:max-w-[12rem] flex justify-center items-center text-gray-800 font-normal">
       {text}
     </span>
-    <span className="pt-3 flex justify-center items-center gap-2">
+    <span className="pt-2 md:pt-3 flex justify-center items-center gap-2">
       Ver más{" "}
       <span className="border border-[#191919] group-hover:bg-black rounded-full p-0.5">
         <svg
-          width="16"
-          height="16"
+          width="14"
+          height="14"
+          className="text-[#191919] group-hover:text-white size-3 md:size-4"
           fill="currentColor"
           aria-hidden="true"
           viewBox="0 0 16 16"
-          className="text-[#191919] group-hover:text-white size-3"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M8.75 4c0-.41421-.33579-.75-.75-.75s-.75.33579-.75.75v3.25H4c-.41421 0-.75.33579-.75.75s.33579.75.75.75h3.25V12c0 .4142.33579.75.75.75s.75-.3358.75-.75V8.75H12c.4142 0 .75-.33579.75-.75s-.3358-.75-.75-.75H8.75V4Z" />
