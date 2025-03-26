@@ -30,58 +30,75 @@ export default function Recommend() {
           <div className="relative rounded-3xl overflow-hidden bg-muted/20 p-8 md:p-12 bg-[#FCF8F2] border border-[#fff0f0]">
             <div className="relative w-full flex justify-center">
               <div className="absolute -top-24 right-0 rotate-[30deg]">
-                <img src="/coin2.png" alt="" className="size-32" />
+                <img
+                  src="/coin2.png"
+                  alt=""
+                  className="size-32"
+                  style={{ animation: "levitate 40s ease infinite" }}
+                />
               </div>
               <div className="absolute -top-10 right-52 rotate-[30deg]">
-                <img src="/coin3.png" alt="" className="size-20 blur-[3px]" />
-              </div>
-              <div className="absolute top-36 right-24 rotate-[30deg]">
                 <img
                   src="/coin3.png"
                   alt=""
-                  className="size-24 -rotate-[30deg]"
+                  className="size-20 blur-[3px]"
+                  style={{ animation: "levitate 33s ease infinite" }}
                 />
               </div>
-              <div className="absolute top-32 -right-14 rotate-[30deg]">
+              <div className="absolute top-36 right-24">
+                <img
+                  src="/coin3.png"
+                  alt=""
+                  className="size-24"
+                  style={{ animation: "levitate 34s ease infinite" }}
+                />
+              </div>
+              <div className="absolute top-32 -right-14 -rotate-[20deg]">
                 <img
                   src="/coin4.png"
                   alt=""
-                  className="size-20 -rotate-[50deg]"
+                  className="size-20 "
+                  style={{ animation: "levitate 30s ease infinite" }}
                 />
               </div>
-              <div className="absolute -top-7 right-[21rem] -rotate-[199deg]">
+              <div className="absolute -top-7 right-[21rem] -rotate-[250deg]">
                 <img
                   src="/coin4.png"
                   alt=""
-                  className="size-20 -rotate-[50deg]"
+                  className="size-20 "
+                  style={{ animation: "levitate 39s ease infinite" }}
                 />
               </div>
-              <div className="absolute -top-7 right-[28rem] rotate-[190deg]">
+              <div className="absolute -top-7 right-[28rem] rotate-[140deg]">
                 <img
                   src="/coin5.png"
                   alt=""
-                  className="size-20 -rotate-[50deg] blur-[5px]"
+                  className="size-20  blur-[5px]"
+                  style={{ animation: "levitate 33s ease infinite" }}
                 />
               </div>
-              <div className="absolute top-36 right-[2rem] rotate-[240deg]">
+              <div className="absolute top-36 right-[2rem] rotate-[190deg]">
                 <img
                   src="/coin4.png"
                   alt=""
-                  className="size-10 -rotate-[50deg] blur-[3px]"
+                  className="size-10 blur-[3px]"
+                  style={{ animation: "levitate 32s ease infinite" }}
                 />
               </div>
-              <div className="absolute top-24 right-60 rotate-[30deg]">
+              <div className="absolute top-24 right-60">
                 <img
                   src="/coin5.png"
                   alt=""
-                  className="size-28 -rotate-[30deg]"
+                  className="size-28"
+                  style={{ animation: "levitate 38s ease infinite" }}
                 />
               </div>
-              <div className="absolute top-24 right-[25rem] rotate-[30deg]">
+              <div className="absolute top-24 right-[25rem] ">
                 <img
                   src="/coin.png"
                   alt=""
-                  className="size-[5.5rem] -rotate-[30deg] blur-[3px]"
+                  className="size-[5.5rem] blur-[3px]"
+                  style={{ animation: "levitate 35s ease infinite" }}
                 />
               </div>
             </div>

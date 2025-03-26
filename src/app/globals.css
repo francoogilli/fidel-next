@@ -72,3 +72,21 @@ html {
   scrollbar-width: auto;
   scrollbar-color: rgb(214, 214, 214) transparent;
 }
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
