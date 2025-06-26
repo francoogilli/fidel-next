@@ -7,9 +7,10 @@ import { pricingInfo } from "@/data/data";
 import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
 import CreditCardIcon from "@/icons/creditCard";
-import ThunderIcon from "@/icons/thunder";
 import Link from "next/link";
 import ArrowUpIcon from "@/icons/arrow-up";
+import { LaurelIcon } from "@/icons/laurel";
+import ThunderIcon from "@/icons/thunder";
 interface Props {
   viewComparison?: boolean;
 }
@@ -74,17 +75,18 @@ export default function PricingCard({ viewComparison }: Props) {
               </h3>
               <div className="flex justify-center items-center gap-x-2.5 pt-4 pb-1">
                 <h4
-                  className="text-base xl:text-lg px-5 text-[#ffffff] font-medium"
+                  className="text-base flex justify-center items-center xl:text-lg px-5 text-[#ffffff] font-medium"
                   style={{ fontFamily: "Satoshi" }}
                 >
-                  <span className="text-[#646464]">«</span> Todos los planes
-                  incluyen <span className="text-[#646464]">»</span>
+                  <LaurelIcon className="text-[#3d3d3d] w-5 mr-4" />
+                  Incluido en todos los planes
+                  <LaurelIcon className="text-[#3d3d3d] w-5 ml-4" mirrored />
                 </h4>
               </div>
               <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2 pb-14">
                 <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 text-[#c5c5c5] rounded-xl">
-                  <ThunderIcon className="size-6 text-[#ffce1f]" />
-                  <span className="text-sm text-[#c5c5c5] font-medium">
+                  <ThunderIcon className="size-6 text-[#ffce1f] mr-1" />
+                  <span className="text-sm text-[#c5c5c5]">
                     Soporte y actualizaciones constantes.
                   </span>
                 </div>
