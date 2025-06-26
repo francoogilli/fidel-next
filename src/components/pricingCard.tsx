@@ -123,7 +123,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   </h3>
                   <div className="flex justify-start text-left text-gray-200 items-baseline my-3">
                     <span
-                      className="text-5xl xl:text-[3.4rem] text-[#f7f7f7] -tracking-wider font-bold"
+                      className="text-5xl xl:text-[3.2rem] text-[#f7f7f7] -tracking-wider font-bold"
                       style={{ fontFamily: "Plus Jakarta Sans" }}
                     >
                       ${Number(pricing.price).toLocaleString("es-AR")}

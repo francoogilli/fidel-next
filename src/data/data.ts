@@ -341,7 +341,7 @@ export const pricingComparison: PricingCardProps[] = [
 export const pricingInfo: PricingCard[] = [
   {
     name: "Básico",
-    price: 37000,
+    price: 44000,
     bestOption: "emprendedores y comercios que buscan facturar y organizarse.",
     benefits: [
       {
@@ -363,7 +363,7 @@ export const pricingInfo: PricingCard[] = [
   },
   {
     name: "Inicial",
-    price: 50000,
+    price: 60000,
     popular: true,
     bestOption: "empresas que buscan automatización y ahorro de tiempo.",
     benefits: [
@@ -386,7 +386,7 @@ export const pricingInfo: PricingCard[] = [
   },
   {
     name: "Intermedio",
-    price: 68000,
+    price: 82000,
     bestOption: "empresas que buscan automatización y ahorro de tiempo.",
     benefits: [
       {
@@ -408,7 +408,7 @@ export const pricingInfo: PricingCard[] = [
   },
   {
     name: "Avanzado",
-    price: 88000,
+    price: 108000,
     bestOption: "emprendedores y comercios que buscan facturar y organizarse.",
     benefits: [
       {
