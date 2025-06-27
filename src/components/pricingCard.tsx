@@ -80,7 +80,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 >
                   <LaurelIcon className="text-[#3d3d3d] w-5 mr-4" />
                   Incluido en todos los planes
-                  <LaurelIcon className="text-[#3d3d3d] w-5 ml-4" mirrored />
+                  <LaurelIcon className="text-[#3d3d3d] w-5 ml-4 transform scale-x-[-1]" />
                 </h4>
               </div>
               <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2 pb-14">

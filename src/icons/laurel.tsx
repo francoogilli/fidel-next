@@ -1,22 +1,17 @@
 import React from "react";
 
 interface LaurelIconProps {
-  mirrored?: boolean;
   className?: string;
 }
 
-export const LaurelIcon: React.FC<LaurelIconProps> = ({
-  mirrored = false,
-  className = "",
-}) => {
-  const combinedClass = `${className} ${mirrored ? "scale-x-[-1]" : ""}`.trim();
+export const LaurelIcon: React.FC<LaurelIconProps> = ({ className = "" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="28"
       height="64"
       viewBox="0 0 28 64"
-      className={combinedClass}
+      className={className}
       fill="currentColor"
     >
       <path
