@@ -105,7 +105,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   pricing.popular === true
                     ? "bg-gradient-to-bl from-[#3a3a3a] to-[#1e1e1e]"
                     : "bg-[#1e1e1e]"
-                } relative flex flex-col px-6 pt-4 text-center rounded-3xl border border-[#333333]`}
+                } relative flex flex-col px-6 pt-4 text-center rounded-[1.6875rem] border border-[#333333]`}
                 key={pricing.name}
                 variants={scaleUp}
               >
