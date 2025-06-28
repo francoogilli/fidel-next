@@ -82,9 +82,9 @@ export default function PricingCard({ viewComparison }: Props) {
                   className="text-base flex justify-center items-center xl:text-lg px-5 text-[#ffffff] font-medium"
                   style={{ fontFamily: "Satoshi" }}
                 >
-                  <LaurelIcon className="text-[#4d4d4d] w-5 mr-4" />
+                  <LaurelIcon className="text-[#fbe660] w-5 mr-4" />
                   Incluido en todos los planes
-                  <LaurelIcon className="text-[#4d4d4d] w-5 ml-4 transform scale-x-[-1]" />
+                  <LaurelIcon className="text-[#fbe660] w-5 ml-4 transform scale-x-[-1]" />
                 </h4>
               </div>
               <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2 pb-14">
