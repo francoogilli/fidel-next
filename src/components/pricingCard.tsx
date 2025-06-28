@@ -134,8 +134,8 @@ export default function PricingCard({ viewComparison }: Props) {
                     >
                       ${Number(pricing.price).toLocaleString("es-AR")}
                     </span>
-                    <span className="pl-1 font-medium text-xs md:text-[15px] xl:text-[16px] text-left text-[#d3d3d3]">
-                      /mes
+                    <span className="pl-1 font-medium text-xs md:text-[13px]  text-left text-[#d3d3d3]">
+                      +IVA/mes
                     </span>
                   </div>
                   <h5 className="text-sm xl:text-sm pt-2 pb-6 font-normal text-left text-zinc-400">
