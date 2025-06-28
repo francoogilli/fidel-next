@@ -6,7 +6,7 @@ import GradientLine from "./gradientLine";
 
 export default function Functionalities() {
   return (
-    <div className="pb-20 md:pb-44">
+    <div className="pb-20 md:pb-28">
       <div className="flex justify-center items-center gap-x-2.5">
         <GradientLine direction="left" />
         <ThreeStripesLeft />
