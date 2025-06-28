@@ -136,7 +136,7 @@ export default function Recommend() {
                   persona que se suscriba usando tu enlace.
                 </p>
               </div>
-              <button className="flex font-sans font-medium justify-center items-center gap-x-2 px-6 py-3 rounded-2xl bg-gradient-to-l from-[#191919] to-[#414141] text-white">
+              <button className="flex font-sans font-medium justify-center items-center gap-x-2 px-6 py-3 rounded-[14px] bg-gradient-to-br from-[#3c3c3c] to-[#2b2b2b] hover:from-[#2b2b2b] hover:to-[#3c3c3c] text-[#fafafa]">
                 Descubrir más
                 <ArrowUpIcon className="size-4" />
               </button>
