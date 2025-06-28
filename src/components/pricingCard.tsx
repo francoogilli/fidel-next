@@ -105,12 +105,12 @@ export default function PricingCard({ viewComparison }: Props) {
           >
             {pricingInfo.map((pricing) => (
               <motion.div
+                key={pricing.name}
                 className={`${
                   pricing.popular === true
                     ? "bg-gradient-to-bl from-[#3a3a3a] to-[#1e1e1e]"
                     : "bg-[#1e1e1e]"
-                } relative flex flex-col px-6 pt-4 text-center rounded-[1.6875rem] border border-[#333333]`}
-                key={pricing.name}
+                } relative flex flex-col px-6 pt-4 text-center rounded-[1.6875rem] border border-[#333333] justify-between`}
                 variants={scaleUp}
               >
                 {pricing.popular && (
@@ -144,82 +144,89 @@ export default function PricingCard({ viewComparison }: Props) {
                   <hr className="flex-grow border-t mb-6 xl:mb-8 mt-2 xl:mt-4 border-[#555555]" />
                 </div>
 
-                {pricing.benefits.map((benefit, index) => (
-                  <li key={index} className="flex flex-col gap-1 pb-2.5">
-                    <div className="flex items-center gap-x-3">
-                      <div className="flex items-center justify-center size-6 bg-[#3d3d3d] rounded-lg">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 256 256"
-                          focusable="false"
-                          color="rgb(255, 255, 255)"
-                          aria-hidden="true"
-                          className="select-none size-3 inline-block fill-white text-white flex-shrink-0"
-                        >
-                          <g color="rgb(255, 255, 255)">
-                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z" />
-                          </g>
-                        </svg>
-                      </div>
-
-                      <div className="flex items-center gap-1 text-sm xl:text-sm">
-                        <span>{benefit.text}</span>
-                        {benefit.description && (
-                          <button
-                            onClick={() => {
-                              if (
-                                openDescription?.cardName === pricing.name &&
-                                openDescription.benefitIndex === index
-                              ) {
-                                setOpenDescription(null);
-                              } else {
-                                setOpenDescription({
-                                  cardName: pricing.name,
-                                  benefitIndex: index,
-                                });
-                              }
-                            }}
-                            className="text-[#d2d2d2] hover:text-white hover:bg-[#2c2c2c] duration-300 rounded-full ml-2 font-bold cursor-pointer"
-                          >
+                {/* Contenedor beneficios con flex-grow para ocupar espacio */}
+                <div className="flex flex-col flex-grow ">
+                  <ul className="flex flex-col gap-1">
+                    {pricing.benefits.map((benefit, index) => (
+                      <li key={index} className="flex flex-col gap-1 pb-2.5">
+                        <div className="flex items-center gap-x-3">
+                          <div className="flex items-center justify-center size-6 bg-[#3d3d3d] rounded-lg">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              className="size-[1.2rem] inline-block"
+                              viewBox="0 0 256 256"
+                              focusable="false"
+                              color="rgb(255, 255, 255)"
+                              aria-hidden="true"
+                              className="select-none size-3 inline-block fill-white text-white flex-shrink-0"
                             >
-                              <path
-                                stroke="none"
-                                d="M0 0h24v24H0z"
-                                fill="none"
-                              />
-                              <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                              <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                              <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                              <g color="rgb(255, 255, 255)">
+                                <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z" />
+                              </g>
                             </svg>
-                          </button>
-                        )}
-                      </div>
-                    </div>
+                          </div>
 
-                    {benefit.description &&
-                      openDescription?.cardName === pricing.name &&
-                      openDescription.benefitIndex === index && (
-                        <p className="ml-9 text-zinc-400 text-sm text-left">
-                          {benefit.description}
-                        </p>
-                      )}
-                  </li>
-                ))}
+                          <div className="flex items-center gap-1 text-sm xl:text-sm">
+                            <span>{benefit.text}</span>
+                            {benefit.description && (
+                              <button
+                                onClick={() => {
+                                  if (
+                                    openDescription?.cardName ===
+                                      pricing.name &&
+                                    openDescription.benefitIndex === index
+                                  ) {
+                                    setOpenDescription(null);
+                                  } else {
+                                    setOpenDescription({
+                                      cardName: pricing.name,
+                                      benefitIndex: index,
+                                    });
+                                  }
+                                }}
+                                className="text-[#d2d2d2] hover:text-white hover:bg-[#2c2c2c] duration-300 rounded-full ml-2 font-bold cursor-pointer"
+                                aria-label="Ver más"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  className="size-[1.2rem] inline-block"
+                                >
+                                  <path
+                                    stroke="none"
+                                    d="M0 0h24v24H0z"
+                                    fill="none"
+                                  />
+                                  <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                  <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                  <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                </svg>
+                              </button>
+                            )}
+                          </div>
+                        </div>
+
+                        {benefit.description &&
+                          openDescription?.cardName === pricing.name &&
+                          openDescription.benefitIndex === index && (
+                            <p className="ml-9 text-zinc-400 text-sm text-left">
+                              {benefit.description}
+                            </p>
+                          )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
                 <Link
                   href="/"
-                  style={{ fontFamily: "Plus Jakarta Sans", marginTop: "60px" }}
+                  style={{ fontFamily: "Plus Jakarta Sans", marginTop: "30px" }}
                   className={`${
                     pricing.popular === true
                       ? "bg-[#ffffff] hover:bg-[#efefef] text-[#191919]"
@@ -232,6 +239,7 @@ export default function PricingCard({ viewComparison }: Props) {
               </motion.div>
             ))}
           </motion.div>
+
           <div className="flex justify-center items-center gap-10 pt-1">
             <div className="text-center">
               <h4
@@ -257,6 +265,7 @@ export default function PricingCard({ viewComparison }: Props) {
             </div>
           </div>
         </div>
+
         <p className="text-[#fddb54] bg-[#2626265d] p-4 rounded-medium mx-auto w-fit flex justify-center items-center gap-x-2 text-center font-medium text-sm mt-11 mb-8 md:mb-20">
           <svg
             xmlns="http://www.w3.org/2000/svg"
