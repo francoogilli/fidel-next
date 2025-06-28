@@ -151,7 +151,7 @@ export default function PricingCard({ viewComparison }: Props) {
                         </h5>
                         <button
                           onClick={() => setOpenBestOption(null)}
-                          className="text-[#d2d2d2] hover:text-white text-xs mt-1"
+                          className="text-[#e4e4e4] hover:text-white text-xs mt-1"
                         >
                           Ver menos
                         </button>
@@ -164,7 +164,7 @@ export default function PricingCard({ viewComparison }: Props) {
                         {pricing.bestOption.length > 50 && (
                           <button
                             onClick={() => setOpenBestOption(pricing.name)}
-                            className="text-[#d2d2d2] hover:text-white text-xs mt-1"
+                            className="text-[#e4e4e4] hover:text-white text-xs mt-1"
                           >
                             Ver más
                           </button>
