@@ -139,7 +139,11 @@ export default function PricingCard({ viewComparison }: Props) {
                       +IVA/mes
                     </span>
                   </div>
-                  <div className="text-left pt-2 pb-6">
+                  <div
+                    className={`text-left pt-2 ${
+                      pricing.bestOption.length > 50 ? "pb-0" : "pb-6"
+                    }`}
+                  >
                     {openBestOption === pricing.name ? (
                       <>
                         <h5 className="text-sm xl:text-sm font-normal text-zinc-400">
