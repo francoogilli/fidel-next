@@ -183,7 +183,7 @@ export default function PricingCard({ viewComparison }: Props) {
                                     });
                                   }
                                 }}
-                                className="text-[#d2d2d2] hover:text-white hover:bg-[#2c2c2c] duration-300 rounded-full ml-2 font-bold cursor-pointer"
+                                className="text-[#d2d2d2] hover:text-white hover:bg-[#2c2c2c] duration-300 rounded-md ml-2 font-bold cursor-pointer"
                                 aria-label="Ver más"
                               >
                                 <svg
