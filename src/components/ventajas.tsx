@@ -48,9 +48,17 @@ export default function Ventajas() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-4 md:gap-[0.01px]">
             <div className="col-span-1 w-full aspect-square order-1 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
               <div className="p-10 text-center sm:text-left mt-auto">
-                <div className="inline-flex items-center justify-center size-14 text-xl rounded-xl bg-gray-100 text-[#121212] font-bold mb-4">
+                <div
+                  style={{
+                    boxShadow: "0px 4px 6px 4px rgba(180, 156, 197, 0.08)",
+                    background:
+                      "linear-gradient(140deg, rgba(173, 255, 190, 0.7) 4%, rgba(144, 238, 144, 0.7) 60%, rgba(34, 139, 34, 0.6) 103%)",
+                  }}
+                  className="inline-flex border-2 border-[#ffffff] items-center justify-center size-16 text-2xl rounded-2xl text-[#393939] font-extrabold mb-4"
+                >
                   1
                 </div>
+
                 <h2 className="text-[33px] leading-[2.3rem] font-sans font-bold text-gray-800 mb-4">
                   Gestión en la nube, sin límites de lugar ni horario.
                 </h2>
@@ -71,7 +79,14 @@ export default function Ventajas() {
             </div>
             <div className="col-span-1 w-full aspect-square order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
               <div className="p-10 text-center sm:text-left mt-auto">
-                <div className="inline-flex items-center justify-center size-14 text-xl rounded-xl bg-gray-100 text-[#121212] font-bold mb-4">
+                <div
+                  style={{
+                    boxShadow: "0px 4px 6px 4px rgba(180, 156, 197, 0.08)",
+                    background:
+                      "linear-gradient(140deg, rgba(173, 255, 190, 0.7) 4%, rgba(144, 238, 144, 0.7) 60%, rgba(34, 139, 34, 0.6) 103%)",
+                  }}
+                  className="inline-flex border-2 border-[#ffffff] items-center justify-center size-16 text-2xl rounded-2xl bg-gray-100 text-[#393939] font-extrabold mb-4"
+                >
                   3
                 </div>
                 <h2 className="text-[33px] leading-[2.3rem] font-sans font-bold text-gray-800 mb-4">
@@ -95,7 +110,14 @@ export default function Ventajas() {
             </div>
             <div className="col-span-1 w-full aspect-square order-3 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
               <div className="p-10 text-center sm:text-left mt-auto">
-                <div className="inline-flex items-center justify-center size-14 text-xl rounded-xl bg-gray-100 text-[#121212] font-bold mb-4">
+                <div
+                  style={{
+                    boxShadow: "0px 4px 6px 4px rgba(180, 156, 197, 0.08)",
+                    background:
+                      "linear-gradient(140deg, rgba(173, 255, 190, 0.7) 4%, rgba(144, 238, 144, 0.7) 60%, rgba(34, 139, 34, 0.6) 103%)",
+                  }}
+                  className="inline-flex border-2 border-[#fff] items-center justify-center size-16 text-2xl rounded-2xl bg-gray-100 text-[#393939] font-extrabold mb-4"
+                >
                   2
                 </div>
                 <h2 className="text-[33px] leading-[2.3rem] tracking-tight font-sans font-bold text-gray-800 mb-4">
