@@ -54,8 +54,8 @@ const CarouselInfinite: React.FC = () => {
   const [selectedFeature, setSelectedFeature] = useState<{
     icon: React.ReactNode;
     text: string;
+    items: string[];
     subtitle: string;
-    description: string;
   } | null>(null);
   const handleHover = (hovering: boolean, index: number) => {
     if (logosRef.current) {
@@ -70,55 +70,98 @@ const CarouselInfinite: React.FC = () => {
     {
       icon: <ShoppingCartIcon className="size-14" strokeWidth="1.5" />,
       text: "Ventas y Clientes",
-      subtitle: "Gestioná todo el ciclo de ventas y relaciones con clientes",
-      description:
-        "Optimiza el proceso de ventas y mejora la relación con tus clientes.",
+      items: [
+        "Emití facturas electrónicas, presupuestos, remitos y pedidos en segundos.",
+        "Creá, buscá y administrá clientes con información detallada. Usá el CUIT o DNI para obtener automáticamente todos los datos de tu cliente en ARCA y optimizar el proceso de registro.",
+        "Registrá pagos y controlá cuentas corrientes fácilmente.",
+        "Portal de clientes: A través de un link, tus clientes acceden a su resumen de cuenta donde podrán visualizar y descargar los comprobantes emitidos, facturas pendientes de pagos y pagos emitidos.",
+        "Emití reportes de Clientes que te facilitan la toma de decisiones.",
+      ],
+      subtitle:
+        "Emití facturas, remitos, pedidos y presupuestos en segundos. Cargá clientes con CUIT/DNI y datos automáticos desde ARCA. Registrá pagos y controlá cuentas corrientes sin errores. Compartí resúmenes de cuenta a través del portal de clientes. Consultá reportes, analizá datos clave y tomá mejores decisiones.",
     },
     {
       icon: <PackageIcon className="size-14" strokeWidth="1.6" />,
       text: "Compras y Proveedores",
-      subtitle: "Optimizá la gestión de tus compras y proveedores",
-      description:
-        "Controla tu inventario de manera eficiente y sin complicaciones.",
+      items: [
+        "Cargá las facturas de tus proveedores para actualizar automáticamente el stock y los precios de tus productos.",
+        "Gestioná las Cuentas Corrientes con tus Proveedores, generando diferentes órdenes de pago.",
+        "Cargá tus órdenes de Compra para enviar tu pedido a tus proveedores, de forma automática.",
+        "Generá órdenes de producción y exportá la lista de insumos necesarios para satisfacer las órdenes pendientes.",
+        "Determiná los descuentos que te otorgan tus proveedores para mantener tus costos actualizados.",
+      ],
+      subtitle:
+        "Cargá facturas de compra y actualizá stock y precios automáticamente. Administrá cuentas corrientes, órdenes de pago y órdenes de compra automáticas a proveedores. Mantené tus costos al día cargando descuentos y condiciones especiales. Si fabricás productos, generá órdenes de producción y exportá la lista de insumos necesarios.",
     },
     {
       icon: <PackageIcon className="size-14" strokeWidth="1.6" />,
       text: "Productos y Stock",
+      items: [
+        "Creá variantes, productos compuestos y listas de precios.",
+        "Controlá inventario en tiempo real y gestioná múltiples depósitos.",
+        "Administrá compras y órdenes de reposición.",
+        "Configurá el stock máximo y mínimo para recibir alertas de reposición.",
+        "Actualizá los precios por porcentajes o mediante archivos Excel.",
+        "Realizá ajustes de stock y transferencias entre depósitos para mantener la organización.",
+      ],
       subtitle:
-        "Administrá tu inventario en tiempo real y asegurate de que nunca te falte ni te sobre mercadería.",
-      description:
-        "Controla tu inventario de manera eficiente y sin complicaciones.",
+        "Mantené tu inventario ordenado y actualizado. Creá variantes, kits, productos compuestos y listas de precios. Controlá el stock en tiempo real, incluso en múltiples depósitos. Recibí alertas automáticas según el stock mínimo o máximo configurado. Actualizá precios por porcentaje o desde Excel en pocos clics. Hacé ajustes y transferencias de stock de forma ágil y segura.",
     },
     {
       icon: <ReceiptIcon className="size-14" strokeWidth="1.6" />,
       text: "Finanzas y Contabilidad",
-      subtitle: "Ordená tus números sin esfuerzo",
-      description:
-        "Mantén tus cuentas claras con herramientas de contabilidad avanzadas.",
+      items: [
+        "Controlá ingresos, egresos y movimientos de dinero.",
+        "Mantené un registro preciso de saldos y pagos.",
+        "Generá reportes clave para ARCA y análisis financieros.",
+        "Registrá cheques propios y de terceros con alertas previas al vencimiento.",
+        "Descargá tus reportes contables de manera fácil y rápida.",
+        "Gestioná la apertura y cierre de tus cajas de forma eficiente.",
+        "Creá grupos de cajas para tener cajas independientes según tu operación.",
+      ],
+      subtitle:
+        "Gestioná ingresos, egresos y saldos bancarios con precisión. Registrá cheques propios y de terceros con alertas de vencimiento. Controlá la apertura y cierre de cajas (con opción de cajas independientes). Generá y descargá reportes contables y financieros en segundos. Accedé a reportes compatibles con ARCA para presentaciones formales.",
     },
     {
       icon: <ChartIcon className="size-14" strokeWidth="1.6" />,
       text: "App Móvil para Vendedores",
+      items: [
+        "App exclusiva: Pedidos, Recibos, Pagos y Órdenes de Compra con sincronización en tiempo real.",
+        "Definí zonas de venta para una mejor organización comercial.",
+        "Generá hojas de ruta para tus vendedores, optimizando recorridos.",
+        "Establecé comisiones por ventas y/o cobros generados.",
+        "Cargá y visualizá imágenes de productos de forma fácil.",
+        "Funcionamiento offline para zonas con señal limitada.",
+        "Guardá la ubicación de tus clientes para encontrarlos fácilmente.",
+        "Consultá el estado de cuenta de tu cliente de forma rápida.",
+      ],
       subtitle:
-        "Dale a tu equipo las herramientas para vender más y mejor, con datos en tiempo real.",
-      description:
-        "Gestiona tus ventas desde cualquier lugar con nuestra app móvil para vendedores.",
+        "Generá pedidos, pagos y recibos provisorios con sincronización en tiempo real. Consultá stock, precios y estado de cuenta de cada cliente al instante. Funciona offline: ideal para zonas con poca señal. Visualizá imágenes de productos y evitá errores en la carga. Organizá zonas de venta, hojas de ruta y comisiones por vendedor. Guardá la ubicación de cada cliente para visitas más eficientes.",
     },
     {
       icon: <TruckDeliveryIcon className="size-14" strokeWidth="1.6" />,
-      text: "Integración E-Commerce",
+      text: "Integraciones E-Commerce",
+      items: [
+        "Sincronizá automáticamente toda la información de tus productos: stock, precios, fotos y más.",
+        "Recibí los pedidos realizados por tus clientes desde el E-Commerce.",
+        "Aplicá descuentos promocionales y potenciá las ventas en tu Tienda.",
+        "Imprimí etiquetas de envío con todos los datos de tus clientes.",
+        "Registrá en el sistema a los nuevos clientes que compren en tu Tienda.",
+      ],
       subtitle:
-        "Sincronizá tu negocio físico y digital en un solo sistema para automatizar procesos.",
-      description:
-        "Conéctate con plataformas de comercio electrónico de manera sencilla.",
+        "Sincronizá stock, precios, imágenes y descripciones automáticamente. Recibí pedidos online listos para procesar en Fidel. Aplicá descuentos y promociones desde el sistema. Imprimí etiquetas de envío con los datos del cliente. Registrá automáticamente nuevos compradores en tu base de clientes.",
     },
     {
       icon: <ChartIcon className="size-14" strokeWidth="1.6" />,
-      text: "Estadísticas",
+      text: "Estadísticas y Reportes",
+      items: [
+        "Conocé el estado de tus ventas, compras, clientes, presupuestos y productos de forma clara.",
+        "Aplicá filtros para obtener reportes más puntuales.",
+        "Identificá tus productos más vendidos para tomar decisiones estratégicas.",
+        "Visualizá datos clave de tu gestión en nuestro Dashboard.",
+      ],
       subtitle:
-        "Visualizá la información clave de tu negocio con reportes claros y fáciles de interpretar.",
-      description:
-        "Obtén informes detallados sobre el rendimiento de tu negocio.",
+        "Consultá reportes detallados de ventas, compras, clientes, presupuestos y productos. Aplicá filtros para obtener información específica. Identificá tus productos más vendidos y optimizá tu estrategia. Accedé a un dashboard fácil de interpretar.",
     },
   ];
 
@@ -152,7 +195,7 @@ const CarouselInfinite: React.FC = () => {
       <Modal
         isOpen={isOpen}
         backdrop="blur"
-        size="4xl"
+        size="5xl"
         radius="lg"
         onOpenChange={onOpenChange}
       >
@@ -160,47 +203,29 @@ const CarouselInfinite: React.FC = () => {
           {() => (
             <>
               <ModalBody className="p-5 md:p-20 max-h-[80vh] overflow-y-auto">
-                <div className="flex justify-center items-center gap-2 pb-6">
+                <div className="flex justify-center items-center gap-2 pb-3">
                   {selectedFeature?.icon}
                   <h3 className=" text-3xl md:text-4xl xl:text-5xl font-sans font-bold">
                     {selectedFeature?.text}
                   </h3>
                 </div>
-                <div className="flex justify-center items-center text-center gap-2 pb-7">
-                  <p className="italic text-xl">{selectedFeature?.subtitle}</p>
+                <div className="flex justify-center items-center text-start gap-2 pb-9">
+                  <p className="text-lg">{selectedFeature?.subtitle}</p>
                 </div>
 
-                <div className="flex flex-col mx-auto gap-2">
-                  <span className="flex items-center text-lg gap-4 py-1.5">
-                    <Check
-                      strokeWidth="4"
-                      className={`bg-[#39e915] scale-150 text-[#ffffff] rounded-[15px] p-1`}
-                    />
-                    Emití facturas electrónicas, presupuestos y pedidos en
-                    segundos.
-                  </span>
-                  <span className="flex items-center text-lg gap-4 py-1.5">
-                    <Check
-                      strokeWidth="4"
-                      className={`bg-[#39e915] scale-150 text-[#ffffff] rounded-[15px] p-1`}
-                    />
-                    Creá, buscá y administrá clientes con información detallada.
-                  </span>
-                  <span className="flex items-center text-lg gap-4 py-1.5">
-                    <Check
-                      strokeWidth="4"
-                      className={`bg-[#39e915] scale-150 text-[#ffffff] rounded-[15px] p-1`}
-                    />
-                    Registrá pagos y controlá cuentas corrientes fácilmente.
-                  </span>
-                  <span className="flex items-center text-lg gap-4 py-1.5">
-                    <Check
-                      strokeWidth="4"
-                      className={`bg-[#39e915] scale-150 text-[#ffffff] rounded-[15px] p-1`}
-                    />
-                    Portal de clientes: A través de un link, tus clientes
-                    acceden a XXXX sin
-                  </span>
+                <div className="flex flex-col gap-2">
+                  {selectedFeature?.items.map((item, index) => (
+                    <span
+                      key={index}
+                      className="flex items-start text-lg gap-4 py-1.5"
+                    >
+                      <Check
+                        strokeWidth="4"
+                        className="bg-[#39e915] scale-150 text-white rounded-[15px] p-1 mt-1"
+                      />
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </ModalBody>
             </>
