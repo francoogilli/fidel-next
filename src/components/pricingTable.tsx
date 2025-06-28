@@ -12,10 +12,10 @@ export default function PricingTable() {
   const [selectedPlanIndex, setSelectedPlanIndex] = useState(1);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const plans = [
-    { name: "Básico", price: "$37.000" },
-    { name: "Inicial", price: "$50.000" },
-    { name: "Intermedio", price: "$68.000" },
-    { name: "Avanzado", price: "$88.000" },
+    { name: "Básico", price: "$44.000" },
+    { name: "Inicial", price: "$60.000" },
+    { name: "Intermedio", price: "$82.000" },
+    { name: "Avanzado", price: "$108.000" },
   ];
 
   const features = [
