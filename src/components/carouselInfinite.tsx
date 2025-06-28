@@ -4,10 +4,13 @@ import { useRef, useState } from "react";
 import ShoppingCartIcon from "../icons/shopping-cart";
 import PackageIcon from "../icons/package";
 import ChartIcon from "../icons/chart";
-import ReceiptIcon from "../icons/receipt";
-import { TruckDeliveryIcon } from "../icons/truck-delivery";
 import { Modal, ModalContent, ModalBody, useDisclosure } from "@heroui/modal";
 import Check from "@/icons/checkIcon";
+import BankIcon from "@/icons/bank";
+import ShoppingBagIcon from "@/icons/shopping-bag";
+import WorldUpIcon from "@/icons/worldUp";
+import DeviceMobileDollar from "@/icons/deviceMobile";
+import MobileIcon from "@/icons/mobile";
 
 const FeatureItem: React.FC<{
   icon: React.ReactNode;
@@ -81,7 +84,7 @@ const CarouselInfinite: React.FC = () => {
         "Emití facturas, remitos, pedidos y presupuestos en segundos. Cargá clientes con CUIT/DNI y datos automáticos desde ARCA. Registrá pagos y controlá cuentas corrientes sin errores. Compartí resúmenes de cuenta a través del portal de clientes. Consultá reportes, analizá datos clave y tomá mejores decisiones.",
     },
     {
-      icon: <PackageIcon className="size-14" strokeWidth="1.6" />,
+      icon: <ShoppingBagIcon className="size-14" strokeWidth="1.6" />,
       text: "Compras y Proveedores",
       items: [
         "Cargá las facturas de tus proveedores para actualizar automáticamente el stock y los precios de tus productos.",
@@ -108,8 +111,8 @@ const CarouselInfinite: React.FC = () => {
         "Mantené tu inventario ordenado y actualizado. Creá variantes, kits, productos compuestos y listas de precios. Controlá el stock en tiempo real, incluso en múltiples depósitos. Recibí alertas automáticas según el stock mínimo o máximo configurado. Actualizá precios por porcentaje o desde Excel en pocos clics. Hacé ajustes y transferencias de stock de forma ágil y segura.",
     },
     {
-      icon: <ReceiptIcon className="size-14" strokeWidth="1.6" />,
-      text: "Finanzas y Contabilidad",
+      icon: <BankIcon className="size-14" strokeWidth="1.8" />,
+      text: "Cajas, Bancos, Finanzas y Contabilidad",
       items: [
         "Controlá ingresos, egresos y movimientos de dinero.",
         "Mantené un registro preciso de saldos y pagos.",
@@ -123,7 +126,7 @@ const CarouselInfinite: React.FC = () => {
         "Gestioná ingresos, egresos y saldos bancarios con precisión. Registrá cheques propios y de terceros con alertas de vencimiento. Controlá la apertura y cierre de cajas (con opción de cajas independientes). Generá y descargá reportes contables y financieros en segundos. Accedé a reportes compatibles con ARCA para presentaciones formales.",
     },
     {
-      icon: <ChartIcon className="size-14" strokeWidth="1.6" />,
+      icon: <MobileIcon className="size-14" strokeWidth="1.8" />,
       text: "App Móvil para Vendedores",
       items: [
         "App exclusiva: Pedidos, Recibos, Pagos y Órdenes de Compra con sincronización en tiempo real.",
@@ -139,7 +142,7 @@ const CarouselInfinite: React.FC = () => {
         "Generá pedidos, pagos y recibos provisorios con sincronización en tiempo real. Consultá stock, precios y estado de cuenta de cada cliente al instante. Funciona offline: ideal para zonas con poca señal. Visualizá imágenes de productos y evitá errores en la carga. Organizá zonas de venta, hojas de ruta y comisiones por vendedor. Guardá la ubicación de cada cliente para visitas más eficientes.",
     },
     {
-      icon: <TruckDeliveryIcon className="size-14" strokeWidth="1.6" />,
+      icon: <WorldUpIcon className="size-14" strokeWidth="1.6" />,
       text: "Integraciones E-Commerce",
       items: [
         "Sincronizá automáticamente toda la información de tus productos: stock, precios, fotos y más.",

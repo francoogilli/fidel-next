@@ -1,8 +1,8 @@
-interface MobileIconProps {
+interface Props {
   className?: string;
   strokeWidth?: string;
 }
-export default function MobileIcon({ className, strokeWidth = "2" }: MobileIconProps) {
+export default function BankIcon({ className, strokeWidth = "2" }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,9 +17,14 @@ export default function MobileIcon({ className, strokeWidth = "2" }: MobileIconP
       className={className}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
-      <path d="M11 4h2" />
-      <path d="M12 17v.01" />
+      <path d="M3 21l18 0" />
+      <path d="M3 10l18 0" />
+      <path d="M5 6l7 -3l7 3" />
+      <path d="M4 10l0 11" />
+      <path d="M20 10l0 11" />
+      <path d="M8 14l0 3" />
+      <path d="M12 14l0 3" />
+      <path d="M16 14l0 3" />
     </svg>
   );
 }
