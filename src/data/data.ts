@@ -343,7 +343,7 @@ export const pricingInfo: PricingCard[] = [
   {
     name: "Básico",
     price: 44000,
-    bestOption: "emprendedores y comercios que buscan facturar y organizarse.",
+    bestOption: "emprendedores, freelancers y pequeños comercios que buscan una solución simple y efectiva para facturar y organizar su negocio.",
     benefits: [
       {
         text: "Facturación rápida y fácil",
@@ -388,7 +388,7 @@ export const pricingInfo: PricingCard[] = [
     name: "Inicial",
     price: 60000,
     popular: true,
-    bestOption: "empresas que buscan automatización y ahorro de tiempo.",
+    bestOption: "comercios medianos y negocios en expansión que necesitan optimizar cada aspecto de su gestión.",
     benefits: [
       { text: "Todo lo del Plan Básico +" },
       { text: "3 usuarios en total" },
@@ -416,7 +416,7 @@ export const pricingInfo: PricingCard[] = [
   {
     name: "Intermedio",
     price: 82000,
-    bestOption: "empresas que buscan automatización y ahorro de tiempo.",
+    bestOption: "grandes Empresas y Distribuidoras.",
     benefits: [
       { text: "Todo lo del Plan Inicial +" },
       { text: "9 Usuarios en total" },
@@ -451,7 +451,7 @@ export const pricingInfo: PricingCard[] = [
   {
     name: "Avanzado",
     price: 108000,
-    bestOption: "emprendedores y comercios que buscan facturar y organizarse.",
+    bestOption: "empresas y grandes distribuidores.",
     benefits: [
       {
         text: "Todo lo del Plan Intermedio +",

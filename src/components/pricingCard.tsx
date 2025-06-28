@@ -28,6 +28,7 @@ export default function PricingCard({ viewComparison }: Props) {
     cardName: string;
     benefitIndex: number;
   } | null>(null);
+  const [openBestOption, setOpenBestOption] = useState<string | null>(null);
 
   return (
     <div className="border-y-8 border-[#e9e9e9]">
@@ -138,9 +139,35 @@ export default function PricingCard({ viewComparison }: Props) {
                       +IVA/mes
                     </span>
                   </div>
-                  <h5 className="text-sm xl:text-sm pt-2 pb-6 font-normal text-left text-zinc-400">
-                    Para {pricing.bestOption}
-                  </h5>
+                  <div className="text-left pt-2 pb-6">
+                    {openBestOption === pricing.name ? (
+                      <>
+                        <h5 className="text-sm xl:text-sm font-normal text-zinc-400">
+                          Para {pricing.bestOption}
+                        </h5>
+                        <button
+                          onClick={() => setOpenBestOption(null)}
+                          className="text-[#d2d2d2] hover:text-white text-xs mt-1"
+                        >
+                          Ver menos
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        <h5 className="text-sm xl:text-sm font-normal text-zinc-400 overflow-hidden text-ellipsis whitespace-nowrap">
+                          Para {pricing.bestOption}
+                        </h5>
+                        {pricing.bestOption.length > 50 && (
+                          <button
+                            onClick={() => setOpenBestOption(pricing.name)}
+                            className="text-[#d2d2d2] hover:text-white text-xs mt-1"
+                          >
+                            Ver más
+                          </button>
+                        )}
+                      </>
+                    )}
+                  </div>
                   <hr className="flex-grow border-t mb-6 xl:mb-8 mt-2 xl:mt-4 border-[#555555]" />
                 </div>
 
