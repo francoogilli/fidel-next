@@ -84,6 +84,7 @@ interface PricingCardProps {
 
 interface BenefitInfo {
   text: string;
+  description?: string;
 }
 interface PricingCard {
   name: string;
@@ -346,18 +347,40 @@ export const pricingInfo: PricingCard[] = [
     benefits: [
       {
         text: "Facturación rápida y fácil",
+        description: "Emití facturas electrónicas y presupuestos en segundos.",
       },
       {
         text: "Clientes organizados",
+        description:
+          "Registrá y administrá tu cartera con información detallada.",
       },
       {
         text: "Control básico de stock",
+        description: "Llevá el registro de productos sin complicarte.",
       },
       {
         text: "Cuentas claras",
+        description: "Gestioná pagos y cobros sin perder de vista nada.",
       },
       {
         text: "Reportes esenciales",
+        description: "Visualizá ingresos, ventas y clientes en un solo lugar.",
+      },
+      {
+        text: "Acceso a módulos esenciales",
+        description:
+          "Incluye acceso a Clientes, Ventas, Productos/Servicios y Cajas.",
+      },
+      {
+        text: "Soporte por WhatsApp",
+      },
+      {
+        text: "Sin límites en operaciones",
+        description:
+          "No limitamos la cantidad de operaciones ni comprobantes realizados.",
+      },
+      {
+        text: "1 Usuario",
       },
     ],
   },
@@ -367,21 +390,27 @@ export const pricingInfo: PricingCard[] = [
     popular: true,
     bestOption: "empresas que buscan automatización y ahorro de tiempo.",
     benefits: [
+      { text: "Todo lo del Plan Básico +" },
+      { text: "3 usuarios en total" },
       {
-        text: "Todo lo del Plan Básico +",
+        text: "Acceso total al sistema",
+        description:
+          "Incluye acceso a todos los módulos del sistema sin restricciones.",
+      },
+      { text: "Facturación desde un CUIT" },
+      { text: "Dashboard con indicadores" },
+      {
+        text: "Integración E-Commerce",
+        description:
+          "Conectá con Tienda Nube o WooCommerce y gestioná hasta 300 productos.",
       },
       {
-        text: "Stock avanzado y depósitos",
+        text: "Uso de la aplicación móvil",
+        description:
+          "Consultá precios, stock y cuentas corrientes desde tu celular en cualquier momento.",
       },
-      {
-        text: "Compras y proveedores",
-      },
-      {
-        text: "Finanzas integradas",
-      },
-      {
-        text: "Reportes avanzados",
-      },
+      { text: "Portal de clientes" },
+      { text: "Reportes contables" },
     ],
   },
   {
@@ -389,20 +418,33 @@ export const pricingInfo: PricingCard[] = [
     price: 82000,
     bestOption: "empresas que buscan automatización y ahorro de tiempo.",
     benefits: [
+      { text: "Todo lo del Plan Inicial +" },
+      { text: "9 Usuarios en total" },
+      { text: "3 Vendedores en la App" },
       {
-        text: "Todo lo del Plan Inicial +",
+        text: "Acceso total al sistema",
+        description:
+          "Incluye acceso a todos los módulos del sistema sin restricciones.",
       },
       {
-        text: "Stock avanzado y depósitos",
+        text: "Facturación desde 2 CUIT",
+        description:
+          "Emití facturas con hasta 2 CUIT diferentes para tu empresa.",
       },
       {
-        text: "Compras y proveedores",
+        text: "Multimoneda en Ventas",
+        description:
+          "Maneja Ventas, Facturas E y Bono Fiscal en múltiples monedas sin problemas.",
       },
       {
-        text: "Finanzas integradas",
+        text: "Integración E-Commerce",
+        description:
+          "Conectá con Tienda Nube o WooCommerce y gestioná hasta 1000 productos.",
       },
       {
-        text: "Reportes avanzados",
+        text: "Uso de la aplicación móvil",
+        description:
+          "Uso del módulo para tomar pedidos y registrar pagos desde tu celular.",
       },
     ],
   },
@@ -412,19 +454,42 @@ export const pricingInfo: PricingCard[] = [
     bestOption: "emprendedores y comercios que buscan facturar y organizarse.",
     benefits: [
       {
-        text: "Todo lo del Intermedio +",
+        text: "Todo lo del Plan Intermedio +",
       },
       {
-        text: "Stock avanzado y depósitos",
+        text: "21 Usuarios en total",
       },
       {
-        text: "Compras y proveedores",
+        text: "9 Vendedores en la App",
       },
       {
-        text: "Finanzas integradas",
+        text: "Acceso total al sistema",
+        description:
+          "Incluye acceso a todos los módulos del sistema sin restricciones.",
       },
       {
-        text: "Reportes avanzados",
+        text: "Facturación desde 5 CUIT",
+        description:
+          "Emití facturas con hasta 5 CUIT diferentes para tu empresa.",
+      },
+      {
+        text: "Multimoneda en Ventas",
+        description:
+          "Maneja Ventas, Facturas E y Bono Fiscal en múltiples monedas sin problemas.",
+      },
+      {
+        text: "Percepciones por Provincias",
+        description: "Aplicá percepciones según cada provincia en tus ventas.",
+      },
+      {
+        text: "Integración E-Commerce",
+        description:
+          "Conectá con Tienda Nube o WooCommerce y gestioná hasta 2000 productos.",
+      },
+      {
+        text: "Uso de la aplicación móvil",
+        description:
+          "Uso del módulo para tomar pedidos y registrar pagos desde tu celular.",
       },
     ],
   },

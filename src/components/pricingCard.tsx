@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import GradientLine from "./gradientLine";
 import { motion } from "framer-motion";
 import { pricingInfo } from "@/data/data";
@@ -24,6 +24,10 @@ export default function PricingCard({ viewComparison }: Props) {
     hidden: { scale: 0.95, opacity: 0 },
     visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
   };
+  const [openDescription, setOpenDescription] = useState<{
+    cardName: string;
+    benefitIndex: number;
+  } | null>(null);
 
   return (
     <div className="border-y-8 border-[#e9e9e9]">
@@ -141,30 +145,78 @@ export default function PricingCard({ viewComparison }: Props) {
                 </div>
 
                 {pricing.benefits.map((benefit, index) => (
-                  <React.Fragment key={index}>
-                    <li className="flex items-center space-x-2 justify-between">
-                      <div className="flex items-center justify-center gap-x-3 pb-2.5">
-                        <div className="flex items-center justify-center size-6 bg-[#3d3d3d] rounded-lg">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 256 256"
-                            focusable="false"
-                            color="rgb(255, 255, 255)"
-                            aria-hidden="true"
-                            className="select-none size-3 inline-block fill-white text-white flex-shrink-0"
-                          >
-                            <g color="rgb(255, 255, 255)">
-                              <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
-                            </g>
-                          </svg>
-                        </div>
-                        <span className="text-sm xl:text-sm ">
-                          {benefit.text}
-                        </span>
+                  <li key={index} className="flex flex-col gap-1 pb-2.5">
+                    <div className="flex items-center gap-x-3">
+                      <div className="flex items-center justify-center size-6 bg-[#3d3d3d] rounded-lg">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 256 256"
+                          focusable="false"
+                          color="rgb(255, 255, 255)"
+                          aria-hidden="true"
+                          className="select-none size-3 inline-block fill-white text-white flex-shrink-0"
+                        >
+                          <g color="rgb(255, 255, 255)">
+                            <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z" />
+                          </g>
+                        </svg>
                       </div>
-                    </li>
-                  </React.Fragment>
+
+                      <div className="flex items-center gap-1 text-sm xl:text-sm">
+                        <span>{benefit.text}</span>
+                        {benefit.description && (
+                          <button
+                            onClick={() => {
+                              if (
+                                openDescription?.cardName === pricing.name &&
+                                openDescription.benefitIndex === index
+                              ) {
+                                setOpenDescription(null);
+                              } else {
+                                setOpenDescription({
+                                  cardName: pricing.name,
+                                  benefitIndex: index,
+                                });
+                              }
+                            }}
+                            className="text-[#d2d2d2] hover:text-white hover:bg-[#2c2c2c] duration-300 rounded-full ml-2 font-bold cursor-pointer"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="size-[1.2rem] inline-block"
+                            >
+                              <path
+                                stroke="none"
+                                d="M0 0h24v24H0z"
+                                fill="none"
+                              />
+                              <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                              <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                              <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            </svg>
+                          </button>
+                        )}
+                      </div>
+                    </div>
+
+                    {benefit.description &&
+                      openDescription?.cardName === pricing.name &&
+                      openDescription.benefitIndex === index && (
+                        <p className="ml-9 text-zinc-400 text-sm text-left">
+                          {benefit.description}
+                        </p>
+                      )}
+                  </li>
                 ))}
+
                 <Link
                   href="/"
                   style={{ fontFamily: "Plus Jakarta Sans", marginTop: "60px" }}
