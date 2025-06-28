@@ -9,7 +9,6 @@ import Check from "@/icons/checkIcon";
 import BankIcon from "@/icons/bank";
 import ShoppingBagIcon from "@/icons/shopping-bag";
 import WorldUpIcon from "@/icons/worldUp";
-import DeviceMobileDollar from "@/icons/deviceMobile";
 import MobileIcon from "@/icons/mobile";
 
 const FeatureItem: React.FC<{
