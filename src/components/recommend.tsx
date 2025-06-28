@@ -29,6 +29,14 @@ export default function Recommend() {
         <div className="container">
           <div className="relative rounded-3xl overflow-hidden bg-muted/20 p-8 md:p-12 bg-[#FCF8F2] border border-[#fff0f0]">
             <div className="relative w-full flex justify-center">
+              <div className="absolute top-[3.25rem] right-16 rotate-[5deg] blur-[3px] opacity-70">
+                <img
+                  src="/coin3.png"
+                  alt=""
+                  className="size-20"
+                  style={{ animation: "levitate 40s ease infinite" }}
+                />
+              </div>
               <div className="absolute -top-24 right-0 rotate-[30deg]">
                 <img
                   src="/coin2.png"
@@ -73,7 +81,7 @@ export default function Recommend() {
                 <img
                   src="/coin5.png"
                   alt=""
-                  className="size-20  blur-[5px]"
+                  className="size-20 blur-[5px]"
                   style={{ animation: "levitate 33s ease infinite" }}
                 />
               </div>
