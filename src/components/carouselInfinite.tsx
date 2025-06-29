@@ -30,13 +30,13 @@ const FeatureItem: React.FC<{
     <span className="text-xs md:text-base text-center pt-2 md:pt-4 max-w-[10rem] md:max-w-[12rem] flex justify-center items-center text-gray-800 font-normal">
       {text}
     </span>
-    <span className="pt-2 md:pt-3 flex justify-center items-center gap-2">
-      Ver más{" "}
+    <span className="pt-2 md:pt-3 flex justify-center text-sm items-center gap-2">
+      Ver detalles{" "}
       <span className="border border-[#191919] group-hover:bg-black rounded-full p-0.5">
         <svg
           width="14"
           height="14"
-          className="text-[#191919] group-hover:text-white size-3 md:size-4"
+          className="text-[#191919] group-hover:text-white size-2.5"
           fill="currentColor"
           aria-hidden="true"
           viewBox="0 0 16 16"
