@@ -30,7 +30,7 @@ const FeatureItem: React.FC<{
     onMouseLeave={() => onHover(false)}
   >
     {icon}
-    <span className="text-xs md:text-base text-center pt-2 md:pt-4 max-w-[10rem] md:max-w-[12rem] flex justify-center items-center text-gray-800 font-normal">
+    <span className="text-xs md:text-base text-center font-sans pt-2 md:pt-4 max-w-[10rem] md:max-w-[12rem] flex justify-center items-center text-[#5a5a5a] group-hover:text-[#4b4b4b] font-semibold">
       {text}
     </span>
     <span className="pt-2 md:pt-3 flex justify-center text-sm items-center gap-2">
@@ -73,7 +73,12 @@ const CarouselInfinite: React.FC = () => {
 
   const items = [
     {
-      icon: <ShoppingCartIcon className="size-14" strokeWidth="1.5" />,
+      icon: (
+        <ShoppingCartIcon
+          className="size-16 rounded-full p-3 text-[#5ede23] bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] "
+          strokeWidth="1.5"
+        />
+      ),
       text: "Ventas y Clientes",
       items: [
         "Emití facturas electrónicas, presupuestos, remitos y pedidos en segundos.",
@@ -86,7 +91,12 @@ const CarouselInfinite: React.FC = () => {
         "Emití facturas, remitos, pedidos y presupuestos en segundos. Cargá clientes con CUIT/DNI y datos automáticos desde ARCA. Registrá pagos y controlá cuentas corrientes sin errores. Compartí resúmenes de cuenta a través del portal de clientes. Consultá reportes, analizá datos clave y tomá mejores decisiones.",
     },
     {
-      icon: <ShoppingBagIcon className="size-14" strokeWidth="1.6" />,
+      icon: (
+        <ShoppingBagIcon
+          className="size-16 rounded-full p-3 text-[#5ede23] bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] "
+          strokeWidth="1.6"
+        />
+      ),
       text: "Compras y Proveedores",
       items: [
         "Cargá las facturas de tus proveedores para actualizar automáticamente el stock y los precios de tus productos.",
@@ -99,7 +109,12 @@ const CarouselInfinite: React.FC = () => {
         "Cargá facturas de compra y actualizá stock y precios automáticamente. Administrá cuentas corrientes, órdenes de pago y órdenes de compra automáticas a proveedores. Mantené tus costos al día cargando descuentos y condiciones especiales. Si fabricás productos, generá órdenes de producción y exportá la lista de insumos necesarios.",
     },
     {
-      icon: <PackageIcon className="size-14" strokeWidth="1.6" />,
+      icon: (
+        <PackageIcon
+          className="size-16 rounded-full p-3 text-[#5ede23] bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] "
+          strokeWidth="1.6"
+        />
+      ),
       text: "Productos y Stock",
       items: [
         "Creá variantes, productos compuestos y listas de precios.",
@@ -113,7 +128,11 @@ const CarouselInfinite: React.FC = () => {
         "Mantené tu inventario ordenado y actualizado. Creá variantes, kits, productos compuestos y listas de precios. Controlá el stock en tiempo real, incluso en múltiples depósitos. Recibí alertas automáticas según el stock mínimo o máximo configurado. Actualizá precios por porcentaje o desde Excel en pocos clics. Hacé ajustes y transferencias de stock de forma ágil y segura.",
     },
     {
-      icon: <BankIcon className="size-14" strokeWidth="1.8" />,
+      icon: (
+        <div className="w-16 h-16 rounded-full p-3 bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] text-[#5ede23] flex items-center justify-center shadow-sm">
+          <BankIcon className="w-full h-full" strokeWidth="1.8" />
+        </div>
+      ),
       text: "Cajas, Bancos, Finanzas y Contabilidad",
       items: [
         "Controlá ingresos, egresos y movimientos de dinero.",
@@ -128,7 +147,11 @@ const CarouselInfinite: React.FC = () => {
         "Gestioná ingresos, egresos y saldos bancarios con precisión. Registrá cheques propios y de terceros con alertas de vencimiento. Controlá la apertura y cierre de cajas (con opción de cajas independientes). Generá y descargá reportes contables y financieros en segundos. Accedé a reportes compatibles con ARCA para presentaciones formales.",
     },
     {
-      icon: <MobileIcon className="size-14" strokeWidth="1.8" />,
+      icon: (
+        <div className="size-16 rounded-full p-3 text-[#5ede23] bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] ">
+          <MobileIcon className="w-full h-full" strokeWidth="1.8" />
+        </div>
+      ),
       text: "App Móvil para Vendedores",
       items: [
         "App exclusiva: Pedidos, Recibos, Pagos y Órdenes de Compra con sincronización en tiempo real.",
@@ -144,7 +167,11 @@ const CarouselInfinite: React.FC = () => {
         "Generá pedidos, pagos y recibos provisorios con sincronización en tiempo real. Consultá stock, precios y estado de cuenta de cada cliente al instante. Funciona offline: ideal para zonas con poca señal. Visualizá imágenes de productos y evitá errores en la carga. Organizá zonas de venta, hojas de ruta y comisiones por vendedor. Guardá la ubicación de cada cliente para visitas más eficientes.",
     },
     {
-      icon: <WorldUpIcon className="size-14" strokeWidth="1.6" />,
+      icon: (
+        <div className="size-16 rounded-full p-3 text-[#5ede23] bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] ">
+          <WorldUpIcon className="w-full h-full" strokeWidth="1.6" />
+        </div>
+      ),
       text: "Integraciones E-Commerce",
       items: [
         "Sincronizá automáticamente toda la información de tus productos: stock, precios, fotos y más.",
@@ -157,7 +184,12 @@ const CarouselInfinite: React.FC = () => {
         "Sincronizá stock, precios, imágenes y descripciones automáticamente. Recibí pedidos online listos para procesar en Fidel. Aplicá descuentos y promociones desde el sistema. Imprimí etiquetas de envío con los datos del cliente. Registrá automáticamente nuevos compradores en tu base de clientes.",
     },
     {
-      icon: <ChartIcon className="size-14" strokeWidth="1.6" />,
+      icon: (
+        <ChartIcon
+          className="size-16 rounded-full p-3 text-[#5ede23] bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] "
+          strokeWidth="1.6"
+        />
+      ),
       text: "Estadísticas y Reportes",
       items: [
         "Conocé el estado de tus ventas, compras, clientes, presupuestos y productos de forma clara.",
