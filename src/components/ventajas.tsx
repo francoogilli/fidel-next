@@ -63,10 +63,9 @@ export default function Ventajas() {
                   Gestión en la nube, sin límites de lugar ni horario.
                 </h2>
                 <p className="text-gray-500 text-base">
-                  Fidel funciona 100% en la nube: sin instalaciones, sin
-                  descargas, sin complicaciones. Accedé a toda la información
-                  desde tu PC, tablet o celular, estés donde estés, las 24
-                  horas.
+                  Sin instalaciones, sin descargas, sin complicaciones. Accedé a
+                  toda la información desde tu PC, tablet o celular, estés donde
+                  estés, las 24 horas.
                 </p>
               </div>
             </div>
@@ -90,13 +89,12 @@ export default function Ventajas() {
                   3
                 </div>
                 <h2 className="text-[33px] leading-[2.3rem] font-sans font-bold text-gray-800 mb-4">
-                  Actualizaciones automáticas y todos tus datos seguros.
+                  Actualizaciones automáticas y datos seguros.
                 </h2>
                 <p className="text-gray-500 text-base">
-                  No te preocupes por actualizaciones ni pierdas tiempo
-                  instalando versiones nuevas: todo se actualiza
-                  automáticamente. Además, tenemos servidores con todas las
-                  medidas de seguridad, para que trabajes con total
+                  No tenés que perder tiempo instalando versiones nuevas: todo
+                  se actualiza automáticamente. Tenemos servidores con las
+                  medidas de seguridad necesarias para que trabajes con
                   tranquilidad.
                 </p>
               </div>
@@ -121,12 +119,19 @@ export default function Ventajas() {
                   2
                 </div>
                 <h2 className="text-[33px] leading-[2.3rem] tracking-tight font-sans font-bold text-gray-800 mb-4">
-                  Asesoría personalizada con personas (no bots ).
+                  Un equipo de asesoría real (no bots{" "}
+                  <span className="inline-flex">
+                    <img
+                      src="/emoji.png"
+                      className="size-6 translate-y-0.5 ml-2"
+                    />
+                  </span>
+                  )
                 </h2>
                 <p className="text-gray-500 text-base">
                   Olvídate de respuestas automáticas y chats eternos con bots
-                  que no entienden lo que buscás. En Fidel, hablamos tu idioma y
-                  te acompañamos en cada paso con un equipo real, listo para
+                  que no entienden lo que buscás. Hablamos tu idioma y te
+                  acompañamos en cada paso con un equipo real, listo para
                   resolver cualquier duda.
                 </p>
               </div>
