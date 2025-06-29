@@ -19,7 +19,7 @@ const FeatureItem: React.FC<{
   onClick: () => void;
 }> = ({ icon, text, onHover, isBlurred, onClick }) => (
   <li
-    className={`flex flex-col justify-between group cursor-pointer items-center w-[12rem] h-[10rem] md:w-[15rem] md:h-[12rem] py-3 md:py-5 gap-x-1 bg-[#FCFBF9] border border-[#e5e5e5] rounded-3xl transition-all duration-300 ${
+    className={`flex flex-col justify-between group cursor-pointer items-center w-[12rem] h-[10rem] md:w-[15rem] md:h-[12rem] py-3 md:py-5 gap-x-1 bg-gradient-to-tr from-[#FCFBF9] via-[#fff] to-[#f1f1f17d] border border-[#e5e5e5] rounded-3xl transition-all duration-300 ${
       isBlurred ? "blur-sm opacity-50" : "blur-none opacity-100"
     }`}
     style={{
