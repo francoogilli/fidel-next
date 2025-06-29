@@ -47,7 +47,7 @@ export default function Ventajas() {
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-4 md:gap-[0.01px]">
             <div className="col-span-1 w-full aspect-square order-1 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
-              <div className="p-10 text-center sm:text-left mt-auto">
+              <div className="p-10 text-center sm:text-center mt-auto">
                 <div
                   style={{
                     boxShadow: "0px 4px 6px 4px rgba(180, 156, 197, 0.08)",
@@ -77,7 +77,7 @@ export default function Ventajas() {
               />
             </div>
             <div className="col-span-1 w-full aspect-square order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
-              <div className="p-10 text-center sm:text-left mt-auto">
+              <div className="p-10 text-center sm:text-center mt-auto">
                 <div
                   style={{
                     boxShadow: "0px 4px 6px 4px rgba(180, 156, 197, 0.08)",
@@ -107,7 +107,7 @@ export default function Ventajas() {
               />
             </div>
             <div className="col-span-1 w-full aspect-square order-3 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
-              <div className="p-10 text-center sm:text-left mt-auto">
+              <div className="p-10 text-center sm:text-center mt-auto">
                 <div
                   style={{
                     boxShadow: "0px 4px 6px 4px rgba(180, 156, 197, 0.08)",
