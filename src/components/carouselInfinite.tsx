@@ -204,7 +204,7 @@ const CarouselInfinite: React.FC = () => {
         radius="lg"
         onOpenChange={onOpenChange}
       >
-        <ModalContent>
+        <ModalContent className="bg-white/95 backdrop-blur-md">
           {() => (
             <>
               <ModalBody className="p-5 md:p-20 max-h-[80vh] overflow-y-auto">
@@ -226,7 +226,7 @@ const CarouselInfinite: React.FC = () => {
                     >
                       <Check
                         strokeWidth="4"
-                        className="bg-[#39e915] scale-150 text-white rounded-[15px] p-1 mt-1"
+                        className="bg-gradient-to-br from-[#15e943] via-[#7eff9a] to-[#15e943] scale-150 text-white rounded-[15px] p-1 mt-1"
                       />
                       {item}
                     </span>
