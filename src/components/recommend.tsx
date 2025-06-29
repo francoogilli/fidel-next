@@ -93,7 +93,7 @@ export default function Recommend() {
                   style={{ animation: "levitate 32s ease infinite" }}
                 />
               </div>
-              <div className="absolute top-24 right-60">
+              <div className="absolute top-24 right-60 rotate-[240deg]">
                 <img
                   src="/coin5.png"
                   alt=""
