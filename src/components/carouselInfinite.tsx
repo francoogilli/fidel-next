@@ -226,7 +226,7 @@ const CarouselInfinite: React.FC = () => {
                     >
                       <Check
                         strokeWidth="4"
-                        className="bg-gradient-to-br from-[#15e943] via-[#7eff9a] to-[#15e943] scale-150 text-white rounded-[15px] p-1 mt-1"
+                        className="bg-gradient-to-br from-[#15e96d] via-[#7effaf] to-[#15e966] scale-150 text-white rounded-[15px] p-1 mt-1"
                       />
                       {item}
                     </span>
