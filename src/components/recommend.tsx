@@ -119,8 +119,8 @@ export default function Recommend() {
 
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
               <div>
-                <p className="text-sm text-muted-foreground mb-2 px-4 py-1.5 border border-[#2121210c] rounded-full inline-block bg-[#6666660c]">
-                  ¡Novedad!
+                <p className="text-sm text-muted-foreground mb-4 px-4 py-1.5 border border-[#2121210c] rounded-full inline-block bg-[#6666660c]">
+                 ✨ ¡Novedad!
                 </p>
                 <h2 className="text-2xl pb-2 font-sans bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent md:text-6xl font-extrabold mb-4 ">
                   ¡Recomenda y gana!
