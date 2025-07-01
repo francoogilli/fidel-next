@@ -505,7 +505,7 @@ export default function AppMobile() {
       </motion.div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-        <button className="w-full max-w-[250px] bg-gradient-to-l from-[#191919] to-[#414141] text-white px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
+        <button className="w-full max-w-[250px] bg-[#2f2f2f] border border-[#000000] text-white px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="209"
