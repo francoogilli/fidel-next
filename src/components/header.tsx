@@ -3,10 +3,35 @@
 import AdvantagesIcon from "@/icons/advantages";
 import CreditCardIcon from "@/icons/creditCard";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (Math.abs(currentScrollY - lastScrollY) > 10) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          setShowHeader(false);
+        } else {
+          setShowHeader(true);
+        }
+        setLastScrollY(currentScrollY);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
   return (
-    <div className="sticky top-0 left-0 right-0 z-50">
+    <div
+      className={`sticky top-0 left-0 right-0 z-50 transition-all duration-700 ${
+        showHeader ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+      }`}
+    >
       <div className="bg-transparent w-full">
         <div className="flex items-center justify-center w-full flex-col">
           <div
