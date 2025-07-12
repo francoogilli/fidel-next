@@ -1,10 +1,7 @@
 "use client";
 
 import AdvantagesIcon from "@/icons/advantages";
-import ArrowRight from "@/icons/arrowRight";
 import CreditCardIcon from "@/icons/creditCard";
-import Star from "@/icons/star";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
