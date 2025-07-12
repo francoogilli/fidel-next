@@ -2,10 +2,8 @@
 
 import AdvantagesIcon from "@/icons/advantages";
 import CreditCardIcon from "@/icons/creditCard";
-import { useState } from "react";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="sticky top-0 left-0 right-0 z-50">
       <div className="bg-transparent w-full">
