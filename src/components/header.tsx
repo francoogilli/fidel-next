@@ -2,6 +2,7 @@
 
 import AdvantagesIcon from "@/icons/advantages";
 import CreditCardIcon from "@/icons/creditCard";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -25,7 +26,7 @@ export default function Header() {
           >
             <div className="relative z-10 flex items-center justify-between w-full gap-2">
               <div className="flex items-center gap-6">
-                <a className="flex items-center gap-2" href="/">
+                <Link className="flex items-center gap-2" href="/">
                   <img
                     alt="logo"
                     loading="lazy"
@@ -47,18 +48,18 @@ export default function Header() {
                     src="/fidel1.svg"
                   />
                   <span className="hidden sm:block font-semibold">Fidel</span>
-                </a>
+                </Link>
                 <span className="text-zinc-300 ">|</span>
                 <div className="hidden sm:flex items-center gap-x-0.5">
-                  <a
+                  <Link
                     className="text-sm flex justify-center px-3.5 py-1.5 hover:bg-zinc-100 rounded-md items-center gap-x-1 text-zinc-800 hover:text-zinc-900 transition-colors group"
                     href="/planes"
                   >
                     <CreditCardIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
                     Planes
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     target="_blank"
                     className="text-sm px-3.5 py-1.5 hover:bg-zinc-100 rounded-md text-zinc-800 hover:text-zinc-900  transition-colors flex items-center gap-2 group"
                     href="#"
@@ -68,7 +69,7 @@ export default function Header() {
                     {/* <span className="text-orange-500 rounded-md border border-orange-500 px-1 py-0.5 text-xs">
                       Nuevo
                     </span> */}
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="hidden sm:flex items-center gap-3">
@@ -171,7 +172,7 @@ export default function Header() {
                         </div>
                       </div>
                     </a> */}
-                    <a
+                    <Link
                       target="_blank"
                       className="hidden group relative md:inline-flex items-center gap-2 px-3 py-1.5 rounded-[10px] bg-zinc-900 transition-colors hover:bg-zinc-700 "
                       href="https://github.com/kokonut-labs/kokonutui"
@@ -181,26 +182,26 @@ export default function Header() {
                           Iniciar Sesion
                         </span>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="flex sm:hidden items-center gap-4">
-                <a
+                <Link
                   className="text-sm flex items-center gap-1 text-zinc-800 hover:text-zinc-900 transition-colors"
                   href="/"
                 >
                   <CreditCardIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
                   Planes
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   className="text-sm flex items-center gap-1 text-zinc-800 hover:text-zinc-900  transition-colors"
                   href="https://kokonutui.pro/templates?utm_source=kokonutui.com&amp;utm_medium=header"
                 >
                   <AdvantagesIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
                   Funcionalidades
-                </a>
+                </Link>
               </div>
             </div>
           </div>
