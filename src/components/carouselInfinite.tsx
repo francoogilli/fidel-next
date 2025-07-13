@@ -2,7 +2,6 @@
 
 import { useRef, useState } from "react";
 import ShoppingCartIcon from "../icons/shopping-cart";
-import PackageIcon from "../icons/package";
 import ChartIcon from "../icons/chart";
 import { Modal, ModalContent, ModalBody, useDisclosure } from "@heroui/modal";
 import Check from "@/icons/checkIcon";
@@ -10,6 +9,7 @@ import BankIcon from "@/icons/bank";
 import ShoppingBagIcon from "@/icons/shopping-bag";
 import WorldUpIcon from "@/icons/worldUp";
 import MobileIcon from "@/icons/mobile";
+import { PackageIcon } from "@/icons/package";
 
 const FeatureItem: React.FC<{
   icon: React.ReactNode;
@@ -112,7 +112,7 @@ const CarouselInfinite: React.FC = () => {
       icon: (
         <PackageIcon
           className="size-16 rounded-full p-3 text-[#5ede23] bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] "
-          strokeWidth="1.6"
+          strokeWidth={1.6}
         />
       ),
       text: "Productos y Stock",
