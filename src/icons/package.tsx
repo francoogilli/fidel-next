@@ -7,7 +7,6 @@ interface BoxProps extends React.SVGAttributes<SVGSVGElement> {
   width?: number;
   height?: number;
   strokeWidth?: number;
-  stroke?: string;
   className?: string;
 }
 
@@ -35,7 +34,6 @@ const PackageIcon = ({
   width = 28,
   height = 28,
   strokeWidth = 2,
-  stroke = "#ffffff",
   className,
   ...props
 }: BoxProps) => {
