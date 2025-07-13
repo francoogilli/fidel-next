@@ -37,7 +37,7 @@ const SlicedText: React.FC<SlicedTextProps> = ({
             opacity: 0,
           },
         }}
-        transition={{ duration: 0.1 }}
+        transition={{ duration: 0.3 }}
       >
         {text}
       </motion.div>
@@ -55,7 +55,7 @@ const SlicedText: React.FC<SlicedTextProps> = ({
             opacity: 1,
           },
         }}
-        transition={{ duration: 0.1 }}
+        transition={{ duration: 0.3 }}
       >
         {text}
       </motion.div>
