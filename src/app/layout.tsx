@@ -21,7 +21,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Fidel - Sistema Web de Gestión",
+  title: "Fidel: Sistema Web de Gestión para Empresas",
   description:
     "Fidel es un sistema avanzado de gestión empresarial diseñado para optimizar procesos y mejorar la productividad.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Productividad",
   ],
   openGraph: {
-    title: "Fidel - Sistema Web de Gestión",
+    title: "Fidel: Sistema Web de Gestión para Empresas",
     description:
       "Optimiza los procesos de tu empresa con Fidel, el sistema web de gestión empresarial.",
     url: "https://fidel.com.ar/",

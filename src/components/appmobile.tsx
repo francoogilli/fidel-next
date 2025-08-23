@@ -245,12 +245,12 @@ export default function AppMobile() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
-                    Revisá listas de precios siempre actualizadas.
+                    Accedé a listas de precios siempre actualizadas.
                   </h3>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +289,7 @@ export default function AppMobile() {
                     Todo el pedido se sincroniza automáticamente con Fidel.
                   </h3>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -331,8 +331,7 @@ export default function AppMobile() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
-                    Conocé el saldo disponible de cada cliente antes de cerrar
-                    la venta.
+                    Conocé el saldo disponible antes de cerrar la venta.
                   </h3>
                 </div>
               </div>
@@ -380,8 +379,7 @@ export default function AppMobile() {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg font-sans text-gray-800">
-                    Toda la información se guarda en Fidel para su gestión
-                    administrativa.
+                    Todo queda registrado y listo para procesar en Fidel.
                   </h3>
                 </div>
               </div>
@@ -489,7 +487,7 @@ export default function AppMobile() {
                   </h3>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
                   <RefreshIcon className="size-6 text-gray-600" />
                 </div>
@@ -498,7 +496,7 @@ export default function AppMobile() {
                     Todo el pedido se sincroniza automáticamente con Fidel.
                   </h3>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
