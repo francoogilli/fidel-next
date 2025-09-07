@@ -210,7 +210,7 @@ const CarouselInfinite: React.FC = () => {
             <>
               <ModalBody className="p-5 md:p-20 max-h-[80vh] overflow-y-auto">
                 <div className="flex justify-center items-center gap-2 pb-3">
-                  <div className="size-16 rounded-full p-3 bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] flex items-center justify-center">
+                  <div className="size-16 rounded-xl p-3 bg-[radial-gradient(75%_35%_at_50%_50%,rgb(240,236,231)_35.31%,rgb(255,255,255)_100%)] border border-[#f2f2f2] flex items-center justify-center">
                     <Image
                       src={selectedFeature?.imageSrc || ""}
                       alt={selectedFeature?.text || ""}
