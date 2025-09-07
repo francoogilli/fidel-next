@@ -45,7 +45,7 @@ export default function Ventajas() {
             segura y sin complicaciones, con el mejor respaldo y un equipo para
             ayudarte.
           </h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-4 md:gap-[0.01px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-4 md:gap-4">
             <div className="col-span-1 w-full aspect-square order-1 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
               <div className="p-10 text-center sm:text-center mt-auto">
                 <div
