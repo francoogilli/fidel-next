@@ -5,6 +5,7 @@ import AdvantagesIcon from "../icons/advantages";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
+import Image from "next/image";
 
 export default function Ventajas() {
   return (
@@ -45,21 +46,18 @@ export default function Ventajas() {
             segura y sin complicaciones, con el mejor respaldo y un equipo para
             ayudarte.
           </h4>
+          {/* Opción 2: Mantener grid pero quitar aspect-square y agregar h-full */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-4 md:gap-4">
-            <div className="col-span-1 w-full aspect-square order-1 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
-              <div className="p-10 text-center sm:text-center mt-auto">
-                <div
-                  style={{
-                    boxShadow: "0px 4px 6px 4px rgba(180, 156, 197, 0.08)",
-                    background:
-                      "linear-gradient(140deg, rgba(173, 255, 190, 0.7) 4%, rgba(144, 238, 144, 0.7) 60%, rgba(34, 139, 34, 0.6) 103%)",
-                  }}
-                  className="inline-flex border-2 border-[#ffffff] items-center justify-center size-16 text-2xl rounded-2xl text-[#393939] font-extrabold mb-4"
-                >
-                  1
-                </div>
-
-                <h2 className="text-[33px] leading-[2.3rem] font-sans font-bold text-gray-800 mb-4">
+            <div className="col-span-1 w-full h-full order-1 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex">
+              <div className="p-10 text-center flex flex-col justify-center flex-1">
+                <Image
+                  src="/ventajas1.png"
+                  width={350}
+                  height={168}
+                  className="mx-auto"
+                  alt="cloud"
+                />
+                <h2 className="text-[33px] leading-[2.3rem] mt-4 font-sans font-bold text-gray-800 mb-4">
                   Gestión en la nube, sin límites de lugar ni horario.
                 </h2>
                 <p className="text-gray-500 text-base">
@@ -69,19 +67,16 @@ export default function Ventajas() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1 w-full aspect-square order-3 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
-              <div className="p-10 text-center sm:text-center mt-auto">
-                <div
-                  style={{
-                    boxShadow: "0px 4px 6px 4px rgba(180, 156, 197, 0.08)",
-                    background:
-                      "linear-gradient(140deg, rgba(173, 255, 190, 0.7) 4%, rgba(144, 238, 144, 0.7) 60%, rgba(34, 139, 34, 0.6) 103%)",
-                  }}
-                  className="inline-flex border-2 border-[#fff] items-center justify-center size-16 text-2xl rounded-2xl bg-gray-100 text-[#393939] font-extrabold mb-4"
-                >
-                  2
-                </div>
-                <h2 className="text-[33px] leading-[2.3rem] tracking-tight font-sans font-bold text-gray-800 mb-4">
+            <div className="col-span-1 w-full h-full order-3 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex">
+              <div className="p-10 text-center flex flex-col justify-center flex-1">
+                <Image
+                  src="/ventajas2.png"
+                  width={350}
+                  height={168}
+                  className="mx-auto"
+                  alt="cloud"
+                />
+                <h2 className="text-[33px] leading-[2.3rem] tracking-tight font-sans font-bold mt-2 text-gray-800 mb-4">
                   Un equipo de asesoría real (no bots{" "}
                   <span className="inline-flex">
                     <img
@@ -99,18 +94,15 @@ export default function Ventajas() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1 w-full aspect-square order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex items-center justify-center">
-              <div className="p-10 text-center sm:text-center mt-auto">
-                <div
-                  style={{
-                    boxShadow: "0px 4px 6px 4px rgba(180, 156, 197, 0.08)",
-                    background:
-                      "linear-gradient(140deg, rgba(173, 255, 190, 0.7) 4%, rgba(144, 238, 144, 0.7) 60%, rgba(34, 139, 34, 0.6) 103%)",
-                  }}
-                  className="inline-flex border-2 border-[#ffffff] items-center justify-center size-16 text-2xl rounded-2xl bg-gray-100 text-[#393939] font-extrabold mb-4"
-                >
-                  3
-                </div>
+            <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex">
+              <div className="p-10 text-center flex flex-col justify-center flex-1">
+               <Image
+                  src="/ventajas3.png"
+                  width={350}
+                  height={168}
+                  className="mx-auto"
+                  alt="cloud"
+                />
                 <h2 className="text-[33px] leading-[2.3rem] font-sans font-bold text-gray-800 mb-4">
                   Actualizaciones automáticas y datos seguros.
                 </h2>
