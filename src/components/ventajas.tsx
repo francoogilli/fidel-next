@@ -47,9 +47,9 @@ export default function Ventajas() {
             ayudarte.
           </h4>
           {/* Opción 2: Mantener grid pero quitar aspect-square y agregar h-full */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-4 md:gap-4">
-            <div className="col-span-1 w-full h-full order-1 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex">
-              <div className="p-10 text-center flex flex-col justify-center flex-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-4 md:gap-6">
+            <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
+              <div className="p-10 text-center flex flex-col justify-center flex-1 transform scale-95 hover:scale-90 transition-transform duration-300 ease-in-out">
                 <Image
                   src="/ventajas1.png"
                   width={350}
@@ -67,8 +67,8 @@ export default function Ventajas() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1 w-full h-full order-3 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex">
-              <div className="p-10 text-center flex flex-col justify-center flex-1">
+            <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
+              <div className="p-10 text-center flex flex-col justify-center flex-1 transform scale-95 hover:scale-90 transition-transform duration-300 ease-in-out">
                 <Image
                   src="/ventajas2.png"
                   width={350}
@@ -94,9 +94,9 @@ export default function Ventajas() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex">
-              <div className="p-10 text-center flex flex-col justify-center flex-1">
-               <Image
+            <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
+              <div className="p-10 text-center flex flex-col justify-center flex-1 transform scale-95 hover:scale-90 transition-transform duration-300 ease-in-out">
+                <Image
                   src="/ventajas3.png"
                   width={350}
                   height={168}
