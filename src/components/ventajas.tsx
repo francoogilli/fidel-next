@@ -76,21 +76,14 @@ export default function Ventajas() {
                   className="mx-auto"
                   alt="cloud"
                 />
-                <h2 className="text-[33px] leading-[2.3rem] tracking-tight font-sans font-bold mt-2 text-gray-800 mb-4">
-                  Un equipo de asesoría real (no bots{" "}
-                  <span className="inline-flex">
-                    <img
-                      src="/emoji.png"
-                      className="size-6 translate-y-0.5 ml-2"
-                    />
-                  </span>
-                  )
+                <h2 className="text-[30px] leading-[2.3rem] tracking-tight font-sans font-bold mt-2 text-gray-800 mb-4">
+                  ¿Un agente de IA que responde? Sí. ¿Un equipo que acompaña?
+                  También.
                 </h2>
                 <p className="text-gray-500 text-base">
-                  Olvídate de respuestas automáticas y chats eternos con bots
-                  que no entienden lo que buscás. Hablamos tu idioma y te
-                  acompañamos en cada paso con un equipo real, listo para
-                  resolver cualquier duda.
+                  Hay consultas que se resuelven al instante y otras que
+                  necesitan alguien del otro lado. En Fidel, combinamos lo mejor
+                  de los dos mundos para que nunca te quedes sin respuesta.
                 </p>
               </div>
             </div>
