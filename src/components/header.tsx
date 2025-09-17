@@ -204,7 +204,7 @@ export default function Header() {
                     >
                       <div className="relative flex items-center gap-2 w-full">
                         <span className="text-white text-sm group-hover:text-white  ">
-                          Iniciar Sesion
+                          Ingresar
                         </span>
                       </div>
                     </Link>
