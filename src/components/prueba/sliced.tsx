@@ -27,14 +27,14 @@ const SlicedText: React.FC<SlicedTextProps> = ({
         className={`absolute w-full -ml-0.5 ${className ?? ""}`}
         variants={{
           default: {
-            clipPath: "inset(0 0 40% 0)",
-            y: -splitSpacing / 2,
+            clipPath: "inset(0 0 0 0)",
+            y: 0,
             opacity: 1,
           },
           hover: {
-            clipPath: "inset(0 0 0 0)",
-            y: 0,
-            opacity: 0,
+            clipPath: "inset(0 0 40% 0)",
+            y: -splitSpacing / 2,
+            opacity: 1,
           },
         }}
         transition={{ duration: 0.3 }}
@@ -45,13 +45,13 @@ const SlicedText: React.FC<SlicedTextProps> = ({
         className={`absolute w-full ${className ?? ""}`}
         variants={{
           default: {
-            clipPath: "inset(60% 0 0 0)",
-            y: splitSpacing / 2,
+            clipPath: "inset(0 0 0 0)",
+            y: 0,
             opacity: 1,
           },
           hover: {
-            clipPath: "inset(0 0 0 0)",
-            y: 0,
+            clipPath: "inset(60% 0 0 0)",
+            y: splitSpacing / 2,
             opacity: 1,
           },
         }}
