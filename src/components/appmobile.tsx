@@ -65,7 +65,7 @@ export default function AppMobile() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         viewport={{ once: true }}
-        className="bg-gradient-to-tr from-[#F2F0FD] to-[#E9F9F6] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden"
+        className="pt-8 pl-16 pr-5 bg-gradient-to-tr from-[#E9F2EA] to-[#F4F6F3] border border-[#E3E8E3] rounded-[35px] relative overflow-hidden"
       >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column */}
@@ -172,7 +172,7 @@ export default function AppMobile() {
           </div>
 
           {/* Right Column - Cards */}
-          <img src="a.jpg" alt="" />
+          <img src="fidelapp1.webp" alt="" className="w-4/4" />
         </div>
       </motion.div>
 
@@ -181,11 +181,11 @@ export default function AppMobile() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         viewport={{ once: true }}
-        className="bg-gradient-to-bl to-[#fcf8f7] from-[#f0f9e6] mt-7 mb-7 rounded-[35px] py-16 pr-16 pl-8 "
+        className="bg-gradient-to-tr from-[#E9F2EA] to-[#F4F6F3] border border-[#E3E8E3] mt-7 mb-7 rounded-[35px] pt-10 pr-16 pl-8"
       >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column - Project Card */}
-          <img src="b.jpg" alt="" />
+          <img src="fidelapp2.webp" alt="" className="w-3/4" />
           {/* Right Column - Features */}
           <div>
             <h2 className="text-[33px] tracking-tighter font-sans font-bold text-gray-800 mb-6">
@@ -249,47 +249,6 @@ export default function AppMobile() {
                   </h3>
                 </div>
               </div>
-
-              {/* <div className="flex items-center gap-3">
-                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="size-6 text-gray-600"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M15 8h.01" />
-                    <path d="M6 13l2.644 -2.644a1.21 1.21 0 0 1 1.712 0l3.644 3.644" />
-                    <path d="M13 13l1.644 -1.644a1.21 1.21 0 0 1 1.712 0l1.644 1.644" />
-                    <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
-                    <path d="M4 16v2a2 2 0 0 0 2 2h2" />
-                    <path d="M16 4h2a2 2 0 0 1 2 2v2" />
-                    <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
-                  </svg>
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-lg font-sans text-gray-800">
-                    Visualizá imágenes de productos para evitar confusiones.
-                  </h3>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <RefreshIcon className="size-6 text-gray-600" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-lg font-sans text-gray-800">
-                    Todo el pedido se sincroniza automáticamente con Fidel.
-                  </h3>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -300,7 +259,7 @@ export default function AppMobile() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         viewport={{ once: true }}
-        className="bg-gradient-to-tr from-[#F2F0FD] to-[#E9F9F6] border border-[#ebf0ff] rounded-[35px] py-16 pl-16 pr-5 relative overflow-hidden"
+        className="bg-gradient-to-tr from-[#E9F2EA] to-[#F4F6F3] border border-[#E3E8E3] pt-12 pl-16 pr-5 rounded-[35px] relative overflow-hidden"
       >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column */}
@@ -387,7 +346,7 @@ export default function AppMobile() {
           </div>
 
           {/* Right Column - Cards */}
-          <img src="a.jpg" alt="" />
+          <img src="fidelapp3.webp" alt="" className="w-3/4" />
         </div>
       </motion.div>
 
@@ -396,11 +355,11 @@ export default function AppMobile() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         viewport={{ once: true }}
-        className="bg-gradient-to-bl to-[#fcf8f7] from-[#f0f9e6] mt-7 mb-7 rounded-[35px] py-16 pr-12 pl-8 "
+        className="bg-gradient-to-tr from-[#E9F2EA] to-[#F4F6F3] border border-[#E3E8E3] pt-16 pr-12 pl-8 mt-7 mb-7 rounded-[35px]"
       >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column - Project Card */}
-          <img src="b.jpg" alt="" />
+          <img src="fidelapp4.webp" alt="" className="w-3/4" />
           {/* Right Column - Features */}
           <div>
             <h2 className="text-[33px] tracking-tighter font-sans font-bold text-gray-800 mb-6">
@@ -487,16 +446,6 @@ export default function AppMobile() {
                   </h3>
                 </div>
               </div>
-              {/* <div className="flex items-center gap-3">
-                <div className="bg-white p-1.5 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <RefreshIcon className="size-6 text-gray-600" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-lg font-sans text-gray-800">
-                    Todo el pedido se sincroniza automáticamente con Fidel.
-                  </h3>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
