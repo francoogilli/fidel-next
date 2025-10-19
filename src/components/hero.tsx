@@ -7,7 +7,6 @@ import CreditCardIcon from "../icons/creditCard";
 import PlayIcon from "../icons/play";
 import Link from "next/link";
 import Modal from "./modal";
-import SlicedText from "./prueba/sliced";
 
 export default function Hero() {
   const [isModalOpen, setModalOpen] = useState(false);
