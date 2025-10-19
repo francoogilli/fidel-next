@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
-import PlayIcon from "../icons/play";
 import Link from "next/link";
 import Modal from "./modal";
 
