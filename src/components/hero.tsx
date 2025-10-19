@@ -80,24 +80,16 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <motion.img
-            src="/image.png"
-            alt="Laptop"
-            className="md:border-[7px] border-[7px] border-[#a7faa5] md:mt-11 w-[100%] rounded-[2.5rem] transition-colors duration-300 group-hover:border-[#79f277]"
+          <motion.video
+            src="/hero.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="md:mt-6 w-[100%] transition-colors duration-300"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
           />
-          <button
-            onClick={openModal}
-            className="absolute inset-0 flex justify-center mt-0 md:mt-11 items-center"
-          >
-            <motion.div
-              whileHover={{ scale: 1.2, rotate: 10 }}
-              className="bg-[#6fff6d] hover:bg-[#43fc40] border-[5px] border-[#dcffdb] hover:border-[#e6ffe6] p-4 rounded-full shadow-xl hover:shadow-2xl duration-500 transition-all"
-            >
-              <PlayIcon className="size-8 md:size-12 pl-0.5 text-white" />
-            </motion.div>
-          </button>
         </motion.div>
         <Modal
           isOpen={isModalOpen}
