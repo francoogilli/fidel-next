@@ -1,6 +1,5 @@
 import AppMobile from "@/components/appmobile";
 import ContactSection from "@/components/contact";
-import Customers from "@/components/customers";
 import Functionalities from "@/components/functionalities";
 import Hero from "@/components/hero";
 import PricingCard from "@/components/pricingCard";
@@ -18,7 +17,6 @@ export default function Home() {
       <Ventajas />
       <AppMobile />
       <Recommend />
-      <Customers />
       <QuestionsAnswers />
       <ContactSection />
     </>
