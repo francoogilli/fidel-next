@@ -123,10 +123,10 @@ export default function Recommend() {
                  ✨ ¡Novedad!
                 </p>
                 <h2 className="text-2xl pb-2 font-sans bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent md:text-6xl font-extrabold mb-4 ">
-                  ¡Recomenda y gana!
+                  ¡Recomendá y ganá!
                 </h2>
                 <p className="text-sm md:text-base flex justify-start gap-x-1.5 text-muted-foreground max-w-3xl">
-                  Recomenda{" "}
+                  Recomendá{" "}
                   <span className="inline-flex items-center space-x-1">
                     <img
                       src="/fidel1.svg"
@@ -221,10 +221,10 @@ export default function Recommend() {
             className="select-none absolute -left-1 top-28 transform -translate-y-1/2 size-8"
           />
           <p className="text-2xl pb-3.5 font-sans font-extrabold text-center bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent">
-            ¡Recomenda y gana!
+            ¡Recomendá y ganá!
           </p>
           <p className="text-xs md:text-base flex justify-start gap-x-1.5 text-muted-foreground max-w-3xl">
-            Recomenda{" "}
+            Recomendá{" "}
             <span className="inline-flex items-center space-x-1">
               <img
                 src="/fidel1.svg"

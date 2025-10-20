@@ -32,14 +32,13 @@ export const QuestionsAnswers = () => {
         <GradientLine weight="1.5px" direction="right" />
       </div>
       <h3 className="font-satoshi animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight">
-        No te quedes con las dudas
+        No te quedes con dudas
       </h3>
       <h4
-        className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[19rem] md:w-[25rem] xl:w-[27rem] mx-auto pb-0 md:pb-9"
+        className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[19rem] md:w-[25rem] xl:w-[31rem] mx-auto pb-0 md:pb-9"
         style={{ fontFamily: "Satoshi" }}
       >
-        ¿Todavía tenes preguntas? Contacta a nuestro equipo, disponible durante
-        la semana.
+        ¿Todavía tenés preguntas? Contactá a nuestro equipo, disponible de lunes a viernes de 8:00 a 18:00 hs.
       </h4>
       <div className="space-y-3">
         {accordionData.map((item, index) => {

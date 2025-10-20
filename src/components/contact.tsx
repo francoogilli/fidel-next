@@ -48,9 +48,18 @@ export default function ContactSection({ viewPage }: Props) {
     { key: "Delicatessen", label: "Delicatessen" },
     { key: "Descartables y Cotillón", label: "Descartables y Cotillón" },
     { key: "Dietética", label: "Dietética" },
-    { key: "Distribuidoras de Carnes y Avícolas", label: "Distribuidoras de Carnes y Avícolas" },
-    { key: "Distribuidora Comestibles, Lácteos y Bebidas", label: "Distribuidora Comestibles, Lácteos y Bebidas" },
-    { key: "Distribuidora de Ferretería y Afines", label: "Distribuidora de Ferretería y Afines" },
+    {
+      key: "Distribuidoras de Carnes y Avícolas",
+      label: "Distribuidoras de Carnes y Avícolas",
+    },
+    {
+      key: "Distribuidora Comestibles, Lácteos y Bebidas",
+      label: "Distribuidora Comestibles, Lácteos y Bebidas",
+    },
+    {
+      key: "Distribuidora de Ferretería y Afines",
+      label: "Distribuidora de Ferretería y Afines",
+    },
     { key: "Drugstore", label: "Drugstore" },
     { key: "Electricidad", label: "Electricidad" },
     { key: "Eventos", label: "Eventos" },
@@ -69,9 +78,15 @@ export default function ContactSection({ viewPage }: Props) {
     { key: "Mercería", label: "Mercería" },
     { key: "Pet Shop", label: "Pet Shop" },
     { key: "Pinturería", label: "Pinturería" },
-    { key: "Piscinas y Energía Sustentable", label: "Piscinas y Energía Sustentable" },
+    {
+      key: "Piscinas y Energía Sustentable",
+      label: "Piscinas y Energía Sustentable",
+    },
     { key: "Polirubros", label: "Polirubros" },
-    { key: "Repuestos Automotor y Motos", label: "Repuestos Automotor y Motos" },
+    {
+      key: "Repuestos Automotor y Motos",
+      label: "Repuestos Automotor y Motos",
+    },
     { key: "Seguridad Industrial", label: "Seguridad Industrial" },
     { key: "Servicio Automotor y Motos", label: "Servicio Automotor y Motos" },
     { key: "Servicios", label: "Servicios" },
@@ -196,12 +211,11 @@ export default function ContactSection({ viewPage }: Props) {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <h1 className="text-4xl md:text-5xl  xl:text-[3.25rem] font-bold leading-tight">
-                    Pregunta todo lo que tengas en mente
+                    Preguntá todo lo que tengas en mente
                   </h1>
                   <p className="text-[#5c5c5c] text-lg">
-                    Si tiene preguntas o está listo para hablar sobre su
-                    negocio, estamos aquí para ayudarlo. Comuníquese con
-                    nosotros hoy mismo.
+                    Si tenés preguntas o estás listo para hablar estamos acá
+                    para ayudarte. Comunicate hoy mismo.
                   </p>
                 </div>
 

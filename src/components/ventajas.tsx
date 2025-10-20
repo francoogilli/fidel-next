@@ -36,7 +36,7 @@ export default function Ventajas() {
             className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 xl:pb-3 tracking-tight"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Aprovecha todas nuestras ventajas
+            Aprovechá todas nuestras ventajas
           </h3>
           <h4
             className="text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium md:w-[50%] xl:w-[48%] mx-auto pb-0"
