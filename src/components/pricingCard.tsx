@@ -73,12 +73,20 @@ export default function PricingCard({ viewComparison }: Props) {
                 <GradientLine from="#1e1e1e" to="#999999d9" direction="right" />
               </div>
               <h3
-                className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 xl:pb-2.5 tracking-tight"
+                className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 xl:pb-2.5 tracking-tighter"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                No importa tu negocio, tenemos un plan para vos.
+                No importa el tamaño de tu negocio, hay un plan para vos.
               </h3>
-              <div className="flex justify-center items-center gap-x-2.5 pt-4 pb-1">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2 pt-4">
+                <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 text-[#c5c5c5] rounded-xl">
+                  <ThunderIcon className="size-5 text-[#ffce1f] mr-1" />
+                  <span className="text-sm text-[#c5c5c5]">
+                    Soporte y actualizaciones constantes.
+                  </span>
+                </div>
+              </div>
+              <div className="flex justify-center items-center gap-x-2.5 pb-10 pt-1">
                 <h4
                   className="text-base flex justify-center items-center xl:text-lg px-5 text-[#ffffff] font-medium"
                   style={{ fontFamily: "Satoshi" }}
@@ -88,14 +96,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   <LaurelIcon className="text-[#fbe660] w-5 ml-4 transform scale-x-[-1]" />
                 </h4>
               </div>
-              <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2 pb-14">
-                <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 text-[#c5c5c5] rounded-xl">
-                  <ThunderIcon className="size-6 text-[#ffce1f] mr-1" />
-                  <span className="text-sm text-[#c5c5c5]">
-                    Soporte y actualizaciones constantes.
-                  </span>
-                </div>
-              </div>
+              
             </>
           )}
           <motion.div

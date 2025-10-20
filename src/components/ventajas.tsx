@@ -76,9 +76,8 @@ export default function Ventajas() {
                   className="mx-auto"
                   alt="cloud"
                 />
-                <h2 className="text-[30px] leading-[2.3rem] tracking-tight font-sans font-bold mt-2 text-gray-800 mb-4">
-                  ¿Un agente de IA que responde? Sí. ¿Un equipo que acompaña?
-                  También.
+                <h2 className="text-[30px] leading-[2.3rem]  font-sans font-bold mt-2 text-gray-800 mb-4">
+                 ¿Necesitas a alguien del otro lado? También estamos.
                 </h2>
                 <p className="text-gray-500 text-base">
                   Hay consultas que se resuelven al instante y otras que
