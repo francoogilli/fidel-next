@@ -211,7 +211,7 @@ export default function ContactSection({ viewPage }: Props) {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <h1 className="text-4xl md:text-5xl  xl:text-[3.25rem] font-bold leading-tight">
-                    Preguntá todo lo que tengas en mente
+                    Preguntá todo lo que tengas en mente.
                   </h1>
                   <p className="text-[#5c5c5c] text-lg">
                     Si tenés preguntas o estás listo para hablar estamos acá
