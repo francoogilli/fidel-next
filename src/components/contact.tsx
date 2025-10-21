@@ -219,7 +219,7 @@ export default function ContactSection({ viewPage }: Props) {
                   </p>
                 </div>
 
-                <div className="space-y-4 ">
+                <div className="space-y-5 pt-1">
                   <div className="flex items-center gap-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -233,10 +233,10 @@ export default function ContactSection({ viewPage }: Props) {
                       </g>
                     </svg>
                     <a
-                      href="mailto:admin@fidel.com"
+                      href="mailto:info@fidel.com.ar"
                       className="text-zinc-600 hover:text-[#B5B3AD]"
                     >
-                      admin@fidel.com
+                      info@fidel.com.ar
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
@@ -255,24 +255,8 @@ export default function ContactSection({ viewPage }: Props) {
                       href="tel:(969)819-8061"
                       className="text-zinc-600 hover:text-[#B5B3AD]"
                     >
-                      (969) 819-8061
+                      3564-15222935
                     </a>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 256 256"
-                      focusable="false"
-                      color="var(--token-8c14519b-b926-46e8-8772-9a05cbede172, rgba(255, 255, 255, 0.7))"
-                      className="select-none size-6 inline-block fill-[rgba(33,33,33,0.7)] text-[rgba(28,28,28,0.7)] flex-shrink-0"
-                    >
-                      <g color="var(--token-8c14519b-b926-46e8-8772-9a05cbede172, rgba(255, 255, 255, 0.7))">
-                        <path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path>
-                      </g>
-                    </svg>
-                    <span className="text-zinc-600 hover:text-[#B5B3AD]">
-                      43 Roselle St. Nueva York
-                    </span>
                   </div>
                 </div>
                 <div className="flex justify-center items-center">
