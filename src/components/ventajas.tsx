@@ -48,12 +48,13 @@ export default function Ventajas() {
           </h4>
           {/* Opción 2: Mantener grid pero quitar aspect-square y agregar h-full */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-4 md:gap-6">
-            <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
+            <div className="col-span-1 w-full h-full order-5 md:order-none bg-white border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
               <div className="p-10 text-center flex flex-col justify-center flex-1 transform scale-95 hover:scale-90 transition-transform duration-300 ease-in-out">
                 <Image
                   src="/fidel/ventajas1.png"
                   width={350}
                   height={168}
+                  draggable="false"
                   className="mx-auto"
                   alt="cloud"
                 />
@@ -67,17 +68,18 @@ export default function Ventajas() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
+            <div className="col-span-1 w-full h-full order-5 md:order-none bg-white border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
               <div className="p-10 text-center flex flex-col justify-center flex-1 transform scale-95 hover:scale-90 transition-transform duration-300 ease-in-out">
                 <Image
                   src="/fidel/ventajas2.png"
                   width={350}
                   height={168}
+                  draggable="false"
                   className="mx-auto"
                   alt="cloud"
                 />
                 <h2 className="text-[30px] leading-[2.3rem]  font-sans font-bold mt-2 text-gray-800 mb-4">
-                 ¿Necesitás una persona del otro lado? También estamos.
+                  ¿Necesitás una persona del otro lado? También estamos.
                 </h2>
                 <p className="text-gray-500 text-base">
                   Hay consultas que se resuelven al instante y otras que
@@ -86,12 +88,13 @@ export default function Ventajas() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
+            <div className="col-span-1 w-full h-full order-5 md:order-none bg-white border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
               <div className="p-10 text-center flex flex-col justify-center flex-1 transform scale-95 hover:scale-90 transition-transform duration-300 ease-in-out">
                 <Image
                   src="/fidel/ventajas3.png"
                   width={350}
                   height={168}
+                  draggable="false"
                   className="mx-auto"
                   alt="cloud"
                 />
