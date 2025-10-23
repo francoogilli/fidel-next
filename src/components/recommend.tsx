@@ -155,67 +155,67 @@ export default function Recommend() {
       <div className="bg-[#FCF8F2] border border-[#ffebebd4] md:bg-gradient-to-br max-w-[78.5rem] xl:max-w-[90rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
         <div className="block md:hidden relative py-4">
           <img
-            src="coin.png"
+            src="/fidel/coin.png"
             alt=""
             className="mx-auto rotate-[47deg] size-28 mb-6"
           />
           <img
-            src="coin4.png"
+            src="/fidel/coin4.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-16 top-16 transform -translate-y-1/2 size-8"
           />
           <img
-            src="coin7.png"
+            src="/fidel/coin7.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-8 top-16 transform -translate-y-1/2 w-4 rotate-45"
           />
           <img
-            src="coin5.png"
+            src="/fidel/coin5.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-1 top-7 transform -translate-y-1/2 size-9"
           />
           <img
-            src="coin4.png"
+            src="/fidel/coin4.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-14 top-24 transform -translate-y-1/2 w-4 blur-[3px] rotate-[20deg]"
           />
           <img
-            src="coin.png"
+            src="/fidel/coin.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-0 top-28 transform -translate-y-1/2 size-8"
           />
 
           <img
-            src="coin2.png"
+            src="/fidel/coin2.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute -left-1 top-8 transform -translate-y-1/2 size-9"
           />
           <img
-            src="coin82.png"
+            src="/fidel/coin82.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute left-14 top-14 rotate-[175deg] transform -translate-y-1/2 size-8"
           />
           <img
-            src="coin7.png"
+            src="/fidel/coin7.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute left-4 top-20 transform -translate-y-1/2 w-5"
           />
           <img
-            src="coin4.png"
+            src="/fidel/coin4.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute left-14 top-24 transform rotate-[-20deg] -translate-y-1/2 size-5 blur-[4px]"
           />
           <img
-            src="coin3.png"
+            src="/fidel/coin3.png"
             alt="Moneda"
             draggable="false"
             className="select-none absolute -left-1 top-28 transform -translate-y-1/2 size-8"
