@@ -469,6 +469,7 @@ export default function AppMobile() {
           Disponible en iOS
         </button>
         </a>
+        <a href="https://play.google.com/store/apps/details?id=ar.com.fidel&pcampaignid=web_share" target="_blank">
         <button className="w-full max-w-[250px] bg-[#ededed57] font-medium border border-[#e6eee6] text-[#000000] px-5 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
           <svg
             className="size-5"
@@ -498,6 +499,7 @@ export default function AppMobile() {
           </svg>
           Disponible en Android
         </button>
+        </a>
       </div>
     </div>
   );
