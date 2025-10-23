@@ -382,6 +382,9 @@ export const pricingInfo: PricingCard[] = [
       {
         text: "1 Usuario",
       },
+      {
+        text: "Límite de 20.000 productos",
+      },
     ],
   },
   {
@@ -411,6 +414,9 @@ export const pricingInfo: PricingCard[] = [
       },
       { text: "Portal de clientes" },
       { text: "Reportes contables" },
+      {
+        text: "Límite de 20.000 productos",
+      },
     ],
   },
   {
@@ -445,6 +451,9 @@ export const pricingInfo: PricingCard[] = [
         text: "Uso de la aplicación móvil",
         description:
           "Uso del módulo para tomar pedidos y registrar pagos desde tu celular.",
+      },
+      {
+        text: "Límite de 20.000 productos",
       },
     ],
   },
@@ -490,6 +499,9 @@ export const pricingInfo: PricingCard[] = [
         text: "Uso de la aplicación móvil",
         description:
           "Uso del módulo para tomar pedidos y registrar pagos desde tu celular.",
+      },
+      {
+        text: "Límite de 50.000 productos",
       },
     ],
   },
