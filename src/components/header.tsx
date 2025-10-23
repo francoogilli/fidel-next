@@ -26,6 +26,14 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
+
+    const handleScrollToPlanes = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const section = document.getElementById("planes");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div
       className={`sticky top-0 left-0 right-0 z-50 transition-all duration-700 ${
@@ -78,7 +86,8 @@ export default function Header() {
                 <div className="hidden sm:flex items-center gap-x-0.5">
                   <Link
                     className="text-sm flex justify-center px-3.5 py-1.5 hover:bg-zinc-100 rounded-md items-center gap-x-1 text-zinc-800 hover:text-zinc-900 transition-colors group"
-                    href="/"
+                    href="#"
+                    onClick={handleScrollToPlanes}
                   >
                     <CreditCardIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
                     Planes
@@ -117,7 +126,8 @@ export default function Header() {
               <div className="flex sm:hidden items-center gap-4">
                 <Link
                   className="text-sm flex items-center gap-1 text-zinc-800 hover:text-zinc-900 transition-colors"
-                  href="/"
+                  href="#"
+                  onClick={handleScrollToPlanes}
                 >
                   <CreditCardIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
                   Planes
