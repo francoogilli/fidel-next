@@ -13,7 +13,9 @@ export default function Home() {
       <div className="backgroundImage"></div>
       <Hero />
       <Functionalities />
-      <PricingCard viewComparison />
+      <div id="planes">
+        <PricingCard viewComparison />
+      </div>
       <Ventajas />
       <AppMobile />
       <Recommend />
