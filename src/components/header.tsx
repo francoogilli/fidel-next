@@ -46,7 +46,7 @@ export default function Header() {
             className="
                             flex items-center justify-between
                             bg-[#FCFBF9]/90
-                            shadow-[0_2px_20px_-2px_rgba(0,0,0,0.07)]
+                            shadow-[0_2px_20px_-2px_rgba(0,0,0,0.04)]
                             backdrop-blur-md
                             border 
                             border-[rgba(230,230,230,0.7)] 
