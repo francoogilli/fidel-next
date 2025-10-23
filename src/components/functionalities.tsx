@@ -1,4 +1,4 @@
-import CreditCardIcon from "../icons/creditCard";
+import AdvantagesIcon from "@/icons/advantages";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import CarouselInfinite from "./carouselInfinite";
@@ -11,7 +11,7 @@ export default function Functionalities() {
         <GradientLine direction="left" />
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#f6f6f6] px-4 xl:px-5 py-2 animation-1">
-          <CreditCardIcon className="size-4 md:size-5 text-[#121212]" />
+          <AdvantagesIcon className="size-4 md:size-5 text-[#121212]"/>
           <h2
             className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#121212]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
