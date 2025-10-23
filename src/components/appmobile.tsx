@@ -452,6 +452,7 @@ export default function AppMobile() {
       </motion.div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+        <a href="https://apps.apple.com/ar/app/fidel-gesti%C3%B3n/id1670120525" target="_blank">
         <button className="w-full max-w-[250px] bg-[#2f2f2f] border border-[#000000] text-white px-6 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -467,6 +468,7 @@ export default function AppMobile() {
           </svg>
           Disponible en iOS
         </button>
+        </a>
         <button className="w-full max-w-[250px] bg-[#ededed57] font-medium border border-[#e6eee6] text-[#000000] px-5 py-3.5 rounded-xl text-sm flex items-center justify-center gap-2">
           <svg
             className="size-5"
