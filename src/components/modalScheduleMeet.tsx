@@ -53,7 +53,7 @@ export const ModalScheduleMeet: React.FC = () => {
                   Agendar una Reunión
                 </Dialog.Title>
                 <iframe
-                  src="https://calendly.com/francogilli10/reunion-de-30-minutos?locale=es"
+                  src="https://calendly.com/reunionesfidel"
                   width="100%"
                   height="600px"
                   className="xl:h-[700px]"
