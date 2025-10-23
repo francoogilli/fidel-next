@@ -60,7 +60,7 @@ export default function Header() {
                     decoding="async"
                     data-nimg="1"
                     className="hidden dark:block"
-                    src="/fidel1.svg"
+                    src="/fidel/fidel1.svg"
                   />
                   <img
                     alt="logo"
@@ -70,7 +70,7 @@ export default function Header() {
                     decoding="async"
                     data-nimg="1"
                     className="block dark:hidden"
-                    src="/fidel1.svg"
+                    src="/fidel/fidel1.svg"
                   />
                   <span className="hidden sm:block font-semibold">Fidel</span>
                 </Link>
@@ -101,17 +101,16 @@ export default function Header() {
                 <span className="text-zinc-300 ">|</span>
                 <div className="flex items-center justify-end gap-1 flex-1">
                   <div className="flex items-center justify-start md:justify-end gap-1 flex-1">
-                    <Link
-                      target="_blank"
-                      className="hidden group relative md:inline-flex items-center gap-2 px-3 py-1.5 rounded-[10px] bg-zinc-900 transition-colors hover:bg-zinc-700 "
-                      href="#"
+                    <a
+                      href="/Home/Entrar"
+                      className="hidden group relative md:inline-flex items-center gap-2 px-3 py-1.5 rounded-[10px] bg-zinc-900 transition-colors hover:bg-zinc-700"
                     >
                       <div className="relative flex items-center gap-2 w-full">
-                        <span className="text-white text-sm group-hover:text-white  ">
+                        <span className="text-white text-sm group-hover:text-white">
                           Ingresar
                         </span>
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

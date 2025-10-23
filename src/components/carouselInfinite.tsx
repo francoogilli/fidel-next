@@ -74,7 +74,7 @@ const CarouselInfinite: React.FC = () => {
 
   const items = [
     {
-      imageSrc: "/funcionalidades/ventas.webp",
+      imageSrc: "/fidel/funcionalidades/ventas.webp",
       text: "Ventas y Clientes",
       items: [
         "Emití facturas electrónicas, presupuestos, remitos y pedidos en segundos.",
@@ -87,7 +87,7 @@ const CarouselInfinite: React.FC = () => {
         "Emití facturas, remitos, pedidos y presupuestos en segundos. Cargá clientes con CUIT/DNI y datos automáticos desde ARCA. Registrá pagos y controlá cuentas corrientes sin errores. Compartí resúmenes de cuenta a través del portal de clientes. Consultá reportes, analizá datos clave y tomá mejores decisiones.",
     },
     {
-      imageSrc: "/funcionalidades/proveedores.webp",
+      imageSrc: "/fidel/funcionalidades/proveedores.webp",
       text: "Compras y Proveedores",
       items: [
         "Cargá las facturas de tus proveedores para actualizar automáticamente el stock y los precios de tus productos.",
@@ -100,7 +100,7 @@ const CarouselInfinite: React.FC = () => {
         "Cargá facturas de compra y actualizá stock y precios automáticamente. Administrá cuentas corrientes, órdenes de pago y órdenes de compra automáticas a proveedores. Mantené tus costos al día cargando descuentos y condiciones especiales. Si fabricás productos, generá órdenes de producción y exportá la lista de insumos necesarios.",
     },
     {
-      imageSrc: "/funcionalidades/productos.webp",
+      imageSrc: "/fidel/funcionalidades/productos.webp",
       text: "Productos y Stock",
       items: [
         "Creá variantes, productos compuestos y listas de precios.",
@@ -114,7 +114,7 @@ const CarouselInfinite: React.FC = () => {
         "Mantené tu inventario ordenado y actualizado. Creá variantes, kits, productos compuestos y listas de precios. Controlá el stock en tiempo real, incluso en múltiples depósitos. Recibí alertas automáticas según el stock mínimo o máximo configurado. Actualizá precios por porcentaje o desde Excel en pocos clics. Hacé ajustes y transferencias de stock de forma ágil y segura.",
     },
     {
-      imageSrc: "/funcionalidades/bancos.webp",
+      imageSrc: "/fidel/funcionalidades/bancos.webp",
       text: "Finanzas y Contabilidad",
       items: [
         "Controlá ingresos, egresos y movimientos de dinero.",
@@ -129,7 +129,7 @@ const CarouselInfinite: React.FC = () => {
         "Gestioná ingresos, egresos y saldos bancarios con precisión. Registrá cheques propios y de terceros con alertas de vencimiento. Controlá la apertura y cierre de cajas (con opción de cajas independientes). Generá y descargá reportes contables y financieros en segundos. Accedé a reportes compatibles con ARCA para presentaciones formales.",
     },
     {
-      imageSrc: "/funcionalidades/app.webp",
+      imageSrc: "/fidel/funcionalidades/app.webp",
       text: "App para Vendedores",
       items: [
         "App exclusiva: Pedidos, Recibos, Pagos y Órdenes de Compra con sincronización en tiempo real.",
@@ -145,7 +145,7 @@ const CarouselInfinite: React.FC = () => {
         "Generá pedidos, pagos y recibos provisorios con sincronización en tiempo real. Consultá stock, precios y estado de cuenta de cada cliente al instante. Funciona offline: ideal para zonas con poca señal. Visualizá imágenes de productos y evitá errores en la carga. Organizá zonas de venta, hojas de ruta y comisiones por vendedor. Guardá la ubicación de cada cliente para visitas más eficientes.",
     },
     {
-      imageSrc: "/funcionalidades/integracion.webp",
+      imageSrc: "/fidel/funcionalidades/integracion.webp",
       text: "Integraciones E-Commerce",
       items: [
         "Sincronizá automáticamente toda la información de tus productos: stock, precios, fotos y más.",
@@ -158,7 +158,7 @@ const CarouselInfinite: React.FC = () => {
         "Sincronizá stock, precios, imágenes y descripciones automáticamente. Recibí pedidos online listos para procesar en Fidel. Aplicá descuentos y promociones desde el sistema. Imprimí etiquetas de envío con los datos del cliente. Registrá automáticamente nuevos compradores en tu base de clientes.",
     },
     {
-      imageSrc: "/funcionalidades/estadisticas.webp",
+      imageSrc: "/fidel/funcionalidades/estadisticas.webp",
       text: "Estadísticas y Reportes",
       items: [
         "Conocé el estado de tus ventas, compras, clientes, presupuestos y productos de forma clara.",

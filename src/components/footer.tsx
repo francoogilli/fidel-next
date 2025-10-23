@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="space-y-3.5">
             <div className="flex items-center space-x-2">
               <img
-                src="/fidel1.svg"
+                src="/fidel/fidel1.svg"
                 className="w-12"
                 draggable="false"
                 alt="Logo Fidel"

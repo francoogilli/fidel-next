@@ -79,7 +79,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <motion.video
-            src="/hero.mp4"
+            src="/fidel/hero.mp4"
             autoPlay
             loop
             muted

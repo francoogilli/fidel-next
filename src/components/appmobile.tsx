@@ -172,7 +172,7 @@ export default function AppMobile() {
           </div>
 
           {/* Right Column - Cards */}
-          <img src="fidelapp1.webp" alt="" className="w-4/4" />
+          <img src="/fidel/fidelapp1.webp" alt="" className="w-4/4" />
         </div>
       </motion.div>
 
@@ -185,7 +185,7 @@ export default function AppMobile() {
       >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column - Project Card */}
-          <img src="fidelapp2.webp" alt="" className="w-3/4" />
+          <img src="/fidel/fidelapp2.webp" alt="" className="w-3/4" />
           {/* Right Column - Features */}
           <div>
             <h2 className="text-[33px] tracking-tighter font-sans font-bold text-gray-800 mb-6">
@@ -346,7 +346,7 @@ export default function AppMobile() {
           </div>
 
           {/* Right Column - Cards */}
-          <img src="fidelapp3.webp" alt="" className="w-3/4" />
+          <img src="/fidel/fidelapp3.webp" alt="" className="w-3/4" />
         </div>
       </motion.div>
 
@@ -359,7 +359,7 @@ export default function AppMobile() {
       >
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Column - Project Card */}
-          <img src="fidelapp4.webp" alt="" className="w-3/4" />
+          <img src="/fidel/fidelapp4.webp" alt="" className="w-3/4" />
           {/* Right Column - Features */}
           <div>
             <h2 className="text-[33px] tracking-tighter font-sans font-bold text-gray-800 mb-6">

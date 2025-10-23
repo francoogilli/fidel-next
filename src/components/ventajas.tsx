@@ -51,7 +51,7 @@ export default function Ventajas() {
             <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
               <div className="p-10 text-center flex flex-col justify-center flex-1 transform scale-95 hover:scale-90 transition-transform duration-300 ease-in-out">
                 <Image
-                  src="/ventajas1.png"
+                  src="/fidel/ventajas1.png"
                   width={350}
                   height={168}
                   className="mx-auto"
@@ -70,7 +70,7 @@ export default function Ventajas() {
             <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
               <div className="p-10 text-center flex flex-col justify-center flex-1 transform scale-95 hover:scale-90 transition-transform duration-300 ease-in-out">
                 <Image
-                  src="/ventajas2.png"
+                  src="/fidel/ventajas2.png"
                   width={350}
                   height={168}
                   className="mx-auto"
@@ -89,7 +89,7 @@ export default function Ventajas() {
             <div className="col-span-1 w-full h-full order-5 md:order-none border border-[#e9e9e9d3] rounded-[32px] flex transition-transform duration-300 ease-in-out hover:scale-105">
               <div className="p-10 text-center flex flex-col justify-center flex-1 transform scale-95 hover:scale-90 transition-transform duration-300 ease-in-out">
                 <Image
-                  src="/ventajas3.png"
+                  src="/fidel/ventajas3.png"
                   width={350}
                   height={168}
                   className="mx-auto"

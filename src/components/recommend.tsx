@@ -31,7 +31,7 @@ export default function Recommend() {
             <div className="relative w-full flex justify-center">
               <div className="absolute top-[3.25rem] right-16 rotate-[5deg] blur-[3px] opacity-70">
                 <img
-                  src="/coin3.png"
+                  src="/fidel/coin3.png"
                   alt=""
                   className="size-20"
                   style={{ animation: "levitate 40s ease infinite" }}
@@ -39,7 +39,7 @@ export default function Recommend() {
               </div>
               <div className="absolute -top-24 right-0 rotate-[30deg]">
                 <img
-                  src="/coin2.png"
+                  src="/fidel/coin2.png"
                   alt=""
                   className="size-32"
                   style={{ animation: "levitate 40s ease infinite" }}
@@ -47,7 +47,7 @@ export default function Recommend() {
               </div>
               <div className="absolute -top-10 right-52 rotate-[30deg]">
                 <img
-                  src="/coin3.png"
+                  src="/fidel/coin3.png"
                   alt=""
                   className="size-20 blur-[3px]"
                   style={{ animation: "levitate 33s ease infinite" }}
@@ -55,7 +55,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-36 right-24">
                 <img
-                  src="/coin3.png"
+                  src="/fidel/coin3.png"
                   alt=""
                   className="size-24"
                   style={{ animation: "levitate 34s ease infinite" }}
@@ -63,7 +63,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-32 -right-14 -rotate-[20deg]">
                 <img
-                  src="/coin4.png"
+                  src="/fidel/coin4.png"
                   alt=""
                   className="size-20 "
                   style={{ animation: "levitate 30s ease infinite" }}
@@ -71,7 +71,7 @@ export default function Recommend() {
               </div>
               <div className="absolute -top-7 right-[21rem] -rotate-[250deg]">
                 <img
-                  src="/coin4.png"
+                  src="/fidel/coin4.png"
                   alt=""
                   className="size-20 "
                   style={{ animation: "levitate 39s ease infinite" }}
@@ -79,7 +79,7 @@ export default function Recommend() {
               </div>
               <div className="absolute -top-7 right-[28rem] rotate-[140deg]">
                 <img
-                  src="/coin5.png"
+                  src="/fidel/coin5.png"
                   alt=""
                   className="size-20 blur-[5px]"
                   style={{ animation: "levitate 33s ease infinite" }}
@@ -87,7 +87,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-36 right-[2rem] rotate-[190deg]">
                 <img
-                  src="/coin4.png"
+                  src="/fidel/coin4.png"
                   alt=""
                   className="size-10 blur-[3px]"
                   style={{ animation: "levitate 32s ease infinite" }}
@@ -95,7 +95,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-24 right-60 rotate-[240deg]">
                 <img
-                  src="/coin5.png"
+                  src="/fidel/coin5.png"
                   alt=""
                   className="size-28"
                   style={{ animation: "levitate 38s ease infinite" }}
@@ -103,7 +103,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-24 right-[25rem] ">
                 <img
-                  src="/coin.png"
+                  src="/fidel/coin.png"
                   alt=""
                   className="size-[5.5rem] blur-[3px]"
                   style={{ animation: "levitate 35s ease infinite" }}
@@ -129,7 +129,7 @@ export default function Recommend() {
                   Recomendá{" "}
                   <span className="inline-flex items-center space-x-1">
                     <img
-                      src="/fidel1.svg"
+                      src="/fidel/fidel1.svg"
                       className="w-6"
                       draggable="false"
                       alt="Logo Fidel"
@@ -227,7 +227,7 @@ export default function Recommend() {
             Recomendá{" "}
             <span className="inline-flex items-center space-x-1">
               <img
-                src="/fidel1.svg"
+                src="/fidel/fidel1.svg"
                 className="w-4"
                 draggable="false"
                 alt="Logo Fidel"

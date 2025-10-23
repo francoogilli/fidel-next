@@ -9,7 +9,6 @@ import * as Yup from "yup";
 import { useState } from "react";
 import { ModalScheduleMeet } from "./modalScheduleMeet";
 import { Contact } from "@/api/types";
-import { createHubSpotContact } from "@/api/hubspot";
 import CheckToast from "@/icons/checkToast";
 import Exclamation from "@/icons/exclamation";
 import ExclamationError from "@/icons/exclamationError";
@@ -105,39 +104,40 @@ export default function ContactSection({ viewPage }: Props) {
     text: "",
   });
   const handleSubmit = async (
-    values: Contact,
-    { resetForm }: { resetForm: () => void }
-  ) => {
-    const { firstname, email, phone, llamada } = values;
-    try {
-      const result = await createHubSpotContact({
-        firstname,
-        email,
-        phone,
-        llamada,
-      });
-      if (result.success) {
-        setToastType("success");
-        setToastMessage("Tu mensaje se ha enviado correctamente.");
-        resetForm();
-      } else {
-        setToastType("warning");
-        setToastMessage(result.message || "Hubo un error");
-        resetForm();
-      }
-    } catch (error: unknown) {
-      setToastType("error");
-
-      if (error instanceof Error) {
-        setToastMessage(error.message);
-      } else {
-        setToastMessage("Ha ocurrido un error desconocido.");
-      }
+  values: Contact,
+  { resetForm }: { resetForm: () => void }
+) => {
+  const { firstname, email, phone, llamada } = values;
+  try {
+    const response = await fetch('/Home/EnviarDatosHubSpot', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ firstname, email, phone, llamada }),
+    });
+    
+    const result = await response.json();
+    
+    if (result.success) {
+      setToastType("success");
+      setToastMessage("Tu mensaje se ha enviado correctamente.");
+      resetForm();
+    } else {
+      setToastType("warning");
+      setToastMessage(result.message || "Hubo un error");
+      resetForm();
     }
+  } catch (error: unknown) {
+    setToastType("error");
+    if (error instanceof Error) {
+      setToastMessage(error.message);
+    } else {
+      setToastMessage("Ha ocurrido un error desconocido.");
+    }
+  }
 
-    setToastVisible(true);
-    setTimeout(() => setToastVisible(false), 7000);
-  };
+  setToastVisible(true);
+  setTimeout(() => setToastVisible(false), 7000);
+};
 
   return (
     <div className="max-w-7xl xl:max-w-[90rem] mb-16 xl:mb-28 mx-auto px-4 md:px-3">
@@ -298,6 +298,7 @@ export default function ContactSection({ viewPage }: Props) {
                       className="w-full"
                       name="llamada"
                       label="Rubro"
+                      selectedKeys={[values.llamada]}
                       onChange={handleChange}
                       startContent={
                         <svg

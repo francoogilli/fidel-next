@@ -1,4 +1,4 @@
-"use server";
+import { NextRequest, NextResponse } from 'next/server';
 
 interface ContactProperties {
   firstname: string;
@@ -7,12 +7,17 @@ interface ContactProperties {
   llamada: string;
 }
 
-export async function createHubSpotContact(properties: ContactProperties) {
+export async function POST(request: NextRequest) {
+  const properties: ContactProperties = await request.json();
+  
   const API_URL = "https://api.hubapi.com/crm/v3/objects/contacts";
   const TOKEN = process.env.HUBSPOT_API_TOKEN;
 
   if (!TOKEN) {
-    throw new Error("Falta el token de HubSpot. Verifica las variables de entorno.");
+    return NextResponse.json(
+      { error: "Falta el token de HubSpot" },
+      { status: 500 }
+    );
   }
 
   try {
@@ -26,7 +31,10 @@ export async function createHubSpotContact(properties: ContactProperties) {
     });
 
     if (response.status === 409) {
-      return { success: false, message: "Ya hemos recibido tu mensaje." };
+      return NextResponse.json(
+        { success: false, message: "Ya hemos recibido tu mensaje." },
+        { status: 409 }
+      );
     }
 
     if (!response.ok) {
@@ -34,9 +42,12 @@ export async function createHubSpotContact(properties: ContactProperties) {
     }
 
     const data = await response.json();
-    return { success: true, data };
+    return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error("Error al crear contacto en HubSpot:", error);
-    throw error;
+    return NextResponse.json(
+      { error: "Error al crear contacto" },
+      { status: 500 }
+    );
   }
 }
