@@ -298,6 +298,7 @@ export default function ContactSection({ viewPage }: Props) {
                       className="w-full"
                       name="llamada"
                       label="Rubro"
+                      selectedKeys={[values.llamada]}
                       onChange={handleChange}
                       startContent={
                         <svg
