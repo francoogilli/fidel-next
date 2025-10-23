@@ -30,9 +30,9 @@ export const ModalScheduleMeet: React.FC = () => {
       <Dialog.Portal forceMount>
         <AnimatePresence mode="popLayout">
           {open && (
-            <Dialog.Overlay className="fixed top-0 left-0 h-full w-full">
+            <Dialog.Overlay className="fixed top-0 left-0 h-full w-full z-40">
               <motion.div
-                className="fixed inset-0 bg-[#11111152]"
+                className="fixed inset-0 bg-[#11111152] z-40"
                 {...variants.overlay}
               />
             </Dialog.Overlay>
@@ -40,9 +40,9 @@ export const ModalScheduleMeet: React.FC = () => {
         </AnimatePresence>
         <AnimatePresence mode="popLayout">
           {open && (
-            <Dialog.Content className="-translate-x-1/2 -translate-y-1/2 fixed top-1/2 left-1/2 max-h-[85vh] w-[90vw] max-w-[600px] xl:max-w-[670px]">
+            <Dialog.Content className="-translate-x-1/2 -translate-y-1/2 fixed top-1/2 left-1/2 max-h-[85vh] w-[90vw] max-w-[600px] xl:max-w-[670px] z-50">
               <motion.div
-                className="flex-col overflow-hidden rounded-3xl  border border-gray-3 bg-[#ffffff] sm:w-[600px] xl:w-[670px]"
+                className="flex-col overflow-hidden rounded-3xl border border-gray-3 bg-[#ffffff] sm:w-[600px] xl:w-[670px]"
                 {...variants.content}
               >
                 <Dialog.Title className="text-lg xl:text-xl text-center flex justify-center gap-x-2 items-center font-semibold my-4">
