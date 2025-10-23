@@ -61,7 +61,7 @@ export default function Hero() {
               </motion.button>
               <Link href="/planes">
                 <motion.button
-                  className="bg-gradient-to-br from-[#ffb347] via-[#ffc97b] to-[#ffb347] tracking-tighter md:tracking-normal text-w gap-2 justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fff5f0] hover:border-[#ffe1c6] transition-all duration-700"
+                  className="bg-gradient-to-bl from-[#ffb347] via-[#ffdaa5] to-[#ffb347] tracking-tighter md:tracking-normal text-w gap-2 justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fff5f0] hover:border-[#ffe1c6] transition-all duration-700"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
                 >
                   <CreditCardIcon className="size-4 md:size-5" />
