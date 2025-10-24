@@ -4,14 +4,20 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
-import Link from "next/link";
 import Modal from "./modal";
 
 export default function Hero() {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const closeModal = () => setModalOpen(false);
-
+  const handleScrollToPlanes = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const section = document.getElementById("planes");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   return (
     <>
       <motion.div
@@ -53,21 +59,20 @@ export default function Hero() {
           >
             <div className="flex flex-col md:flex-row md:space-x-3 mx-auto lg:mx-0 justify-center lg:justify-start items-center text-center space-y-2 md:space-y-0">
               <motion.button
-                className="bg-gradient-to-br from-[#81fc71] via-[#b2fa9e] to-[#81fc71] tracking-tighter md:tracking-normal text-[#171717] justify-center w-auto gap-2 font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fafafa] hover:border-[#dfffdf] transition-all duration-700"
+                className="w-full md:w-auto bg-gradient-to-br from-[#81fc71] via-[#b2fa9e] to-[#81fc71] tracking-tighter md:tracking-normal text-[#171717] justify-center gap-2 font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fafafa] hover:border-[#dfffdf] transition-all duration-700"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
                 <SparklesIcon className="size-4 md:size-5" />
                 ¡Probá una demo!
               </motion.button>
-              <Link href="/planes">
                 <motion.button
-                  className="bg-gradient-to-bl from-[#222222] via-[#383838] to-[#222222] tracking-tighter md:tracking-normal text-white gap-2 justify-center w-auto font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#f3f3f3] hover:border-[#d4d4d4] transition-all duration-700"
+                onClick={handleScrollToPlanes}
+                  className="w-full md:w-auto bg-gradient-to-bl from-[#222222] via-[#383838] to-[#222222] tracking-tighter md:tracking-normal text-white gap-2 justify-center font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#f3f3f3] hover:border-[#d4d4d4] transition-all duration-700"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
                 >
                   <CreditCardIcon className="size-4 md:size-5" />
                   Mirá nuestros planes
                 </motion.button>
-              </Link>
             </div>
           </motion.div>
         </div>
