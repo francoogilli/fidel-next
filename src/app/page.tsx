@@ -12,7 +12,9 @@ export default function Home() {
     <>
       <div className="backgroundImage"></div>
       <Hero />
+      <div id="funcionalidades">
       <Functionalities />
+      </div>
       <div id="planes">
         <PricingCard viewComparison />
       </div>
