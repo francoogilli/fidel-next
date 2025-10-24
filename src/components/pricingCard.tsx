@@ -273,7 +273,7 @@ export default function PricingCard({ viewComparison }: Props) {
           </motion.div>
 
           <div className="flex justify-center items-center gap-10 pt-1">
-            <div className="text-center">
+            <div className="bg-[#1f1f1f] hover:bg-[#2b2b2b] py-2.5 px-3 duration-300 rounded-lg text-center">
               <h4
                 className="text-base px-5 pb-1 text-[#ffffff] font-medium"
                 style={{ fontFamily: "Satoshi" }}
@@ -284,7 +284,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 Podés cambiar de plan en cualquier momento, sin problemas.
               </p>
             </div>
-            <div className=" text-center">
+            <div className="bg-[#1f1f1f] hover:bg-[#2b2b2b] py-2.5 px-3 duration-300 rounded-lg text-center">
               <h4
                 className="text-base px-5 pb-1 text-[#ffffff] font-medium"
                 style={{ fontFamily: "Satoshi" }}
