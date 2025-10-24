@@ -34,6 +34,14 @@ export default function Header() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+    const handleScrollToFuncionalidades = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const section = document.getElementById("funcionalidades");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div
       className={`sticky top-0 left-0 right-0 z-50 transition-all duration-700 ${
@@ -94,9 +102,9 @@ export default function Header() {
                   </Link>
 
                   <Link
-                    target="_blank"
                     className="text-sm px-3.5 py-1.5 hover:bg-zinc-100 rounded-md text-zinc-800 hover:text-zinc-900  transition-colors flex items-center gap-2 group"
                     href="#"
+                    onClick={handleScrollToFuncionalidades}
                   >
                     <AdvantagesIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
                     Funcionalidades
@@ -148,9 +156,9 @@ export default function Header() {
                   Planes
                 </Link>
                 <Link
-                  target="_blank"
                   className="text-sm flex items-center gap-1 text-zinc-800 hover:text-zinc-900  transition-colors"
                   href="#"
+                  onClick={handleScrollToFuncionalidades}
                 >
                   <AdvantagesIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
                   Funcionalidades
