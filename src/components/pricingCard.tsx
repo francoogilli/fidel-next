@@ -256,8 +256,15 @@ export default function PricingCard({ viewComparison }: Props) {
                   </ul>
                 </div>
 
-                <Link
-                  href="/"
+                <motion.button
+                  onClick={() =>
+                    window.open(
+                      `https://api.whatsapp.com/send?phone=543564222935&text=${encodeURIComponent(
+                        `¡Hola! Estoy viendo la web de Fidel y me interesa el plan ${pricing.name}. ¿Podrían enviarme más información sobre el sistema?`
+                      )}`,
+                      "_blank"
+                    )
+                  }
                   style={{ fontFamily: "Plus Jakarta Sans", marginTop: "30px" }}
                   className={`${
                     pricing.popular === true
@@ -267,7 +274,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 >
                   Elegir plan
                   <ArrowUpIcon className="size-4" />
-                </Link>
+                </motion.button>
               </motion.div>
             ))}
           </motion.div>
