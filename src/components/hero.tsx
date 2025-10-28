@@ -61,6 +61,15 @@ export default function Hero() {
               <motion.button
                 className="w-full md:w-auto bg-gradient-to-br from-[#81fc71] via-[#b2fa9e] to-[#81fc71] tracking-tighter md:tracking-normal text-[#171717] justify-center gap-2 font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fafafa] hover:border-[#dfffdf] transition-all duration-700"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
+                onClick={() =>
+                  window.open(
+                    "https://api.whatsapp.com/send?phone=543564222935&text=" +
+                      encodeURIComponent(
+                        "¡Hola! Estoy viendo la web de Fidel y me gustaría acceder a una cuenta de prueba para conocer mejor el sistema."
+                      ),
+                    "_blank"
+                  )
+                }
               >
                 <SparklesIcon className="size-4 md:size-5" />
                 ¡Probá una demo!
