@@ -7,7 +7,6 @@ import { pricingInfo } from "@/data/data";
 import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
 import CreditCardIcon from "@/icons/creditCard";
-import Link from "next/link";
 import ArrowUpIcon from "@/icons/arrow-up";
 import { LaurelIcon } from "@/icons/laurel";
 import ThunderIcon from "@/icons/thunder";
