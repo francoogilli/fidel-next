@@ -5,6 +5,7 @@ interface ContactProperties {
   email: string;
   phone?: string;
   llamada: string;
+  hs_lead_status: string;
 }
 
 export async function POST(request: NextRequest) {
