@@ -123,6 +123,7 @@ export default function ContactSection({ viewPage }: Props) {
         phone,
         llamada,
         hs_lead_status: "NEW",
+        canal: "Página Web",
       });
       if (result.success) {
         setToastType("success");
