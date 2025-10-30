@@ -115,6 +115,7 @@ export default function ContactSection({ viewPage }: Props) {
         email,
         phone,
         llamada,
+        hs_lead_status: "NEW",
       });
       if (result.success) {
         setToastType("success");
