@@ -57,7 +57,7 @@ export default function Header() {
                             shadow-[0_2px_20px_-2px_rgba(0,0,0,0.04)]
                             backdrop-blur-md
                             border 
-                            border-[rgba(230,230,230,0.7)] 
+                            border-[rgba(255,255,255,0.7)] 
                             w-[95%] sm:min-w-[800px] sm:max-w-[1200px]
                             rounded-xl
                             px-4 py-2 mt-2 md:mt-4 
