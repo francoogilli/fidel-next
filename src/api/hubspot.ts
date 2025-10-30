@@ -6,6 +6,7 @@ interface ContactProperties {
   phone?: string;
   llamada: string;
   hs_lead_status: string;
+  canal: string;
 }
 
 export async function POST(request: NextRequest) {

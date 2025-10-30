@@ -119,7 +119,7 @@ export default function ContactSection({ viewPage }: Props) {
     const response = await fetch('/Home/EnviarDatosHubSpot', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ firstname, email, phone, llamada, hs_lead_status: "NEW" }),
+      body: JSON.stringify({ firstname, email, phone, llamada, hs_lead_status: "NEW", canal: "Página Web" }),
     });
     
     const result = await response.json();
