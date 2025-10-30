@@ -1,9 +1,25 @@
-import Facebook from "@/icons/facebook";
+"use client";
+
 import Instagram from "@/icons/instagram";
 import Whatsapp from "@/icons/whatsapp";
 import Link from "next/link";
 
 export default function Footer() {
+  const handleScrollToPlanes = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const section = document.getElementById("planes");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+    const handleScrollToFuncionalidades = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const section = document.getElementById("funcionalidades");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <footer className="w-full p-8">
       <div className="mx-auto max-w-[88.5rem] rounded-[30px] bg-[#f6f6f6] border border-[#e6eee6] px-12 py-16">
@@ -42,14 +58,6 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://www.facebook.com/fidelgestion"
-                target="_blank"
-                className="text-[#272727] hover:text-zinc-900"
-              >
-                <Facebook />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link
                 href="https://www.instagram.com/fidelsistema"
                 target="_blank"
                 className="text-[#272727] mt-0.5 hover:text-zinc-900"
@@ -57,14 +65,21 @@ export default function Footer() {
                 <Instagram />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link
-                href="https://api.whatsapp.com/send?phone=543564222935"
-                target="_blank"
-                className="text-[#272727] hover:text-zinc-900"
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://api.whatsapp.com/send?phone=543564222935&text=" +
+                      encodeURIComponent(
+                        "¡Hola! Estoy viendo la web de Fidel y me gustaría acceder a una cuenta de prueba para conocer mejor el sistema."
+                      ),
+                    "_blank"
+                  )
+                }
+                className="cursor-pointer text-[#272727] hover:text-zinc-900"
               >
-                <Whatsapp className="mt-0.5" />
+                <Whatsapp className="mb-0.5 size-7" />
                 <span className="sr-only">WhatsApp</span>
-              </Link>
+              </div>
             </div>
           </div>
 
@@ -81,20 +96,20 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#"
-                  className="text-sm text-gray-600 hover:text-gray-900"
+                <span
+                  onClick={handleScrollToFuncionalidades}
+                  className="cursor-pointer text-sm text-gray-600 hover:text-gray-900"
                 >
                   Funcionalidades
-                </Link>
+                </span>
               </li>
               <li>
-                <Link
-                  href="#"
-                  className="text-sm text-gray-600 hover:text-gray-900"
+                <span
+                  onClick={handleScrollToPlanes}
+                  className="text-sm text-gray-600 hover:text-gray-900 cursor-pointer"
                 >
                   Planes
-                </Link>
+                </span>
               </li>
               <li>
                 <Link
