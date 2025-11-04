@@ -390,7 +390,6 @@ export const pricingInfo: PricingCard[] = [
   {
     name: "Inicial",
     price: 72000,
-    popular: true,
     bestOption: "comercios medianos y negocios en expansión que necesitan optimizar cada aspecto de su gestión.",
     benefits: [
       { text: "Todo lo del Plan Básico +" },
@@ -422,6 +421,7 @@ export const pricingInfo: PricingCard[] = [
   {
     name: "Intermedio",
     price: 98000,
+    popular: true,
     bestOption: "grandes Empresas y Distribuidoras.",
     benefits: [
       { text: "Todo lo del Plan Inicial +" },
