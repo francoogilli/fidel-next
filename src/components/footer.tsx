@@ -20,6 +20,22 @@ export default function Footer() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+    const handleScrollToHome = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const section = document.getElementById("home");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+    const handleScrollToContacto = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const section = document.getElementById("contacto");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <footer className="w-full p-8">
       <div className="mx-auto max-w-[88.5rem] rounded-[30px] bg-[#f6f6f6] border border-[#e6eee6] px-12 py-16">
@@ -88,12 +104,12 @@ export default function Footer() {
             <h3 className="text-lg font-medium">Recursos</h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="#"
-                  className="text-sm text-gray-600 hover:text-gray-900"
+                <span
+                  onClick={handleScrollToHome}
+                  className="text-sm text-gray-600 hover:text-gray-900 cursor-pointer"
                 >
                   Inicio
-                </Link>
+                </span>
               </li>
               <li>
                 <span
@@ -112,12 +128,12 @@ export default function Footer() {
                 </span>
               </li>
               <li>
-                <Link
-                  href="#"
-                  className="text-sm text-gray-600 hover:text-gray-900"
+                <span
+                  onClick={handleScrollToContacto}
+                  className="text-sm text-gray-600 hover:text-gray-900 cursor-pointer"
                 >
                   Contacto
-                </Link>
+                </span>
               </li>
             </ul>
           </div>
