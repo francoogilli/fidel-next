@@ -132,7 +132,7 @@ export default function PricingCard({ viewComparison }: Props) {
                       className="text-5xl xl:text-[3.2rem] text-[#f7f7f7] -tracking-wider font-bold"
                       style={{ fontFamily: "Plus Jakarta Sans" }}
                     >
-                      ${Number(pricing.price).toLocaleString("es-AR")}
+                      ${"\u00A0"}{Number(pricing.price).toLocaleString("es-AR")}
                     </span>
                     <span className="pl-1 font-medium text-xs md:text-[13px]  text-left text-[#d3d3d3]">
                       +IVA/mes
