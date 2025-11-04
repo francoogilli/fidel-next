@@ -460,7 +460,7 @@ export const pricingInfo: PricingCard[] = [
   {
     name: "Avanzado",
     price: 128000,
-    bestOption: "grandes Empresas y Distribuidoras.",
+    bestOption: "grandes empresas que requieren de más usuarios y para Distribuidoras con muchos vendedores preventistas.",
     benefits: [
       {
         text: "Todo lo del Plan Intermedio +",
