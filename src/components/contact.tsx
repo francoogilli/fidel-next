@@ -376,7 +376,7 @@ export default function ContactSection({ viewPage }: Props) {
                     <Input
                       key="outside"
                       name="phone"
-                      label="Telefono"
+                      label="Teléfono"
                       onChange={handleChange}
                       value={values.phone}
                       onBlur={handleBlur}
@@ -387,7 +387,7 @@ export default function ContactSection({ viewPage }: Props) {
                         />
                       }
                       labelPlacement="outside"
-                      placeholder="Ingrese su telefono"
+                      placeholder="Ingrese su teléfono"
                     />
                   </div>
                   {errors.phone && touched.phone && (
