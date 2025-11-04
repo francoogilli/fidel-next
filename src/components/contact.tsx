@@ -379,6 +379,9 @@ export default function ContactSection({ viewPage }: Props) {
                       key="outside"
                       name="phone"
                       label="Teléfono"
+                      type="tel"
+                      inputMode="numeric"
+                      pattern="[0-9]*"
                       onChange={handleChange}
                       value={values.phone}
                       onBlur={handleBlur}
