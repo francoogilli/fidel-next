@@ -25,7 +25,7 @@ export default function Home() {
       <Recommend />
       <QuestionsAnswers />
       <div id="contacto">
-      <ContactSection />
+        <ContactSection />
       </div>
     </>
   );
