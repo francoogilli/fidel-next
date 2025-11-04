@@ -422,7 +422,7 @@ export const pricingInfo: PricingCard[] = [
     name: "Intermedio",
     price: 98000,
     popular: true,
-    bestOption: "grandes Empresas y Distribuidoras.",
+    bestOption: "medianas empresas (comercios, negocios, fábricas) y pequeñas Distribuidoras con vendedores en la calle",
     benefits: [
       { text: "Todo lo del Plan Inicial +" },
       { text: "9 Usuarios en total" },
