@@ -10,6 +10,7 @@ import CreditCardIcon from "@/icons/creditCard";
 import ArrowUpIcon from "@/icons/arrow-up";
 import { LaurelIcon } from "@/icons/laurel";
 import ThunderIcon from "@/icons/thunder";
+import { cn } from "@nextui-org/react";
 interface Props {
   viewComparison?: boolean;
 }
@@ -133,7 +134,8 @@ export default function PricingCard({ viewComparison }: Props) {
                       className="text-5xl xl:text-[3.2rem] text-[#f7f7f7] -tracking-wider font-bold"
                       style={{ fontFamily: "Plus Jakarta Sans" }}
                     >
-                      ${"\u00A0"}{Number(pricing.price).toLocaleString("es-AR")}
+                      ${"\u00A0"}
+                      {Number(pricing.price).toLocaleString("es-AR")}
                     </span>
                     <span className="pl-1 font-medium text-xs md:text-[13px]  text-left text-[#d3d3d3]">
                       +IVA/mes
@@ -197,7 +199,16 @@ export default function PricingCard({ viewComparison }: Props) {
                           </div>
 
                           <div className="flex items-center gap-1 text-sm xl:text-sm">
-                            <span>{benefit.text}</span>
+                            <li
+                              className={cn(
+                                "text-sm",
+                                benefit.highlight &&
+                                  "bg-gradient-to-br text-white from-[#353535] via-[#4d4d4df1] to-[#353535] border border-[#525252] font-medium px-2 py-1 rounded-md"
+                              )}
+                            >
+                              {benefit.text}
+                            </li>
+
                             {benefit.description && (
                               <button
                                 onClick={() => {

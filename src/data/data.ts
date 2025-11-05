@@ -84,6 +84,7 @@ interface PricingCardProps {
 
 interface BenefitInfo {
   text: string;
+  highlight?: boolean;
   description?: string;
 }
 interface PricingCard {
