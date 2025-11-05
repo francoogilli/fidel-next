@@ -84,6 +84,7 @@ interface PricingCardProps {
 
 interface BenefitInfo {
   text: string;
+  highlight?: boolean;
   description?: string;
 }
 interface PricingCard {
@@ -343,16 +344,15 @@ export const pricingInfo: PricingCard[] = [
   {
     name: "Básico",
     price: 53000,
-    bestOption: "emprendedores, freelancers y pequeños comercios que buscan una solución simple y efectiva para facturar y organizar su negocio.",
+    bestOption:
+      "emprendedores, freelancers y pequeños comercios que buscan una solución simple y efectiva para facturar y organizar su negocio.",
     benefits: [
+      { text: "Soporte por WhatsApp" },
+      { text: "1 Usuario", highlight: true },
       {
-        text: "Facturación rápida y fácil",
-        description: "Emití facturas electrónicas y presupuestos en segundos.",
-      },
-      {
-        text: "Clientes organizados",
+        text: "Acceso a módulos esenciales",
         description:
-          "Registrá y administrá tu cartera con información detallada.",
+          "Incluye acceso a Clientes, Ventas, Productos/Servicios y Cajas.",
       },
       {
         text: "Control básico de stock",
@@ -363,44 +363,40 @@ export const pricingInfo: PricingCard[] = [
         description: "Gestioná pagos y cobros sin perder de vista nada.",
       },
       {
+        text: "Clientes organizados",
+        description:
+          "Registrá y administrá tu cartera con información detallada.",
+      },
+      {
         text: "Reportes esenciales",
         description: "Visualizá ingresos, ventas y clientes en un solo lugar.",
       },
       {
-        text: "Acceso a módulos esenciales",
-        description:
-          "Incluye acceso a Clientes, Ventas, Productos/Servicios y Cajas.",
-      },
-      {
-        text: "Soporte por WhatsApp",
+        text: "Facturación rápida y fácil",
+        description: "Emití facturas electrónicas y presupuestos en segundos.",
       },
       {
         text: "Sin límites en operaciones",
         description:
           "No limitamos la cantidad de operaciones ni comprobantes realizados.",
       },
-      {
-        text: "1 Usuario",
-      },
-      {
-        text: "Límite de 20.000 productos",
-      },
+      { text: "Límite de 20.000 productos", highlight: true },
     ],
   },
   {
     name: "Inicial",
     price: 72000,
-    bestOption: "comercios medianos y negocios en expansión que necesitan optimizar cada aspecto de su gestión.",
+    bestOption:
+      "comercios medianos y negocios en expansión que necesitan optimizar cada aspecto de su gestión.",
     benefits: [
       { text: "Todo lo del Plan Básico +" },
-      { text: "3 usuarios en total" },
+      { text: "3 Usuarios", highlight: true },
+      { text: "Facturación hasta 1 CUIT", highlight: true },
       {
         text: "Acceso total al sistema",
         description:
           "Incluye acceso a todos los módulos del sistema sin restricciones.",
       },
-      { text: "Facturación desde un CUIT" },
-      { text: "Dashboard con indicadores" },
       {
         text: "Integración E-Commerce",
         description:
@@ -412,35 +408,31 @@ export const pricingInfo: PricingCard[] = [
           "Consultá precios, stock y cuentas corrientes desde tu celular en cualquier momento.",
       },
       { text: "Portal de clientes" },
+      { text: "Dashboard con indicadores" },
       { text: "Reportes contables" },
-      {
-        text: "Límite de 20.000 productos",
-      },
+      { text: "Límite de 20.000 productos", highlight: true },
     ],
   },
   {
     name: "Intermedio",
     price: 98000,
     popular: true,
-    bestOption: "medianas empresas (comercios, negocios, fábricas) y pequeñas Distribuidoras con vendedores en la calle",
+    bestOption:
+      "medianas empresas (comercios, negocios, fábricas) y pequeñas Distribuidoras con vendedores en la calle",
     benefits: [
       { text: "Todo lo del Plan Inicial +" },
-      { text: "9 Usuarios en total" },
-      { text: "3 Vendedores en la App" },
+      { text: "9 Usuarios", highlight: true },
+      {
+        text: "Facturación hasta 2 CUIT",
+        highlight: true,
+        description:
+          "Emití facturas con hasta 2 CUIT diferentes para tu empresa.",
+      },
+      { text: "3 Vendedores en la App", highlight: true },
       {
         text: "Acceso total al sistema",
         description:
           "Incluye acceso a todos los módulos del sistema sin restricciones.",
-      },
-      {
-        text: "Facturación desde 2 CUIT",
-        description:
-          "Emití facturas con hasta 2 CUIT diferentes para tu empresa.",
-      },
-      {
-        text: "Multimoneda en Ventas",
-        description:
-          "Maneja Ventas, Facturas E y Bono Fiscal en múltiples monedas sin problemas.",
       },
       {
         text: "Integración E-Commerce",
@@ -452,43 +444,34 @@ export const pricingInfo: PricingCard[] = [
         description:
           "Uso del módulo para tomar pedidos y registrar pagos desde tu celular.",
       },
+      { text: "Portal de clientes" },
       {
-        text: "Límite de 20.000 productos",
+        text: "Multimoneda en Ventas",
+        description:
+          "Manejá Ventas, Facturas E y Bono Fiscal en múltiples monedas sin problemas.",
       },
+      { text: "Límite de 20.000 productos", highlight: true },
     ],
   },
   {
     name: "Avanzado",
     price: 128000,
-    bestOption: "grandes empresas que requieren de más usuarios y para Distribuidoras con muchos vendedores preventistas.",
+    bestOption:
+      "grandes empresas que requieren de más usuarios y para Distribuidoras con muchos vendedores preventistas.",
     benefits: [
+      { text: "Todo lo del Plan Intermedio +" },
+      { text: "21 Usuarios", highlight: true },
       {
-        text: "Todo lo del Plan Intermedio +",
+        text: "Facturación hasta 5 CUIT",
+        highlight: true,
+        description:
+          "Emití facturas con hasta 5 CUIT diferentes para tu empresa.",
       },
-      {
-        text: "21 Usuarios en total",
-      },
-      {
-        text: "9 Vendedores en la App",
-      },
+      { text: "9 Vendedores en la App", highlight: true },
       {
         text: "Acceso total al sistema",
         description:
           "Incluye acceso a todos los módulos del sistema sin restricciones.",
-      },
-      {
-        text: "Facturación desde 5 CUIT",
-        description:
-          "Emití facturas con hasta 5 CUIT diferentes para tu empresa.",
-      },
-      {
-        text: "Multimoneda en Ventas",
-        description:
-          "Maneja Ventas, Facturas E y Bono Fiscal en múltiples monedas sin problemas.",
-      },
-      {
-        text: "Percepciones por Provincias",
-        description: "Aplicá percepciones según cada provincia en tus ventas.",
       },
       {
         text: "Integración E-Commerce",
@@ -500,9 +483,12 @@ export const pricingInfo: PricingCard[] = [
         description:
           "Uso del módulo para tomar pedidos y registrar pagos desde tu celular.",
       },
+      { text: "Portal de clientes" },
       {
-        text: "Límite de 50.000 productos",
+        text: "Percepciones por Provincias",
+        description: "Aplicá percepciones según cada provincia en tus ventas.",
       },
+      { text: "Límite de 50.000 productos", highlight: true },
     ],
   },
 ];
