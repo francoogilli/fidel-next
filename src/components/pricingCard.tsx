@@ -202,7 +202,7 @@ export default function PricingCard({ viewComparison }: Props) {
                               className={cn(
                                 "text-sm",
                                 benefit.highlight &&
-                                  "bg-gradient-to-br text-white from-[#353535] via-[#4d4d4df1] to-[#353535] border border-[#525252] font-medium px-2 py-1 rounded-md"
+                                  "bg-gradient-to-br text-white from-[#353535] via-[#4d4d4df1] to-[#353535] hover:from-[#414141] hover:via-[#575757f1] hover:to-[#414141] border border-[#525252] font-medium px-2 py-1 rounded-md"
                               )}
                             >
                               {benefit.text}
