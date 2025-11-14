@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <>
       <motion.div
-        className="mx-auto flex flex-col lg:flex-row max-w-7xl xl:max-w-[90rem] pt-10 lg:pt-10 xl:pt-20 space-y-6 px-4 lg:px-4 pb-40"
+        className="mx-auto flex flex-col lg:flex-row max-w-7xl xl:max-w-[90rem] pt-10 lg:pt-10 xl:pt-20 space-y-6 px-4 lg:px-4 pb-32"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
