@@ -71,18 +71,18 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '9604014666300937');
+            fbq('init', '264310256211065');
             fbq('track', 'PageView');
           `}
         </Script>
 
-        {/*  Noscript fallback */}
         <noscript>
           <img
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=9604014666300937&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=264310256211065&ev=PageView&noscript=1"
+            alt="Meta Pixel"
           />
         </noscript>
 
