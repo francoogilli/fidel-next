@@ -27,7 +27,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-    const handleScrollToPlanes = (e: React.MouseEvent) => {
+  const handleScrollToPlanes = (e: React.MouseEvent) => {
     e.preventDefault();
     const section = document.getElementById("planes");
     if (section) {
@@ -35,7 +35,7 @@ export default function Header() {
     }
   };
 
-    const handleScrollToFuncionalidades = (e: React.MouseEvent) => {
+  const handleScrollToFuncionalidades = (e: React.MouseEvent) => {
     e.preventDefault();
     const section = document.getElementById("funcionalidades");
     if (section) {
@@ -108,9 +108,6 @@ export default function Header() {
                   >
                     <AdvantagesIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
                     Funcionalidades
-                    {/* <span className="text-orange-500 rounded-md border border-orange-500 px-1 py-0.5 text-xs">
-                      Nuevo
-                    </span> */}
                   </Link>
                 </div>
               </div>
@@ -120,7 +117,7 @@ export default function Header() {
                   <div className="flex items-center justify-start md:justify-end gap-1 flex-1">
                     <a
                       href="/Home/Entrar"
-                      className="hidden group relative md:inline-flex items-center gap-2 px-3 py-1.5 rounded-[10px] bg-zinc-900 transition-colors hover:bg-zinc-700"
+                      className="group relative inline-flex items-center gap-2 px-3 py-1.5 rounded-[10px] bg-zinc-900 transition-colors hover:bg-zinc-700"
                     >
                       <div className="relative flex items-center gap-2 w-full">
                         <span className="text-white text-sm group-hover:text-white flex items-center gap-2">
@@ -131,9 +128,9 @@ export default function Header() {
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             className="size-4"
                           >
                             <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
@@ -146,23 +143,30 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <div className="flex sm:hidden items-center gap-4">
-                <Link
-                  className="text-sm flex items-center gap-1 text-zinc-800 hover:text-zinc-900 transition-colors"
-                  href="#"
-                  onClick={handleScrollToPlanes}
+              <div className="flex sm:hidden items-center">
+                <a
+                  href="/Home/Entrar"
+                  className="group relative inline-flex items-center gap-2 px-3 py-1.5 rounded-[10px] bg-zinc-900 transition-colors hover:bg-zinc-700"
                 >
-                  <CreditCardIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
-                  Planes
-                </Link>
-                <Link
-                  className="text-sm flex items-center gap-1 text-zinc-800 hover:text-zinc-900  transition-colors"
-                  href="#"
-                  onClick={handleScrollToFuncionalidades}
-                >
-                  <AdvantagesIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
-                  Funcionalidades
-                </Link>
+                  <span className="text-white text-sm flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="size-4"
+                    >
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    Iniciar sesión
+                  </span>
+                </a>
               </div>
             </div>
           </div>
