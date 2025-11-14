@@ -67,7 +67,7 @@ export default function Header() {
           >
             <div className="relative z-10 flex items-center justify-between w-full gap-2">
               <div className="flex items-center gap-6">
-                <Link className="flex items-center gap-2" href="/">
+                <div className="flex items-center gap-2">
                   <img
                     alt="logo"
                     loading="lazy"
@@ -89,7 +89,7 @@ export default function Header() {
                     src="/fidel/fidel1.svg"
                   />
                   <span className="hidden sm:block font-semibold">Fidel</span>
-                </Link>
+                </div>
                 <span className="text-zinc-300 ">|</span>
                 <div className="hidden sm:flex items-center gap-x-0.5">
                   <Link
