@@ -462,7 +462,7 @@ export const pricingInfo: PricingCard[] = [
       { text: "Todo lo del Plan Intermedio +" },
       { text: "21 Usuarios", highlight: true },
       {
-        text: "Facturación hasta 5 CUIT",
+        text: "Facturación hasta 3* CUIT",
         highlight: true,
         description:
           "Emití facturas con hasta 5 CUIT diferentes para tu empresa.",
