@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
@@ -17,7 +17,26 @@ export default function Hero() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [loadVideo, setLoadVideo] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadVideo(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (videoRef.current) observer.observe(videoRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <motion.div
@@ -74,14 +93,14 @@ export default function Hero() {
                 <SparklesIcon className="size-4 md:size-5" />
                 ¡Probá una demo!
               </motion.button>
-                <motion.button
+              <motion.button
                 onClick={handleScrollToPlanes}
-                  className="w-full md:w-auto bg-gradient-to-bl from-[#222222] via-[#383838] to-[#222222] tracking-tighter md:tracking-normal text-white gap-2 justify-center font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#f3f3f3] hover:border-[#d4d4d4] transition-all duration-700"
-                  style={{ fontFamily: "Plus Jakarta Sans" }}
-                >
-                  <CreditCardIcon className="size-4 md:size-5" />
-                  Mirá nuestros planes
-                </motion.button>
+                className="w-full md:w-auto bg-gradient-to-bl from-[#222222] via-[#383838] to-[#222222] tracking-tighter md:tracking-normal text-white gap-2 justify-center font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#f3f3f3] hover:border-[#d4d4d4] transition-all duration-700"
+                style={{ fontFamily: "Plus Jakarta Sans" }}
+              >
+                <CreditCardIcon className="size-4 md:size-5" />
+                Mirá nuestros planes
+              </motion.button>
             </div>
           </motion.div>
         </div>
@@ -93,15 +112,21 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <motion.video
-            src="/fidel/hero.mp4"
+            ref={videoRef}
             autoPlay
             loop
             muted
             playsInline
+            preload="none"
             className="md:mt-6 w-[100%] transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.5 }}
-          />
+            poster="/fidel/hero-poster.png"
+          >
+            {loadVideo && (
+              <>
+                <source src="/fidel/hero.mp4" type="video/mp4" />
+              </>
+            )}
+          </motion.video>
         </motion.div>
         <Modal
           isOpen={isModalOpen}
