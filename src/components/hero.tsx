@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
@@ -17,6 +17,25 @@ export default function Hero() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [loadVideo, setLoadVideo] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadVideo(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (videoRef.current) observer.observe(videoRef.current);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
@@ -93,15 +112,21 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <motion.video
-            src="/hero.mp4"
+            ref={videoRef}
             autoPlay
             loop
             muted
             playsInline
+            preload="none"
             className="md:mt-6 w-[100%] transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.5 }}
-          />
+            poster="/hero-poster.png"
+          >
+            {loadVideo && (
+              <>
+                <source src="/hero.mp4" type="video/mp4" />
+              </>
+            )}
+          </motion.video>
         </motion.div>
         <Modal
           isOpen={isModalOpen}
