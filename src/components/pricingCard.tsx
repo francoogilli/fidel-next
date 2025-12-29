@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import GradientLine from "./gradientLine";
 import { motion } from "framer-motion";
 import { pricingInfo } from "@/data/data";
@@ -11,10 +11,40 @@ import ArrowUpIcon from "@/icons/arrow-up";
 import { LaurelIcon } from "@/icons/laurel";
 import ThunderIcon from "@/icons/thunder";
 import { cn } from "@nextui-org/react";
+
+interface Plan {
+  Name: string;
+  Amount: string;
+}
+
 interface Props {
   viewComparison?: boolean;
 }
+
 export default function PricingCard({ viewComparison }: Props) {
+  const [plans, setPlans] = useState<Plan[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [openDescription, setOpenDescription] = useState<{
+    cardName: string;
+    benefitIndex: number;
+  } | null>(null);
+  const [openBestOption, setOpenBestOption] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchPlans = async () => {
+      try {
+        const response = await fetch("/Home/ObtenerPlanesFidel");
+        const data = await response.json();
+        setPlans(data.plans || []);
+      } catch (error) {
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPlans();
+  }, []);
+
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -24,11 +54,14 @@ export default function PricingCard({ viewComparison }: Props) {
     hidden: { scale: 0.95, opacity: 0 },
     visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
   };
-  const [openDescription, setOpenDescription] = useState<{
-    cardName: string;
-    benefitIndex: number;
-  } | null>(null);
-  const [openBestOption, setOpenBestOption] = useState<string | null>(null);
+
+  const pricingWithDynamicPrices = pricingInfo.map((pricing) => {
+    const dynamicPlan = plans.find((p) => p.Name === pricing.name);
+    return {
+      ...pricing,
+      price: dynamicPlan?.Amount || pricing.price,
+    };
+  });
 
   return (
     <div className="border-y-8 border-[#e9e9e9]">
@@ -96,7 +129,6 @@ export default function PricingCard({ viewComparison }: Props) {
                   <LaurelIcon className="text-[#fbe660] w-5 ml-4 transform scale-x-[-1]" />
                 </h4>
               </div>
-              
             </>
           )}
           <motion.div
@@ -105,7 +137,7 @@ export default function PricingCard({ viewComparison }: Props) {
             animate="visible"
             variants={fadeIn}
           >
-            {pricingInfo.map((pricing) => (
+            {pricingWithDynamicPrices.map((pricing) => (
               <motion.div
                 key={pricing.name}
                 className={`${
@@ -135,7 +167,7 @@ export default function PricingCard({ viewComparison }: Props) {
                       style={{ fontFamily: "Plus Jakarta Sans" }}
                     >
                       ${"\u00A0"}
-                      {Number(pricing.price).toLocaleString("es-AR")}
+                      {pricing.price}
                     </span>
                     <span className="pl-1 font-medium text-xs md:text-[13px]  text-left text-[#d3d3d3]">
                       +IVA/mes
