@@ -343,7 +343,7 @@ export const pricingComparison: PricingCardProps[] = [
 export const pricingInfo: PricingCard[] = [
   {
     name: "Básico",
-    price: 53000,
+    price: 57000,
     bestOption:
       "emprendedores, freelancers y pequeños comercios que buscan una solución simple y efectiva para facturar y organizar su negocio.",
     benefits: [
@@ -385,7 +385,7 @@ export const pricingInfo: PricingCard[] = [
   },
   {
     name: "Inicial",
-    price: 72000,
+    price: 78000,
     bestOption:
       "comercios medianos y negocios en expansión que necesitan optimizar cada aspecto de su gestión.",
     benefits: [
@@ -415,7 +415,7 @@ export const pricingInfo: PricingCard[] = [
   },
   {
     name: "Intermedio",
-    price: 98000,
+    price: 107000,
     popular: true,
     bestOption:
       "medianas empresas (comercios, negocios, fábricas) y pequeñas Distribuidoras con vendedores en la calle",
@@ -455,7 +455,7 @@ export const pricingInfo: PricingCard[] = [
   },
   {
     name: "Avanzado",
-    price: 128000,
+    price: 140000,
     bestOption:
       "grandes empresas que requieren de más usuarios y para Distribuidoras con muchos vendedores preventistas.",
     benefits: [
