@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Script from "next/script";
+import SmoothScroll from "@/components/smooth-scroll";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -87,7 +88,7 @@ export default function RootLayout({
         </noscript>
 
         <Header />
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
         <Footer />
       </body>
     </html>
