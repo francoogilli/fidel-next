@@ -18,13 +18,16 @@ export default function FidelFeaturesSection() {
         <div className="mx-auto max-w-6xl px-6 text-center">
           <SectionBadge
             className="flex justify-center items-center mx-auto gap-2 w-fit border border-[#e9e9e9]"
-            tailwindColor="green-100"
+            tailwindColor="bg-green-100"
           >
             {" "}
             <Wrench className="size-4 text-zinc-700" />
             Fidel para Ferreterías
           </SectionBadge>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl text-balance">
+          <h1
+            className="mt-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl text-balance"
+            style={{ lineHeight: "1.25" }}
+          >
             El sistema de gestión pensado para el día a día de tu ferretería
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground leading-relaxed">
@@ -33,15 +36,22 @@ export default function FidelFeaturesSection() {
             trabajo con herramientas diseñadas específicamente para el rubro
             ferretero, ayudándote a vender más y ordenar tu negocio.
           </p>
+          {/* Placeholder imagen hero */}
+          <div className="mx-auto mt-12 w-full max-w-4xl aspect-[16/9] bg-muted rounded-xl border-2 border-dashed border-border flex items-center justify-center">
+            <span className="text-muted-foreground text-sm">Imagen: Hero</span>
+          </div>
         </div>
       </section>
 
       {/* Actualización masiva de precios - CON IMAGEN DERECHA */}
-      <section className="bg-background py-16 md:py-24">
+      <section className="bg-background py-16 md:pt-14 md:pb-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
-              <SectionBadge className="flex items-center gap-2 w-fit border border-lime-200">
+              <SectionBadge
+                tailwindColor="bg-lime-100"
+                className="flex items-center gap-2 w-fit border border-lime-200"
+              >
                 <FileSpreadsheet className="size-4" />
                 Actualización masiva de precios
               </SectionBadge>
@@ -82,7 +92,10 @@ export default function FidelFeaturesSection() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid items-start gap-12 md:grid-cols-2">
             <div>
-              <SectionBadge className="flex items-center gap-2 w-fit">
+              <SectionBadge
+                tailwindColor="bg-lime-100"
+                className="flex items-center gap-2 w-fit border border-lime-200"
+              >
                 <Package className="size-4" />
                 Gestión flexible
               </SectionBadge>
@@ -121,7 +134,10 @@ export default function FidelFeaturesSection() {
             </div>
 
             <div>
-              <SectionBadge className="flex items-center gap-2 w-fit">
+              <SectionBadge
+                tailwindColor="bg-lime-100"
+                className="flex items-center gap-2 w-fit border border-lime-200"
+              >
                 <Users className="size-4" />
                 Múltiples proveedores
               </SectionBadge>
@@ -152,7 +168,10 @@ export default function FidelFeaturesSection() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
-              <SectionBadge className="flex items-center gap-2 w-fit">
+              <SectionBadge
+                tailwindColor="bg-lime-100"
+                className="flex items-center gap-2 w-fit border border-lime-200"
+              >
                 <Bell className="size-4" />
                 Control inteligente
               </SectionBadge>
@@ -194,7 +213,10 @@ export default function FidelFeaturesSection() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid items-start gap-12 md:grid-cols-2">
             <div>
-              <SectionBadge className="flex items-center gap-2 w-fit">
+              <SectionBadge
+                tailwindColor="bg-lime-100"
+                className="flex items-center gap-2 w-fit border border-lime-200"
+              >
                 <Mail className="size-4" />
                 Facturación ágil
               </SectionBadge>
@@ -233,7 +255,10 @@ export default function FidelFeaturesSection() {
             </div>
 
             <div>
-              <SectionBadge className="flex items-center gap-2 w-fit">
+              <SectionBadge
+                tailwindColor="bg-lime-100"
+                className="flex items-center gap-2 w-fit border border-lime-200"
+              >
                 <Image className="size-4" />
                 Catálogos visuales
               </SectionBadge>

@@ -6,7 +6,7 @@ interface SectionBadgeProps {
 
 export function SectionBadge({ children, tailwindColor, className }: SectionBadgeProps) {
   return (
-    <span className={`inline-block rounded-xl bg-${tailwindColor || 'lime-100'} px-4 py-1.5 text-sm font-medium text-primary ${className || ''}`}>
+    <span className={`inline-block rounded-xl ${tailwindColor || 'bg-green-100'} px-4 py-1.5 text-sm font-medium text-primary ${className || ''}`}>
       {children}
     </span>
   )
