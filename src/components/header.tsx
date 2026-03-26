@@ -217,8 +217,7 @@ export default function Header() {
               <div className="hidden sm:flex items-center gap-3">
                 <span className="text-zinc-300 ">|</span>
 
-                <Link
-                  target="_blank"
+                <a
                   className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[10px] bg-zinc-900 hover:bg-zinc-700 transition-colors"
                   href="/Home/Entrar"
                 >
@@ -238,7 +237,7 @@ export default function Header() {
                     </svg>
                     Iniciar sesión
                   </span>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
