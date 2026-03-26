@@ -6,7 +6,7 @@ import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
 import * as Yup from "yup";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ModalScheduleMeet } from "./modalScheduleMeet";
 import { Contact } from "@/api/types";
 import CheckToast from "@/icons/checkToast";
@@ -102,6 +102,26 @@ export default function ContactSection({ viewPage }: Props) {
     { key: "Sanabit", label: "Sanabit" },
     { key: "Estudio Contable", label: "Estudio Contable" },
   ];
+
+  const [nroVentas, setNroVentas] = useState<string>("");
+  const [loadingNro, setLoadingNro] = useState(true);
+
+  useEffect(() => {
+    const fetchNroVentas = async () => {
+      try {
+        const response = await fetch("/Home/ObtenerNroVentasFidel");
+        const data = await response.json();
+
+        setNroVentas(data || "");
+      } catch (error) {
+        console.error("Error obteniendo nro de ventas", error);
+      } finally {
+        setLoadingNro(false);
+      }
+    };
+
+    fetchNroVentas();
+  }, []);
 
   const [values] = useState<Contact>({
     firstname: "",
@@ -259,10 +279,10 @@ export default function ContactSection({ viewPage }: Props) {
                       </g>
                     </svg>
                     <a
-                      href="tel:(969)819-8061"
+                      href={`tel:${nroVentas}`}
                       className="text-zinc-600 hover:text-[#B5B3AD]"
                     >
-                      3564-15222935
+                      {loadingNro ? "Cargando..." : nroVentas}
                     </a>
                   </div>
                 </div>
