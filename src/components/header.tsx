@@ -116,7 +116,7 @@ export default function Header() {
                   </Link>
 
                   {/* RUBROS — SHADCN NAVIGATION MENU */}
-                  <NavigationMenu>
+                  {/* <NavigationMenu>
                     <NavigationMenuList>
                       <NavigationMenuItem>
                         <NavigationMenuTrigger
@@ -209,7 +209,7 @@ export default function Header() {
                         </NavigationMenuContent>
                       </NavigationMenuItem>
                     </NavigationMenuList>
-                  </NavigationMenu>
+                  </NavigationMenu> */}
                 </div>
               </div>
 
