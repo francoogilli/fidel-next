@@ -11,6 +11,7 @@ import ArrowUpIcon from "@/icons/arrow-up";
 import { LaurelIcon } from "@/icons/laurel";
 import ThunderIcon from "@/icons/thunder";
 import { cn } from "@nextui-org/react";
+import { useSales } from "@/context/SalesContext";
 
 interface Plan {
   Name: string;
@@ -22,6 +23,7 @@ interface Props {
 }
 
 export default function PricingCard({ viewComparison }: Props) {
+  const { nroVentas } = useSales();
   const [plans, setPlans] = useState<Plan[]>([]);
   const [loading, setLoading] = useState(true);
   const [openDescription, setOpenDescription] = useState<{
@@ -301,7 +303,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 <motion.button
                   onClick={() =>
                     window.open(
-                      `https://api.whatsapp.com/send?phone=543564222935&text=${encodeURIComponent(
+                      `https://api.whatsapp.com/send?phone=${nroVentas}&text=${encodeURIComponent(
                         `¡Hola! Estoy viendo la web de Fidel y me interesa el plan ${pricing.name}. ¿Podrían enviarme más información sobre el sistema?`
                       )}`,
                       "_blank"

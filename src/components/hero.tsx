@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
 import Modal from "./modal";
+import { useSales } from "@/context/SalesContext";
 
 export default function Hero() {
+  const { nroVentas } = useSales();
   const [isModalOpen, setModalOpen] = useState(false);
 
   const closeModal = () => setModalOpen(false);
@@ -82,7 +84,7 @@ export default function Hero() {
                 style={{ fontFamily: "Plus Jakarta Sans" }}
                 onClick={() =>
                   window.open(
-                    "https://api.whatsapp.com/send?phone=543564222935&text=" +
+                    `https://api.whatsapp.com/send?phone=${nroVentas}&text=` +
                       encodeURIComponent(
                         "¡Hola! Estoy viendo la web de Fidel y me gustaría acceder a una cuenta de prueba para conocer mejor el sistema."
                       ),

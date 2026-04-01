@@ -3,8 +3,10 @@
 import Instagram from "@/icons/instagram";
 import Whatsapp from "@/icons/whatsapp";
 import Link from "next/link";
+import { useSales } from "@/context/SalesContext";
 
 export default function Footer() {
+  const { nroVentas } = useSales();
   const handleScrollToPlanes = (e: React.MouseEvent) => {
     e.preventDefault();
     const section = document.getElementById("planes");
@@ -84,7 +86,7 @@ export default function Footer() {
               <div
                 onClick={() =>
                   window.open(
-                    "https://api.whatsapp.com/send?phone=543564222935&text=" +
+                    `https://api.whatsapp.com/send?phone=${nroVentas}&text=` +
                       encodeURIComponent(
                         "¡Hola! Estoy viendo la web de Fidel y me gustaría acceder a una cuenta de prueba para conocer mejor el sistema."
                       ),

@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Script from "next/script";
 import SmoothScroll from "@/components/smooth-scroll";
+import { SalesProvider } from "@/context/SalesContext";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -60,7 +61,8 @@ export default function RootLayout({
 
       <body
         className={`${poppins.variable} ${plusJakartaSans.variable} ${instrumentSerif} antialiased`}
-      >
+        >
+        <SalesProvider>
         {/*  Meta Pixel */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
@@ -88,8 +90,9 @@ export default function RootLayout({
         </noscript>
 
         <Header />
-        <SmoothScroll>{children}</SmoothScroll>
+          <SmoothScroll>{children}</SmoothScroll>
         <Footer />
+        </SalesProvider>
       </body>
     </html>
   );

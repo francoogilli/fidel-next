@@ -17,6 +17,7 @@ import { Select, SelectItem } from "@heroui/select";
 import UsersIconIndividual from "../icons/user";
 import PhoneIcon from "../icons/phone";
 import MessageIcon from "../icons/message";
+import { useSales } from "@/context/SalesContext";
 interface Props {
   viewPage?: boolean;
 }
@@ -103,25 +104,7 @@ export default function ContactSection({ viewPage }: Props) {
     { key: "Estudio Contable", label: "Estudio Contable" },
   ];
 
-  const [nroVentas, setNroVentas] = useState<string>("");
-  const [loadingNro, setLoadingNro] = useState(true);
-
-  useEffect(() => {
-    const fetchNroVentas = async () => {
-      try {
-        const response = await fetch("/Home/ObtenerNroVentasFidel");
-        const data = await response.json();
-
-        setNroVentas(data || "");
-      } catch (error) {
-        console.error("Error obteniendo nro de ventas", error);
-      } finally {
-        setLoadingNro(false);
-      }
-    };
-
-    fetchNroVentas();
-  }, []);
+  const { nroVentas, loadingNro } = useSales();
 
   const [values] = useState<Contact>({
     firstname: "",
