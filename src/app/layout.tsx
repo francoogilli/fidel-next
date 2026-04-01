@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Script from "next/script";
 import SmoothScroll from "@/components/smooth-scroll";
+import WhatsAppButton from "@/components/whatsappButton";
 import { SalesProvider } from "@/context/SalesContext";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -61,11 +62,11 @@ export default function RootLayout({
 
       <body
         className={`${poppins.variable} ${plusJakartaSans.variable} ${instrumentSerif} antialiased`}
-        >
+      >
         <SalesProvider>
-        {/*  Meta Pixel */}
-        <Script id="meta-pixel" strategy="afterInteractive">
-          {`
+          {/*  Meta Pixel */}
+          <Script id="meta-pixel" strategy="afterInteractive">
+            {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -77,21 +78,22 @@ export default function RootLayout({
             fbq('init', '264310256211065');
             fbq('track', 'PageView');
           `}
-        </Script>
+          </Script>
 
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=264310256211065&ev=PageView&noscript=1"
-            alt="Meta Pixel"
-          />
-        </noscript>
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src="https://www.facebook.com/tr?id=264310256211065&ev=PageView&noscript=1"
+              alt="Meta Pixel"
+            />
+          </noscript>
 
-        <Header />
+          <Header />
           <SmoothScroll>{children}</SmoothScroll>
-        <Footer />
+          <WhatsAppButton />
+          <Footer />
         </SalesProvider>
       </body>
     </html>
