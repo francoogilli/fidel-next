@@ -24,7 +24,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Fidel: Sistema Web de Gestión para Empresas",
+  title: "Fidel - Sistema Web de Gestión y Facturación Electrónica",
   description:
     "Fidel es un sistema avanzado de gestión empresarial diseñado para optimizar procesos y mejorar la productividad.",
   keywords: [
