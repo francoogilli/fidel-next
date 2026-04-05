@@ -105,7 +105,7 @@ export default function PricingCard({ viewComparison }: Props) {
     <div
       className="relative w-full min-h-screen flex bg-[#ffffff] items-center justify-center overflow-hidden py-32"
       style={{
-        backgroundImage: "url('/canvas.png')",
+        backgroundImage: "url('/canvas.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
