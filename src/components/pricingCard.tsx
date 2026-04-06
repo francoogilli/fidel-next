@@ -79,7 +79,6 @@ function ShinyPrice({
   );
 }
 
-
 interface Props {
   viewComparison?: boolean;
 }
@@ -225,8 +224,7 @@ export default function PricingCard({ viewComparison }: Props) {
                         spread={120}
                         className="text-[2.4rem] font-bold text-neutral-900"
                       >
-                        ${"\u00A0"}
-                        {Number(pricing.price).toLocaleString("es-AR")}
+                        ${Number(pricing.price).toLocaleString("es-AR")}
                       </ShinyPrice>
                       <span
                         className="text-sm text-neutral-500 mb-0.5 whitespace-nowrap text-ellipsis overflow-hidden"
