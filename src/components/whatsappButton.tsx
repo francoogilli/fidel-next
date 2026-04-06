@@ -1,15 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { useSales } from "@/context/SalesContext";
 
-const WHATSAPP_NUMBER = "5491100000000";
 const WHATSAPP_MESSAGE =
   "¡Hola! Estoy viendo la web de Fidel y me gustaría acceder más INFO para conocer mejor el sistema.";
 
 export default function WhatsAppButton() {
   const [hovered, setHovered] = useState(false);
+  const { nroVentas } = useSales();
 
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  const whatsappNumber = nroVentas.replace(/\D/g, "");
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   return (
     <>
