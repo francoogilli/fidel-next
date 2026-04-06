@@ -55,7 +55,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Gestionar tu negocio no tiene que ser complicado.
+            Gestionar tu negocio no tiene que ser complicado
           </motion.h2>
 
           <motion.div

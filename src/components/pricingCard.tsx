@@ -111,7 +111,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 xl:pb-2.5 tracking-tighter"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                No importa el tamaño de tu negocio, hay un plan para vos.
+                No importa el tamaño de tu negocio, hay un plan para vos
               </h3>
               <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2 pt-4">
                 <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 text-[#c5c5c5] rounded-xl">
