@@ -214,8 +214,8 @@ export default function Header() {
               </div>
 
               {/* RIGHT */}
-              <div className="hidden sm:flex items-center gap-3">
-                <span className="text-zinc-300 ">|</span>
+              <div className="flex items-center gap-3">
+                <span className="hidden sm:block text-zinc-300">|</span>
 
                 <a
                   className="inline-flex items-center gap-2 px-3 py-1.5 rounded-[10px] bg-zinc-900 hover:bg-zinc-700 transition-colors"
@@ -235,7 +235,7 @@ export default function Header() {
                       <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
                       <circle cx="12" cy="7" r="4" />
                     </svg>
-                    Iniciar sesión
+                    <span className="hidden sm:inline">Iniciar sesión</span>
                   </span>
                 </a>
               </div>
