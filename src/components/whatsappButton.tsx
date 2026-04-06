@@ -3,7 +3,8 @@
 import { useState } from "react";
 
 const WHATSAPP_NUMBER = "5491100000000";
-const WHATSAPP_MESSAGE = "Hola! Me interesa saber más sobre Fidel.";
+const WHATSAPP_MESSAGE =
+  "¡Hola! Estoy viendo la web de Fidel y me gustaría acceder más INFO para conocer mejor el sistema.";
 
 export default function WhatsAppButton() {
   const [hovered, setHovered] = useState(false);
@@ -56,7 +57,7 @@ export default function WhatsAppButton() {
             width: "46px",
             height: "46px",
             borderRadius: "50%",
-            
+
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
