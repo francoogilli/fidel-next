@@ -32,7 +32,7 @@ function ShinyPrice({
   children,
   speed = 3,
   color = "#171717",
-  shineColor = "#1e9df1",
+  shineColor = "#1ef15d",
   spread = 120,
   className = "",
 }: ShinyPriceProps) {
@@ -255,17 +255,35 @@ export default function PricingCard({ viewComparison }: Props) {
                             strokeWidth="2.5  "
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="lucide lucide-check size-4 shrink-0 mt-0.5 text-[#1e9df1]"
+                            className="lucide lucide-check size-4 shrink-0 mt-0.5 text-[#0ade49]"
                             aria-hidden="true"
                           >
                             <path d="M20 6 9 17l-5-5"></path>
                           </svg>
                           <div className="flex items-center gap-1">
                             <span
+                              onClick={() => {
+                                if (!benefit.description) return;
+                                if (
+                                  openDescription?.cardName === pricing.name &&
+                                  openDescription.benefitIndex === index
+                                ) {
+                                  setOpenDescription(null);
+                                } else {
+                                  setOpenDescription({
+                                    cardName: pricing.name,
+                                    benefitIndex: index,
+                                  });
+                                }
+                              }}
                               className={cn(
-                                "text-sm",
+                                "text-sm transition-colors duration-200",
+                                benefit.description && "cursor-pointer",
                                 benefit.highlight &&
                                   "bg-gradient-to-tr text-black from-[#ededed] via-[#fffffff1] to-[#ededed] border border-[#ffffff] font-medium px-2 py-1 rounded-md",
+                                openDescription?.cardName === pricing.name &&
+                                  openDescription.benefitIndex === index &&
+                                  "text-neutral-800 font-medium",
                               )}
                             >
                               {benefit.text}
@@ -287,7 +305,13 @@ export default function PricingCard({ viewComparison }: Props) {
                                     });
                                   }
                                 }}
-                                className="text-neutral-400 px-0.5 hover:text-neutral-700 hover:bg-neutral-100 duration-300 rounded-md ml-2 font-bold cursor-pointer"
+                                className={cn(
+                                  "px-0.5 hover:text-neutral-700 hover:bg-neutral-100 duration-300 rounded-md ml-2 font-bold cursor-pointer",
+                                  openDescription?.cardName === pricing.name &&
+                                    openDescription.benefitIndex === index
+                                    ? "text-neutral-700 bg-gradient-to-tr  from-[#f0f0f0] via-[#fffffff1] to-[#f0f0f0]"
+                                    : "text-neutral-400",
+                                )}
                                 aria-label="Ver más"
                               >
                                 <svg
@@ -302,14 +326,12 @@ export default function PricingCard({ viewComparison }: Props) {
                                   strokeLinejoin="round"
                                   className="size-[1.2rem] inline-block"
                                 >
-                                  <path
-                                    stroke="none"
-                                    d="M0 0h24v24H0z"
-                                    fill="none"
-                                  />
-                                  <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                                  <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-                                  <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                  {openDescription?.cardName === pricing.name &&
+                                  openDescription.benefitIndex === index ? (
+                                    <path d="M6 15l6 -6l6 6" />
+                                  ) : (
+                                    <path d="M6 9l6 6l6 -6" />
+                                  )}
                                 </svg>
                               </button>
                             )}
@@ -331,7 +353,7 @@ export default function PricingCard({ viewComparison }: Props) {
                                 }}
                                 style={{ overflow: "hidden" }}
                               >
-                                <p className="ml-7 text-neutral-400 text-sm text-left pt-1">
+                                <p className="ml-7 text-zinc-600 text-[13px] text-left pt-1 mt-1 bg-gradient-to-tr  from-[#f0f0f0] via-[#fffffff1] to-[#f0f0f0] border border-[#ffffff] rounded-md px-2 py-1.5">
                                   {benefit.description}
                                 </p>
                               </motion.div>
@@ -355,7 +377,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   className={cn(
                     "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 cursor-pointer h-12 rounded-[20px] px-8 w-full",
                     isPopular
-                      ? "bg-gradient-to-b from-[#1e9df1] via-[#1e9df1] to-[#1e9df1]/80 text-primary-foreground shadow-[0_4px_12px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.2),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.25),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:translate-y-[-1px] active:translate-y-[1px] active:shadow-[0_2px_8px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.1),inset_0_-1px_0_rgba(0,0,0,0.1)] border border-[#1e9df1]/50"
+                      ? "bg-gradient-to-b from-[#1ef15d]/70 via-[#1ef15d] to-[#1ef15d]/70 text-primary-foreground shadow-[0_4px_12px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.2),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.25),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:translate-y-[-1px] active:translate-y-[1px] active:shadow-[0_2px_8px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.1),inset_0_-1px_0_rgba(0,0,0,0.1)] border border-[#1ef15d]/20"
                       : "bg-gradient-to-b from-[#0f1419] via-[#0f1419] to-[#0f1419]/80 text-white shadow-[0_2px_8px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.3),inset_0_-1px_0_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.4)] hover:translate-y-[-1px] active:translate-y-[1px]",
                   )}
                 >
@@ -373,7 +395,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   variants={scaleUp}
                 >
                   <div className="text-center py-1.5">
-                    <span className="text-sm flex items-center gap-1 justify-center font-medium text-[#1e9df1]">
+                    <span className="text-sm flex items-center gap-1 justify-center font-semibold text-[#1aff00a5]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"

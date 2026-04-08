@@ -165,7 +165,7 @@ html {
   background: linear-gradient(
     to bottom,
     #fffafa 0%,
-    color-mix(in srgb, #e5e5e6 30%, transparent)
+    color-mix(in srgb, #e5e5e6 40%, transparent)
   );
 }
 
