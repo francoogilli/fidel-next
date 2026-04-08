@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import SparklesIcon from "../icons/sparkles";
 import CreditCardIcon from "../icons/creditCard";
 import Modal from "./modal";
+import { useSales } from "@/context/SalesContext";
 
 export default function Hero() {
+  const { nroVentas } = useSales();
   const [isModalOpen, setModalOpen] = useState(false);
 
   const closeModal = () => setModalOpen(false);
@@ -17,11 +19,30 @@ export default function Hero() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [loadVideo, setLoadVideo] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoadVideo(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (videoRef.current) observer.observe(videoRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <motion.div
-        className="mx-auto flex flex-col lg:flex-row max-w-7xl xl:max-w-[90rem] pt-40 lg:pt-10 xl:pt-20 space-y-6 px-4 lg:px-4 pb-40"
+        className="mx-auto flex flex-col lg:flex-row max-w-7xl xl:max-w-[90rem] pt-10 lg:pt-10 xl:pt-14 space-y-6 px-4 lg:px-4 pb-32"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -34,7 +55,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Gestionar tu negocio no tiene que ser complicado.
+            Gestionar tu negocio no tiene que ser complicado
           </motion.h2>
 
           <motion.div
@@ -61,18 +82,27 @@ export default function Hero() {
               <motion.button
                 className="w-full md:w-auto bg-gradient-to-br from-[#81fc71] via-[#b2fa9e] to-[#81fc71] tracking-tighter md:tracking-normal text-[#171717] justify-center gap-2 font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#fafafa] hover:border-[#dfffdf] transition-all duration-700"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
+                onClick={() =>
+                  window.open(
+                    `https://api.whatsapp.com/send?phone=${nroVentas}&text=` +
+                      encodeURIComponent(
+                        "¡Hola! Estoy viendo la web de Fidel y me gustaría acceder a una cuenta de prueba para conocer mejor el sistema."
+                      ),
+                    "_blank"
+                  )
+                }
               >
                 <SparklesIcon className="size-4 md:size-5" />
                 ¡Probá una demo!
               </motion.button>
-                <motion.button
+              <motion.button
                 onClick={handleScrollToPlanes}
-                  className="w-full md:w-auto bg-gradient-to-bl from-[#222222] via-[#383838] to-[#222222] tracking-tighter md:tracking-normal text-white gap-2 justify-center font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#f3f3f3] hover:border-[#d4d4d4] transition-all duration-700"
-                  style={{ fontFamily: "Plus Jakarta Sans" }}
-                >
-                  <CreditCardIcon className="size-4 md:size-5" />
-                  Mirá nuestros planes
-                </motion.button>
+                className="w-full md:w-auto bg-gradient-to-bl from-[#222222] via-[#383838] to-[#222222] tracking-tighter md:tracking-normal text-white gap-2 justify-center font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#f3f3f3] hover:border-[#d4d4d4] transition-all duration-700"
+                style={{ fontFamily: "Plus Jakarta Sans" }}
+              >
+                <CreditCardIcon className="size-4 md:size-5" />
+                Mirá nuestros planes
+              </motion.button>
             </div>
           </motion.div>
         </div>
@@ -84,15 +114,21 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <motion.video
-            src="/fidel/hero.mp4"
+            ref={videoRef}
             autoPlay
             loop
             muted
             playsInline
+            preload="none"
             className="md:mt-6 w-[100%] transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.5 }}
-          />
+            poster="/fidel/hero-poster.png"
+          >
+            {loadVideo && (
+              <>
+                <source src="/fidel/hero.mp4" type="video/mp4" />
+              </>
+            )}
+          </motion.video>
         </motion.div>
         <Modal
           isOpen={isModalOpen}

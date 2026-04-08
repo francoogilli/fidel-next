@@ -1,20 +1,52 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import GradientLine from "./gradientLine";
 import { motion } from "framer-motion";
 import { pricingInfo } from "@/data/data";
 import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
 import CreditCardIcon from "@/icons/creditCard";
-import Link from "next/link";
 import ArrowUpIcon from "@/icons/arrow-up";
 import { LaurelIcon } from "@/icons/laurel";
 import ThunderIcon from "@/icons/thunder";
+import { cn } from "@nextui-org/react";
+import { useSales } from "@/context/SalesContext";
+
+interface Plan {
+  Name: string;
+  Amount: string;
+}
+
 interface Props {
   viewComparison?: boolean;
 }
+
 export default function PricingCard({ viewComparison }: Props) {
+  const { nroVentas } = useSales();
+  const [plans, setPlans] = useState<Plan[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [openDescription, setOpenDescription] = useState<{
+    cardName: string;
+    benefitIndex: number;
+  } | null>(null);
+  const [openBestOption, setOpenBestOption] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchPlans = async () => {
+      try {
+        const response = await fetch("/Home/ObtenerPlanesFidel");
+        const data = await response.json();
+        setPlans(data.plans || []);
+      } catch (error) {
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPlans();
+  }, []);
+
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -24,11 +56,14 @@ export default function PricingCard({ viewComparison }: Props) {
     hidden: { scale: 0.95, opacity: 0 },
     visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
   };
-  const [openDescription, setOpenDescription] = useState<{
-    cardName: string;
-    benefitIndex: number;
-  } | null>(null);
-  const [openBestOption, setOpenBestOption] = useState<string | null>(null);
+
+  const pricingWithDynamicPrices = pricingInfo.map((pricing) => {
+    const dynamicPlan = plans.find((p) => p.Name === pricing.name);
+    return {
+      ...pricing,
+      price: dynamicPlan?.Amount || pricing.price,
+    };
+  });
 
   return (
     <div className="border-y-8 border-[#e9e9e9]">
@@ -76,7 +111,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 xl:pb-2.5 tracking-tighter"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                No importa el tamaño de tu negocio, hay un plan para vos.
+                No importa el tamaño de tu negocio, hay un plan para vos
               </h3>
               <div className="flex flex-col md:flex-row justify-center items-center gap-2.5 md:gap-x-2 pt-4">
                 <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 text-[#c5c5c5] rounded-xl">
@@ -96,7 +131,6 @@ export default function PricingCard({ viewComparison }: Props) {
                   <LaurelIcon className="text-[#fbe660] w-5 ml-4 transform scale-x-[-1]" />
                 </h4>
               </div>
-              
             </>
           )}
           <motion.div
@@ -105,7 +139,7 @@ export default function PricingCard({ viewComparison }: Props) {
             animate="visible"
             variants={fadeIn}
           >
-            {pricingInfo.map((pricing) => (
+            {pricingWithDynamicPrices.map((pricing) => (
               <motion.div
                 key={pricing.name}
                 className={`${
@@ -134,7 +168,8 @@ export default function PricingCard({ viewComparison }: Props) {
                       className="text-5xl xl:text-[3.2rem] text-[#f7f7f7] -tracking-wider font-bold"
                       style={{ fontFamily: "Plus Jakarta Sans" }}
                     >
-                      ${Number(pricing.price).toLocaleString("es-AR")}
+                      ${"\u00A0"}
+                      {pricing.price}
                     </span>
                     <span className="pl-1 font-medium text-xs md:text-[13px]  text-left text-[#d3d3d3]">
                       +IVA/mes
@@ -198,7 +233,16 @@ export default function PricingCard({ viewComparison }: Props) {
                           </div>
 
                           <div className="flex items-center gap-1 text-sm xl:text-sm">
-                            <span>{benefit.text}</span>
+                            <li
+                              className={cn(
+                                "text-sm",
+                                benefit.highlight &&
+                                  "bg-gradient-to-br text-white from-[#353535] via-[#4d4d4df1] to-[#353535] hover:from-[#414141] hover:via-[#575757f1] hover:to-[#414141] border border-[#525252] font-medium px-2 py-1 rounded-md"
+                              )}
+                            >
+                              {benefit.text}
+                            </li>
+
                             {benefit.description && (
                               <button
                                 onClick={() => {
@@ -215,7 +259,7 @@ export default function PricingCard({ viewComparison }: Props) {
                                     });
                                   }
                                 }}
-                                className="text-[#d2d2d2] hover:text-white hover:bg-[#2c2c2c] duration-300 rounded-md ml-2 font-bold cursor-pointer"
+                                className="text-[#d2d2d2] px-0.5 hover:text-white hover:bg-[#2c2c2c] duration-300 rounded-md ml-2 font-bold cursor-pointer"
                                 aria-label="Ver más"
                               >
                                 <svg
@@ -256,8 +300,15 @@ export default function PricingCard({ viewComparison }: Props) {
                   </ul>
                 </div>
 
-                <Link
-                  href="/"
+                <motion.button
+                  onClick={() =>
+                    window.open(
+                      `https://api.whatsapp.com/send?phone=${nroVentas}&text=${encodeURIComponent(
+                        `¡Hola! Estoy viendo la web de Fidel y me interesa el plan ${pricing.name}. ¿Podrían enviarme más información sobre el sistema?`
+                      )}`,
+                      "_blank"
+                    )
+                  }
                   style={{ fontFamily: "Plus Jakarta Sans", marginTop: "30px" }}
                   className={`${
                     pricing.popular === true
@@ -267,7 +318,7 @@ export default function PricingCard({ viewComparison }: Props) {
                 >
                   Elegir plan
                   <ArrowUpIcon className="size-4" />
-                </Link>
+                </motion.button>
               </motion.div>
             ))}
           </motion.div>

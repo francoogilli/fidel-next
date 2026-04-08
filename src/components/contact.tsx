@@ -6,7 +6,7 @@ import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
 import * as Yup from "yup";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ModalScheduleMeet } from "./modalScheduleMeet";
 import { Contact } from "@/api/types";
 import CheckToast from "@/icons/checkToast";
@@ -17,6 +17,7 @@ import { Select, SelectItem } from "@heroui/select";
 import UsersIconIndividual from "../icons/user";
 import PhoneIcon from "../icons/phone";
 import MessageIcon from "../icons/message";
+import { useSales } from "@/context/SalesContext";
 interface Props {
   viewPage?: boolean;
 }
@@ -35,22 +36,11 @@ export default function ContactSection({ viewPage }: Props) {
   );
 
   const items = [
-    { key: "Aberturas", label: "Aberturas" },
-    { key: "Accesorios para Celulares", label: "Accesorios para Celulares" },
-    { key: "Agro", label: "Agro" },
+    { key: "Si", label: "Agro" },
+    { key: "No", label: "Accesorios para Celulares" },
     { key: "Apícolas", label: "Apícolas" },
+    { key: "Pet Shop", label: "Pet Shop" },
     { key: "Calzados", label: "Calzados" },
-    { key: "Comex", label: "Comex" },
-    { key: "Constructora", label: "Constructora" },
-    { key: "Concesionarias", label: "Concesionarias" },
-    { key: "Cosméticos y Perfumería", label: "Cosméticos y Perfumería" },
-    { key: "Delicatessen", label: "Delicatessen" },
-    { key: "Descartables y Cotillón", label: "Descartables y Cotillón" },
-    { key: "Dietética", label: "Dietética" },
-    {
-      key: "Distribuidoras de Carnes y Avícolas",
-      label: "Distribuidoras de Carnes y Avícolas",
-    },
     {
       key: "Distribuidora Comestibles, Lácteos y Bebidas",
       label: "Distribuidora Comestibles, Lácteos y Bebidas",
@@ -59,42 +49,62 @@ export default function ContactSection({ viewPage }: Props) {
       key: "Distribuidora de Ferretería y Afines",
       label: "Distribuidora de Ferretería y Afines",
     },
-    { key: "Drugstore", label: "Drugstore" },
-    { key: "Electricidad", label: "Electricidad" },
-    { key: "Eventos", label: "Eventos" },
+    {
+      key: "Distribuidoras de Carnes y Avícolas",
+      label: "Distribuidoras de Carnes y Avícolas",
+    },
+    { key: "Constructora", label: "Constructora" },
+    { key: "Cosméticos", label: "Cosméticos y Perfumería" },
+    { key: "Dietética", label: "Dietética" },
+    { key: "Drugstore", label: "Drugstore / Mini Market" },
     { key: "Ferretería y Corralón", label: "Ferretería y Corralón" },
-    { key: "Fiambrerías", label: "Fiambrerías" },
-    { key: "Hogar, Muebles y Deco", label: "Hogar, Muebles y Deco" },
-    { key: "Industria", label: "Industria" },
+    { key: "Serviocios Hidráulicos", label: "Servicios Hidráulicos" },
     { key: "Indumentaria y Uniformes", label: "Indumentaria y Uniformes" },
+    { key: "Seguridad Industrial", label: "Seguridad Industrial" },
+    { key: "Industria", label: "Industria" },
     { key: "Informática", label: "Informática" },
     { key: "Insumos Médicos", label: "Insumos Médicos" },
     { key: "Joyería", label: "Joyería" },
-    { key: "Juguetería y Pañalera", label: "Juguetería y Pañalera" },
-    { key: "Librerías y Artísticas", label: "Librerías y Artísticas" },
-    { key: "Limpieza", label: "Limpieza" },
-    { key: "Marmolería", label: "Marmolería" },
-    { key: "Mercería", label: "Mercería" },
-    { key: "Pet Shop", label: "Pet Shop" },
-    { key: "Pinturería", label: "Pinturería" },
+    { key: "Juguetería", label: "Juguetería y Pañalera" },
+    { key: "Fiambrerías", label: "Fiambrerías" },
     {
       key: "Piscinas y Energía Sustentable",
       label: "Piscinas y Energía Sustentable",
     },
-    { key: "Polirubros", label: "Polirubros" },
     {
       key: "Repuestos Automotor y Motos",
       label: "Repuestos Automotor y Motos",
     },
-    { key: "Seguridad Industrial", label: "Seguridad Industrial" },
     { key: "Servicio Automotor y Motos", label: "Servicio Automotor y Motos" },
-    { key: "Servicios", label: "Servicios" },
-    { key: "Servicios Hidráulicos", label: "Servicios Hidráulicos" },
-    { key: "Sistemas de Seguridad", label: "Sistemas de Seguridad" },
     { key: "Transporte / Logística", label: "Transporte / Logística" },
-    { key: "Vidriería y Cristalería", label: "Vidriería y Cristalería" },
+    { key: "Ópticas", label: "Ópticas" },
+    { key: "Librerías", label: "Librerías y Artísticas" },
+    { key: "Electricidad", label: "Electricidad" },
+    { key: "Limpieza", label: "Limpieza" },
+    { key: "Pinturería", label: "Pinturería" },
+    { key: "Hogar y Deco", label: "Hogar, Muebles y Deco" },
+    { key: "Descartables y Cotillón", label: "Descartables y Cotillón" },
+    { key: "Polirubros", label: "Polirubros" },
+    { key: "Servicios", label: "Servicios" },
+    { key: "Comex", label: "Comex" },
+    { key: "No aplican", label: "No aplican" },
+    { key: "Aberturas", label: "Aberturas" },
     { key: "Vivero", label: "Vivero" },
+    { key: "Mercería", label: "Mercería" },
+    { key: "Colchoneria", label: "Colchoneria" },
+    { key: "Delicatessen", label: "Delicatessen y Productos Regionales" },
+    { key: "Congelados", label: "Congelados" },
+    { key: "Eventos", label: "Eventos" },
+    { key: "Concesionarias", label: "Concesionarias" },
+    { key: "Vidriería y Cristalería", label: "Vidriería y Cristalería" },
+    { key: "Bicicletería", label: "Bicicletería" },
+    { key: "Marmolería", label: "Marmolería" },
+    { key: "Sistemas de Seguridad", label: "Sistemas de Seguridad" },
+    { key: "Sanabit", label: "Sanabit" },
+    { key: "Estudio Contable", label: "Estudio Contable" },
   ];
+
+  const { nroVentas, loadingNro } = useSales();
 
   const [values] = useState<Contact>({
     firstname: "",
@@ -112,7 +122,7 @@ export default function ContactSection({ viewPage }: Props) {
     const response = await fetch('/Home/EnviarDatosHubSpot', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ firstname, email, phone, llamada }),
+      body: JSON.stringify({ firstname, email, phone, llamada, hs_lead_status: "NEW", canal: "Página Web" }),
     });
     
     const result = await response.json();
@@ -211,7 +221,7 @@ export default function ContactSection({ viewPage }: Props) {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <h1 className="text-4xl md:text-5xl  xl:text-[3.25rem] font-bold leading-tight">
-                    Preguntá todo lo que tengas en mente.
+                    Preguntá todo lo que tengas en mente
                   </h1>
                   <p className="text-[#5c5c5c] text-lg">
                     Si tenés preguntas o estás listo para hablar estamos acá
@@ -252,10 +262,10 @@ export default function ContactSection({ viewPage }: Props) {
                       </g>
                     </svg>
                     <a
-                      href="tel:(969)819-8061"
+                      href={`tel:${nroVentas}`}
                       className="text-zinc-600 hover:text-[#B5B3AD]"
                     >
-                      3564-15222935
+                      {loadingNro ? "Cargando..." : nroVentas}
                     </a>
                   </div>
                 </div>
@@ -369,7 +379,10 @@ export default function ContactSection({ viewPage }: Props) {
                     <Input
                       key="outside"
                       name="phone"
-                      label="Telefono"
+                      label="Teléfono"
+                      type="tel"
+                      inputMode="numeric"
+                      pattern="[0-9]*"
                       onChange={handleChange}
                       value={values.phone}
                       onBlur={handleBlur}
@@ -380,7 +393,7 @@ export default function ContactSection({ viewPage }: Props) {
                         />
                       }
                       labelPlacement="outside"
-                      placeholder="Ingrese su telefono"
+                      placeholder="Ingrese su teléfono"
                     />
                   </div>
                   {errors.phone && touched.phone && (

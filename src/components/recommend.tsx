@@ -120,7 +120,7 @@ export default function Recommend() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
               <div>
                 <p className="text-sm text-muted-foreground mb-4 px-4 py-1.5 border border-[#2121210c] rounded-full inline-block bg-[#6666660c]">
-                 ✨ ¡Novedad!
+                  ✨ ¡Novedad!
                 </p>
                 <h2 className="text-2xl pb-2 font-sans bg-gradient-to-br from-[#000000] to-[#434343] bg-clip-text text-transparent md:text-6xl font-extrabold mb-4 ">
                   ¡Recomendá y ganá!
@@ -144,10 +144,15 @@ export default function Recommend() {
                   persona que se suscriba usando tu enlace.
                 </p>
               </div>
-              <button className="flex font-sans font-medium justify-center items-center gap-x-2 px-6 py-3 rounded-[14px] bg-[#333333] shadow-xl hover:scale-105 duration-400 text-[#fafafa]">
+              <a
+                href="https://bit.ly/ProgramaReferidosExternos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex font-sans font-medium justify-center items-center gap-x-2 px-6 py-3 rounded-[14px] bg-[#333333] shadow-xl hover:scale-105 duration-400 text-[#fafafa]"
+              >
                 Descubrir más
                 <ArrowUpIcon className="size-4" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -241,10 +246,15 @@ export default function Recommend() {
             Gana <span className="font-bold">$25.000</span> por cada persona que
             se suscriba usando tu enlace.
           </p>
-          <button className="flex justify-center items-center mx-auto px-7 py-4 mt-5 w-full text-sm bg-[#212121] text-white gap-x-1.5 font-normal rounded-[0.875rem] text-center">
-            Descubri más
+          <a
+            href="https://bit.ly/ProgramaReferidosExternos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-center items-center mx-auto px-7 py-4 mt-5 w-full text-sm bg-[#212121] text-white gap-x-1.5 font-normal rounded-[0.875rem] text-center"
+          >
+            Descubrir más
             <ArrowUpIcon className="size-4" />
-          </button>
+          </a>
         </div>
       </div>
     </div>

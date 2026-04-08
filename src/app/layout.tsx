@@ -3,6 +3,10 @@ import { Poppins, Plus_Jakarta_Sans, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Script from "next/script";
+import SmoothScroll from "@/components/smooth-scroll";
+import WhatsAppButton from "@/components/whatsappButton";
+import { SalesProvider } from "@/context/SalesContext";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -21,7 +25,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Fidel: Sistema Web de Gestión para Empresas",
+  title: "Fidel - Sistema Web de Gestión y Facturación Electrónica",
   description:
     "Fidel es un sistema avanzado de gestión empresarial diseñado para optimizar procesos y mejorar la productividad.",
   keywords: [
@@ -55,12 +59,42 @@ export default function RootLayout({
       <head>
         <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
       </head>
+
       <body
-        className={`${poppins.variable} ${plusJakartaSans.variable} ${instrumentSerif}  antialiased`}
+        className={`${poppins.variable} ${plusJakartaSans.variable} ${instrumentSerif} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <SalesProvider>
+          {/*  Meta Pixel */}
+          <Script id="meta-pixel" strategy="afterInteractive">
+            {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '264310256211065');
+            fbq('track', 'PageView');
+          `}
+          </Script>
+
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src="https://www.facebook.com/tr?id=264310256211065&ev=PageView&noscript=1"
+              alt="Meta Pixel"
+            />
+          </noscript>
+
+          <Header />
+          <SmoothScroll>{children}</SmoothScroll>
+          <WhatsAppButton />
+          <Footer />
+        </SalesProvider>
       </body>
     </html>
   );

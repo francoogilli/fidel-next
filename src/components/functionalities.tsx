@@ -26,7 +26,7 @@ export default function Functionalities() {
         className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
         style={{ fontFamily: "Plus Jakarta Sans" }}
       >
-        Un software, todas las soluciones.
+        Un software, todas las soluciones
       </h3>
       <h4
         className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[27rem] xl:w-[39rem] mx-auto pb-0 md:pb-9"

@@ -44,7 +44,7 @@ export default function AppMobile() {
           className="text-4xl md:text-[3.25rem] xl:w-[75%] xl:leading-[4.2rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
           style={{ fontFamily: "Plus Jakarta Sans" }}
         >
-          Todo lo que tus vendedores necesitan, en la palma de tu mano.
+          Todo lo que tus vendedores necesitan, en la palma de tu mano
         </h3>
       </motion.div>
       <motion.h4

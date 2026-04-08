@@ -80,7 +80,7 @@ const CarouselInfinite: React.FC = () => {
         "Emití facturas electrónicas, presupuestos, remitos y pedidos en segundos.",
         "Creá, buscá y administrá clientes con información detallada. Usá el CUIT o DNI para obtener automáticamente todos los datos de tu cliente en ARCA y optimizar el proceso de registro.",
         "Registrá pagos y controlá cuentas corrientes fácilmente.",
-        "Portal de clientes: A través de un link, tus clientes acceden a su resumen de cuenta donde podrán visualizar y descargar los comprobantes emitidos, facturas pendientes de pagos y pagos emitidos.",
+        "Portal de clientes: A través de un link, tus clientes acceden a su resumen de cuenta donde podrán visualizar y descargar los comprobantes emitidos, facturas pendientes de pago y pagos emitidos.",
         "Emití reportes de Clientes que te facilitan la toma de decisiones.",
       ],
       subtitle:

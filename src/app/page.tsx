@@ -11,9 +11,11 @@ export default function Home() {
   return (
     <>
       <div className="backgroundImage"></div>
-      <Hero />
+      <div id="home">
+        <Hero />
+      </div>
       <div id="funcionalidades">
-      <Functionalities />
+        <Functionalities />
       </div>
       <div id="planes">
         <PricingCard viewComparison />
@@ -22,7 +24,9 @@ export default function Home() {
       <AppMobile />
       <Recommend />
       <QuestionsAnswers />
-      <ContactSection />
+      <div id="contacto">
+        <ContactSection />
+      </div>
     </>
   );
 }
