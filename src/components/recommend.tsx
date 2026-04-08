@@ -134,7 +134,7 @@ export default function Recommend() {
                       draggable="false"
                       alt="Logo Fidel"
                     />
-                    <p className="font-medium">Fidel</p>
+                    <span className="font-medium">Fidel</span>
                   </span>{" "}
                   a tus amigos y familiares.
                 </p>
@@ -232,7 +232,7 @@ export default function Recommend() {
                 draggable="false"
                 alt="Logo Fidel"
               />
-              <p className="font-medium">Fidel</p>
+              <span className="font-medium">Fidel</span>
             </span>{" "}
             a tus amigos y familiares.
           </p>
