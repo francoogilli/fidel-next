@@ -227,7 +227,7 @@ export default function PricingCard({ viewComparison }: Props) {
                         ${Number(pricing.price).toLocaleString("es-AR")}
                       </ShinyPrice>
                       <span
-                        className="text-sm text-neutral-500 mb-0.5 whitespace-nowrap text-ellipsis overflow-hidden"
+                        className="text-[13px] text-neutral-500 mb-0.5 whitespace-nowrap text-ellipsis overflow-hidden"
                         title="+IVA/mes"
                       >
                         +IVA/mes
