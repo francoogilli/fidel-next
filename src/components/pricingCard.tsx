@@ -399,7 +399,7 @@ export default function PricingCard({ viewComparison }: Props) {
                         borderTopLeftRadius: "0.75rem",
                         borderTopRightRadius: "0.75rem",
                       }}
-                      className="text-sm bg-white/90 p-2 flex items-center gap-1 h-8 justify-center font-semibold text-[#1aff00a5]"
+                      className="text-sm bg-white/70 p-2 flex items-center gap-1 h-8 justify-center font-semibold text-[#1aff00a5]"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
