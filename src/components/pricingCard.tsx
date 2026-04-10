@@ -170,7 +170,6 @@ export default function PricingCard({ viewComparison }: Props) {
                 className={cn(
                   "relative flex flex-col px-6 py-5 transition-all duration-200 h-full card-figma",
                   !isPopular && "hover:shadow-md",
-                  isPopular && "flex-1",
                 )}
               >
                 {/* Header */}
@@ -391,11 +390,17 @@ export default function PricingCard({ viewComparison }: Props) {
               return (
                 <motion.div
                   key={pricing.name}
-                  className="relative rounded-2xl p-1 -m-1 glass-prompt-wrap lg:-mt-9 flex flex-col lg:mb-[-2rem]"
+                  className="relative flex flex-col pt-8"
                   variants={scaleUp}
                 >
-                  <div className="text-center py-1.5">
-                    <span className="text-sm flex items-center gap-1 justify-center font-semibold text-[#1aff00a5]">
+                  <div className="absolute top-0 left-0 right-0 text-center py-1.5">
+                    <span
+                      style={{
+                        borderTopLeftRadius: "0.75rem",
+                        borderTopRightRadius: "0.75rem",
+                      }}
+                      className="text-sm bg-white/90 p-2 flex items-center gap-1 h-8 justify-center font-semibold text-[#1aff00a5]"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -415,13 +420,19 @@ export default function PricingCard({ viewComparison }: Props) {
                       Más elegido
                     </span>
                   </div>
-                  {cardContent}
+                  <div className="rounded-2xl p-1 -m-1 glass-prompt-wrap flex flex-col flex-1">
+                    {cardContent}
+                  </div>
                 </motion.div>
               );
             }
 
             return (
-              <motion.div key={pricing.name} variants={scaleUp}>
+              <motion.div
+                key={pricing.name}
+                variants={scaleUp}
+                className="pt-8"
+              >
                 {cardContent}
               </motion.div>
             );
