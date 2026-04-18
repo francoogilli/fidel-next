@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
-import { Wrench, Truck, Sparkles } from "lucide-react";
+import { Wrench, Truck, Sparkles, Settings } from "lucide-react";
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(true);
@@ -201,6 +201,24 @@ export default function Header() {
                                   <p className="text-xs text-muted-foreground">
                                     Productos decorativos y control por
                                     variantes
+                                  </p>
+                                </Link>
+                              </NavigationMenuLink>
+                            </li>
+                            <li>
+                              <NavigationMenuLink asChild>
+                                <Link
+                                  href="/casas-de-repuestos"
+                                  className="block rounded-md p-3 hover:bg-zinc-100 transition"
+                                >
+                                  <div className="flex items-center gap-2 mb-1">
+                                    <Settings className="size-4 text-zinc-700" />
+                                    <span className="font-medium">
+                                      Repuestos
+                                    </span>
+                                  </div>
+                                  <p className="text-xs text-muted-foreground">
+                                    Precios, stock y proveedores para repuestos
                                   </p>
                                 </Link>
                               </NavigationMenuLink>

@@ -6,97 +6,110 @@ import GradientLine from "@/components/gradientLine";
 import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
 import {
-  Wrench,
-  FileSpreadsheet,
-  Package,
+  Truck,
+  Smartphone,
+  RefreshCw,
   Users,
-  Bell,
-  Mail,
-  Image,
+  ImageIcon,
+  Wallet,
+  BarChart3,
 } from "lucide-react";
 
 const features = [
   {
-    icon: FileSpreadsheet,
-    title: "Actualización masiva desde Excel",
+    icon: Smartphone,
+    title: "Pedidos sincronizados en tiempo real",
     description:
-      "Importá la lista de tu proveedor y actualizá todos tus precios en segundos, sin errores manuales.",
+      "Tomá pedidos desde el celular y olvidate de la carga manual. Se sincronizan automáticamente con el sistema al instante.",
   },
   {
-    icon: Package,
-    title: "Compra por bulto, venta por unidad",
+    icon: RefreshCw,
+    title: "Clientes frecuentes, pedidos más rápidos",
     description:
-      "Gestioná ambos formatos sin complicaciones. El sistema calcula precios y stock automáticamente.",
+      "Copiá pedidos anteriores, editá productos en segundos y cerrá ventas mucho más rápido con clientes habituales.",
   },
   {
     icon: Users,
-    title: "Múltiples proveedores",
+    title: "Gestión de clientes desde la app",
     description:
-      "Registrá distintos proveedores para el mismo producto y compará precios desde un solo lugar.",
+      "Cargá clientes, asigná bonificaciones y enviá el detalle del pedido por WhatsApp, todo desde el celular.",
   },
   {
-    icon: Bell,
-    title: "Control de stock inteligente",
+    icon: ImageIcon,
+    title: "Productos con fotos, cero confusiones",
     description:
-      "Recibí alertas automáticas cuando el stock baja y generá órdenes de compra al instante.",
+      "Cargá productos con imágenes para facilitar la identificación y reducir errores en la toma de pedidos.",
   },
   {
-    icon: Mail,
-    title: "Facturación automática",
+    icon: Wallet,
+    title: "Gestión de pagos y cobranzas",
     description:
-      "Enviá facturas por mail o WhatsApp en un par de clics. Sin demoras ni tareas repetitivas.",
+      "Generá recibos provisorios desde la app. Todo queda sincronizado con el sistema y la caja automáticamente.",
   },
   {
-    icon: Image,
-    title: "Catálogos con imágenes",
+    icon: BarChart3,
+    title: "Información clave al instante",
     description:
-      "Creá listas de precios visuales para vender por mostrador o compartir digitalmente con tus clientes.",
+      "Consultá stock, listas de precios y saldos de clientes en tiempo real. Sin llamadas, sin volver a la oficina.",
   },
 ];
 
 const detailSections = [
   {
-    icon: FileSpreadsheet,
-    badge: "Actualización masiva de precios",
-    title: "Actualizá todos tus precios desde un solo archivo Excel",
+    icon: Smartphone,
+    badge: "Pedidos en tiempo real",
+    title: "Tomá pedidos desde la app y olvidate de la carga manual",
     description:
-      "¿Tus proveedores te envían listas de precios en Excel? Con Fidel, solo importás el archivo y el sistema hace el resto.",
+      "Con FIDEL, los pedidos se cargan desde el celular y se sincronizan automáticamente con el sistema. La facturación y preparación comienza al instante.",
     items: [
-      "Actualiza automáticamente los precios según el código de proveedor",
-      "Evita errores manuales y te ahorra horas de carga",
-      "En pocos segundos, tus precios quedan listos para vender",
+      "Los pedidos se cargan desde el celular sin conexión a oficina",
+      "Se sincronizan automáticamente con el sistema central",
+      "La facturación y preparación de pedidos comienza al instante",
     ],
     reverse: false,
   },
   {
-    icon: Bell,
-    badge: "Control inteligente de stock",
-    title: "Nunca más te quedés sin mercadería ni sobrestockeés",
+    icon: RefreshCw,
+    badge: "Clientes frecuentes",
+    title: "Repetí pedidos en segundos y cerrá más ventas",
     description:
-      "Fidel te mantiene siempre en el punto justo. Configurás los límites y el sistema te avisa cuando es momento de reponer.",
+      "¿Tus clientes repiten siempre pedidos similares? FIDEL te permite copiar pedidos anteriores, editarlos y cerrar la venta en tiempo récord.",
     items: [
-      "Definí stock mínimo y máximo por producto",
-      "Recibí alertas automáticas cuando el stock baja",
-      "Generá órdenes de compra de forma rápida",
+      "Copiá pedidos anteriores con un solo toque",
+      "Editá o eliminá productos en segundos",
+      "Cerrá ventas mucho más rápido con clientes habituales",
     ],
     reverse: true,
   },
   {
     icon: Users,
-    badge: "Gestión de proveedores",
-    title: "Comprá siempre al mejor proveedor, sin perder tiempo",
+    badge: "Gestión de clientes",
+    title: "Todo lo que necesitás del cliente, desde el celular",
     description:
-      "¿Comprás el mismo producto a distintos proveedores? Registralos todos en Fidel y elegí siempre la mejor opción.",
+      "Cargá nuevos clientes, asigná condiciones comerciales y comunicá el pedido por WhatsApp, todo sin salir de la app.",
     items: [
-      "Registrá múltiples proveedores para un mismo artículo",
-      "Consultá el historial de compras fácilmente",
-      "Compará precios y tomá mejores decisiones",
+      "Cargá nuevos clientes desde la app en el campo",
+      "Asigná bonificaciones y condiciones comerciales",
+      "Enviá el detalle del pedido por WhatsApp al instante",
     ],
     reverse: false,
   },
+  {
+    icon: Wallet,
+    badge: "Pagos y cobranzas",
+    title: "Control total de los pagos sin papeles ni confusiones",
+    description:
+      "Registrá pagos directamente desde la app sin interrumpir el circuito de ventas. El área de cobranzas recibe la información sincronizada.",
+    items: [
+      "Generá recibos provisorios desde la app",
+      "El área de cobranzas procesa la información automáticamente",
+      "Todo queda sincronizado con el sistema y la caja",
+    ],
+    reverse: true,
+  },
 ];
 
-export default function FidelFeaturesSection() {
+export default function DistribuidorasPage() {
   return (
     <>
       {/* Hero Section */}
@@ -116,12 +129,12 @@ export default function FidelFeaturesSection() {
           <GradientLine direction="left" />
           <ThreeStripesLeft />
           <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-            <Wrench className="size-4 text-[#121212]" />
+            <Truck className="size-4 text-[#121212]" />
             <span
               className="text-xs md:text-sm font-medium text-[#121212]"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
-              Fidel para Ferreterías
+              Fidel para Distribuidoras
             </span>
           </div>
           <ThreeStripesRight />
@@ -136,7 +149,7 @@ export default function FidelFeaturesSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          El sistema de gestión pensado para el día a día de tu ferretería
+          El sistema de gestión ideal para ventas en movimiento
         </motion.h1>
 
         {/* Subtitle */}
@@ -147,9 +160,9 @@ export default function FidelFeaturesSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          ¿Perdés tiempo actualizando precios, controlando stock o enviando
-          facturas? Fidel simplifica tu trabajo con herramientas diseñadas
-          específicamente para el rubro ferretero.
+          ¿Tenés una distribuidora con vendedores que toman pedidos en la calle?
+          FIDEL simplifica la gestión comercial, acelera las ventas y mantiene
+          toda la información sincronizada en tiempo real, sin errores ni demoras.
         </motion.p>
 
         {/* Hero placeholder */}
@@ -157,7 +170,7 @@ export default function FidelFeaturesSection() {
           className="mt-14 mx-auto w-full max-w-4xl aspect-[16/9] bg-[#f6f6f6] border border-[#e9e9e9d3] rounded-[24px] flex items-center justify-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
         >
           <span className="text-[#5c5c5c] text-sm" style={{ fontFamily: "Satoshi" }}>
             Imagen / video del sistema
@@ -167,7 +180,7 @@ export default function FidelFeaturesSection() {
 
       {/* Features Grid */}
       <div
-        id="funcionalidades-ferreteria"
+        id="funcionalidades-distribuidoras"
         className="pb-20 md:pb-28"
         style={{ background: "linear-gradient(to bottom, #FFFFFF, transparent)" }}
       >
@@ -177,7 +190,7 @@ export default function FidelFeaturesSection() {
             <GradientLine direction="left" />
             <ThreeStripesLeft />
             <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-              <Wrench className="size-4 text-[#121212]" />
+              <Truck className="size-4 text-[#121212]" />
               <span
                 className="text-xs md:text-sm font-medium text-[#121212]"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
@@ -193,14 +206,14 @@ export default function FidelFeaturesSection() {
             className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-6 tracking-tight text-[#252525]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Todo lo que necesita tu ferretería
+            Todo lo que necesita tu distribuidora
           </h2>
           <p
             className="text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[38rem] mx-auto pb-10"
             style={{ fontFamily: "Satoshi" }}
           >
-            Herramientas diseñadas para resolver los problemas reales del rubro
-            ferretero, sin complicaciones.
+            Herramientas diseñadas para que tus vendedores vendan más y tu
+            operación funcione sin errores ni demoras.
           </p>
 
           {/* Cards grid */}
@@ -294,17 +307,16 @@ export default function FidelFeaturesSection() {
       {/* CTA Final */}
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 text-center">
-          {/* Badge header */}
           <div className="flex justify-center items-center gap-x-2.5 pb-6">
             <GradientLine direction="left" />
             <ThreeStripesLeft />
             <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-              <Wrench className="size-4 text-[#121212]" />
+              <Truck className="size-4 text-[#121212]" />
               <span
                 className="text-xs md:text-sm font-medium text-[#121212]"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                Fidel, el aliado de tu ferretería
+                Fidel, el aliado de tu distribuidora
               </span>
             </div>
             <ThreeStripesRight />
@@ -315,16 +327,15 @@ export default function FidelFeaturesSection() {
             className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-3xl"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Fidel no es solo un sistema de gestión
+            FIDEL conecta ventas, stock, cobranzas y administración
           </h2>
           <p
             className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed mx-auto max-w-2xl"
             style={{ fontFamily: "Satoshi" }}
           >
-            Es una herramienta pensada para simplificar tu trabajo, ordenar tu
-            stock y ayudarte a vender mejor. Probalo sin compromiso.
+            Un solo sistema pensado para distribuidoras que necesitan velocidad,
+            control y precisión en cada movimiento.
           </p>
-
         </div>
       </section>
     </>
