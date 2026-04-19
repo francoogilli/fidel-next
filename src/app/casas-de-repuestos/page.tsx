@@ -223,7 +223,7 @@ export default function CasasDeRepuestosPage() {
                   <feature.icon className="size-5 text-[#1db31d]" />
                 </div>
                 <h3
-                  className="text-xl font-bold text-[#18a018] mb-3 leading-snug"
+                  className="text-xl font-bold text-[#474747] mb-3 leading-snug"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
                 >
                   {feature.title}
