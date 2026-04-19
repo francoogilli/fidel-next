@@ -158,7 +158,7 @@ export default function Header() {
                                   <div className="flex items-center gap-2 mb-1">
                                     <Wrench className="size-4 text-zinc-700" />
                                     <span className="font-medium">
-                                      Ferretería
+                                      Ferreterías
                                     </span>
                                   </div>
                                   <p className="text-xs text-muted-foreground">
@@ -178,7 +178,7 @@ export default function Header() {
                                   <div className="flex items-center gap-2 mb-1">
                                     <Truck className="size-4 text-zinc-700" />
                                     <span className="font-medium">
-                                      Distribuidora
+                                      Distribuidoras
                                     </span>
                                   </div>
                                   <p className="text-xs text-muted-foreground">

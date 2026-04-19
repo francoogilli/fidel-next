@@ -25,7 +25,7 @@ const features = [
     icon: Package,
     title: "Compra por bulto, venta por unidad",
     description:
-      "FIDEL calcula automáticamente el costo por bulto, el precio por unidad y ajusta el stock sin cuentas manuales.",
+      "Fidel calcula automáticamente el costo por bulto, el precio por unidad y ajusta el stock sin cuentas manuales.",
   },
   {
     icon: Users,
@@ -53,7 +53,7 @@ const detailSections = [
     badge: "Actualización masiva de precios",
     title: "Los precios cambian todo el tiempo. Actualizalos en segundos",
     description:
-      "En el rubro repuestos, trabajar con precios desactualizados es perder dinero. Con FIDEL importás la lista del proveedor y actualizás todo al instante.",
+      "En el rubro repuestos, trabajar con precios desactualizados es perder dinero. Con Fidel importás la lista del proveedor y actualizás todo al instante.",
     items: [
       "Importá listas de precios directamente desde Excel",
       "Actualizá precios de forma masiva usando el código de proveedor",
@@ -66,7 +66,7 @@ const detailSections = [
     badge: "Compra por bulto, venta por unidad",
     title: "Precisión total sin cuentas manuales",
     description:
-      "¿Comprás por bulto pero vendés por pieza? FIDEL hace los cálculos por vos y mantiene el stock actualizado automáticamente.",
+      "¿Comprás por bulto pero vendés por pieza? Fidel hace los cálculos por vos y mantiene el stock actualizado automáticamente.",
     items: [
       "Calcula automáticamente el costo por bulto",
       "Determina el precio por unidad sin intervención manual",
@@ -79,7 +79,7 @@ const detailSections = [
     badge: "Múltiples proveedores",
     title: "Comprá siempre al proveedor más conveniente",
     description:
-      "Un mismo repuesto puede tener varios proveedores. Con FIDEL los tenés todos organizados para tomar la mejor decisión de compra.",
+      "Un mismo repuesto puede tener varios proveedores. Con Fidel los tenés todos organizados para tomar la mejor decisión de compra.",
     items: [
       "Asigná más de un proveedor a cada artículo",
       "Compará precios fácilmente desde un solo lugar",
@@ -92,7 +92,7 @@ const detailSections = [
     badge: "Ubicación de productos",
     title: "Miles de repuestos, encontrados al instante",
     description:
-      "Cuando tenés miles de productos, saber dónde está cada uno es clave para atender rápido. FIDEL te da esa precisión.",
+      "Cuando tenés miles de productos, saber dónde está cada uno es clave para atender rápido. Fidel te da esa precisión.",
     items: [
       "Creá distintos depósitos o sectores del local",
       "Asigná ubicación específica a cada producto",
@@ -154,7 +154,7 @@ export default function CasasDeRepuestosPage() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           Los precios cambian constantemente, el stock es complejo y el tiempo
-          en mostrador vale oro. Por eso FIDEL tiene herramientas pensadas
+          en mostrador vale oro. Por eso Fidel tiene herramientas pensadas
           específicamente para quienes trabajan entre listas de precios, códigos
           y estanterías llenas de productos.
         </motion.p>
@@ -320,10 +320,11 @@ export default function CasasDeRepuestosPage() {
           </div>
 
           <h2
-            className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-3xl"
+            className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-5xl"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            FIDEL te ayuda a ordenar precios, stock y proveedores en un solo lugar
+            <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel{" "}
+            te ayuda a ordenar precios, stock y proveedores en un solo lugar
           </h2>
           <p
             className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed mx-auto max-w-2xl"

@@ -46,7 +46,7 @@ const detailSections = [
     badge: "Tienda Nube y WooCommerce",
     title: "Vendé online sin duplicar trabajo",
     description:
-      "Con FIDEL, tus ventas online ingresan directo al sistema. Productos, stock, precios, variantes, promociones y fotos se actualizan automáticamente.",
+      "Con Fidel, tus ventas online ingresan directo al sistema. Productos, stock, precios, variantes, promociones y fotos se actualizan automáticamente.",
     items: [
       "Las ventas online ingresan directo al sistema sin carga manual",
       "Facturás y despachás en el momento, sin errores",
@@ -136,7 +136,7 @@ export default function CasasDeDecoracionPage() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           Si usás distintas plataformas para vender, controlar stock y armar
-          catálogos, FIDEL es para vos. Centralizá todo en un solo sistema y
+          catálogos, Fidel es para vos. Centralizá todo en un solo sistema y
           enfocá tu tiempo en vender y atender mejor a tus clientes.
         </motion.p>
 
@@ -304,7 +304,8 @@ export default function CasasDeDecoracionPage() {
             className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-3xl"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Estas herramientas ya están incluidas en FIDEL
+            Estas herramientas ya están incluidas en{" "}
+            <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel
           </h2>
           <p
             className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed mx-auto max-w-2xl"

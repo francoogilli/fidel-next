@@ -315,7 +315,7 @@ export default function FidelFeaturesSection() {
             className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-3xl"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Fidel no es solo un sistema de gestión
+            <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel no es solo un sistema de gestión
           </h2>
           <p
             className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed mx-auto max-w-2xl"

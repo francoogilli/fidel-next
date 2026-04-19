@@ -60,7 +60,7 @@ const detailSections = [
     badge: "Pedidos en tiempo real",
     title: "Tomá pedidos desde la app y olvidate de la carga manual",
     description:
-      "Con FIDEL, los pedidos se cargan desde el celular y se sincronizan automáticamente con el sistema. La facturación y preparación comienza al instante.",
+      "Con Fidel, los pedidos se cargan desde el celular y se sincronizan automáticamente con el sistema. La facturación y preparación comienza al instante.",
     items: [
       "Los pedidos se cargan desde el celular sin conexión a oficina",
       "Se sincronizan automáticamente con el sistema central",
@@ -73,7 +73,7 @@ const detailSections = [
     badge: "Clientes frecuentes",
     title: "Repetí pedidos en segundos y cerrá más ventas",
     description:
-      "¿Tus clientes repiten siempre pedidos similares? FIDEL te permite copiar pedidos anteriores, editarlos y cerrar la venta en tiempo récord.",
+      "¿Tus clientes repiten siempre pedidos similares? Fidel te permite copiar pedidos anteriores, editarlos y cerrar la venta en tiempo récord.",
     items: [
       "Copiá pedidos anteriores con un solo toque",
       "Editá o eliminá productos en segundos",
@@ -161,7 +161,7 @@ export default function DistribuidorasPage() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           ¿Tenés una distribuidora con vendedores que toman pedidos en la calle?
-          FIDEL simplifica la gestión comercial, acelera las ventas y mantiene
+          Fidel simplifica la gestión comercial, acelera las ventas y mantiene
           toda la información sincronizada en tiempo real, sin errores ni demoras.
         </motion.p>
 
@@ -324,10 +324,10 @@ export default function DistribuidorasPage() {
           </div>
 
           <h2
-            className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-3xl"
+            className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-4xl"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            FIDEL conecta ventas, stock, cobranzas y administración
+            <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel conecta ventas, stock, cobranzas y administración
           </h2>
           <p
             className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed mx-auto max-w-2xl"
