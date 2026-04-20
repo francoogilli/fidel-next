@@ -321,7 +321,8 @@ export default function PricingCard({ viewComparison }: Props) {
                               <button
                                 onClick={() => {
                                   if (
-                                    openDescription?.cardName === pricing.name &&
+                                    openDescription?.cardName ===
+                                      pricing.name &&
                                     openDescription.benefitIndex === index
                                   ) {
                                     setOpenDescription(null);
@@ -372,7 +373,10 @@ export default function PricingCard({ viewComparison }: Props) {
                                 initial={{ height: 0, opacity: 0 }}
                                 animate={{ height: "auto", opacity: 1 }}
                                 exit={{ height: 0, opacity: 0 }}
-                                transition={{ duration: 0.25, ease: "easeInOut" }}
+                                transition={{
+                                  duration: 0.25,
+                                  ease: "easeInOut",
+                                }}
                                 style={{ overflow: "hidden" }}
                               >
                                 <p className="ml-7 text-zinc-600 text-[13px] text-left pt-1 mt-1 bg-gradient-to-tr from-[#f0f0f0] via-[#fffffff1] to-[#f0f0f0] border border-[#ffffff] rounded-md px-2 py-1.5">
@@ -399,7 +403,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   className={cn(
                     "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 cursor-pointer h-12 rounded-[20px] px-8 w-full",
                     isPopular
-                      ? "bg-gradient-to-b from-[#1ef15d]/90 via-[#00ec46] to-[#1ef15d]/90 text-white shadow-[0_4px_12px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.2),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.25),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:translate-y-[-1px] active:translate-y-[1px] border border-[#1ef15d]/20"
+                      ? "bg-gradient-to-b from-[#0bcd35]/90 via-[#1be156] to-[#0bcd35]/90 text-white shadow-[0_4px_12px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.2),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.25),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:translate-y-[-1px] active:translate-y-[1px] active:shadow-[0_2px_8px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.1),inset_0_-1px_0_rgba(0,0,0,0.1)] border border-[#1ef15d]/20"
                       : "bg-gradient-to-b from-[#0f1419] via-[#0f1419] to-[#0f1419]/80 text-white shadow-[0_2px_8px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.3),inset_0_-1px_0_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.4)] hover:translate-y-[-1px] active:translate-y-[1px]",
                   )}
                 >
@@ -418,13 +422,27 @@ export default function PricingCard({ viewComparison }: Props) {
                 >
                   <div className="absolute top-0 left-0 right-0 text-center py-1.5">
                     <span
-                      style={{ borderTopLeftRadius: "0.75rem", borderTopRightRadius: "0.75rem" }}
-                      className="text-sm bg-white/70 p-2 flex items-center gap-1 h-8 justify-center font-semibold text-[#1aff00a5]"
+                      style={{
+                        borderTopLeftRadius: "0.75rem",
+                        borderTopRightRadius: "0.75rem",
+                      }}
+                      className="text-xs tracking-widest bg-white/70 p-2 flex items-center gap-1 h-8 justify-center font-bold text-[#2f2911] uppercase"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-4">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 4v3m-4 -3v6m8 -6v6"/>
-                        <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5l-3 -1.5"/>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="size-4"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 4v3m-4 -3v6m8 -6v6" />
+                        <path d="M12 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5l-3 -1.5" />
                       </svg>
                       Más elegido
                     </span>
@@ -437,7 +455,11 @@ export default function PricingCard({ viewComparison }: Props) {
             }
 
             return (
-              <motion.div key={pricing.name} variants={scaleUp} className="pt-8">
+              <motion.div
+                key={pricing.name}
+                variants={scaleUp}
+                className="pt-8"
+              >
                 {cardContent}
               </motion.div>
             );
@@ -447,7 +469,10 @@ export default function PricingCard({ viewComparison }: Props) {
         {/* Footer cards */}
         <div className="flex flex-wrap justify-center items-center gap-4 pt-1">
           <div className="bg-[#ffffff] border border-[#dffcf6] py-2.5 px-3 duration-300 rounded-xl text-center card-figma-secondary">
-            <h4 className="text-base px-5 pb-1 text-[#022943] font-medium" style={{ fontFamily: "Satoshi" }}>
+            <h4
+              className="text-base px-5 pb-1 text-[#022943] font-medium"
+              style={{ fontFamily: "Satoshi" }}
+            >
               ¿Necesitás más herramientas?
             </h4>
             <p className="text-[#022943] text-sm">
@@ -455,7 +480,10 @@ export default function PricingCard({ viewComparison }: Props) {
             </p>
           </div>
           <div className="bg-[#ffffff] border border-[#dffcf6] py-2.5 px-3 duration-300 rounded-xl text-center card-figma-secondary">
-            <h4 className="text-base px-5 pb-1 text-[#022943] font-medium" style={{ fontFamily: "Satoshi" }}>
+            <h4
+              className="text-base px-5 pb-1 text-[#022943] font-medium"
+              style={{ fontFamily: "Satoshi" }}
+            >
               ¿No estás seguro de cuál elegir?
             </h4>
             <p className="text-[#022943] text-sm">
@@ -465,9 +493,16 @@ export default function PricingCard({ viewComparison }: Props) {
         </div>
 
         <p className="text-[#ffcc01] bg-[#fffbee] card-figma-tertiary border border-[#fef1bc] p-4 rounded-medium mx-auto w-fit flex justify-center items-center gap-x-2 text-center font-medium text-sm mt-11">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="size-6 text-[#ffcc01]">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M11 14v8h-4a3 3 0 0 1 -3 -3v-4a1 1 0 0 1 1 -1h6zm8 0a1 1 0 0 1 1 1v4a3 3 0 0 1 -3 3h-4v-8h6zm-2.5 -12a3.5 3.5 0 0 1 3.163 5h.337a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-7v-5h-2v5h-7a2 2 0 0 1 -2 -2v-1a2 2 0 0 1 2 -2h.337a3.486 3.486 0 0 1 -.337 -1.5c0 -1.933 1.567 -3.5 3.483 -3.5c1.755 -.03 3.312 1.092 4.381 2.934l.136 .243c1.033 -1.914 2.56 -3.114 4.291 -3.175l.209 -.002zm-9 2a1.5 1.5 0 0 0 0 3h3.143c-.741 -1.905 -1.949 -3.02 -3.143 -3zm8.983 0c-1.18 -.02 -2.385 1.096 -3.126 3h3.143a1.5 1.5 0 1 0 -.017 -3z"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="size-6 text-[#ffcc01]"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M11 14v8h-4a3 3 0 0 1 -3 -3v-4a1 1 0 0 1 1 -1h6zm8 0a1 1 0 0 1 1 1v4a3 3 0 0 1 -3 3h-4v-8h6zm-2.5 -12a3.5 3.5 0 0 1 3.163 5h.337a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-7v-5h-2v5h-7a2 2 0 0 1 -2 -2v-1a2 2 0 0 1 2 -2h.337a3.486 3.486 0 0 1 -.337 -1.5c0 -1.933 1.567 -3.5 3.483 -3.5c1.755 -.03 3.312 1.092 4.381 2.934l.136 .243c1.033 -1.914 2.56 -3.114 4.291 -3.175l.209 -.002zm-9 2a1.5 1.5 0 0 0 0 3h3.143c-.741 -1.905 -1.949 -3.02 -3.143 -3zm8.983 0c-1.18 -.02 -2.385 1.096 -3.126 3h3.143a1.5 1.5 0 1 0 -.017 -3z" />
           </svg>
           Sin compromiso, sin tarjeta de crédito.
         </p>
