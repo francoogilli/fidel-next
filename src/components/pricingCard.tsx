@@ -376,7 +376,7 @@ export default function PricingCard({ viewComparison }: Props) {
                   className={cn(
                     "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 cursor-pointer h-12 rounded-[20px] px-8 w-full",
                     isPopular
-                      ? "bg-gradient-to-b from-[#1ef15d]/90 via-[#00ec46] to-[#1ef15d]/90 text-white shadow-[0_4px_12px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.2),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.25),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:translate-y-[-1px] active:translate-y-[1px] active:shadow-[0_2px_8px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.1),inset_0_-1px_0_rgba(0,0,0,0.1)] border border-[#1ef15d]/20"
+                      ? "bg-gradient-to-b from-[#0bcd35]/90 via-[#1be156] to-[#0bcd35]/90 text-white shadow-[0_4px_12px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.2),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.25),inset_0_-1px_0_rgba(0,0,0,0.1)] hover:translate-y-[-1px] active:translate-y-[1px] active:shadow-[0_2px_8px_rgba(0,0,0,0.15),inset_0_1px_0_rgba(255,255,255,0.1),inset_0_-1px_0_rgba(0,0,0,0.1)] border border-[#1ef15d]/20"
                       : "bg-gradient-to-b from-[#0f1419] via-[#0f1419] to-[#0f1419]/80 text-white shadow-[0_2px_8px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.3),inset_0_-1px_0_rgba(0,0,0,0.05)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12),inset_0_1px_0_rgba(255,255,255,0.4)] hover:translate-y-[-1px] active:translate-y-[1px]",
                   )}
                 >
@@ -399,7 +399,7 @@ export default function PricingCard({ viewComparison }: Props) {
                         borderTopLeftRadius: "0.75rem",
                         borderTopRightRadius: "0.75rem",
                       }}
-                      className="text-sm bg-white/70 p-2 flex items-center gap-1 h-8 justify-center font-semibold text-[#1aff00a5]"
+                      className="text-xs tracking-widest bg-white/70 p-2 flex items-center gap-1 h-8 justify-center font-bold text-[#2f2911] uppercase"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
