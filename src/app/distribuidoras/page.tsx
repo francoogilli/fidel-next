@@ -167,14 +167,16 @@ export default function DistribuidorasPage() {
 
         {/* Hero placeholder */}
         <motion.div
-          className="mt-14 mx-auto w-full max-w-4xl aspect-[16/9] bg-[#f6f6f6] border border-[#e9e9e9d3] rounded-[24px] flex items-center justify-center"
+          className="mt-14 mx-auto w-full max-w-4xl rounded-[24px] overflow-hidden border border-[#e9e9e9d3]"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <span className="text-[#5c5c5c] text-sm" style={{ fontFamily: "Satoshi" }}>
-            Imagen / video del sistema
-          </span>
+          <img
+            src="/distribuidoras.png"
+            alt="Sistema Fidel para distribuidoras"
+            className="w-full h-auto"
+          />
         </motion.div>
       </motion.div>
 
