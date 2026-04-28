@@ -67,6 +67,7 @@ const detailSections = [
       "Usá códigos de barra y lector para agilizar las ventas",
       "Menos consultas repetitivas, más foco en atender y vender",
     ],
+    image: "/deco2.png",
     reverse: true,
   },
   {
@@ -80,6 +81,7 @@ const detailSections = [
       "Personalizalos para cada cliente o segmento",
       "Enviálos por WhatsApp en pocos segundos",
     ],
+    image: "/deco3.png",
     reverse: false,
   },
 ];
@@ -261,19 +263,29 @@ export default function CasasDeDecoracionPage() {
                 </ul>
               </div>
 
-              {/* Visual placeholder */}
+              {/* Visual */}
               <div className="flex justify-center">
-                <div className="w-full max-w-md aspect-[4/3] bg-[#f6f6f6] border border-[#e9e9e9d3] rounded-[24px] flex flex-col items-center justify-center gap-3">
-                  <div className="inline-flex items-center justify-center size-16 rounded-2xl bg-white border border-[#e9e9e9] shadow-sm">
-                    <section.icon className="size-8 text-[#252525]" />
+                {"image" in section && section.image ? (
+                  <div className="w-full max-w-md rounded-[24px] overflow-hidden border border-[#e9e9e9d3]">
+                    <img
+                      src={section.image}
+                      alt={section.badge}
+                      className="w-full h-auto"
+                    />
                   </div>
-                  <span
-                    className="text-sm text-[#5c5c5c]"
-                    style={{ fontFamily: "Satoshi" }}
-                  >
-                    {section.badge}
-                  </span>
-                </div>
+                ) : (
+                  <div className="w-full max-w-md aspect-[4/3] bg-[#f6f6f6] border border-[#e9e9e9d3] rounded-[24px] flex flex-col items-center justify-center gap-3">
+                    <div className="inline-flex items-center justify-center size-16 rounded-2xl bg-white border border-[#e9e9e9] shadow-sm">
+                      <section.icon className="size-8 text-[#252525]" />
+                    </div>
+                    <span
+                      className="text-sm text-[#5c5c5c]"
+                      style={{ fontFamily: "Satoshi" }}
+                    >
+                      {section.badge}
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
           </div>
