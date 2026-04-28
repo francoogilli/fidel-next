@@ -80,6 +80,7 @@ const detailSections = [
       "Editá o eliminá productos en segundos",
       "Cerrá ventas mucho más rápido con clientes habituales",
     ],
+    image: "/distribuidoras2.png",
     reverse: true,
   },
   {
