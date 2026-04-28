@@ -66,6 +66,7 @@ const detailSections = [
       "Se sincronizan automáticamente con el sistema central",
       "La facturación y preparación de pedidos comienza al instante",
     ],
+    image: "/distribuidoras1.png",
     reverse: false,
   },
   {
@@ -92,6 +93,7 @@ const detailSections = [
       "Asigná bonificaciones y condiciones comerciales",
       "Enviá el detalle del pedido por WhatsApp al instante",
     ],
+    image: "/distribuidoras3.png",
     reverse: false,
   },
   {
@@ -105,6 +107,7 @@ const detailSections = [
       "El área de cobranzas procesa la información automáticamente",
       "Todo queda sincronizado con el sistema y la caja",
     ],
+    image: "/distribuidoras4.png",
     reverse: true,
   },
 ];
@@ -287,19 +290,29 @@ export default function DistribuidorasPage() {
                 </ul>
               </div>
 
-              {/* Visual placeholder */}
+              {/* Visual */}
               <div className="flex justify-center">
-                <div className="w-full max-w-md aspect-[4/3] bg-[#f6f6f6] border border-[#e9e9e9d3] rounded-[24px] flex flex-col items-center justify-center gap-3">
-                  <div className="inline-flex items-center justify-center size-16 rounded-2xl bg-white border border-[#e9e9e9] shadow-sm">
-                    <section.icon className="size-8 text-[#252525]" />
+                {"image" in section && section.image ? (
+                  <div className="w-full max-w-md rounded-[24px] overflow-hidden border border-[#e9e9e9d3]">
+                    <img
+                      src={section.image}
+                      alt={section.badge}
+                      className="w-full h-auto"
+                    />
                   </div>
-                  <span
-                    className="text-sm text-[#5c5c5c]"
-                    style={{ fontFamily: "Satoshi" }}
-                  >
-                    {section.badge}
-                  </span>
-                </div>
+                ) : (
+                  <div className="w-full max-w-md aspect-[4/3] bg-[#f6f6f6] border border-[#e9e9e9d3] rounded-[24px] flex flex-col items-center justify-center gap-3">
+                    <div className="inline-flex items-center justify-center size-16 rounded-2xl bg-white border border-[#e9e9e9] shadow-sm">
+                      <section.icon className="size-8 text-[#252525]" />
+                    </div>
+                    <span
+                      className="text-sm text-[#5c5c5c]"
+                      style={{ fontFamily: "Satoshi" }}
+                    >
+                      {section.badge}
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
           </div>
