@@ -4,6 +4,7 @@ import AdvantagesIcon from "@/icons/advantages";
 import CreditCardIcon from "@/icons/creditCard";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -20,6 +21,8 @@ const TR = `all ${DUR} ${EASE}`;
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -28,16 +31,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleScrollToPlanes = (e: React.MouseEvent) => {
+  const scrollToSection = (id: string) => (e: React.MouseEvent) => {
     e.preventDefault();
-    document.getElementById("planes")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleScrollToFuncionalidades = (e: React.MouseEvent) => {
-    e.preventDefault();
-    document
-      .getElementById("funcionalidades")
-      ?.scrollIntoView({ behavior: "smooth" });
+    if (pathname === "/") {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push(`/#${id}`);
+    }
   };
 
   return (
@@ -143,8 +143,8 @@ export default function Header() {
             style={{ justifySelf: "center", minWidth: 0 }}
           >
             <Link
-              href="#"
-              onClick={handleScrollToPlanes}
+              href="/#planes"
+              onClick={scrollToSection("planes")}
               className="inline-flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap group"
             >
               <CreditCardIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
@@ -152,8 +152,8 @@ export default function Header() {
             </Link>
 
             <Link
-              href="#"
-              onClick={handleScrollToFuncionalidades}
+              href="/#funcionalidades"
+              onClick={scrollToSection("funcionalidades")}
               className="inline-flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap group"
             >
               <AdvantagesIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
