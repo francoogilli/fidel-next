@@ -54,6 +54,7 @@ const detailSections = [
       "Imprimís etiquetas de envío en pocos clics",
       "Cada venta crea un nuevo cliente en tu base de datos",
     ],
+    image: "/deco1.png",
     reverse: false,
   },
   {

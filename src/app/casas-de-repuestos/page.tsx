@@ -59,6 +59,7 @@ const detailSections = [
       "Actualizá precios de forma masiva usando el código de proveedor",
       "Sin errores manuales y en pocos segundos",
     ],
+    image: "/repuestos1.png",
     reverse: false,
   },
   {
