@@ -31,7 +31,7 @@ const features = [
     icon: Users,
     title: "Múltiples proveedores por producto",
     description:
-      "Asigná más de un proveedor a cada artículo, comparé precios fácilmente y consultá el historial de compras.",
+      "Asigná más de un proveedor a cada artículo, compará precios fácilmente y consultá el historial de compras.",
   },
   {
     icon: Bell,
@@ -95,7 +95,7 @@ const detailSections = [
     description:
       "Cuando tenés miles de productos, saber dónde está cada uno es clave para atender rápido. Fidel te da esa precisión.",
     items: [
-      "Creá distintos depósitos o sectores del local",
+      "Creá distintos depósitos.",
       "Asigná ubicación específica a cada producto",
       "Encontrá cualquier repuesto al instante, incluso si también vendés online",
     ],

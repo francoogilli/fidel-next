@@ -72,7 +72,7 @@ const detailSections = [
   {
     icon: Bell,
     badge: "Control inteligente de stock",
-    title: "Nunca más te quedés sin mercadería ni sobrestockeés",
+    title: "Nunca más te quedés sin mercadería tengas sobrestock",
     description:
       "Fidel te mantiene siempre en el punto justo. Configurás los límites y el sistema te avisa cuando es momento de reponer.",
     items: [
@@ -335,7 +335,7 @@ export default function FidelFeaturesSection() {
             style={{ fontFamily: "Satoshi" }}
           >
             Es una herramienta pensada para simplificar tu trabajo, ordenar tu
-            stock y ayudarte a vender mejor. Probalo sin compromiso.
+            stock y ayudarte a vender mejor. Pedí una demo Gratis
           </p>
 
         </div>

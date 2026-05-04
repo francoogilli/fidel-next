@@ -62,8 +62,8 @@ const detailSections = [
     description:
       "Con Fidel, los pedidos se cargan desde el celular y se sincronizan automáticamente con el sistema. La facturación y preparación comienza al instante.",
     items: [
-      "Los pedidos se cargan desde el celular sin conexión a oficina",
-      "Se sincronizan automáticamente con el sistema central",
+      "Los pedidos se cargan desde el celular sin conexión.",
+      "Se sincronizan automáticamente con el sistema.",
       "La facturación y preparación de pedidos comienza al instante",
     ],
     image: "/distribuidoras1.png",
@@ -90,7 +90,7 @@ const detailSections = [
     description:
       "Cargá nuevos clientes, asigná condiciones comerciales y comunicá el pedido por WhatsApp, todo sin salir de la app.",
     items: [
-      "Cargá nuevos clientes desde la app en el campo",
+      "Cargá nuevos clientes desde la app.",
       "Asigná bonificaciones y condiciones comerciales",
       "Enviá el detalle del pedido por WhatsApp al instante",
     ],
@@ -219,7 +219,7 @@ export default function DistribuidorasPage() {
             style={{ fontFamily: "Satoshi" }}
           >
             Herramientas diseñadas para que tus vendedores vendan más y tu
-            operación funcione sin errores ni demoras.
+            empresa funcione sin errores ni demoras.
           </p>
 
           {/* Cards grid */}

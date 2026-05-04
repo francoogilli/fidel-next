@@ -24,13 +24,13 @@ const features = [
     icon: QrCode,
     title: "QR y códigos de barra en el local",
     description:
-      "Colocá QR en los productos para que el cliente vea precios y detalles desde su celular. Menos consultas, más ventas.",
+      "Imprimí etiquetas con código QR en los productos para que el cliente vea precios y detalles desde su celular. Menos consultas, más ventas.",
   },
   {
     icon: BarChart3,
     title: "Información clave en tiempo real",
     description:
-      "Mirá qué productos se venden más, el stock disponible y las alertas de reposición, todo actualizado en segundos.",
+      "Mirá qué productos se venden más, el stock disponible y las alertas de reposición, todo actualizado en tiempo real.",
   },
   {
     icon: BookImage,
@@ -76,7 +76,7 @@ const detailSections = [
     badge: "Catálogos visuales",
     title: "Enviá catálogos por WhatsApp y vendé desde cualquier lugar",
     description:
-      "Armá catálogos en PDF con fotos y precios personalizados. Enviálos por WhatsApp y cerrá ventas incluso cuando el cliente no está en el local.",
+      "Armá catálogos en PDF con fotos y precios. Enviálos por WhatsApp y cerrá ventas incluso cuando el cliente no está en el local.",
     items: [
       "Armá catálogos en PDF con fotos y precios",
       "Personalizalos para cada cliente o segmento",
@@ -139,8 +139,7 @@ export default function CasasDeDecoracionPage() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           Si usás distintas plataformas para vender, controlar stock y armar
-          catálogos, Fidel es para vos. Centralizá todo en un solo sistema y
-          enfocá tu tiempo en vender y atender mejor a tus clientes.
+          catálogos, Fidel es para vos. Centralizá todo en un solo sistema, y enfocá tu tiempo en vender y atender mejor a tus clientes.
         </motion.p>
 
         {/* Hero placeholder */}
