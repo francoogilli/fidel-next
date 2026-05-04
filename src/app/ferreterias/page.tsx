@@ -153,6 +153,29 @@ export default function FidelFeaturesSection() {
           específicamente para el rubro ferretero.
         </motion.p>
 
+        {/* Account count */}
+        <motion.div
+          className="mt-8 flex justify-center"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          <div className="inline-flex items-center gap-x-3 rounded-2xl bg-[#d4ffcc] border border-[#81fc71] px-6 py-3">
+            <span
+              className="text-3xl font-bold text-[#1db31d]"
+              style={{ fontFamily: "Plus Jakarta Sans" }}
+            >
+              +230
+            </span>
+            <span
+              className="text-base font-medium text-[#18a018]"
+              style={{ fontFamily: "Satoshi" }}
+            >
+              ferreterías ya confían en Fidel
+            </span>
+          </div>
+        </motion.div>
+
         {/* Hero image */}
         <motion.div
           className="mt-14 mx-auto w-full max-w-4xl rounded-[24px] overflow-hidden border border-[#e9e9e9d3]"
