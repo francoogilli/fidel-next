@@ -14,6 +14,7 @@ import {
   Wallet,
   BarChart3,
 } from "lucide-react";
+import InstagramReel from "@/components/InstagramReel";
 
 const features = [
   {
@@ -345,36 +346,49 @@ export default function DistribuidorasPage() {
 
       {/* CTA Final */}
       <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 text-center">
-          <div className="flex justify-center items-center gap-x-2.5 pb-6">
-            <GradientLine direction="left" />
-            <ThreeStripesLeft />
-            <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-              <Truck className="size-4 text-[#121212]" />
-              <span
-                className="text-xs md:text-sm font-medium text-[#121212]"
+        <div className="mx-auto max-w-7xl xl:max-w-[87rem] px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Text side */}
+            <div className="flex flex-col items-center md:items-end text-center md:text-right">
+              <div className="flex justify-center md:justify-end items-center gap-x-2.5 pb-6">
+                <GradientLine direction="left" />
+                <ThreeStripesLeft />
+                <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
+                  <Truck className="size-4 text-[#121212]" />
+                  <span
+                    className="text-xs md:text-sm font-medium text-[#121212]"
+                    style={{ fontFamily: "Plus Jakarta Sans" }}
+                  >
+                    Fidel, el aliado de tu distribuidora
+                  </span>
+                </div>
+                <ThreeStripesRight />
+                <GradientLine direction="right" />
+              </div>
+
+              <h2
+                className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                Fidel, el aliado de tu distribuidora
-              </span>
+                <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel conecta ventas, stock, cobranzas y administración
+              </h2>
+              <p
+                className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed max-w-lg"
+                style={{ fontFamily: "Satoshi" }}
+              >
+                Un solo sistema pensado para distribuidoras que necesitan velocidad,
+                control y precisión en cada movimiento. Pedí una demo Gratis
+              </p>
             </div>
-            <ThreeStripesRight />
-            <GradientLine direction="right" />
-          </div>
 
-          <h2
-            className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-4xl"
-            style={{ fontFamily: "Plus Jakarta Sans" }}
-          >
-            <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel conecta ventas, stock, cobranzas y administración
-          </h2>
-          <p
-            className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed mx-auto max-w-2xl"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Un solo sistema pensado para distribuidoras que necesitan velocidad,
-            control y precisión en cada movimiento.
-          </p>
+            {/* Instagram Reel */}
+            <div className="flex justify-center">
+              <InstagramReel
+                url="https://www.instagram.com/fidelsistema/reel/DFOpX2fP0l4/"
+                width={320}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>

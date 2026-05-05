@@ -13,6 +13,7 @@ import {
   Bell,
   MapPin,
 } from "lucide-react";
+import InstagramReel from "@/components/InstagramReel";
 
 const features = [
   {
@@ -336,37 +337,50 @@ export default function CasasDeRepuestosPage() {
 
       {/* CTA Final */}
       <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 text-center">
-          <div className="flex justify-center items-center gap-x-2.5 pb-6">
-            <GradientLine direction="left" />
-            <ThreeStripesLeft />
-            <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-              <Settings className="size-4 text-[#121212]" />
-              <span
-                className="text-xs md:text-sm font-medium text-[#121212]"
+        <div className="mx-auto max-w-7xl xl:max-w-[80rem] px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Text side */}
+            <div className="flex flex-col items-center md:items-end text-center md:text-right">
+              <div className="flex justify-center md:justify-end items-center gap-x-2.5 pb-6">
+                <GradientLine direction="left" />
+                <ThreeStripesLeft />
+                <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
+                  <Settings className="size-4 text-[#121212]" />
+                  <span
+                    className="text-xs md:text-sm font-medium text-[#121212]"
+                    style={{ fontFamily: "Plus Jakarta Sans" }}
+                  >
+                    Fidel, el aliado de tu casa de repuestos
+                  </span>
+                </div>
+                <ThreeStripesRight />
+                <GradientLine direction="right" />
+              </div>
+
+              <h2
+                className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                Fidel, el aliado de tu casa de repuestos
-              </span>
+                <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel{" "}
+                te ayuda a ordenar precios, stock y proveedores en un solo lugar
+              </h2>
+              <p
+                className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed max-w-lg"
+                style={{ fontFamily: "Satoshi" }}
+              >
+                Para que puedas trabajar con más velocidad, menos errores y mayor
+                control en cada operación de tu negocio. Pedí una demo Gratis
+              </p>
             </div>
-            <ThreeStripesRight />
-            <GradientLine direction="right" />
-          </div>
 
-          <h2
-            className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-5xl"
-            style={{ fontFamily: "Plus Jakarta Sans" }}
-          >
-            <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel{" "}
-            te ayuda a ordenar precios, stock y proveedores en un solo lugar
-          </h2>
-          <p
-            className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed mx-auto max-w-2xl"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Para que puedas trabajar con más velocidad, menos errores y mayor
-            control en cada operación de tu negocio.
-          </p>
+            {/* Instagram Reel */}
+            <div className="flex justify-center">
+              <InstagramReel
+                url="https://www.instagram.com/reel/DSc4kkBjnUk/"
+                width={320}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>
