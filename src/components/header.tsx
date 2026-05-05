@@ -181,7 +181,7 @@ export default function Header() {
                       <rect width="7" height="7" x="3" y="14" rx="1" />
                     </svg>
                     Rubros
-                    <span className="ml-0.5 px-1.5 py-1 rounded-md bg-[#249cf7] text-white text-[9px] font-bold leading-none uppercase tracking-wide">
+                    <span className="ml-0.5 px-1.5 py-1 rounded-md bg-gradient-to-r from-[#19ff19] to-[#ffcd91] text-white text-[9px] font-bold leading-none uppercase tracking-wide">
                       Nuevo
                     </span>
                   </NavigationMenuTrigger>
