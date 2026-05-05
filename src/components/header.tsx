@@ -21,6 +21,7 @@ const TR = `all ${DUR} ${EASE}`;
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -161,7 +162,7 @@ export default function Header() {
             </Link>
 
             {/* Rubros dropdown */}
-            <NavigationMenu>
+            <NavigationMenu onValueChange={(v) => setMenuOpen(!!v)}>
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-[13.5px] px-3.5 py-2 bg-transparent hover:bg-black/5 text-[#2a2b30] hover:text-black gap-1.5 font-medium rounded-xl">
@@ -299,6 +300,21 @@ export default function Header() {
           </div>
         </header>
       </div>
+      {/* Blur overlay when menu is open */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 40,
+          backdropFilter: menuOpen ? "blur(3px)" : "blur(0px)",
+          WebkitBackdropFilter: menuOpen ? "blur(3px)" : "blur(0px)",
+          background: menuOpen ? "rgba(182, 182, 182, 0.08)" : "rgba(0,0,0,0)",
+          pointerEvents: menuOpen ? "auto" : "none",
+          transition: "backdrop-filter 0.25s ease, -webkit-backdrop-filter 0.25s ease, background 0.25s ease",
+        }}
+        onClick={() => setMenuOpen(false)}
+      />
 
       {/* Spacer so content doesn't hide behind the fixed header */}
       <div style={{ height: 80 }} aria-hidden="true" />
