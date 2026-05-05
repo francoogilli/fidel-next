@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+.reel-volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  box-shadow: none;
+  margin-top: -2.5px;
+}
+.reel-volume::-moz-range-thumb {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+}
+.reel-volume::-webkit-slider-runnable-track {
+  height: 3px;
+  border-radius: 9999px;
+}
+
+.reel-container:fullscreen,
+.reel-container:-webkit-full-screen {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  outline: none !important;
+  border-radius: 0 !important;
+}
+
 /* Estilos generales */
 body {
   background-color: #fcfbf9;

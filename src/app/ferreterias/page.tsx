@@ -14,6 +14,7 @@ import {
   Mail,
   Image,
 } from "lucide-react";
+import InstagramReel from "@/components/InstagramReel";
 
 const features = [
   {
@@ -102,7 +103,7 @@ export default function FidelFeaturesSection() {
     <>
       {/* Hero Section */}
       <motion.div
-        className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 lg:px-4 pt-16 md:pt-20 xl:pt-28 pb-16 md:pb-24 text-center"
+        className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 pt-16 md:pt-20 xl:pt-28 pb-16 md:pb-24 text-center"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -329,38 +330,49 @@ export default function FidelFeaturesSection() {
 
       {/* CTA Final */}
       <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 text-center">
-          {/* Badge header */}
-          <div className="flex justify-center items-center gap-x-2.5 pb-6">
-            <GradientLine direction="left" />
-            <ThreeStripesLeft />
-            <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-              <Wrench className="size-4 text-[#121212]" />
-              <span
-                className="text-xs md:text-sm font-medium text-[#121212]"
+        <div className="mx-auto max-w-7xl xl:max-w-[80rem] px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Text side */}
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+              <div className="flex justify-center md:justify-start items-center gap-x-2.5 pb-6">
+                <GradientLine direction="left" />
+                <ThreeStripesLeft />
+                <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
+                  <Wrench className="size-4 text-[#121212]" />
+                  <span
+                    className="text-xs md:text-sm font-medium text-[#121212]"
+                    style={{ fontFamily: "Plus Jakarta Sans" }}
+                  >
+                    Fidel, el aliado de tu ferretería
+                  </span>
+                </div>
+                <ThreeStripesRight />
+                <GradientLine direction="right" />
+              </div>
+
+              <h2
+                className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                Fidel, el aliado de tu ferretería
-              </span>
+                <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel no es solo un sistema de gestión
+              </h2>
+              <p
+                className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed max-w-lg"
+                style={{ fontFamily: "Satoshi" }}
+              >
+                Es una herramienta pensada para simplificar tu trabajo, ordenar tu
+                stock y ayudarte a vender mejor. Pedí una demo Gratis
+              </p>
             </div>
-            <ThreeStripesRight />
-            <GradientLine direction="right" />
+
+            {/* Instagram Reel */}
+            <div className="flex justify-center">
+              <InstagramReel
+                url="https://www.instagram.com/fidelsistema/reel/DABaUHuxGc7/"
+                width={320}
+              />
+            </div>
           </div>
-
-          <h2
-            className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance mx-auto max-w-3xl"
-            style={{ fontFamily: "Plus Jakarta Sans" }}
-          >
-            <img src="/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel no es solo un sistema de gestión
-          </h2>
-          <p
-            className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed mx-auto max-w-2xl"
-            style={{ fontFamily: "Satoshi" }}
-          >
-            Es una herramienta pensada para simplificar tu trabajo, ordenar tu
-            stock y ayudarte a vender mejor. Pedí una demo Gratis
-          </p>
-
         </div>
       </section>
     </>
