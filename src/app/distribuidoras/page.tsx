@@ -187,7 +187,7 @@ export default function DistribuidorasPage() {
               className="text-base font-medium text-[#18a018]"
               style={{ fontFamily: "Satoshi" }}
             >
-              distribuidoras ya confían en Fidel
+              DISTRIBUIDORAS ya confían en Fidel
             </span>
           </div>
         </motion.div>

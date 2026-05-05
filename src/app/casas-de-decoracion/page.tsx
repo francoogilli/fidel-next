@@ -160,7 +160,7 @@ export default function CasasDeDecoracionPage() {
               className="text-base font-medium text-[#18a018]"
               style={{ fontFamily: "Satoshi" }}
             >
-              locales de decoración ya confían en Fidel
+              locales de DECO ya confían en Fidel
             </span>
           </div>
         </motion.div>

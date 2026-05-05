@@ -179,7 +179,7 @@ export default function CasasDeRepuestosPage() {
               className="text-base font-medium text-[#18a018]"
               style={{ fontFamily: "Satoshi" }}
             >
-              casas de repuestos ya confían en Fidel
+              casas de REPUESTOS ya confían en Fidel
             </span>
           </div>
         </motion.div>

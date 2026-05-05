@@ -172,7 +172,7 @@ export default function FidelFeaturesSection() {
               className="text-base font-medium text-[#18a018]"
               style={{ fontFamily: "Satoshi" }}
             >
-              ferreterías ya confían en Fidel
+              FERRETERÍAS ya confían en Fidel
             </span>
           </div>
         </motion.div>
@@ -333,8 +333,8 @@ export default function FidelFeaturesSection() {
         <div className="mx-auto max-w-7xl xl:max-w-[80rem] px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Text side */}
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="flex justify-center md:justify-start items-center gap-x-2.5 pb-6">
+            <div className="flex flex-col items-center md:items-end text-center md:text-right">
+              <div className="flex justify-center md:justify-end items-center gap-x-2.5 pb-6">
                 <GradientLine direction="left" />
                 <ThreeStripesLeft />
                 <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
