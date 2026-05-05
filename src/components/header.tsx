@@ -187,77 +187,66 @@ export default function Header() {
                     </span>
                   </NavigationMenuTrigger>
 
-                  <NavigationMenuContent className="backdrop-blur-md bg-white/80 border rounded-2xl">
-                    <ul className="grid w-[420px] gap-2 p-4 md:grid-cols-2">
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/ferreterias"
-                            className="block rounded-md p-3 hover:bg-zinc-100 transition"
-                          >
-                            <div className="flex items-center gap-2 mb-1">
-                              <Wrench className="size-4 text-zinc-700" />
-                              <span className="font-medium">Ferreterías</span>
-                            </div>
-                            <p className="text-xs text-muted-foreground">
-                              Control de stock, listas de precios y ventas
-                              rápidas
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/distribuidoras"
-                            className="block rounded-md p-3 hover:bg-zinc-100 transition"
-                          >
-                            <div className="flex items-center gap-2 mb-1">
-                              <Truck className="size-4 text-zinc-700" />
-                              <span className="font-medium">
-                                Distribuidoras
-                              </span>
-                            </div>
-                            <p className="text-xs text-muted-foreground">
-                              Gestión mayorista y control de pedidos
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/casas-de-decoracion"
-                            className="block rounded-md p-3 hover:bg-zinc-100 transition"
-                          >
-                            <div className="flex items-center gap-2 mb-1">
-                              <Sparkles className="size-4 text-zinc-700" />
-                              <span className="font-medium">Deco</span>
-                            </div>
-                            <p className="text-xs text-muted-foreground">
-                              Productos decorativos y control por variantes
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/casas-de-repuestos"
-                            className="block rounded-md p-3 hover:bg-zinc-100 transition"
-                          >
-                            <div className="flex items-center gap-2 mb-1">
-                              <Settings className="size-4 text-zinc-700" />
-                              <span className="font-medium">Repuestos</span>
-                            </div>
-                            <p className="text-xs text-muted-foreground">
-                              Precios, stock y proveedores para repuestos
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    </ul>
+                  <NavigationMenuContent>
+                    <div className="w-[280px] p-2">
+                      <ul className="flex flex-col gap-1">
+                        {[
+                          {
+                            href: "/ferreterias",
+                            icon: <Wrench className="size-4" />,
+                            color: "bg-gradient-to-r from-[#19ff19] to-[#19ff19]",
+                            label: "Ferreterías",
+                            desc: "Control de stock, listas de precios y ventas rápidas.",
+                          },
+                          {
+                            href: "/distribuidoras",
+                            icon: <Truck className="size-4" />,
+                            color: "bg-gradient-to-r from-[#19ff19] to-[#ffcd91]",
+                            label: "Distribuidoras",
+                            desc: "Gestión mayorista y control de pedidos.",
+                          },
+                          {
+                            href: "/casas-de-decoracion",
+                            icon: <Sparkles className="size-4" />,
+                            color: "bg-gradient-to-r from-[#19ff19] to-[#ffcd91]",
+                            label: "Decoración",
+                            desc: "Productos decorativos y control por variantes.",
+                          },
+                          {
+                            href: "/casas-de-repuestos",
+                            icon: <Settings className="size-4" />,
+                            color: "bg-gradient-to-r from-[#19ff19] to-[#ffcd91]",
+                            label: "Repuestos",
+                            desc: "Precios, stock y proveedores para repuestos.",
+                          },
+                        ].map(({ href, icon, color, label, desc }) => (
+                          <li key={href}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href={href}
+                                className="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-zinc-50 transition-colors group"
+                              >
+                                <span
+                                  className={`flex items-center justify-center size-9 rounded-lg shrink-0 ${color} [&_*]:fill-white [&_*]:[stroke:none]`}
+                                >
+                                  {icon}
+                                </span>
+                                <div>
+                                  <p className="text-sm font-medium text-[#0b0b0c] leading-tight">
+                                    {label}
+                                  </p>
+                                  <p className="text-xs text-zinc-500 mt-0.5 leading-snug">
+                                    {desc}
+                                  </p>
+                                </div>
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </NavigationMenuContent>
+
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
