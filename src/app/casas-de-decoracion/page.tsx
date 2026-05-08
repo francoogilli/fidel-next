@@ -19,7 +19,7 @@ const features = [
     icon: ShoppingCart,
     title: "Integración con Tienda Nube y WooCommerce",
     description:
-      "Las ventas online ingresan directo al sistema. Facturás, despachás y actualizás stock sin cargar nada a mano.",
+      "Las ventas online ingresan directo al sistema. Facturás, despachás y mantenes stock sin cargar nada a mano.",
   },
   {
     icon: QrCode,
@@ -140,7 +140,7 @@ export default function CasasDeDecoracionPage() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           Si usás distintas plataformas para vender, controlar stock y armar
-          catálogos, Fidel es para vos. Centralizá todo en un solo sistema, y enfocá tu tiempo en vender y atender mejor a tus clientes.
+          catálogos, Fidel es para vos. Centralizá todo en un solo sistema, enfocá tu tiempo en vender y atender mejor a tus clientes.
         </motion.p>
 
         {/* Account count */}

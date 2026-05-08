@@ -234,7 +234,7 @@ export default function CasasDeRepuestosPage() {
             style={{ fontFamily: "Satoshi" }}
           >
             Herramientas para ordenar precios, stock y proveedores en un solo
-            lugar, y trabajar con más velocidad y control.
+            lugar, trabajar con más velocidad y control.
           </p>
 
           {/* Cards grid */}
