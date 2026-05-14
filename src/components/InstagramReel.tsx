@@ -1,15 +1,17 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { Play, Pause, Volume2, VolumeX, Maximize2, Minimize2 } from "lucide-react";
+import { Play, Pause, Volume2, VolumeX, Maximize2, Minimize2, Instagram } from "lucide-react";
 
 interface InstagramReelProps {
   url: string;
   width?: number;
+  title?: string;
 }
 
-export default function InstagramReel({ url, width = 320 }: InstagramReelProps) {
+export default function InstagramReel({ url, width = 320, title }: InstagramReelProps) {
   const [src, setSrc] = useState<string | null>(null);
+  const [poster, setPoster] = useState<string | null>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(true);
@@ -29,6 +31,9 @@ export default function InstagramReel({ url, width = 320 }: InstagramReelProps) 
       .then((data) => {
         if (data.videoUrl) {
           setSrc(`/api/instagram-proxy?url=${encodeURIComponent(data.videoUrl)}`);
+          if (data.thumbnailUrl) {
+            setPoster(`/api/instagram-proxy?url=${encodeURIComponent(data.thumbnailUrl)}`);
+          }
           setStatus("ready");
         } else {
           setStatus("error");
@@ -141,6 +146,7 @@ export default function InstagramReel({ url, width = 320 }: InstagramReelProps) 
   }
 
   return (
+    <div className="relative" style={{ width: isFullscreen ? "100%" : width }}>
     <div
       ref={containerRef}
       className="reel-container relative overflow-hidden rounded-[34px] cursor-pointer select-none"
@@ -157,6 +163,7 @@ export default function InstagramReel({ url, width = 320 }: InstagramReelProps) 
       <video
         ref={videoRef}
         src={src}
+        poster={poster ?? undefined}
         playsInline
         loop
         muted={muted}
@@ -164,6 +171,12 @@ export default function InstagramReel({ url, width = 320 }: InstagramReelProps) 
         onEnded={() => setPlaying(false)}
         className="w-full h-full"
         style={{ objectFit: isFullscreen ? "contain" : "cover" }}
+      />
+
+      {/* Top gradient */}
+      <div
+        className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-black/50 to-transparent pointer-events-none transition-opacity duration-200"
+        style={{ opacity: showControls ? 1 : 0 }}
       />
 
       {/* Play/Pause overlay */}
@@ -251,6 +264,33 @@ export default function InstagramReel({ url, width = 320 }: InstagramReelProps) 
           </div>
         </div>
       </div>
+    </div>
+
+    {/* Title + Instagram button — outside the clickable video div */}
+    <div
+      className="absolute top-0 left-0 right-0 transition-opacity duration-200 pointer-events-none"
+      style={{ opacity: showControls ? 1 : 0 }}
+    >
+      {title && !isFullscreen && (
+        <div className="absolute top-5 left-5 right-16">
+          <p
+            className="text-white text-sm font-semibold leading-snug drop-shadow-md"
+            style={{ fontFamily: "Plus Jakarta Sans" }}
+          >
+            {title}
+          </p>
+        </div>
+      )}
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        onMouseEnter={resetHideTimer}
+        className="absolute top-4 right-5 flex items-center justify-center size-9 rounded-full bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors pointer-events-auto"
+      >
+        <Instagram className="size-4 text-white" />
+      </a>
+    </div>
     </div>
   );
 }

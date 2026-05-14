@@ -24,9 +24,11 @@ export async function GET(request: Request) {
       return NextResponse.json({ error: "No video URL found" }, { status: 404 });
     }
 
+    const thumbnailUrl = result?.media_details?.[0]?.thumbnail ?? null;
+
     cache.set(url, { url: videoUrl, expiresAt: Date.now() + 30 * 60 * 1000 });
 
-    return NextResponse.json({ videoUrl });
+    return NextResponse.json({ videoUrl, thumbnailUrl });
   } catch {
     return NextResponse.json({ error: "Failed to extract video URL" }, { status: 500 });
   }

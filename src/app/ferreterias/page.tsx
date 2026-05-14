@@ -370,6 +370,7 @@ export default function FidelFeaturesSection() {
               <InstagramReel
                 url="https://www.instagram.com/fidelsistema/reel/DABaUHuxGc7/"
                 width={320}
+                title="Fidel para Ferreterías"
               />
             </div>
           </div>
