@@ -182,7 +182,7 @@ export default function Header() {
                       <rect width="7" height="7" x="3" y="14" rx="1" />
                     </svg>
                     Rubros
-                    <span className="ml-0.5 px-1.5 py-1 rounded-md bg-gradient-to-r from-[#19ff19] to-[#ffcd91] text-white text-[9px] font-bold leading-none uppercase tracking-wide">
+                    <span className="ml-0.5 px-1.5 py-1 rounded-md bg-gradient-to-r from-[#19ff19] to-[#19ff19] text-white text-[9px] font-bold leading-none uppercase tracking-wide">
                       Nuevo
                     </span>
                   </NavigationMenuTrigger>
@@ -194,32 +194,28 @@ export default function Header() {
                           {
                             href: "/ferreterias",
                             icon: <Wrench className="size-4" />,
-                            color: "bg-gradient-to-tr from-[#19ff19] to-[#aefbae]",
                             label: "Ferreterías",
                             desc: "Control de stock, listas de precios y ventas rápidas.",
                           },
                           {
                             href: "/distribuidoras",
                             icon: <Truck className="size-4" />,
-                            color: "bg-gradient-to-r from-[#19ff19] to-[#aefbae]",
                             label: "Distribuidoras",
                             desc: "Gestión mayorista y control de pedidos.",
                           },
                           {
                             href: "/casas-de-decoracion",
                             icon: <Sparkles className="size-4" />,
-                            color: "bg-gradient-to-br from-[#19ff19] to-[#aefbae]",
                             label: "Decoración",
                             desc: "Productos decorativos y control por variantes.",
                           },
                           {
                             href: "/casas-de-repuestos",
                             icon: <Settings className="size-4" />,
-                            color: "bg-gradient-to-b from-[#19ff19] to-[#aefbae]",
                             label: "Repuestos",
                             desc: "Precios, stock y proveedores para repuestos.",
                           },
-                        ].map(({ href, icon, color, label, desc }) => (
+                        ].map(({ href, icon, label, desc }) => (
                           <li key={href}>
                             <NavigationMenuLink asChild>
                               <Link
@@ -227,7 +223,7 @@ export default function Header() {
                                 className="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-zinc-50 transition-colors group"
                               >
                                 <span
-                                  className={`flex items-center justify-center size-9 rounded-lg shrink-0 ${color} [&_*]:fill-white [&_*]:[stroke:none]`}
+                                  className="flex items-center justify-center size-9 rounded-lg shrink-0 bg-zinc-100 text-zinc-500"
                                 >
                                   {icon}
                                 </span>
