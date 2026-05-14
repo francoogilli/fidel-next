@@ -18,9 +18,11 @@ export async function GET(request: Request) {
 
   try {
     const result = await instagramGetUrl(url);
+    console.log("[instagram-video] result:", JSON.stringify(result));
     const videoUrl = result?.url_list?.[0];
 
     if (!videoUrl) {
+      console.error("[instagram-video] No videoUrl in result");
       return NextResponse.json({ error: "No video URL found" }, { status: 404 });
     }
 
@@ -29,7 +31,8 @@ export async function GET(request: Request) {
     cache.set(url, { url: videoUrl, expiresAt: Date.now() + 30 * 60 * 1000 });
 
     return NextResponse.json({ videoUrl, thumbnailUrl });
-  } catch {
+  } catch (err) {
+    console.error("[instagram-video] error:", err);
     return NextResponse.json({ error: "Failed to extract video URL" }, { status: 500 });
   }
 }
