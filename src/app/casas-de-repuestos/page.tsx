@@ -74,6 +74,7 @@ const detailSections = [
       "Determina el precio por unidad sin intervención manual",
       "Ajusta el stock de forma automática en cada venta",
     ],
+    image: "/repuestos2.png",
     reverse: true,
   },
   {
