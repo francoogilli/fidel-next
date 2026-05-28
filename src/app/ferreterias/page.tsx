@@ -81,6 +81,7 @@ const detailSections = [
       "Recibí alertas automáticas cuando el stock baja",
       "Generá órdenes de compra de forma rápida",
     ],
+    image: "/ferreteria2.png",
     reverse: true,
   },
   {
@@ -94,6 +95,7 @@ const detailSections = [
       "Consultá el historial de compras fácilmente",
       "Compará precios y tomá mejores decisiones",
     ],
+    image: "/ferreteria3.png",
     reverse: false,
   },
 ];
