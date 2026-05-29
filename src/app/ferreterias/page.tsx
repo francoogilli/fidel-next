@@ -73,7 +73,7 @@ const detailSections = [
   {
     icon: Bell,
     badge: "Control inteligente de stock",
-    title: "Nunca más te quedés sin mercadería tengas sobrestock",
+    title: "Nunca más te quedés sin mercadería ni tengas sobrestock",
     description:
       "Fidel te mantiene siempre en el punto justo. Configurás los límites y el sistema te avisa cuando es momento de reponer.",
     items: [
