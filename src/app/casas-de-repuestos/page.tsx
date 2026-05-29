@@ -12,6 +12,7 @@ import {
   Users,
   Bell,
   MapPin,
+  Share2,
 } from "lucide-react";
 import InstagramReel from "@/components/InstagramReel";
 
@@ -45,6 +46,12 @@ const features = [
     title: "Ubicación exacta de cada producto",
     description:
       "Creá depósitos y asigná ubicación específica a cada repuesto. Encontralos al instante, incluso si vendés online.",
+  },
+  {
+    icon: Share2,
+    title: "Catálogos con Fotos para enviar por WhatsApp",
+    description:
+      "Armá catálogos en PDF con fotos y precios, y envialos por WhatsApp en segundos. Vendé incluso cuando el cliente no está en el local.",
   },
 ];
 
