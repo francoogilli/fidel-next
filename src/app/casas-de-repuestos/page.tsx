@@ -95,6 +95,7 @@ const detailSections = [
       "Compará precios fácilmente desde un solo lugar",
       "Consultá el historial de compras por proveedor",
     ],
+    image: "/repuestos3.png",
     reverse: false,
   },
   {
