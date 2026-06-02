@@ -91,6 +91,25 @@ const changelog = [
   },
 ];
 
+function HighlightedText({ text, query }: { text: string; query: string }) {
+  if (!query.trim()) return <>{text}</>;
+  const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi");
+  const parts = text.split(regex);
+  return (
+    <>
+      {parts.map((part, i) =>
+        regex.test(part) ? (
+          <span key={i} className="text-gray-900 font-semibold">
+            {part}
+          </span>
+        ) : (
+          part
+        )
+      )}
+    </>
+  );
+}
+
 function TagBadge({ type }: { type: string }) {
   const s = tagStyles[type];
   return (
@@ -261,7 +280,7 @@ export default function ChangelogPage() {
                     className="flex items-center gap-4 px-4 py-3 rounded-[18px]"
                   >
                     <TagBadge type={item.type} />
-                    <span className="text-gray-700 text-sm">{item.text}</span>
+                    <span className="text-gray-700 text-sm"><HighlightedText text={item.text} query={query} /></span>
                   </div>
                 ))}
               </div>
