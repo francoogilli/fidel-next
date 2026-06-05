@@ -63,7 +63,7 @@ const detailSections = [
     description:
       "Con Fidel, los pedidos se cargan desde el celular y se sincronizan automáticamente con el sistema. La facturación y preparación comienza al instante.",
     items: [
-      "Los pedidos se cargan desde el celular sin conexión.",
+      "Los pedidos se cargan desde el celular.",
       "Se sincronizan automáticamente con el sistema.",
       "La facturación y preparación de pedidos comienza al instante",
     ],
