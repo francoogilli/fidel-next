@@ -489,6 +489,11 @@ export const pricingInfo: PricingCard[] = [
         description: "Aplicá percepciones según cada provincia en tus ventas.",
       },
       { text: "Límite de 50.000 productos", highlight: true },
+      {
+        text: "API Pública para Devs",
+        description:
+          "Integrá Fidel con tus propias herramientas y sistemas mediante nuestra API.",
+      },
     ],
   },
 ];
