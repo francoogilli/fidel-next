@@ -387,6 +387,7 @@ export default function DistribuidorasPage() {
                 url="https://www.instagram.com/fidelsistema/reel/DFOpX2fP0l4/"
                 width={320}
                 title="Fidel para Distribuidoras"
+                thumbnail="/fidel/reels/distribuidoras.jpg"
               />
             </div>
           </div>

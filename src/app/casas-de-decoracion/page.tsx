@@ -360,6 +360,7 @@ export default function CasasDeDecoracionPage() {
                 url="https://www.instagram.com/reel/DLiB4MXuhp1/"
                 width={320}
                 title="Fidel para Casas de Decoración"
+                thumbnail="/fidel/reels/decoracion.jpg"
               />
             </div>
           </div>

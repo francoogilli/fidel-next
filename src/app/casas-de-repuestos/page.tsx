@@ -388,6 +388,7 @@ export default function CasasDeRepuestosPage() {
                 url="https://www.instagram.com/reel/DSc4kkBjnUk/"
                 width={320}
                 title="Fidel para Casas de Repuestos"
+                thumbnail="/fidel/reels/repuestos.jpg"
               />
             </div>
           </div>
