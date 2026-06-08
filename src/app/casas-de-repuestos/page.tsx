@@ -6,52 +6,52 @@ import GradientLine from "@/components/gradientLine";
 import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
 import {
-  Wrench,
+  Settings,
   FileSpreadsheet,
   Package,
   Users,
   Bell,
-  Mail,
-  Image,
+  MapPin,
+  Share2,
 } from "lucide-react";
 import InstagramReel from "@/components/InstagramReel";
 
 const features = [
   {
     icon: FileSpreadsheet,
-    title: "Actualización masiva desde Excel",
+    title: "Actualización masiva de precios",
     description:
-      "Importá la lista de tu proveedor y actualizá todos tus precios en segundos, sin errores manuales.",
+      "Importá listas desde Excel y actualizá precios de forma masiva usando el código de proveedor, en segundos y sin errores.",
   },
   {
     icon: Package,
     title: "Compra por bulto, venta por unidad",
     description:
-      "Gestioná ambos formatos sin complicaciones. El sistema calcula precios y stock automáticamente.",
+      "Fidel calcula automáticamente el costo por bulto, el precio por unidad y ajusta el stock sin cuentas manuales.",
   },
   {
     icon: Users,
-    title: "Múltiples proveedores",
+    title: "Múltiples proveedores por producto",
     description:
-      "Registrá distintos proveedores para el mismo producto y compará precios desde un solo lugar.",
+      "Asigná más de un proveedor a cada artículo, compará precios fácilmente y consultá el historial de compras.",
   },
   {
     icon: Bell,
-    title: "Control de stock inteligente",
+    title: "Stock mínimo y máximo con alertas",
     description:
-      "Recibí alertas automáticas cuando el stock baja y generá órdenes de compra al instante.",
+      "Definí límites por producto y recibí alertas automáticas para reponer a tiempo y mantener el equilibrio.",
   },
   {
-    icon: Mail,
-    title: "Facturación automática",
+    icon: MapPin,
+    title: "Ubicación exacta de cada producto",
     description:
-      "Enviá facturas por mail o WhatsApp en un par de clics. Sin demoras ni tareas repetitivas.",
+      "Creá depósitos y asigná ubicación específica a cada repuesto. Encontralos al instante, incluso si vendés online.",
   },
   {
-    icon: Image,
-    title: "Catálogos con imágenes",
+    icon: Share2,
+    title: "Catálogos con Fotos para enviar por WhatsApp",
     description:
-      "Creá listas de precios visuales para vender por mostrador o compartir digitalmente con tus clientes.",
+      "Armá catálogos en PDF con fotos y precios, y envialos por WhatsApp en segundos. Vendé incluso cuando el cliente no está en el local.",
   },
 ];
 
@@ -59,53 +59,67 @@ const detailSections = [
   {
     icon: FileSpreadsheet,
     badge: "Actualización masiva de precios",
-    title: "Actualizá todos tus precios desde un solo archivo Excel",
+    title: "Los precios cambian todo el tiempo. Actualizalos en segundos",
     description:
-      "¿Tus proveedores te envían listas de precios en Excel? Con Fidel, solo importás el archivo y el sistema hace el resto.",
+      "En el rubro repuestos, trabajar con precios desactualizados es perder dinero. Con Fidel importás la lista del proveedor y actualizás todo al instante.",
     items: [
-      "Actualiza automáticamente los precios según el código de proveedor",
-      "Evita errores manuales y te ahorra horas de carga",
-      "En pocos segundos, tus precios quedan listos para vender",
+      "Importá listas de precios directamente desde Excel",
+      "Actualizá precios de forma masiva usando el código de proveedor",
+      "Sin errores manuales y en pocos segundos",
     ],
-    image: "/fidel/ferreteria1.png",
+    image: "/fidel/repuestos1.png",
     reverse: false,
   },
   {
-    icon: Bell,
-    badge: "Control inteligente de stock",
-    title: "Nunca más te quedés sin mercadería ni tengas sobrestock",
+    icon: Package,
+    badge: "Compra por bulto, venta por unidad",
+    title: "Precisión total sin cuentas manuales",
     description:
-      "Fidel te mantiene siempre en el punto justo. Configurás los límites y el sistema te avisa cuando es momento de reponer.",
+      "¿Comprás por bulto pero vendés por pieza? Fidel hace los cálculos por vos y mantiene el stock actualizado automáticamente.",
     items: [
-      "Definí stock mínimo y máximo por producto",
-      "Recibí alertas automáticas cuando el stock baja",
-      "Generá órdenes de compra de forma rápida",
+      "Calcula automáticamente el costo por bulto",
+      "Determina el precio por unidad sin intervención manual",
+      "Ajusta el stock de forma automática en cada venta",
     ],
-    image: "/fidel/ferreteria2.png",
+    image: "/fidel/repuestos2.png",
     reverse: true,
   },
   {
     icon: Users,
-    badge: "Gestión de proveedores",
-    title: "Comprá siempre al mejor proveedor, sin perder tiempo",
+    badge: "Múltiples proveedores",
+    title: "Comprá siempre al proveedor más conveniente",
     description:
-      "¿Comprás el mismo producto a distintos proveedores? Registralos todos en Fidel y elegí siempre la mejor opción.",
+      "Un mismo repuesto puede tener varios proveedores. Con Fidel los tenés todos organizados para tomar la mejor decisión de compra.",
     items: [
-      "Registrá múltiples proveedores para un mismo artículo",
-      "Consultá el historial de compras fácilmente",
-      "Compará precios y tomá mejores decisiones",
+      "Asigná más de un proveedor a cada artículo",
+      "Compará precios fácilmente desde un solo lugar",
+      "Consultá el historial de compras por proveedor",
     ],
-    image: "/fidel/ferreteria3.png",
+    image: "/fidel/repuestos3.png",
     reverse: false,
+  },
+  {
+    icon: MapPin,
+    badge: "Ubicación de productos",
+    title: "Miles de repuestos, encontrados al instante",
+    description:
+      "Cuando tenés miles de productos, saber dónde está cada uno es clave para atender rápido. Fidel te da esa precisión.",
+    items: [
+      "Creá distintos depósitos.",
+      "Asigná ubicación específica a cada producto",
+      "Encontrá cualquier repuesto al instante, incluso si también vendés online",
+    ],
+    image: "/fidel/repuestos4.png",
+    reverse: true,
   },
 ];
 
-export default function FidelFeaturesSection() {
+export default function CasasDeRepuestosPage() {
   return (
     <>
       {/* Hero Section */}
       <motion.div
-        className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 pt-16 md:pt-20 xl:pt-28 pb-16 md:pb-24 text-center"
+        className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 lg:px-4 pt-16 md:pt-20 xl:pt-28 pb-16 md:pb-24 text-center"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -120,12 +134,12 @@ export default function FidelFeaturesSection() {
           <GradientLine direction="left" />
           <ThreeStripesLeft />
           <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-            <Wrench className="size-4 text-[#121212]" />
+            <Settings className="size-4 text-[#121212]" />
             <span
               className="text-xs md:text-sm font-medium text-[#121212]"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
-              Fidel para Ferreterías
+              Fidel para Casas de Repuestos
             </span>
           </div>
           <ThreeStripesRight />
@@ -134,13 +148,13 @@ export default function FidelFeaturesSection() {
 
         {/* Title */}
         <motion.h1
-          className="font-bold text-[#252525] text-4xl md:text-[3.25rem] xl:text-[3.5rem] tracking-tight leading-[1.15] text-balance mx-auto max-w-4xl"
+          className="font-bold text-[#252525] text-4xl md:text-[3.25rem] xl:text-[3.5rem] tracking-tight leading-[1.15] text-balance mx-auto max-w-5xl"
           style={{ fontFamily: "Plus Jakarta Sans" }}
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          El sistema de gestión pensado para el día a día de tu ferretería
+          El sistema pensado para negocios con muchos códigos y alta rotación
         </motion.h1>
 
         {/* Subtitle */}
@@ -151,9 +165,10 @@ export default function FidelFeaturesSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          ¿Perdés tiempo actualizando precios, controlando stock o enviando
-          facturas? Fidel simplifica tu trabajo con herramientas diseñadas
-          específicamente para el rubro ferretero.
+          Los precios cambian constantemente, el stock es complejo y el tiempo
+          en mostrador vale oro. Por eso Fidel tiene herramientas pensadas
+          específicamente para quienes trabajan entre listas de precios, códigos
+          y estanterías llenas de productos.
         </motion.p>
 
         {/* Account count */}
@@ -168,18 +183,18 @@ export default function FidelFeaturesSection() {
               className="text-3xl font-bold text-[#1db31d]"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
-              +230
+              +160
             </span>
             <span
               className="text-base font-medium text-[#18a018]"
               style={{ fontFamily: "Satoshi" }}
             >
-              FERRETERÍAS ya confían en Fidel
+              casas de REPUESTOS ya confían en Fidel
             </span>
           </div>
         </motion.div>
 
-        {/* Hero image */}
+        {/* Hero placeholder */}
         <motion.div
           className="mt-14 mx-auto w-full max-w-4xl rounded-[24px] overflow-hidden border border-[#e9e9e9d3]"
           initial={{ opacity: 0, y: 30 }}
@@ -187,8 +202,8 @@ export default function FidelFeaturesSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <img
-            src="/fidel/ferreterias1.png"
-            alt="Sistema Fidel para ferreterías"
+            src="/fidel/repuestos.png"
+            alt="Sistema Fidel para casas de repuestos"
             className="w-full h-auto"
           />
         </motion.div>
@@ -196,7 +211,6 @@ export default function FidelFeaturesSection() {
 
       {/* Features Grid */}
       <div
-        id="funcionalidades-ferreteria"
         className="pb-20 md:pb-28"
         style={{ background: "linear-gradient(to bottom, #FFFFFF, transparent)" }}
       >
@@ -206,7 +220,7 @@ export default function FidelFeaturesSection() {
             <GradientLine direction="left" />
             <ThreeStripesLeft />
             <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-              <Wrench className="size-4 text-[#121212]" />
+              <Settings className="size-4 text-[#121212]" />
               <span
                 className="text-xs md:text-sm font-medium text-[#121212]"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
@@ -222,14 +236,14 @@ export default function FidelFeaturesSection() {
             className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-6 tracking-tight text-[#252525]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Todo lo que necesita tu ferretería
+            Todo lo que necesita tu casa de repuestos
           </h2>
           <p
             className="text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[38rem] mx-auto pb-10"
             style={{ fontFamily: "Satoshi" }}
           >
-            Herramientas diseñadas para resolver los problemas reales del rubro
-            ferretero, sin complicaciones.
+            Herramientas para ordenar precios, stock y proveedores en un solo
+            lugar, trabajar con más velocidad y control.
           </p>
 
           {/* Cards grid */}
@@ -340,12 +354,12 @@ export default function FidelFeaturesSection() {
                 <GradientLine direction="left" />
                 <ThreeStripesLeft />
                 <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-                  <Wrench className="size-4 text-[#121212]" />
+                  <Settings className="size-4 text-[#121212]" />
                   <span
                     className="text-xs md:text-sm font-medium text-[#121212]"
                     style={{ fontFamily: "Plus Jakarta Sans" }}
                   >
-                    Fidel, el aliado de tu ferretería
+                    Fidel, el aliado de tu casa de repuestos
                   </span>
                 </div>
                 <ThreeStripesRight />
@@ -356,23 +370,24 @@ export default function FidelFeaturesSection() {
                 className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                <img src="/fidel/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel no es solo un sistema de gestión
+                <img src="/fidel/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel{" "}
+                te ayuda a ordenar precios, stock y proveedores en un solo lugar
               </h2>
               <p
                 className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed max-w-lg"
                 style={{ fontFamily: "Satoshi" }}
               >
-                Es una herramienta pensada para simplificar tu trabajo, ordenar tu
-                stock y ayudarte a vender mejor. Pedí una demo Gratis
+                Para que puedas trabajar con más velocidad, menos errores y mayor
+                control en cada operación de tu negocio. Pedí una demo Gratis
               </p>
             </div>
 
             {/* Instagram Reel */}
             <div className="flex justify-center">
               <InstagramReel
-                url="https://www.instagram.com/fidelsistema/reel/DABaUHuxGc7/"
+                url="https://www.instagram.com/reel/DSc4kkBjnUk/"
                 width={320}
-                title="Fidel para Ferreterías"
+                title="Fidel para Casas de Repuestos"
               />
             </div>
           </div>

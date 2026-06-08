@@ -6,106 +6,94 @@ import GradientLine from "@/components/gradientLine";
 import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
 import {
-  Wrench,
-  FileSpreadsheet,
-  Package,
-  Users,
-  Bell,
-  Mail,
-  Image,
+  Sparkles,
+  ShoppingCart,
+  QrCode,
+  BarChart3,
+  BookImage,
 } from "lucide-react";
 import InstagramReel from "@/components/InstagramReel";
 
 const features = [
   {
-    icon: FileSpreadsheet,
-    title: "Actualización masiva desde Excel",
+    icon: ShoppingCart,
+    title: "Integración con Tienda Nube y WooCommerce",
     description:
-      "Importá la lista de tu proveedor y actualizá todos tus precios en segundos, sin errores manuales.",
+      "Las ventas online ingresan directo al sistema. Facturás, despachás y mantenes stock sin cargar nada a mano.",
   },
   {
-    icon: Package,
-    title: "Compra por bulto, venta por unidad",
+    icon: QrCode,
+    title: "QR y códigos de barra en el local",
     description:
-      "Gestioná ambos formatos sin complicaciones. El sistema calcula precios y stock automáticamente.",
+      "Imprimí etiquetas con código QR en los productos para que el cliente vea precios y detalles desde su celular. Menos consultas, más ventas.",
   },
   {
-    icon: Users,
-    title: "Múltiples proveedores",
+    icon: BarChart3,
+    title: "Información clave en tiempo real",
     description:
-      "Registrá distintos proveedores para el mismo producto y compará precios desde un solo lugar.",
+      "Mirá qué productos se venden más, el stock disponible y las alertas de reposición, todo actualizado en tiempo real.",
   },
   {
-    icon: Bell,
-    title: "Control de stock inteligente",
+    icon: BookImage,
+    title: "Catálogos visuales por WhatsApp",
     description:
-      "Recibí alertas automáticas cuando el stock baja y generá órdenes de compra al instante.",
-  },
-  {
-    icon: Mail,
-    title: "Facturación automática",
-    description:
-      "Enviá facturas por mail o WhatsApp en un par de clics. Sin demoras ni tareas repetitivas.",
-  },
-  {
-    icon: Image,
-    title: "Catálogos con imágenes",
-    description:
-      "Creá listas de precios visuales para vender por mostrador o compartir digitalmente con tus clientes.",
+      "Armá catálogos en PDF con fotos y precios, y enviálos por WhatsApp en pocos segundos. Vendé incluso fuera del local.",
   },
 ];
 
 const detailSections = [
   {
-    icon: FileSpreadsheet,
-    badge: "Actualización masiva de precios",
-    title: "Actualizá todos tus precios desde un solo archivo Excel",
+    icon: ShoppingCart,
+    badge: "Tienda Nube y WooCommerce",
+    title: "Vendé online sin duplicar trabajo",
     description:
-      "¿Tus proveedores te envían listas de precios en Excel? Con Fidel, solo importás el archivo y el sistema hace el resto.",
+      "Con Fidel, tus ventas online ingresan directo al sistema. Productos, stock, precios, variantes, promociones y fotos se actualizan automáticamente.",
     items: [
-      "Actualiza automáticamente los precios según el código de proveedor",
-      "Evita errores manuales y te ahorra horas de carga",
-      "En pocos segundos, tus precios quedan listos para vender",
+      "Las ventas online ingresan directo al sistema sin carga manual",
+      "Facturás y despachás en el momento, sin errores",
+      "Productos, precios y variantes sincronizados automáticamente",
+      "Imprimís etiquetas de envío en pocos clics",
+      "Cada venta crea un nuevo cliente en tu base de datos",
     ],
-    image: "/fidel/ferreteria1.png",
+    image: "/fidel/deco1.png",
     reverse: false,
   },
   {
-    icon: Bell,
-    badge: "Control inteligente de stock",
-    title: "Nunca más te quedés sin mercadería ni tengas sobrestock",
+    icon: QrCode,
+    badge: "QR y códigos de barra",
+    title: "Mejorá la experiencia de compra en tu showroom",
     description:
-      "Fidel te mantiene siempre en el punto justo. Configurás los límites y el sistema te avisa cuando es momento de reponer.",
+      "Colocá códigos QR en los productos de tu local para que los clientes escaneen y vean precios y detalles desde su celular, sin interrumpirte.",
     items: [
-      "Definí stock mínimo y máximo por producto",
-      "Recibí alertas automáticas cuando el stock baja",
-      "Generá órdenes de compra de forma rápida",
+      "El cliente escanea el QR y ve precios y detalles al instante",
+      "Usá códigos de barra y lector para agilizar las ventas",
+      "Menos consultas repetitivas, más foco en atender y vender",
     ],
-    image: "/fidel/ferreteria2.png",
+    image: "/fidel/deco2.png",
     reverse: true,
   },
   {
-    icon: Users,
-    badge: "Gestión de proveedores",
-    title: "Comprá siempre al mejor proveedor, sin perder tiempo",
+    icon: BookImage,
+    badge: "Catálogos visuales",
+    title: "Enviá catálogos por WhatsApp y vendé desde cualquier lugar",
     description:
-      "¿Comprás el mismo producto a distintos proveedores? Registralos todos en Fidel y elegí siempre la mejor opción.",
+      "Armá catálogos en PDF con fotos y precios. Enviálos por WhatsApp y cerrá ventas incluso cuando el cliente no está en el local.",
     items: [
-      "Registrá múltiples proveedores para un mismo artículo",
-      "Consultá el historial de compras fácilmente",
-      "Compará precios y tomá mejores decisiones",
+      "Armá catálogos en PDF con fotos y precios",
+      "Personalizalos para cada cliente o segmento",
+      "Enviálos por WhatsApp en pocos segundos",
     ],
-    image: "/fidel/ferreteria3.png",
+    image: "/fidel/deco3.png",
     reverse: false,
   },
 ];
 
-export default function FidelFeaturesSection() {
+export default function CasasDeDecoracionPage() {
   return (
     <>
       {/* Hero Section */}
       <motion.div
-        className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 pt-16 md:pt-20 xl:pt-28 pb-16 md:pb-24 text-center"
+        className="mx-auto max-w-7xl xl:max-w-[90rem] px-4 lg:px-4 pt-16 md:pt-20 xl:pt-28 pb-16 md:pb-24 text-center"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -120,12 +108,12 @@ export default function FidelFeaturesSection() {
           <GradientLine direction="left" />
           <ThreeStripesLeft />
           <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-            <Wrench className="size-4 text-[#121212]" />
+            <Sparkles className="size-4 text-[#121212]" />
             <span
               className="text-xs md:text-sm font-medium text-[#121212]"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
-              Fidel para Ferreterías
+              Fidel para Casas de Decoración
             </span>
           </div>
           <ThreeStripesRight />
@@ -134,13 +122,13 @@ export default function FidelFeaturesSection() {
 
         {/* Title */}
         <motion.h1
-          className="font-bold text-[#252525] text-4xl md:text-[3.25rem] xl:text-[3.5rem] tracking-tight leading-[1.15] text-balance mx-auto max-w-4xl"
+          className="font-bold text-[#252525] text-4xl md:text-[3.25rem] xl:text-[3.5rem] tracking-tight leading-[1.15] text-balance mx-auto max-w-5xl"
           style={{ fontFamily: "Plus Jakarta Sans" }}
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          El sistema de gestión pensado para el día a día de tu ferretería
+          Un solo sistema para vender, mostrar y gestionar tu negocio deco
         </motion.h1>
 
         {/* Subtitle */}
@@ -151,9 +139,8 @@ export default function FidelFeaturesSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          ¿Perdés tiempo actualizando precios, controlando stock o enviando
-          facturas? Fidel simplifica tu trabajo con herramientas diseñadas
-          específicamente para el rubro ferretero.
+          Si usás distintas plataformas para vender, controlar stock y armar
+          catálogos, Fidel es para vos. Centralizá todo en un solo sistema, enfocá tu tiempo en vender y atender mejor a tus clientes.
         </motion.p>
 
         {/* Account count */}
@@ -168,18 +155,18 @@ export default function FidelFeaturesSection() {
               className="text-3xl font-bold text-[#1db31d]"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
-              +230
+              +90
             </span>
             <span
               className="text-base font-medium text-[#18a018]"
               style={{ fontFamily: "Satoshi" }}
             >
-              FERRETERÍAS ya confían en Fidel
+              locales de DECO ya confían en Fidel
             </span>
           </div>
         </motion.div>
 
-        {/* Hero image */}
+        {/* Hero placeholder */}
         <motion.div
           className="mt-14 mx-auto w-full max-w-4xl rounded-[24px] overflow-hidden border border-[#e9e9e9d3]"
           initial={{ opacity: 0, y: 30 }}
@@ -187,8 +174,8 @@ export default function FidelFeaturesSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <img
-            src="/fidel/ferreterias1.png"
-            alt="Sistema Fidel para ferreterías"
+            src="/fidel/deco.png"
+            alt="Sistema Fidel para casas de decoración"
             className="w-full h-auto"
           />
         </motion.div>
@@ -196,7 +183,6 @@ export default function FidelFeaturesSection() {
 
       {/* Features Grid */}
       <div
-        id="funcionalidades-ferreteria"
         className="pb-20 md:pb-28"
         style={{ background: "linear-gradient(to bottom, #FFFFFF, transparent)" }}
       >
@@ -206,7 +192,7 @@ export default function FidelFeaturesSection() {
             <GradientLine direction="left" />
             <ThreeStripesLeft />
             <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-              <Wrench className="size-4 text-[#121212]" />
+              <Sparkles className="size-4 text-[#121212]" />
               <span
                 className="text-xs md:text-sm font-medium text-[#121212]"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
@@ -222,18 +208,18 @@ export default function FidelFeaturesSection() {
             className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-6 tracking-tight text-[#252525]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            Todo lo que necesita tu ferretería
+            Todo lo que necesita tu local de decoración
           </h2>
           <p
             className="text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[38rem] mx-auto pb-10"
             style={{ fontFamily: "Satoshi" }}
           >
-            Herramientas diseñadas para resolver los problemas reales del rubro
-            ferretero, sin complicaciones.
+            Herramientas pensadas para negocios deco que venden en tienda
+            física y online, sin duplicar esfuerzo.
           </p>
 
           {/* Cards grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {features.map((feature) => (
               <div
                 key={feature.title}
@@ -340,12 +326,12 @@ export default function FidelFeaturesSection() {
                 <GradientLine direction="left" />
                 <ThreeStripesLeft />
                 <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-                  <Wrench className="size-4 text-[#121212]" />
+                  <Sparkles className="size-4 text-[#121212]" />
                   <span
                     className="text-xs md:text-sm font-medium text-[#121212]"
                     style={{ fontFamily: "Plus Jakarta Sans" }}
                   >
-                    Fidel, el aliado de tu ferretería
+                    Fidel, el sistema pensado para negocios deco
                   </span>
                 </div>
                 <ThreeStripesRight />
@@ -356,23 +342,24 @@ export default function FidelFeaturesSection() {
                 className="text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-[#252525] tracking-tight leading-tight text-balance"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                <img src="/fidel/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel no es solo un sistema de gestión
+                Estas herramientas ya están incluidas en{" "}
+                <img src="/fidel/fidel1.svg" alt="Fidel" style={{ height: "1.5em", width: "auto", display: "inline", verticalAlign: "-0.35em", marginRight: "0.15em" }} />Fidel
               </h2>
               <p
                 className="mt-6 text-[#5c5c5c] text-base md:text-lg xl:text-xl font-medium leading-relaxed max-w-lg"
                 style={{ fontFamily: "Satoshi" }}
               >
-                Es una herramienta pensada para simplificar tu trabajo, ordenar tu
-                stock y ayudarte a vender mejor. Pedí una demo Gratis
+                Junto con muchas más funciones pensadas para locales de decoración
+                que venden en tienda física y online, todo en un solo sistema. Pedí una demo Gratis
               </p>
             </div>
 
             {/* Instagram Reel */}
             <div className="flex justify-center">
               <InstagramReel
-                url="https://www.instagram.com/fidelsistema/reel/DABaUHuxGc7/"
+                url="https://www.instagram.com/reel/DLiB4MXuhp1/"
                 width={320}
-                title="Fidel para Ferreterías"
+                title="Fidel para Casas de Decoración"
               />
             </div>
           </div>
