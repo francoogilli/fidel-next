@@ -7,7 +7,7 @@ import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
 import * as Yup from "yup";
 import { useState } from "react";
-import { ModalScheduleMeet } from "./modalScheduleMeet";
+import { ScheduleMeetButton } from "./scheduleMeetButton";
 import { Contact } from "@/api/types";
 import { createHubSpotContact } from "@/api/hubspot";
 import CheckToast from "@/icons/checkToast";
@@ -269,7 +269,7 @@ export default function ContactSection({ viewPage }: Props) {
                   </div>
                 </div>
                 <div className="flex justify-center items-center">
-                  <ModalScheduleMeet />
+                  <ScheduleMeetButton />
                 </div>
               </div>
 
