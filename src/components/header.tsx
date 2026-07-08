@@ -13,15 +13,40 @@ import {
   NavigationMenuTrigger,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
-import { Wrench, Truck, Sparkles, Settings } from "lucide-react";
+import { Wrench, Truck, Sparkles, Settings, ArrowRight } from "lucide-react";
 
 const EASE = "cubic-bezier(.2,.85,.25,1)";
 const DUR = "0.6s";
 const TR = `all ${DUR} ${EASE}`;
 
+const rubroCardContent = [
+  {
+    title: "Día en Ferreterías",
+    desc: "Viví el recorrido interactivo de una ferretería real automatizada con Fidel.",
+    badge: "Ferreterías 🛠️"
+  },
+  {
+    title: "Día en Distribuidoras",
+    desc: "Explorá la gestión de stock y pedidos (demo interactiva basada en ferreterías).",
+    badge: "Distribuidoras 🚛"
+  },
+  {
+    title: "Día en Decoración",
+    desc: "Conocé cómo optimizar ventas y variantes (demo interactiva basada en ferreterías).",
+    badge: "Decoración ✨"
+  },
+  {
+    title: "Día en Repuestos",
+    desc: "Mirá el control de precios y proveedores (demo interactiva basada en ferreterías).",
+    badge: "Repuestos ⚙️"
+  }
+];
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showDiaConFidel, setShowDiaConFidel] = useState(false);
+  const [activeRubroIndex, setActiveRubroIndex] = useState(0);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -162,7 +187,12 @@ export default function Header() {
             </Link>
 
             {/* Rubros dropdown */}
-            <NavigationMenu onValueChange={(v) => setMenuOpen(!!v)}>
+            <NavigationMenu
+              onValueChange={(v) => {
+                setMenuOpen(!!v);
+                if (!v) setShowDiaConFidel(false);
+              }}
+            >
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-[13.5px] px-3.5 py-2 bg-transparent hover:bg-black/5 text-[#2a2b30] hover:text-black gap-1.5 font-medium rounded-xl">
@@ -188,8 +218,9 @@ export default function Header() {
                   </NavigationMenuTrigger>
 
                   <NavigationMenuContent>
-                    <div className="w-[280px] p-2">
-                      <ul className="flex flex-col gap-1">
+                    <div className="flex w-[500px] p-2 gap-2">
+                      {/* Left: rubros list */}
+                      <ul className="flex flex-col gap-1 flex-1 min-w-0">
                         {[
                           {
                             href: "/ferreterias",
@@ -215,16 +246,17 @@ export default function Header() {
                             label: "Repuestos",
                             desc: "Precios, stock y proveedores para repuestos.",
                           },
-                        ].map(({ href, icon, label, desc }) => (
-                          <li key={href}>
+                        ].map(({ href, icon, label, desc }, index) => (
+                          <li
+                            key={href}
+                            onMouseEnter={() => setActiveRubroIndex(index)}
+                          >
                             <NavigationMenuLink asChild>
                               <Link
                                 href={href}
                                 className="flex items-center gap-3 rounded-lg px-3 py-2.5 hover:bg-zinc-50 transition-colors group"
                               >
-                                <span
-                                  className="flex items-center justify-center size-9 rounded-lg shrink-0 bg-zinc-100 text-zinc-500"
-                                >
+                                <span className="flex items-center justify-center size-9 rounded-lg shrink-0 bg-zinc-100 text-zinc-500">
                                   {icon}
                                 </span>
                                 <div>
@@ -240,6 +272,37 @@ export default function Header() {
                           </li>
                         ))}
                       </ul>
+
+                      {/* Divider */}
+                      <div className="w-px bg-zinc-100 self-stretch mx-1" />
+
+                      {/* Right: Un día con Fidel panel */}
+                      <div className="w-[186px] shrink-0 flex flex-col justify-between rounded-xl bg-zinc-50 p-3.5 gap-3">
+                        <div className="flex flex-col gap-2">
+                          <div className="flex items-center gap-1.5 text-[10px] font-bold text-[#06dc02] bg-[#ffffff] px-2 py-0.5 rounded-md uppercase tracking-wider self-start">
+                            <Sparkles className="size-3" />
+                            <span>{rubroCardContent[activeRubroIndex]?.badge?.split(" ")[0] || "Ferreterías"}</span>
+                          </div>
+                          <div>
+                            <p className="text-[11px] font-semibold text-zinc-400 uppercase tracking-wide leading-none mb-1">
+                              Un día con Fidel
+                            </p>
+                            <h4 className="text-[13px] font-bold text-zinc-900 leading-snug">
+                              {rubroCardContent[activeRubroIndex]?.title || "Día en Ferreterías"}
+                            </h4>
+                          </div>
+                          <p className="text-[11.5px] text-zinc-500 leading-snug">
+                            {rubroCardContent[activeRubroIndex]?.desc || ""}
+                          </p>
+                        </div>
+                        <Link
+                          href="/dia-con-fidel-ferreterias"
+                          className="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 text-xs font-semibold text-white bg-zinc-900 hover:bg-zinc-800 rounded-lg transition-colors group/btn no-underline"
+                        >
+                          Ver día
+                          <ArrowRight className="size-3.5 transition-transform group-hover/btn:translate-x-0.5" />
+                        </Link>
+                      </div>
                     </div>
                   </NavigationMenuContent>
 

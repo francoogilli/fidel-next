@@ -91,7 +91,7 @@ const NavigationMenuViewport = React.forwardRef<
   <div className={cn("absolute top-full left-1/2 -translate-x-1/2 flex justify-center [perspective:2000px]")}>
     <NavigationMenuPrimitive.Viewport
       className={cn(
-        "origin-top relative mt-2.5 h-[var(--radix-navigation-menu-viewport-height)] overflow-hidden rounded-2xl border bg-popover text-popover-foreground shadow transition-[width,height] duration-300 ease-in-out w-[var(--radix-navigation-menu-viewport-width)]",
+        "origin-top relative mt-2.5 h-[var(--radix-navigation-menu-viewport-height)] rounded-2xl border bg-popover text-popover-foreground shadow transition-[width,height] duration-300 ease-in-out w-[var(--radix-navigation-menu-viewport-width)]",
         "data-[state=open]:[animation:navScaleIn_200ms_ease]",
         "data-[state=closed]:[animation:navScaleOut_200ms_ease]",
         className
