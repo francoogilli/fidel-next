@@ -42,59 +42,6 @@ function StatCard({ label, value, color }: { label: string; value: string; color
   );
 }
 
-function MockCaja() {
-  return (
-    <BrowserChrome url="fidel.com.ar / ferreteria / caja">
-      <div className="space-y-4">
-        <div className="flex justify-between text-xs text-gray-500 font-medium">
-          <span>Apertura de Jornada</span>
-          <span className="font-mono">07:30</span>
-        </div>
-        <div>
-          <div className="text-[11px] text-gray-400 font-bold mb-1 uppercase tracking-wider">Efectivo inicial en caja</div>
-          <div className="bg-white/80 border border-gray-200 rounded-md px-3 py-2 font-mono text-gray-700 text-sm">$15.000</div>
-        </div>
-        <div>
-          <div className="text-[11px] text-gray-400 font-bold mb-1 uppercase tracking-wider">Notas de apertura</div>
-          <div className="bg-white/80 border border-gray-200 rounded-md px-3 py-2 text-xs text-gray-500">Caja inicial de cambio</div>
-        </div>
-        <button className="w-full bg-[#121212] text-white hover:bg-gray-800 rounded-md py-2.5 text-xs font-bold transition-all">
-          Abrir caja
-        </button>
-      </div>
-    </BrowserChrome>
-  );
-}
-
-function MockImport() {
-  return (
-    <BrowserChrome url="fidel.com.ar / inventario / actualizar-precios">
-      <div className="flex items-center justify-between mb-3 text-xs">
-        <span className="text-gray-400 font-medium">Excel de Proveedor Bulonera</span>
-        <span className="text-emerald-600 font-bold flex items-center gap-1">
-          <CheckCircle2 className="size-3" /> Listo
-        </span>
-      </div>
-      <div className="bg-gray-50 border border-gray-200 rounded-md px-3 py-2.5 mb-4 flex items-center justify-between text-xs">
-        <div>
-          <div className="font-mono text-gray-700 font-medium">lista-precios-ferreteria.xlsx</div>
-          <div className="text-[10px] text-gray-400">1.240 productos procesados en 3.5s</div>
-        </div>
-        <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">Aplicado</span>
-      </div>
-      <div className="space-y-2">
-        <div className="flex justify-between items-center text-xs bg-white p-2 rounded border border-gray-100">
-          <span className="text-gray-600">Precios actualizados</span>
-          <span className="font-mono font-bold text-gray-700">1.240</span>
-        </div>
-        <div className="flex justify-between items-center text-xs bg-white p-2 rounded border border-gray-100">
-          <span className="text-gray-600">Nuevos artículos cargados</span>
-          <span className="font-mono font-bold text-gray-700">14</span>
-        </div>
-      </div>
-    </BrowserChrome>
-  );
-}
 
 function MockTaladro() {
   const providers = [
@@ -406,14 +353,30 @@ export default function DiaConFidelPage() {
       label: "Apertura de caja",
       title: "Abrís el local y empezás el día tranquilo",
       body: "Llegás a la ferretería, preparás el mate y abrís la caja desde Fidel. En pocos segundos ya tenés todo listo para comenzar a vender. No hay planillas para completar ni cuentas pendientes del día anterior. Mientras acomodás el mostrador, podés ver rápidamente las ventas realizadas, los saldos de clientes y los movimientos pendientes. La jornada arranca organizada.",
-      mock: <MockCaja />
+      mock: (
+        <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
+          <img
+            src="/diaf1.png"
+            alt="Apertura de caja"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )
     },
     {
       time: "08:15",
       label: "Actualización masiva",
       title: "Tu proveedor envía una nueva lista de precios",
       body: "Como pasa seguido en el rubro, llega una actualización de precios. Antes significaba revisar cientos o miles de artículos uno por uno. Ahora simplemente importás el archivo de Excel que envió el proveedor y Fidel actualiza los productos de manera masiva. En cuestión de minutos toda la lista queda actualizada y lista para vender. Menos errores. Menos tiempo perdido.",
-      mock: <MockImport />
+      mock: (
+        <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
+          <img
+            src="/diaf2.png"
+            alt="Actualización masiva"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )
     },
     {
       time: "09:30",
