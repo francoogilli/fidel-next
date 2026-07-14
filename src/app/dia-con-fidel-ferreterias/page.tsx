@@ -42,79 +42,6 @@ function StatCard({ label, value, color }: { label: string; value: string; color
   );
 }
 
-
-function MockTaladro() {
-  const providers = [
-    { name: "Bosch Argentina (Oficial)", price: "$42.500", delivery: "Inmediata" },
-    { name: "Distribuidora del Norte", price: "$45.200", delivery: "48hs" },
-    { name: "Bulonera del Centro", price: "$43.900", delivery: "24hs" },
-  ];
-  return (
-    <BrowserChrome url="fidel.com.ar / stock / consulta / taladro">
-      <div className="space-y-3">
-        <div className="flex justify-between items-start">
-          <div>
-            <h4 className="text-xs font-extrabold text-gray-800">Taladro Percutor Bosch 650W</h4>
-            <p className="text-[10px] text-gray-400 mt-0.5">Categoría: Herramientas Eléctricas</p>
-          </div>
-          <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-50 border border-emerald-100 text-emerald-600">
-            Stock: 5 u.
-          </span>
-        </div>
-
-        <div className="bg-gray-50 border border-gray-200/60 rounded-md p-2.5">
-          <div className="text-[9px] text-gray-400 font-bold uppercase tracking-wider mb-2">Proveedores cargados</div>
-          <div className="space-y-2">
-            {providers.map((p, idx) => (
-              <div key={p.name} className="flex justify-between items-center text-xs border-b border-gray-200/40 last:border-0 pb-1.5 last:pb-0">
-                <div>
-                  <span className="font-medium text-gray-700">{p.name}</span>
-                  <span className="block text-[8px] text-gray-400">Entrega: {p.delivery}</span>
-                </div>
-                <span className="font-mono font-bold text-gray-900">{p.price}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </BrowserChrome>
-  );
-}
-
-function MockStock() {
-  const rows = [
-    { name: "Disco flap 115 mm", qty: "3 u.", min: "20 u.", badge: "Crítico", color: "text-rose-600 bg-rose-50 border-rose-100" },
-    { name: "Cinta aisladora 20m", qty: "5 u.", min: "15 u.", badge: "Bajo", color: "text-amber-600 bg-amber-50 border-amber-100" },
-    { name: "Tornillo Parker 2\"", qty: "50 u.", min: "500 u.", badge: "Crítico", color: "text-rose-600 bg-rose-50 border-rose-100" },
-  ];
-  return (
-    <BrowserChrome url="fidel.com.ar / inventario / stock-bajo">
-      <div className="flex justify-between items-center mb-3">
-        <span className="text-xs font-bold text-gray-700">Alertas de reposición</span>
-        <button className="text-[10px] font-bold text-purple-600 flex items-center gap-1 hover:underline">
-          Generar Orden de Compra
-        </button>
-      </div>
-      <div className="space-y-2">
-        {rows.map(r => (
-          <div key={r.name} className="flex items-center justify-between bg-white/60 border border-gray-100 rounded-md p-2.5">
-            <div>
-              <div className="text-xs font-bold text-gray-800">{r.name}</div>
-              <div className="text-[9px] text-gray-400">Mínimo configurado: {r.min}</div>
-            </div>
-            <div className="text-right">
-              <div className="font-mono font-bold text-xs text-gray-700">Stock: {r.qty}</div>
-              <span className={`inline-block text-[8px] font-bold px-1.5 py-0.5 rounded-full border ${r.color} mt-0.5`}>
-                {r.badge}
-              </span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </BrowserChrome>
-  );
-}
-
 function MockConversion() {
   return (
     <BrowserChrome url="fidel.com.ar / inventario / conversiones">
@@ -383,14 +310,30 @@ export default function DiaConFidelPage() {
       label: "Atención al cliente",
       title: "Un cliente necesita un taladro",
       body: "Un cliente entra buscando un taladro. Mientras lo atendés, consultás el stock en tiempo real y verificás las distintas opciones disponibles. También podés ver qué proveedores ofrecen ese mismo producto y comparar costos para futuras compras. Toda la información está en un solo lugar, sin llamadas ni búsquedas interminables.",
-      mock: <MockTaladro />
+      mock: (
+        <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
+          <img
+            src="/diaf3.png"
+            alt="Un cliente necesita un taladro"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )
     },
     {
       time: "11:00",
       label: "Reposición",
       title: "Descubrís que un producto está por agotarse",
       body: "Mientras trabajás, Fidel detecta que el stock de ciertos artículos llegó al mínimo configurado. El sistema te avisa automáticamente. No hace falta esperar a que el cliente pida un producto que ya no tenés. Incluso podés generar la orden de compra directamente desde el sistema para reponer mercadería antes de quedarte sin stock.",
-      mock: <MockStock />
+      mock: (
+        <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
+          <img
+            src="/diaf4.png"
+            alt="Descubrís que un producto está por agotarse"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )
     },
     {
       time: "12:30",
@@ -447,41 +390,6 @@ export default function DiaConFidelPage() {
             ))}
           </div>
         </div>
-
-        {/* CTA final integrado para complementar la experiencia */}
-        <motion.div
-          className="mt-32 md:mt-48 text-center max-w-2xl mx-auto bg-white/40 backdrop-blur-md border border-gray-200/50 p-8 md:p-12 rounded-3xl shadow-lg"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="w-12 h-12 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-6">
-            <Calendar className="size-5 text-emerald-600" />
-          </div>
-          <h3 className="text-2xl md:text-3xl font-extrabold text-[#252525] tracking-tight mb-4" style={{ fontFamily: "Plus Jakarta Sans" }}>
-            Hacé tu día a día más rentable
-          </h3>
-          <p className="text-[#5c5c5c] text-sm md:text-base mb-8 leading-relaxed" style={{ fontFamily: "Satoshi" }}>
-            Dejá atrás las planillas complejas. Probá Fidel gratis por 7 días sin tarjetas y gestioná tu ferretería con total tranquilidad.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="https://fidel.com.ar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-[#121212] hover:bg-gray-800 text-white font-bold px-8 py-3.5 rounded-full text-sm transition-all flex items-center justify-center gap-2"
-            >
-              Empezar gratis <ArrowRight className="size-4" />
-            </a>
-            <a
-              href="https://fidel.com.ar/#contacto"
-              className="w-full sm:w-auto border border-gray-300 hover:bg-gray-50 text-gray-700 font-bold px-8 py-3.5 rounded-full text-sm transition-all text-center"
-            >
-              Hacer una consulta
-            </a>
-          </div>
-        </motion.div>
       </main>
     </>
   );
