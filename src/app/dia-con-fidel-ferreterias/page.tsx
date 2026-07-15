@@ -33,123 +33,6 @@ function BrowserChrome({ url, children }: { url: string; children: React.ReactNo
   );
 }
 
-function StatCard({ label, value, color }: { label: string; value: string; color?: string }) {
-  return (
-    <div className="rounded-lg bg-gray-50/50 border border-gray-200/40 p-4">
-      <div className="text-[10px] font-bold uppercase tracking-wider text-gray-400">{label}</div>
-      <div className={`text-xl font-extrabold mt-1 ${color ?? "text-gray-800"}`}>{value}</div>
-    </div>
-  );
-}
-
-function MockConversion() {
-  return (
-    <BrowserChrome url="fidel.com.ar / inventario / conversiones">
-      <div className="space-y-3">
-        <div className="border-b border-gray-200/50 pb-2 flex justify-between items-center">
-          <div>
-            <h4 className="text-xs font-extrabold text-gray-800">Tornillo Madera Parker 8x1</h4>
-            <p className="text-[9px] text-gray-400">Compra por bulto, venta por unidad suelta</p>
-          </div>
-          <span className="text-[10px] font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded-full border border-purple-100">Equivalencia</span>
-        </div>
-        <div className="grid grid-cols-2 gap-3 text-center">
-          <div className="bg-gray-50 border border-gray-200/60 p-2 rounded-md">
-            <span className="block text-[9px] text-gray-400 font-bold uppercase tracking-wider">Unidad de Compra</span>
-            <span className="text-xs font-bold text-gray-700">Caja de 500 u.</span>
-          </div>
-          <div className="bg-gray-50 border border-gray-200/60 p-2 rounded-md">
-            <span className="block text-[9px] text-gray-400 font-bold uppercase tracking-wider">Unidad de Venta</span>
-            <span className="text-xs font-bold text-gray-700">Unidad (Suelto)</span>
-          </div>
-        </div>
-        <div className="bg-purple-50/40 border border-purple-100/50 p-2.5 rounded-md text-xs">
-          <div className="flex justify-between items-center font-medium text-gray-700">
-            <span>Venta actual: 35 tornillos</span>
-            <span className="text-purple-600 font-bold font-mono">-0.07 cajas</span>
-          </div>
-          <p className="text-[9px] text-gray-400 mt-1">Fidel descuenta la fracción del bulto y actualiza el stock automáticamente.</p>
-        </div>
-      </div>
-    </BrowserChrome>
-  );
-}
-
-function MockFactura() {
-  return (
-    <BrowserChrome url="fidel.com.ar / pos / facturacion">
-      <div className="space-y-4">
-        <div className="bg-emerald-50/50 border border-emerald-100 rounded-md p-3 text-center">
-          <div className="text-[10px] text-emerald-600 font-bold uppercase tracking-wider">Factura Electrónica Emitida</div>
-          <h4 className="text-xs font-bold text-gray-800 mt-1">Factura B · Nº 0002-00045812</h4>
-          <span className="inline-block text-[9px] text-emerald-600 bg-emerald-50 border border-emerald-100 px-2 py-0.5 rounded mt-1 font-semibold">
-            CAE: 7625819483726 · Vto: 05/07/2026
-          </span>
-        </div>
-        <div className="flex gap-2">
-          <button className="flex-1 bg-white hover:bg-gray-50 border border-gray-200 py-2 rounded-md text-[10px] font-bold text-gray-600 flex items-center justify-center gap-1 transition-all">
-            <Share2 className="size-3 text-emerald-600" /> Compartir por WhatsApp
-          </button>
-          <button className="flex-1 bg-white hover:bg-gray-50 border border-gray-200 py-2 rounded-md text-[10px] font-bold text-gray-600 flex items-center justify-center gap-1 transition-all">
-            <FileText className="size-3 text-gray-400" /> Enviar por Email
-          </button>
-        </div>
-      </div>
-    </BrowserChrome>
-  );
-}
-
-function MockCatalogo() {
-  return (
-    <BrowserChrome url="fidel.com.ar / catalogos / compartir">
-      <div className="space-y-3">
-        <div className="border border-gray-200 rounded-md p-2.5 bg-white/60">
-          <div className="text-xs font-bold text-gray-800">Catálogo: Herramientas de Mano</div>
-          <div className="text-[9px] text-gray-400 mt-0.5">15 herramientas con fotos y precios vigentes</div>
-        </div>
-        <div className="bg-gray-50 border border-gray-200 rounded-md p-2 text-xs">
-          <div className="text-[9px] text-gray-400 font-bold uppercase mb-1">Previsualización de envío</div>
-          <p className="text-gray-600 italic">"Hola! Te paso el catálogo de herramientas actualizado..."</p>
-        </div>
-        <button className="w-full bg-[#1db31d] text-white hover:bg-emerald-600 py-2 rounded-md text-xs font-bold flex items-center justify-center gap-1.5 transition-all">
-          <Share2 className="size-3.5" /> Compartir Catálogo por WhatsApp
-        </button>
-      </div>
-    </BrowserChrome>
-  );
-}
-
-function MockReportes() {
-  const topSales = [
-    { name: "Tarugos Fischer 8mm", qty: "120 u.", revenue: "$4.800" },
-    { name: "Discos de corte 115mm", qty: "45 u.", revenue: "$36.000" },
-    { name: "Tornillos madera 1\"", qty: "300 u.", revenue: "$6.000" },
-  ];
-  return (
-    <BrowserChrome url="fidel.com.ar / reportes / analiticas">
-      <div className="space-y-3">
-        <div className="flex justify-between items-center text-xs">
-          <span className="font-bold text-gray-700">Top Productos Vendidos Hoy</span>
-          <span className="text-[10px] text-emerald-600 font-semibold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">
-            Margen Prom: 34%
-          </span>
-        </div>
-        <div className="space-y-1.5">
-          {topSales.map(s => (
-            <div key={s.name} className="flex justify-between items-center text-xs bg-white/60 p-2 rounded border border-gray-100">
-              <span className="text-gray-600 font-medium">{s.name}</span>
-              <div className="flex gap-4 text-right">
-                <span className="text-gray-400 font-mono">{s.qty}</span>
-                <span className="font-mono font-bold text-gray-700">{s.revenue}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </BrowserChrome>
-  );
-}
-
 function MockCierre() {
   return (
     <BrowserChrome url="fidel.com.ar / ferreteria / caja / cierre">
@@ -340,28 +223,60 @@ export default function DiaConFidelPage() {
       label: "Control de stock fraccionado",
       title: "Vendés por unidad lo que compraste por bulto",
       body: "Un cliente necesita solamente algunas unidades de tornillos. No importa que los hayas comprado por cajas o bultos completos. Fidel administra automáticamente las conversiones entre compra y venta, manteniendo el stock actualizado sin cálculos manuales. Vos vendés como necesitás. El sistema hace el resto.",
-      mock: <MockConversion />
+      mock: (
+        <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
+          <img
+            src="/diaf5.png"
+            alt="Vendés por unidad lo que compraste por bulto"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )
     },
     {
       time: "14:00",
       label: "Facturación electrónica",
       title: "Emitís una factura en segundos",
       body: "Después de una venta importante, generás la factura electrónica. Con un par de clics queda emitida y enviada al cliente por correo electrónico, WhatsApp o ambos. Todo queda registrado automáticamente.",
-      mock: <MockFactura />
+      mock: (
+        <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
+          <img
+            src="/diaf6.png"
+            alt="Emitís una factura en segundos"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )
     },
     {
       time: "15:30",
       label: "Catálogos visuales",
       title: "Un cliente pide una lista de precios",
       body: "Un cliente habitual quiere conocer los precios actualizados de varias herramientas. En lugar de armar un documento desde cero, generás un catálogo con imágenes y precios directamente desde Fidel. Lo compartís por WhatsApp y el cliente recibe una presentación profesional y actualizada. Más rápido para vos. Más cómodo para tu cliente.",
-      mock: <MockCatalogo />
+      mock: (
+        <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
+          <img
+            src="/diaf7.png"
+            alt="Un cliente pide una lista de precios"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )
     },
     {
       time: "17:00",
       label: "Decisiones de compra",
       title: "Analizás las compras del próximo pedido",
       body: "Antes de cerrar, revisás los productos más vendidos del día. También consultás qué proveedor ofrece mejores precios para ciertos artículos. Tomar decisiones deja de ser una cuestión de intuición.",
-      mock: <MockReportes />
+      mock: (
+        <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
+          <img
+            src="/diaf8.png"
+            alt="Un cliente pide una lista de precios"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      )
     },
     {
       time: "18:00",
