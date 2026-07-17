@@ -23,22 +23,28 @@ const rubroCardContent = [
   {
     title: "Día en Ferreterías",
     desc: "Viví el recorrido interactivo de una ferretería real automatizada con Fidel.",
-    badge: "Ferreterías 🛠️"
+    badge: "Ferreterías 🛠️",
+    bgImage: "/menu_ferreteria_bg.png",
+    href: "/dia-con-fidel-ferreterias"
   },
   {
     title: "Día en Distribuidoras",
-    desc: "Explorá la gestión de stock y pedidos (demo interactiva basada en ferreterías).",
-    badge: "Distribuidoras 🚛"
+    desc: "Explorá la gestión de stock y pedidos en ruta sincronizados al instante con Fidel.",
+    badge: "Distribuidoras 🚛",
+    bgImage: "/menu_distribuidora_bg.png",
+    href: "/dia-con-fidel-distribuidoras"
   },
   {
     title: "Día en Decoración",
     desc: "Conocé cómo optimizar ventas y variantes (demo interactiva basada en ferreterías).",
-    badge: "Decoración ✨"
+    badge: "Decoración ✨",
+    href: "/dia-con-fidel-ferreterias"
   },
   {
     title: "Día en Repuestos",
     desc: "Mirá el control de precios y proveedores (demo interactiva basada en ferreterías).",
-    badge: "Repuestos ⚙️"
+    badge: "Repuestos ⚙️",
+    href: "/dia-con-fidel-ferreterias"
   }
 ];
 
@@ -277,8 +283,18 @@ export default function Header() {
                       <div className="w-px bg-zinc-100 self-stretch mx-1" />
 
                       {/* Right: Un día con Fidel panel */}
-                      <div className="w-[186px] shrink-0 flex flex-col justify-between rounded-xl bg-zinc-50 p-3.5 gap-3">
-                        <div className="flex flex-col gap-2">
+                      <div
+                        className="w-[186px] shrink-0 flex flex-col justify-between rounded-xl p-3.5 gap-3 transition-all duration-300 relative overflow-hidden"
+                        style={{
+                          backgroundImage: rubroCardContent[activeRubroIndex]?.bgImage
+                            ? `linear-gradient(to bottom, rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.9)), url(${rubroCardContent[activeRubroIndex].bgImage})`
+                            : "none",
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                          backgroundColor: rubroCardContent[activeRubroIndex]?.bgImage ? "transparent" : "#f9fafb",
+                        }}
+                      >
+                        <div className="flex flex-col gap-2 relative z-10">
                           <div className="flex items-center gap-1.5 text-[10px] font-bold text-[#06dc02] bg-[#ffffff] px-2 py-0.5 rounded-md uppercase tracking-wider self-start">
                             <Sparkles className="size-3" />
                             <span>{rubroCardContent[activeRubroIndex]?.badge?.split(" ")[0] || "Ferreterías"}</span>
@@ -287,17 +303,26 @@ export default function Header() {
                             <p className="text-[11px] font-semibold text-zinc-400 uppercase tracking-wide leading-none mb-1">
                               Un día con Fidel
                             </p>
-                            <h4 className="text-[13px] font-bold text-zinc-900 leading-snug">
+                            <h4
+                              className={`text-[13px] font-bold leading-snug transition-colors duration-300 ${rubroCardContent[activeRubroIndex]?.bgImage ? "text-white" : "text-zinc-900"
+                                }`}
+                            >
                               {rubroCardContent[activeRubroIndex]?.title || "Día en Ferreterías"}
                             </h4>
                           </div>
-                          <p className="text-[11.5px] text-zinc-500 leading-snug">
+                          <p
+                            className={`text-[11.5px] leading-snug transition-colors duration-300 ${rubroCardContent[activeRubroIndex]?.bgImage ? "text-zinc-200" : "text-zinc-500"
+                              }`}
+                          >
                             {rubroCardContent[activeRubroIndex]?.desc || ""}
                           </p>
                         </div>
                         <Link
-                          href="/dia-con-fidel-ferreterias"
-                          className="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 text-xs font-semibold text-white bg-zinc-900 hover:bg-zinc-800 rounded-lg transition-colors group/btn no-underline"
+                          href={rubroCardContent[activeRubroIndex]?.href || "/dia-con-fidel-ferreterias"}
+                          className={`inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 text-xs font-semibold rounded-lg transition-colors group/btn no-underline relative z-10 ${rubroCardContent[activeRubroIndex]?.bgImage
+                              ? "bg-white text-zinc-900 hover:bg-zinc-100"
+                              : "bg-zinc-900 text-white hover:bg-zinc-800"
+                            }`}
                         >
                           Ver día
                           <ArrowRight className="size-3.5 transition-transform group-hover/btn:translate-x-0.5" />
