@@ -185,7 +185,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/distribuidoras2.png"
+            src="/diadi2.png"
             alt="Primera visita, primer pedido"
             className="w-full h-auto object-cover"
           />
@@ -200,7 +200,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/distribuidoras.png"
+            src="/diadi3.png"
             alt="Consulta de stock en tiempo real"
             className="w-full h-auto object-cover"
           />
