@@ -215,7 +215,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/distribuidoras3.png"
+            src="/diadi4.png"
             alt="Nuevos clientes sin papeleo"
             className="w-full h-auto object-cover"
           />
@@ -230,7 +230,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/distribuidoras1.png"
+            src="/diadi5.png"
             alt="Productos con fotos, menos errores"
             className="w-full h-auto object-cover"
           />
@@ -247,7 +247,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/distribuidoras_ia.png"
+            src="/diadi6.png"
             alt="Llega nueva mercadería y la cargás en minutos"
             className="w-full h-auto object-cover"
           />
@@ -262,7 +262,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/distribuidoras.png"
+            src="/diadi7.png"
             alt="Pedidos en la oficina en tiempo real"
             className="w-full h-auto object-cover"
           />
@@ -272,12 +272,12 @@ export default function DiaConFidelDistribuidorasPage() {
     {
       time: "14:00",
       label: "Cobranzas",
-      title: "Registro de cobros al instante",
+      title: "Un cliente realiza un pago",
       body: "Uno de los clientes aprovecha la visita para cancelar una deuda pendiente. Martín registra el cobro desde la aplicación y genera un recibo provisorio en el momento. La información queda sincronizada automáticamente para que sea procesada por la Administración. Sin papeles. Sin cargas duplicadas.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/distribuidoras4.png"
+            src="/diadi8.png"
             alt="Un cliente realiza un pago"
             className="w-full h-auto object-cover"
           />
@@ -286,7 +286,7 @@ export default function DiaConFidelDistribuidorasPage() {
     },
     {
       time: "15:30",
-      label: "Información de ventas",
+      label: "Información comercial siempre disponible",
       title: "Listas de precios y condiciones a un tap de distancia",
       body: "Antes de cerrar una venta importante, el cliente consulta precios y condiciones. Martín accede desde la aplicación a las listas de precios vigentes y verifica saldos pendientes. No necesita llamar a nadie ni esperar respuestas. Toda la información está disponible donde la necesita: frente al cliente.",
       mock: (
@@ -302,7 +302,7 @@ export default function DiaConFidelDistribuidorasPage() {
     {
       time: "17:00",
       label: "Operaciones conectadas",
-      title: "Depósito y administración trabajando en sintonía",
+      title: "Últimas visitas del día",
       body: "Los pedidos continúan ingresando y sincronizándose automáticamente. Desde la oficina pueden seguir la actividad comercial en tiempo real, mientras el equipo de depósito prepara la mercadería para las entregas del día siguiente. Cada área trabaja con la misma información. Sin planillas paralelas. Sin errores por transcripción.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
