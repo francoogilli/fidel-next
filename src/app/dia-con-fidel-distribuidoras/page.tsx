@@ -165,7 +165,7 @@ export default function DiaConFidelDistribuidorasPage() {
     {
       time: "07:45",
       label: "Arranca la jornada",
-      title: "Martín arranca el día con la información en su mano",
+      title: "Arranca la jornada",
       body: "Antes de salir a recorrer clientes, Martín abre la aplicación de Fidel desde su celular. Revisa su Hoja de Ruta del día, consulta el saldo de algunos clientes y verifica que tiene la lista de precios actualizada. No necesita llamar a la oficina ni pedir información por WhatsApp. Todo está disponible desde la app.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
@@ -180,7 +180,7 @@ export default function DiaConFidelDistribuidorasPage() {
     {
       time: "08:30",
       label: "Toma de pedidos",
-      title: "Primera visita, primer pedido cargado en segundos",
+      title: "Primera visita, primer pedido",
       body: "Martín llega a un autoservicio que compra mercadería todas las semanas. El cliente necesita prácticamente los mismos productos que en el pedido anterior. En lugar de cargar todo nuevamente, Martín copia el último pedido realizado y modifica únicamente algunas cantidades. En menos de un minuto el pedido está listo. Más velocidad para vender. Menos tiempo cargando información.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
@@ -195,7 +195,7 @@ export default function DiaConFidelDistribuidorasPage() {
     {
       time: "09:15",
       label: "Consulta de stock",
-      title: "Stock al instante frente al cliente",
+      title: "Consulta de stock en tiempo real",
       body: "Durante la visita, el cliente pregunta por un producto específico. Antes, esto implicaba llamar a la oficina para consultar disponibilidad. Ahora Martín verifica el stock desde la aplicación y confirma al instante cuántas unidades quedan disponibles. La respuesta es inmediata y el pedido se cierra sin demoras.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
@@ -210,7 +210,7 @@ export default function DiaConFidelDistribuidorasPage() {
     {
       time: "10:45",
       label: "Alta de clientes",
-      title: "Nuevas oportunidades registradas al momento",
+      title: "Nuevos clientes, sin papeleo",
       body: "Durante el recorrido surge una oportunidad. Un comercio quiere comenzar a comprarle a la distribuidora. Martín crea el nuevo cliente directamente desde la aplicación. Carga sus datos y registra la información necesaria sin volver a la oficina. Cuando finaliza, el cliente ya está disponible para toda la empresa.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
@@ -225,7 +225,7 @@ export default function DiaConFidelDistribuidorasPage() {
     {
       time: "11:30",
       label: "Catálogos visuales",
-      title: "Catálogo visual para evitar confusiones",
+      title: "Productos con fotos, menos errores",
       body: "Mientras arma un pedido, el cliente tiene dudas sobre algunas presentaciones. Martín utiliza las imágenes cargadas en los productos para identificar rápidamente cada artículo. Esto evita confusiones, reduce errores y agiliza la toma de pedidos. Todos hablan del mismo producto desde el primer momento.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
@@ -241,7 +241,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "12:00",
       label: "Carga de facturas (IA)",
       ai: true,
-      title: "Nueva mercadería cargada en minutos",
+      title: "Llega nueva mercadería y la cargás en minutos",
       body: "Mientras tanto desde el depósito reciben una nueva entrega de productos. Antes, esto significaba ingresar manualmente cada artículo, cantidad y precio de la factura. Una tarea repetitiva que consumía tiempo y podía generar errores. Ahora simplemente cargás una foto o el PDF de la factura de compra en Fidel. La inteligencia artificial identifica automáticamente al proveedor, detecta los productos incluidos, las cantidades, los precios y el total de la factura. En pocos segundos la compra queda registrada en el sistema y el stock se actualiza automáticamente.",
       note: "Mientras antes dedicabas varios minutos a tareas administrativas, ahora podés volver rápidamente a lo importante: atender clientes, vender y hacer crecer tu negocio.",
       mock: (
@@ -287,7 +287,7 @@ export default function DiaConFidelDistribuidorasPage() {
     {
       time: "15:30",
       label: "Información comercial siempre disponible",
-      title: "Listas de precios y condiciones a un tap de distancia",
+      title: "Información comercial siempre disponible",
       body: "Antes de cerrar una venta importante, el cliente consulta precios y condiciones. Martín accede desde la aplicación a las listas de precios vigentes y verifica saldos pendientes. No necesita llamar a nadie ni esperar respuestas. Toda la información está disponible donde la necesita: frente al cliente.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
