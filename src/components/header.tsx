@@ -36,9 +36,10 @@ const rubroCardContent = [
   },
   {
     title: "Día en Decoración",
-    desc: "Conocé cómo optimizar ventas y variantes (demo interactiva basada en ferreterías).",
+    desc: "Descubrí cómo unificar tu showroom y tu tienda online en tiempo real con Fidel.",
     badge: "Decoración ✨",
-    href: "/dia-con-fidel-ferreterias"
+    bgImage: "/menu_decoracion_bg.png",
+    href: "/dia-con-fidel-decoracion"
   },
   {
     title: "Día en Repuestos",
@@ -320,8 +321,8 @@ export default function Header() {
                         <Link
                           href={rubroCardContent[activeRubroIndex]?.href || "/dia-con-fidel-ferreterias"}
                           className={`inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 text-xs font-semibold rounded-lg transition-colors group/btn no-underline relative z-10 ${rubroCardContent[activeRubroIndex]?.bgImage
-                              ? "bg-white text-zinc-900 hover:bg-zinc-100"
-                              : "bg-zinc-900 text-white hover:bg-zinc-800"
+                            ? "bg-gradient-to-r from-gray-200 via-white to-gray-200 text-black border-2 border-zinc-700 hover:bg-zinc-800"
+                            : "bg-black border-2 border-zinc-700 text-white hover:bg-zinc-800"
                             }`}
                         >
                           Ver día
