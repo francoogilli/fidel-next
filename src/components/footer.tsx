@@ -53,9 +53,6 @@ export default function Footer() {
                 Fidel
               </h3>
             </div>
-            <p className="text-sm text-[#101010]">
-              Optimiza la gestión de tu empresa y simplifica tu día a día.
-            </p>
             <p className="text-sm text-[#101010] flex gap-x-1.5 items-center">
               © {new Date().getFullYear()}. Un producto de{" "}
               <a
@@ -71,6 +68,16 @@ export default function Footer() {
                   alt=""
                 />
               </a>
+            </p>
+            <p className="text-sm text-[#101010]">
+              <span className="whitespace-nowrap">
+                Fidel pertenece a{" "}
+                <span className="font-medium text-[#252525]">
+                  AGENCIA PROGRAMARTE SAS
+                </span>
+              </span>
+              <br />
+              CUIT 30-71584333-8
             </p>
             <div className="flex space-x-4">
               <Link
