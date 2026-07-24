@@ -170,7 +170,7 @@ export default function DiaConFidelDecoracionPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/deco.png"
+            src="/diade1.png"
             alt="Abrís el local y empezás el día organizado"
             className="w-full h-auto object-cover"
           />
@@ -185,7 +185,7 @@ export default function DiaConFidelDecoracionPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/deco1.png"
+            src="/diade2.png"
             alt="Mientras atendés el local, también vendés online"
             className="w-full h-auto object-cover"
           />
@@ -215,7 +215,7 @@ export default function DiaConFidelDecoracionPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/deco3.png"
+            src="/diade4.png"
             alt="Una consulta llega por WhatsApp"
             className="w-full h-auto object-cover"
           />
@@ -245,7 +245,7 @@ export default function DiaConFidelDecoracionPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/deco.png"
+            src="/diade6.png"
             alt="Detectás cuáles son los productos tendencia"
             className="w-full h-auto object-cover"
           />
@@ -260,7 +260,7 @@ export default function DiaConFidelDecoracionPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/deco2.png"
+            src="/diade7.png"
             alt="Un producto está por agotarse"
             className="w-full h-auto object-cover"
           />
