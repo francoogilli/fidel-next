@@ -90,7 +90,7 @@ function MomentComponent({ m, i }: { m: MomentType; i: number }) {
     >
       <div>
         <div className="flex items-center gap-3 mb-4 text-xs">
-          <span className="text-5xl font-bold tracking-wider text-[#307fff] pr-2.5 py-1 rounded-md">{m.time}</span>
+          <span className="text-5xl font-bold tracking-wider text-[#307fff] pr-2.5 py-1 rounded-md">{m.time} <span className="inline-block -ml-1.5 text-4xl">hs</span></span>
           <span className="text-base text-gray-400 font-semibold uppercase tracking-wider">{m.label}</span>
           {m.ai && (
             <span className="text-[10px] font-bold px-2 py-0.5 rounded-full border border-purple-200 text-purple-600 bg-purple-50/50 flex items-center gap-1">
