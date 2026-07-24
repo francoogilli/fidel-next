@@ -86,8 +86,8 @@ function MomentComponent({ m, i }: { m: MomentType; i: number }) {
     >
       <div>
         <div className="flex items-center gap-3 mb-4 text-xs">
-          <span className="font-semibold tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md border border-purple-100/60">{m.time}</span>
-          <span className="text-gray-400 font-semibold uppercase tracking-wider">{m.label}</span>
+          <span className="text-5xl font-bold tracking-wider text-[#307fff] pr-2.5 py-1 rounded-md">{m.time}</span>
+          <span className="text-base text-gray-400 font-semibold uppercase tracking-wider">{m.label}</span>
           {m.ai && (
             <span className="text-[10px] font-bold px-2 py-0.5 rounded-full border border-purple-200 text-purple-600 bg-purple-50/50 flex items-center gap-1">
               <Sparkles className="size-3" /> IA
@@ -122,7 +122,7 @@ function SectionHeading({ eyebrow, title, sub }: { eyebrow: string; title: React
         <div className="flex items-center rounded-full bg-[#f6f6f6] px-4 xl:px-5 py-2">
           <Sparkles className="size-4 md:size-5 text-[#121212]" />
           <h2
-            className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#121212]"
+            className="text-xs md:text-sm xl:text-base font-medium uppercase text-center ml-2 text-[#121212]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             {eyebrow}
@@ -296,7 +296,7 @@ export default function DiaConFidelPage() {
         <div id="dia">
           <SectionHeading
             eyebrow="Un día con Fidel"
-            title="Un día con Fidel: así trabaja una ferretería"
+            title="Así trabaja una ferretería"
             sub="Cada momento del día muestra cómo Fidel acompaña la rutina de una ferretería, simplificando cada tarea."
           />
           <div className="space-y-24 md:space-y-36 max-w-5xl mx-auto">
