@@ -195,13 +195,14 @@ export default function Header() {
 
             {/* Rubros dropdown */}
             <NavigationMenu
+              value={menuOpen ? "rubros" : ""}
               onValueChange={(v) => {
                 setMenuOpen(!!v);
                 if (!v) setShowDiaConFidel(false);
               }}
             >
               <NavigationMenuList>
-                <NavigationMenuItem>
+                <NavigationMenuItem value="rubros">
                   <NavigationMenuTrigger className="text-[13.5px] px-3.5 py-2 bg-transparent hover:bg-black/5 text-[#2a2b30] hover:text-black gap-1.5 font-medium rounded-xl">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -320,6 +321,7 @@ export default function Header() {
                         </div>
                         <Link
                           href={rubroCardContent[activeRubroIndex]?.href || "/dia-con-fidel-ferreterias"}
+                          onClick={() => setMenuOpen(false)}
                           className={`inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 text-xs font-semibold rounded-lg transition-colors group/btn no-underline relative z-10 ${rubroCardContent[activeRubroIndex]?.bgImage
                             ? "bg-gradient-to-r from-gray-200 via-white to-gray-200 text-black border-2 border-zinc-700 hover:bg-zinc-800"
                             : "bg-black border-2 border-zinc-700 text-white hover:bg-zinc-800"
