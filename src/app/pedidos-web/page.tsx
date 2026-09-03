@@ -3,7 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Wrench } from "lucide-react";
+import {
+  BadgeDollarSign,
+  BadgePercent,
+  ClipboardList,
+  PackageSearch,
+  UserRoundCheck,
+  Wrench,
+} from "lucide-react";
 import GradientLine from "@/components/gradientLine";
 import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
@@ -11,21 +18,25 @@ import ThreeStripesRight from "@/icons/threeStripesRight";
 const productDetails = [
   {
     title: "Visualización de productos:",
+    icon: PackageSearch,
     description:
       "La página web estará sincronizada con tu cuenta de Fidel, mostrando tus productos tal como están en el sistema (nombre, imagen, stock y precio).",
   },
   {
     title: "Acceso exclusivo para clientes:",
+    icon: UserRoundCheck,
     description:
       "Podrás generar usuarios y contraseñas desde Fidel para que tus clientes ingresen, visualicen tus productos y realicen pedidos.",
   },
   {
     title: "Gestión de pedidos:",
+    icon: ClipboardList,
     description:
       "Los pedidos que realicen tus clientes se enviarán automáticamente al Módulo de Ventas → Pedidos, donde podrás Facturarlos o Presupuestarlos según corresponda.",
   },
   {
     title: "Cálculo de precios de venta:",
+    icon: BadgePercent,
     description:
       "Tus clientes podrán ingresar su margen de ganancia en la web para conocer el precio final de sus productos.",
   },
@@ -56,9 +67,26 @@ const workflowDetails = [
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-xs font-semibold tracking-[0.2em] text-[#D08236]">
-      {children}
-    </p>
+    <motion.div
+      className="flex justify-center items-center gap-x-2.5 pb-6"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+    >
+      <GradientLine direction="left" />
+      <ThreeStripesLeft />
+      <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
+        <Wrench className="size-4 text-[#121212]" />
+        <span
+          className="text-xs md:text-sm font-medium text-[#121212]"
+          style={{ fontFamily: "Plus Jakarta Sans" }}
+        >
+          {children}
+        </span>
+      </div>
+      <ThreeStripesRight />
+      <GradientLine direction="right" />
+    </motion.div>
   );
 }
 
@@ -68,26 +96,7 @@ export default function PedidosWebPage() {
       <section className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-4xl text-center">
 
-          <motion.div
-            className="flex flex-wrap justify-center items-center gap-x-2.5 gap-y-2 pb-6"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-          >
-            <GradientLine direction="left" />
-            <ThreeStripesLeft />
-            <div className="flex items-center rounded-full bg-[#f6f6f6] border border-[#e9e9e9] px-4 py-2 gap-x-2">
-              <Wrench className="size-4 text-[#121212]" />
-              <span
-                className="text-xs md:text-sm font-medium text-[#121212]"
-                style={{ fontFamily: "Plus Jakarta Sans" }}
-              >
-                Soluciones en la nube para tu empresa
-              </span>
-            </div>
-            <ThreeStripesRight />
-            <GradientLine direction="right" />
-          </motion.div>
+          <SectionLabel>Soluciones en la nube para tu empresa</SectionLabel>
           <h1
             className="mt-5 text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-[#252525] sm:text-5xl md:text-6xl"
             style={{ fontFamily: "Plus Jakarta Sans" }}
@@ -143,49 +152,76 @@ export default function PedidosWebPage() {
 
       <section className="mx-auto mt-28 max-w-7xl md:mt-40">
         <div className="mx-auto max-w-4xl text-center">
-          <SectionLabel>TODO EN UN SOLO LUGAR</SectionLabel>
           <h2
             className="mt-5 text-3xl font-bold leading-tight tracking-[-0.035em] text-[#252525] md:text-5xl"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
-            / Rápido y sincronizado con Fidel
+            ¿En qué consiste?
           </h2>
         </div>
 
-        <div className="mx-auto mt-14 max-w-5xl rounded-[28px] border border-[#e7e5e1] bg-white/70 px-6 py-8 shadow-[0_18px_48px_-36px_rgba(42,31,18,0.14)] md:mt-20 md:px-12 md:py-12">
-          <h3
-            className="text-2xl font-bold tracking-[-0.03em] text-[#252525] md:text-3xl"
-            style={{ fontFamily: "Plus Jakarta Sans" }}
-          >
-            ¿EN QUÉ CONSISTE?
-          </h3>
-          <dl className="mt-8 divide-y divide-[#ebe9e5]">
-            {productDetails.map((item) => (
-              <div
-                key={item.title}
-                className="grid gap-2 py-6 first:pt-0 last:pb-0 md:grid-cols-[minmax(210px,0.65fr)_minmax(0,1.35fr)] md:gap-10"
-              >
-                <dt
-                  className="text-base font-bold leading-snug text-[#252525] md:text-lg"
-                  style={{ fontFamily: "Plus Jakarta Sans" }}
-                >
-                  {item.title}
-                </dt>
-                <dd
-                  className="max-w-3xl text-base leading-relaxed text-[#5c5c5c]"
-                  style={{ fontFamily: "Satoshi" }}
-                >
-                  {item.description}
-                </dd>
-              </div>
-            ))}
-          </dl>
+        <div className="mx-auto mt-14 grid max-w-6xl items-stretch gap-8 md:mt-20 lg:grid-cols-[minmax(0,1.25fr)_minmax(320px,0.75fr)] lg:gap-12">
+          <div className="rounded-[28px] border border-[#e3eddc] bg-[#f7fbf5] px-6 py-6 md:px-8 md:py-8">
+            <dl className="divide-y divide-[#dfead9]">
+              {productDetails.map((item, index) => {
+                const Icon = item.icon;
+                const isGreen = index % 2 === 0;
+
+                return (
+                  <div
+                    key={item.title}
+                    className="grid grid-cols-[auto_minmax(0,1fr)] gap-3 py-4 first:pt-0 last:pb-0 md:gap-4"
+                  >
+                    <div
+                        className={`mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-xl ${
+                        isGreen
+                          ? "bg-[#d4ffcc] text-[#1B8C2B]"
+                          : "bg-[#fff0d5] text-[#D08236]"
+                      }`}
+                      aria-hidden="true"
+                    >
+                      <Icon className="size-5" strokeWidth={2} />
+                    </div>
+                    <div>
+                      <dt
+                        className="text-base font-bold leading-snug text-[#252525] md:text-[17px]"
+                        style={{ fontFamily: "Plus Jakarta Sans" }}
+                      >
+                        {item.title}
+                      </dt>
+                      <dd
+                        className="mt-1 max-w-3xl text-[15px] leading-6 text-[#5c5c5c]"
+                        style={{ fontFamily: "Satoshi" }}
+                      >
+                        {item.description}
+                      </dd>
+                    </div>
+                  </div>
+                );
+              })}
+            </dl>
+          </div>
+
+          <div className="relative aspect-[4/5] w-full max-w-[380px] self-center overflow-hidden rounded-[32px] border border-[#D08236]/25 bg-[#fff9ef] lg:aspect-auto lg:min-h-[420px] lg:self-stretch lg:justify-self-end">
+            <Image
+              src="/pedidos-web-section-v2.png"
+              alt="PedidosWeb"
+              fill
+              sizes="(min-width: 1024px) 380px, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
       <section className="mx-auto mt-28 max-w-7xl md:mt-40">
         <div className="mx-auto max-w-4xl text-center">
-          <SectionLabel>¿CÓMO FUNCIONA?</SectionLabel>
+          <h2
+            className="mt-5 text-3xl font-bold leading-tight tracking-[-0.035em] text-[#252525] md:text-5xl"
+            style={{ fontFamily: "Plus Jakarta Sans" }}
+          >
+            ¿Cómo funciona?
+          </h2>
         </div>
 
         <div className="mx-auto mt-12 max-w-5xl border-y border-[#e5e3df] md:mt-16">
@@ -213,8 +249,16 @@ export default function PedidosWebPage() {
 
       <section className="mx-auto mt-28 max-w-7xl md:mt-40">
         <div className="mx-auto max-w-5xl">
-          <div className="text-center">
-            <SectionLabel>COSTOS</SectionLabel>
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mt-5 flex items-center justify-center gap-3">
+              <BadgeDollarSign className="size-7 md:size-9" aria-hidden="true" />
+              <h2
+                className="text-3xl font-bold leading-tight tracking-[-0.035em] text-[#252525] md:text-5xl"
+                style={{ fontFamily: "Plus Jakarta Sans" }}
+              >
+                Costos
+              </h2>
+            </div>
           </div>
 
           <div className="mt-12 grid gap-0 border-y border-[#e5e3df] md:mt-16 md:grid-cols-2 md:divide-x md:divide-[#e5e3df]">
