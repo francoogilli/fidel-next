@@ -13,7 +13,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
-import { Wrench, Truck, Sparkles, Settings, ArrowRight } from "lucide-react";
+import { Wrench, Truck, Sparkles, Settings, ArrowRight, ShoppingCart } from "lucide-react";
 
 const EASE = "cubic-bezier(.2,.85,.25,1)";
 const DUR = "0.6s";
@@ -53,7 +53,6 @@ const rubroCardContent = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showDiaConFidel, setShowDiaConFidel] = useState(false);
   const [activeRubroIndex, setActiveRubroIndex] = useState(0);
   const pathname = usePathname();
   const router = useRouter();
@@ -194,12 +193,19 @@ export default function Header() {
               Funcionalidades
             </Link>
 
+            <Link
+              href="/pedidos-web"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap group"
+            >
+              <ShoppingCart className="size-4 transition-transform group-hover:-translate-x-0.5" />
+              Pedidos Web
+            </Link>
+
             {/* Rubros dropdown */}
             <NavigationMenu
               value={menuOpen ? "rubros" : ""}
               onValueChange={(v) => {
                 setMenuOpen(!!v);
-                if (!v) setShowDiaConFidel(false);
               }}
             >
               <NavigationMenuList>
@@ -331,6 +337,7 @@ export default function Header() {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
+
           </nav>
 
           {/* Actions */}
