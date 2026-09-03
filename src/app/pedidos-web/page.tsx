@@ -173,11 +173,10 @@ export default function PedidosWebPage() {
                     className="grid grid-cols-[auto_minmax(0,1fr)] gap-3 py-4 first:pt-0 last:pb-0 md:gap-4"
                   >
                     <div
-                        className={`mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-xl ${
-                        isGreen
+                      className={`mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-xl ${isGreen
                           ? "bg-[#d4ffcc] text-[#1B8C2B]"
                           : "bg-[#fff0d5] text-[#D08236]"
-                      }`}
+                        }`}
                       aria-hidden="true"
                     >
                       <Icon className="size-5" strokeWidth={2} />
@@ -267,7 +266,7 @@ export default function PedidosWebPage() {
                 className="text-2xl font-bold text-[#252525] md:text-3xl"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                Development
+                Desarrollo
               </h2>
               <p
                 className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#1B8C2B] md:text-4xl"
@@ -281,7 +280,7 @@ export default function PedidosWebPage() {
                 className="text-2xl font-bold text-[#252525] md:text-3xl"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
-                Monthly maintenance
+                Mantenimiento mensual
               </h2>
               <p
                 className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#1B8C2B] md:text-4xl"
