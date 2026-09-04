@@ -7,7 +7,11 @@ import {
   BadgeDollarSign,
   BadgePercent,
   ClipboardList,
+  FilePlus2,
+  ListFilter,
+  LogIn,
   PackageSearch,
+  Save,
   UserRoundCheck,
   Wrench,
 } from "lucide-react";
@@ -44,22 +48,30 @@ const productDetails = [
 
 const workflowDetails = [
   {
-    title: "INICIO DE SESIÓN PARA CLIENTES:",
+    title: "Inicio de sesión para clientes:",
+    icon: LogIn,
+    image: "/pedidos-web-workflow-login.png",
     description:
       "Si el Cliente no inicia sesión pueden ver productos y fotos, pero no stock y precios.",
   },
   {
-    title: "LISTADO DE PRODUCTOS CON PRECIO, STOCK (opcional) Y FOTOS:",
+    title: "Listado de Productos con Precio, Stock (opcional) y Fotos:",
+    icon: ListFilter,
+    image: "/pedidos-web-workflow-products.png",
     description:
       "El cliente podrá realizar las búsquedas por diferentes filtros (nombre, código, marca, categoría, precio).",
   },
   {
-    title: "PEDIDO PARCIAL:",
+    title: "Pedido Parcial",
+    icon: Save,
+    image: "/pedidos-web-workflow-order.png",
     description:
       "Se puede ir guardando parcialmente (en diferentes días) el Pedido y al finalizar la carga se confirma y se envía. En Fidel se recepcionará desde el menú Ventas → Pedidos, listo para facturarlo o presupuestarlo al Cliente.",
   },
   {
-    title: "NUEVO PEDIDO EN FIDEL",
+    title: "Nuevo pedido en Fidel",
+    icon: FilePlus2,
+    image: "/pedidos-web-workflow-fidel-order.png",
     description:
       "Ingresa un nuevo Pedido en Fidel para Facturar o Presupuestar, se puede habilitar una opción para que, al confirmar el Pedido el Cliente, se envíe por Email una copia al Cliente y otra a la Empresa.",
   },
@@ -174,8 +186,8 @@ export default function PedidosWebPage() {
                   >
                     <div
                       className={`mt-0.5 flex size-10 shrink-0 items-center justify-center rounded-xl ${isGreen
-                          ? "bg-[#d4ffcc] text-[#1B8C2B]"
-                          : "bg-[#fff0d5] text-[#D08236]"
+                        ? "bg-[#d4ffcc] text-[#1B8C2B]"
+                        : "bg-[#fff0d5] text-[#D08236]"
                         }`}
                       aria-hidden="true"
                     >
@@ -223,26 +235,61 @@ export default function PedidosWebPage() {
           </h2>
         </div>
 
-        <div className="mx-auto mt-12 max-w-5xl border-y border-[#e5e3df] md:mt-16">
-          {workflowDetails.map((item) => (
-            <article
-              key={item.title}
-              className="grid gap-3 border-b border-[#e5e3df] py-8 last:border-b-0 md:grid-cols-[minmax(220px,0.7fr)_minmax(0,1.3fr)] md:gap-12 md:py-10"
-            >
-              <h3
-                className="text-base font-bold leading-snug tracking-[-0.015em] text-[#252525] md:text-lg"
-                style={{ fontFamily: "Plus Jakarta Sans" }}
+        <div className="mx-auto mt-12 max-w-6xl overflow-hidden rounded-[28px] border border-[#e3eddc] bg-[#f7fbf5] md:mt-16">
+          {workflowDetails.map((item, index) => {
+            const Icon = item.icon;
+            const isGreen = index % 2 === 0;
+
+            return (
+              <article
+                key={item.title}
+                className="grid gap-5 border-b border-[#dfead9] p-5 last:border-b-0 md:grid-cols-[minmax(0,1.4fr)_minmax(200px,0.45fr)] md:items-center md:gap-8"
               >
-                {item.title}
-              </h3>
-              <p
-                className="max-w-3xl text-base leading-relaxed text-[#5c5c5c]"
-                style={{ fontFamily: "Satoshi" }}
-              >
-                {item.description}
-              </p>
-            </article>
-          ))}
+                <div className="grid grid-cols-[auto_minmax(0,1fr)] items-start gap-4 md:gap-5">
+                  <div
+                    className={`mt-0.5 flex size-11 shrink-0 items-center justify-center rounded-2xl ${isGreen
+                      ? "bg-[#d4ffcc] text-[#1B8C2B]"
+                      : "bg-[#fff0d5] text-[#D08236]"
+                      }`}
+                    aria-hidden="true"
+                  >
+                    <Icon className="size-5" strokeWidth={2} />
+                  </div>
+                  <div>
+                    <h3
+                      className="text-base font-bold leading-snug tracking-[-0.015em] text-[#252525] md:text-lg"
+                      style={{ fontFamily: "Plus Jakarta Sans" }}
+                    >
+                      {item.title}
+                    </h3>
+                    <p
+                      className="mt-2 max-w-3xl text-base leading-relaxed text-[#5c5c5c]"
+                      style={{ fontFamily: "Satoshi" }}
+                    >
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+                {item.image ? (
+                  <div className="relative mx-auto aspect-[16/9] w-full max-w-[230px] overflow-hidden rounded-[18px] border border-[#D08236]/25 bg-[#fff9ef] md:mx-0 md:justify-self-end">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="(min-width: 768px) 230px, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div
+                    role="img"
+                    aria-label="Espacio reservado para imagen"
+                    className="mx-auto aspect-[16/9] w-full max-w-[230px] rounded-[18px] border border-dashed border-[#D08236]/45 bg-[#fff9ef] md:mx-0 md:justify-self-end"
+                  />
+                )}
+              </article>
+            );
+          })}
         </div>
       </section>
 
