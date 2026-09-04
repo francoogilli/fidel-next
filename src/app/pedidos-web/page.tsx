@@ -316,7 +316,7 @@ export default function PedidosWebPage() {
                 Desarrollo
               </h2>
               <p
-                className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#1B8C2B] md:text-4xl"
+                className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#3fcf52] md:text-4xl"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
                 $ 500.000 + IVA (pago único)
@@ -330,7 +330,7 @@ export default function PedidosWebPage() {
                 Mantenimiento mensual
               </h2>
               <p
-                className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#1B8C2B] md:text-4xl"
+                className="mt-4 text-3xl font-bold tracking-[-0.035em] text-[#3fcf52] md:text-4xl"
                 style={{ fontFamily: "Plus Jakarta Sans" }}
               >
                 $ 54.000 + IVA (adicional al plan elegido en Fidel)
