@@ -368,46 +368,6 @@ export default function PedidosWebPage() {
           </a>
         </div>
       </section>
-
-      <section className="mx-auto mt-28 max-w-5xl border-t border-[#e5e3df] pt-10 md:mt-40 md:pt-14">
-        <div className="text-center">
-          <SectionLabel>NO DUDES EN CONSULTARNOS</SectionLabel>
-          <h2
-            className="mt-5 text-3xl font-bold tracking-[-0.035em] text-[#252525] md:text-5xl"
-            style={{ fontFamily: "Plus Jakarta Sans" }}
-          >
-            CONTACTO
-          </h2>
-        </div>
-
-        <div className="mt-12 grid gap-8 text-center sm:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#5c5c5c]">
-              WhatsApp Ventas
-            </p>
-            <a
-              href="tel:+543564212129"
-              className="mt-3 inline-block text-2xl font-bold text-[#252525] underline decoration-[#D08236] decoration-1 underline-offset-4 md:text-3xl"
-              style={{ fontFamily: "Plus Jakarta Sans" }}
-            >
-              +54 3564 21-2129
-            </a>
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#5c5c5c]">
-              Instagram
-            </p>
-            <Link
-              href="https://www.instagram.com/fidelsistema"
-              target="_blank"
-              className="mt-3 inline-block text-2xl font-bold text-[#252525] underline decoration-[#D08236] decoration-1 underline-offset-4 md:text-3xl"
-              style={{ fontFamily: "Plus Jakarta Sans" }}
-            >
-              / fidelsistema
-            </Link>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
