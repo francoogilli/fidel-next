@@ -362,9 +362,9 @@ export default function PedidosWebPage() {
             href="https://wa.me/543564212129"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-semibold text-white underline decoration-[#d8ff73] decoration-1 underline-offset-4 md:text-base"
+            className="text-sm font-semibold text-white md:text-base"
           >
-            / Pedí tu Demo Gratis
+            Pedí tu Demo Gratis
           </a>
         </div>
       </section>
