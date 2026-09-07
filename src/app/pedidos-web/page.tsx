@@ -317,7 +317,7 @@ export default function PedidosWebPage() {
                   >
                     Costos
                   </h2>
-                  <p className="mt-1 text-sm text-[#0c110d] md:text-base" style={{ fontFamily: "Satoshi" }}>
+                  <p className="mt-1 text-sm text-[#000000] md:text-base" style={{ fontFamily: "Satoshi" }}>
                     Una inversión clara para poner tu canal de ventas online en marcha.
                   </p>
                 </div>
@@ -375,7 +375,7 @@ export default function PedidosWebPage() {
                 </div>
               </div>
 
-              <div className="mt-6 border-t border-[#d8e9d9] pt-5 text-sm leading-relaxed text-[#0c110d] md:text-base" style={{ fontFamily: "Satoshi" }}>
+              <div className="mt-6 border-t border-[#d8e9d9] pt-5 text-sm leading-relaxed text-[#000000] md:text-base" style={{ fontFamily: "Satoshi" }}>
                 <p>Ambos precios están sujetos a modificaciones.</p>
                 <p className="mt-2 max-w-4xl">
                   Es importante que tengas en cuenta que una vez abonado el
