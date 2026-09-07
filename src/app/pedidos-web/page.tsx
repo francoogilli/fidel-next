@@ -339,7 +339,7 @@ export default function PedidosWebPage() {
                           Configuración inicial de tu plataforma
                         </p>
                       </div>
-                      <span className="rounded-full bg-[#d8ff73] px-3 py-1.5 text-xs font-semibold text-[#252525]">
+                      <span className="rounded-full bg-[#8ef86b] px-3 py-1.5 text-xs font-semibold text-[#252525]">
                         Pago único
                       </span>
                     </div>
