@@ -403,7 +403,7 @@ export default function PedidosWebPage() {
             rel="noopener noreferrer"
             className="text-sm font-semibold text-white md:text-base"
           >
-            Pedí tu Demo Gratis
+            Pedí tu demo gratis
           </a>
         </div>
       </section>
