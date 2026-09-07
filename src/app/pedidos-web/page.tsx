@@ -295,57 +295,96 @@ export default function PedidosWebPage() {
 
       <section className="mx-auto mt-28 max-w-7xl md:mt-40">
         <div className="mx-auto max-w-5xl">
-          <div className="mx-auto max-w-4xl text-center">
-            <div className="mt-5 flex items-center justify-center gap-3">
-              <BadgeDollarSign className="size-7 md:size-9" aria-hidden="true" />
-              <h2
-                className="text-3xl font-bold leading-tight tracking-[-0.035em] text-[#252525] md:text-5xl"
-                style={{ fontFamily: "Plus Jakarta Sans" }}
-              >
-                Costos
-              </h2>
-            </div>
-          </div>
+          <div className="relative isolate overflow-hidden rounded-[36px] border border-[#d8e9d9] bg-[#eff9ec] px-5 py-8 shadow-[0_24px_70px_-42px_rgba(52,126,65,0.28)] md:px-10 md:py-12">
+            <div
+              className="pointer-events-none absolute -right-20 -top-24 -z-10 size-72 rounded-full bg-[#d4ffcc]/70 blur-3xl"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute -bottom-32 -left-20 -z-10 size-72 rounded-full bg-[#92fda6]/90 blur-3xl"
+              aria-hidden="true"
+            />
 
-          <div className="mt-12 grid gap-0 border-y border-[#e5e3df] md:mt-16 md:grid-cols-2 md:divide-x md:divide-[#e5e3df]">
-            <div className="py-9 md:pr-12 md:py-12">
-              <h2
-                className="text-2xl font-bold text-[#252525] md:text-3xl"
-                style={{ fontFamily: "Plus Jakarta Sans" }}
-              >
-                Desarrollo
-              </h2>
-              <p
-                className="mt-4 text-3xl font-bold tracking-[-0.035em] md:text-4xl"
-                style={{ fontFamily: "Plus Jakarta Sans" }}
-              >
-                $ 500.000 + IVA (pago único)
-              </p>
-            </div>
-            <div className="border-t border-[#e5e3df] py-9 md:border-t-0 md:pl-12 md:py-12">
-              <h2
-                className="text-2xl font-bold text-[#252525] md:text-3xl"
-                style={{ fontFamily: "Plus Jakarta Sans" }}
-              >
-                Mantenimiento mensual
-              </h2>
-              <p
-                className="mt-4 text-3xl font-bold tracking-[-0.035em] md:text-4xl"
-                style={{ fontFamily: "Plus Jakarta Sans" }}
-              >
-                $ 54.000 + IVA (adicional al plan elegido en Fidel)
-              </p>
-            </div>
-          </div>
+            <div className="relative">
+              <div className="flex items-center gap-3">
+                <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#252525] text-[#79e149] shadow-[0_10px_20px_-12px_rgba(37,37,37,0.8)]">
+                  <BadgeDollarSign className="size-6" strokeWidth={2.2} aria-hidden="true" />
+                </div>
+                <div>
+                  <h2
+                    className="text-3xl font-bold leading-tight tracking-[-0.035em] text-[#252525] md:text-5xl"
+                    style={{ fontFamily: "Plus Jakarta Sans" }}
+                  >
+                    Costos
+                  </h2>
+                  <p className="mt-1 text-sm text-[#0c110d] md:text-base" style={{ fontFamily: "Satoshi" }}>
+                    Una inversión clara para poner tu canal de ventas online en marcha.
+                  </p>
+                </div>
+              </div>
 
-          <div className="mt-8 space-y-4 text-base leading-relaxed text-[#5c5c5c] md:text-lg" style={{ fontFamily: "Satoshi" }}>
-            <p>Ambos precios están sujetos a modificaciones.</p>
-            <p>
-              Es importante que tengas en cuenta que una vez abonado el
-              servicio el tiempo destinado a su desarrollo es de 15 a 30 días
-              posterior al pago. Si tienes alguna duda o querés avanzar con el
-              desarrollo, estoy a disposición.
-            </p>
+              <div className="mt-10 grid gap-4 md:grid-cols-[1.05fr_0.95fr]">
+                <div className="relative overflow-hidden rounded-[28px] bg-[#252525] p-6 text-white shadow-[0_18px_30px_-22px_rgba(37,37,37,0.9)] transition-transform duration-300 hover:-translate-y-1 md:p-8">
+                  <div
+                    className="pointer-events-none absolute -right-10 -top-10 size-36 rounded-full bg-[#d8ff73]/20 blur-2xl"
+                    aria-hidden="true"
+                  />
+                  <div className="relative flex h-full flex-col justify-between gap-10">
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <p className="text-lg font-semibold md:text-xl" style={{ fontFamily: "Plus Jakarta Sans" }}>
+                          Desarrollo
+                        </p>
+                        <p className="mt-1 text-sm text-white/65" style={{ fontFamily: "Satoshi" }}>
+                          Configuración inicial de tu plataforma
+                        </p>
+                      </div>
+                      <span className="rounded-full bg-[#d8ff73] px-3 py-1.5 text-xs font-semibold text-[#252525]">
+                        Pago único
+                      </span>
+                    </div>
+                    <p
+                      className="max-w-[15ch] text-3xl font-bold leading-[1.05] tracking-[-0.04em] md:text-5xl"
+                      style={{ fontFamily: "Plus Jakarta Sans" }}
+                    >
+                      $ 500.000 <span className="whitespace-nowrap text-xl text-white/60 md:text-2xl">+ IVA</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-between gap-10 rounded-[28px] border border-[#d8e9d9] bg-white/85 p-6 shadow-[0_18px_30px_-26px_rgba(52,126,65,0.24)] transition-transform duration-300 hover:-translate-y-1 md:p-8">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <p className="max-w-[14ch] text-lg font-semibold leading-tight text-[#252525] md:text-xl" style={{ fontFamily: "Plus Jakarta Sans" }}>
+                        Mantenimiento mensual
+                      </p>
+                      <p className="mt-1 text-sm text-[#527257]" style={{ fontFamily: "Satoshi" }}>
+                        Adicional al plan elegido en Fidel
+                      </p>
+                    </div>
+                    <span className="rounded-full bg-[#dff3df] px-3 py-1.5 text-xs font-semibold text-[#071208]">
+                      Mensual
+                    </span>
+                  </div>
+                  <p
+                    className="max-w-[15ch] text-3xl font-bold leading-[1.05] tracking-[-0.04em] text-[#252525] md:text-5xl"
+                    style={{ fontFamily: "Plus Jakarta Sans" }}
+                  >
+                    $ 54.000 <span className="whitespace-nowrap text-xl text-[#6d8d73] md:text-2xl">+ IVA</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 border-t border-[#d8e9d9] pt-5 text-sm leading-relaxed text-[#0c110d] md:text-base" style={{ fontFamily: "Satoshi" }}>
+                <p>Ambos precios están sujetos a modificaciones.</p>
+                <p className="mt-2 max-w-4xl">
+                  Es importante que tengas en cuenta que una vez abonado el
+                  servicio el tiempo destinado a su desarrollo es de 15 a 30 días
+                  posterior al pago. Si tienes alguna duda o querés avanzar con el
+                  desarrollo, estoy a disposición.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
