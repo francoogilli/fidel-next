@@ -307,7 +307,7 @@ export default function PedidosWebPage() {
 
             <div className="relative">
               <div className="flex items-start gap-3">
-                <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#252525] text-[#f6fbf3] shadow-[0_10px_20px_-12px_rgba(37,37,37,0.8)]">
+                <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#252525] text-[#eef8eb] shadow-[0_10px_20px_-12px_rgba(37,37,37,0.8)]">
                   <BadgeDollarSign className="size-6" strokeWidth={2.2} aria-hidden="true" />
                 </div>
                 <div>
