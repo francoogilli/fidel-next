@@ -95,7 +95,7 @@ export default function Integration() {
           className="text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[27rem] xl:w-[39rem] mx-auto "
           style={{ fontFamily: "Satoshi" }}
         >
-          Conectá Mercado Libre, WooCommerce y Tienda Nube en un solo lugar y
+          Conectá <span className="text-[#0f0f0f]">Mercado Libre</span>, <span className="text-[#0f0f0f]">WooCommerce</span> y <span className="text-[#0f0f0f]">Tienda Nube</span> en un solo lugar y
           centralizá tus pedidos, ventas y stock desde cualquier dispositivo.
         </h4>
       </div>
