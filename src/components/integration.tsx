@@ -88,7 +88,7 @@ export default function Integration() {
           className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] leading-[2.8rem] sm:leading-[3.7rem] font-bold text-center my-8 pb-4 tracking-tight text-[#121212]"
           style={{ fontFamily: "Plus Jakarta Sans" }}
         >
-          <span className="block">Centralizá tu tienda online</span>
+          <span className="block">Integra tu tienda online</span>
           <span className="block">y hacé crecer tu negocio</span>
         </h3>
         <h4
