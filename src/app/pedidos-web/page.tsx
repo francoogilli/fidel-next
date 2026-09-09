@@ -6,11 +6,13 @@ import { motion } from "framer-motion";
 import {
   BadgeDollarSign,
   BadgePercent,
+  Check,
   ClipboardList,
   FilePlus2,
   ListFilter,
   LogIn,
   PackageSearch,
+  RefreshCw,
   Save,
   UserRoundCheck,
   Wrench,
@@ -339,8 +341,9 @@ export default function PedidosWebPage() {
                           Configuración inicial de tu plataforma
                         </p>
                       </div>
-                      <span className="rounded-full bg-[#8ef86b] px-3 py-1.5 text-xs font-semibold text-[#252525]">
-                        Pago único
+                      <span className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-[#8ef86b] px-3 py-1.5 text-xs font-semibold text-[#252525]">
+                        <Check className="size-3.5" strokeWidth={2.5} aria-hidden="true" />
+                        <span className="mt-0.5">Pago único</span>
                       </span>
                     </div>
                     <p
@@ -362,8 +365,9 @@ export default function PedidosWebPage() {
                         Adicional al plan elegido en Fidel
                       </p>
                     </div>
-                    <span className="rounded-full bg-[#dff3df] px-3 py-1.5 text-xs font-semibold text-[#071208]">
-                      Mensual
+                    <span className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-[#dff3df] px-3 py-1.5 text-xs font-semibold text-[#071208]">
+                      <RefreshCw className="size-3.5" strokeWidth={2.5} aria-hidden="true" />
+                      <span className="mt-0.5">Mensual</span>
                     </span>
                   </div>
                   <p
