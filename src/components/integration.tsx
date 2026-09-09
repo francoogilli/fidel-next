@@ -121,15 +121,15 @@ export default function Integration() {
             onFocus={() => setActiveTool(tool.name)}
           >
             <IntegrationMark mark={tool.mark} />
-            <span className="pointer-events-none absolute left-1/2 top-full z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-full border border-[rgba(58,101,63,0.12)] bg-white/95 px-3 py-1.5 font-[var(--font-plus-jakarta-sans)] text-xs font-semibold text-[#231813] opacity-0 shadow-[0_8px_24px_rgba(52,91,46,0.14)] transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
+            <span className="pointer-events-none absolute left-1/2 top-full z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-xl border border-white/10 bg-[#121212] px-3 py-1.5 text-xs font-semibold text-white opacity-0 shadow-[0_8px_24px_rgba(0,0,0,0.2)] transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
               {tool.name}
             </span>
           </button>
         ))}
 
         <div className="absolute left-1/2 top-[51%] z-[4] w-[calc(100%_-_40px)] max-w-[600px] -translate-x-1/2 text-center max-[700px]:w-[calc(100%_-_34px)]">
-          <p className="m-0 font-[var(--font-plus-jakarta-sans)] text-[0.74rem] font-[750] uppercase leading-[1.3] tracking-[0.14em] text-[#32833e]">Todo conectado en un solo lugar</p>
-          <p className="mx-auto mt-[13px] max-w-[590px] font-[var(--font-plus-jakarta-sans)] text-[clamp(1rem,1.45vw,1.22rem)] font-[650] leading-[1.4] tracking-[-0.025em] text-[#2c201a] max-[700px]:text-[0.95rem] max-[700px]:leading-[1.55]">
+          <p className="m-0 font-[var(--font-plus-jakarta-sans)] text-[0.74rem] uppercase leading-[1.3] tracking-[0.14em] text-[#32833e]">Todo conectado en un solo lugar</p>
+          <p className="mx-auto mt-[13px] max-w-[590px] font-[var(--font-plus-jakarta-sans)] text-[clamp(1rem,1.45vw,1.22rem)] leading-[1.4] tracking-[-0.025em] text-[#2c201a] max-[700px]:text-[0.95rem] max-[700px]:leading-[1.55]">
             Recibí pedidos de Mercado Libre, WooCommerce y Tienda Nube,
             sincronizá tu stock y trabajá siempre con información actualizada.
           </p>
