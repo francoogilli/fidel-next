@@ -294,7 +294,7 @@ export default function PedidosWebPage() {
       </section>
 
       <section className="mx-auto mt-28 max-w-7xl md:mt-40">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-6xl">
           <div className="relative isolate overflow-hidden rounded-[36px] border border-[#d8e9d9] bg-[#eff9ec] px-5 py-8 shadow-[0_24px_70px_-42px_rgba(52,126,65,0.28)] md:px-10 md:py-12">
             <div
               className="pointer-events-none absolute -right-20 -top-24 -z-10 size-72 rounded-full bg-[#d4ffcc]/70 blur-3xl"
@@ -306,8 +306,8 @@ export default function PedidosWebPage() {
             />
 
             <div className="relative">
-              <div className="flex items-center gap-3">
-                <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#252525] text-[#79e149] shadow-[0_10px_20px_-12px_rgba(37,37,37,0.8)]">
+              <div className="flex items-start gap-3">
+                <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-[#252525] text-[#f6fbf3] shadow-[0_10px_20px_-12px_rgba(37,37,37,0.8)]">
                   <BadgeDollarSign className="size-6" strokeWidth={2.2} aria-hidden="true" />
                 </div>
                 <div>
@@ -355,7 +355,7 @@ export default function PedidosWebPage() {
                 <div className="flex flex-col justify-between gap-10 rounded-[28px] border border-[#d8e9d9] bg-white/85 p-6 shadow-[0_18px_30px_-26px_rgba(52,126,65,0.24)] transition-transform duration-300 hover:-translate-y-1 md:p-8">
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <p className="max-w-[14ch] text-lg font-semibold leading-tight text-[#252525] md:text-xl" style={{ fontFamily: "Plus Jakarta Sans" }}>
+                      <p className="text-lg font-semibold leading-tight text-[#252525] md:text-xl" style={{ fontFamily: "Plus Jakarta Sans" }}>
                         Mantenimiento mensual
                       </p>
                       <p className="mt-1 text-sm text-[#527257]" style={{ fontFamily: "Satoshi" }}>
