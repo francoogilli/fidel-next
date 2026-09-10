@@ -1,7 +1,5 @@
 "use client";
 
-import AdvantagesIcon from "@/icons/advantages";
-import CreditCardIcon from "@/icons/creditCard";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
@@ -13,7 +11,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
-import { Wrench, Truck, Sparkles, Settings, ArrowRight, ShoppingCart } from "lucide-react";
+import { Wrench, Truck, Sparkles, Settings, ArrowRight } from "lucide-react";
 
 const EASE = "cubic-bezier(.2,.85,.25,1)";
 const DUR = "0.6s";
@@ -178,26 +176,23 @@ export default function Header() {
             <Link
               href="/#planes"
               onClick={scrollToSection("planes")}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap group"
+              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
-              <CreditCardIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
               Planes
             </Link>
 
             <Link
               href="/#funcionalidades"
               onClick={scrollToSection("funcionalidades")}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap group"
+              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
-              <AdvantagesIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
               Funcionalidades
             </Link>
 
             <Link
               href="/pedidos-web"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap group"
+              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
-              <ShoppingCart className="size-4 transition-transform group-hover:-translate-x-0.5" />
               Pedidos Web
             </Link>
 
@@ -210,22 +205,7 @@ export default function Header() {
             >
               <NavigationMenuList>
                 <NavigationMenuItem value="rubros">
-                  <NavigationMenuTrigger className="text-[13.5px] px-3.5 py-2 bg-transparent hover:bg-black/5 text-[#2a2b30] hover:text-black gap-1.5 font-medium rounded-xl">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="size-4"
-                    >
-                      <rect width="7" height="7" x="3" y="3" rx="1" />
-                      <rect width="7" height="7" x="14" y="3" rx="1" />
-                      <rect width="7" height="7" x="14" y="14" rx="1" />
-                      <rect width="7" height="7" x="3" y="14" rx="1" />
-                    </svg>
+                  <NavigationMenuTrigger className="text-[13.5px] px-3.5 py-2 bg-transparent hover:bg-black/5 text-[#2a2b30] hover:text-black font-medium rounded-xl">
                     Rubros
                   </NavigationMenuTrigger>
 
