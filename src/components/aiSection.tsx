@@ -199,7 +199,7 @@ export default function AiSection() {
             </div>
 
             <div className="mt-5 flex items-center gap-3 text-sm font-medium text-[#577052]">
-              <span className="grid h-8 w-8 place-items-center rounded-full bg-[#caff8a] text-[#37652b]"><Camera size={16} /></span>
+              <span className="grid h-8 w-8 place-items-center rounded-full bg-[#212121] text-[#f3fdf2]"><Camera size={16} /></span>
               <span>La carga se vuelve más ágil desde el primer paso.</span>
             </div>
           </motion.div>
@@ -237,7 +237,7 @@ export default function AiSection() {
               </div>
             </div>
 
-            <ul className="mx-5 mt-7 space-y-3 border-t border-[#dce8da] pt-6 text-sm text-[#4b604c] md:mx-8">
+            <ul className="mx-5 mt-7 space-y-3 border-t border-[#dce8da] pt-7 text-sm text-[#4b604c] md:mx-8">
               <li className="flex items-start gap-3">
                 <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-[#caffad] text-[#3f7c39]"><Check size={13} /></span>
                 <span>Respuestas al instante sobre cómo usar Fidel.</span>
