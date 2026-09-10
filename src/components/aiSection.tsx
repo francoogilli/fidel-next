@@ -144,7 +144,7 @@ export default function AiSection() {
                   />
                 </div>
                 <figcaption className="mt-2 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-[#5b8054] sm:text-xs">
-                  Cheques con IA
+                  Cheques
                 </figcaption>
               </motion.figure>
             </div>
