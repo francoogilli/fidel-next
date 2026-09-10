@@ -47,19 +47,19 @@ export default function AiSection() {
   return (
     <section
       id="ia"
-      className="relative isolate overflow-hidden bg-[radial-gradient(ellipse_48%_45%_at_88%_5%,rgba(114,203,113,0.22),transparent_68%),radial-gradient(ellipse_45%_55%_at_50%_48%,rgba(236,250,237,0.92),transparent_72%),#fcfaf7] py-20 text-[#121212] md:py-18"
+      className="relative isolate overflow-hidden bg-[radial-gradient(ellipse_48%_45%_at_12%_5%,rgba(255,184,128,0.24),transparent_68%),radial-gradient(ellipse_45%_55%_at_50%_48%,rgba(255,246,235,0.92),transparent_72%),#fffaf5] py-20 text-[#121212] md:py-18"
       aria-labelledby="ai-title"
     >
       <div
-        className="pointer-events-none absolute inset-0 z-0 opacity-[0.65] [background-image:radial-gradient(rgba(50,91,46,0.08)_0.6px,transparent_0.6px)] [background-size:5px_5px] [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0.8),transparent_75%)]"
+        className="pointer-events-none absolute inset-0 z-0 opacity-[0.65] [background-image:radial-gradient(rgba(167,92,42,0.07)_0.6px,transparent_0.6px)] [background-size:5px_5px] [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0.8),transparent_75%)]"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute -top-[190px] right-[9%] z-0 h-[360px] w-[360px] rounded-full bg-[rgba(88,190,96,0.18)] blur-[80px]"
+        className="pointer-events-none absolute -top-[190px] left-[9%] z-0 h-[360px] w-[360px] rounded-full bg-[rgba(255,175,102,0.2)] blur-[80px]"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute left-[34%] top-[360px] z-0 h-[300px] w-[560px] rounded-full bg-[rgba(148,220,151,0.18)] blur-[80px]"
+        className="pointer-events-none absolute left-[34%] top-[360px] z-0 h-[300px] w-[560px] rounded-full bg-[rgba(255,212,146,0.18)] blur-[80px]"
         aria-hidden="true"
       />
 
