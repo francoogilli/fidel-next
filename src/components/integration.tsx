@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import mercadoLibreImage from "../../public/mercado-libre.png";
 import TiendaNubeIcon from "../icons/tiendaNube";
 import IntegrationIcon from "../icons/integration";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
@@ -26,7 +27,7 @@ function IntegrationMark({ mark }: { mark: Mark }) {
   if (mark === "mercado-libre") {
     return (
       <span className="grid h-[50px] w-[50px] place-items-center overflow-hidden rounded-[9px] max-[700px]:h-10 max-[700px]:w-10" aria-hidden="true">
-        <Image className="h-[50px] w-[50px] object-contain max-[700px]:h-10 max-[700px]:w-10" src="/mercado-libre.png" alt="" width={50} height={50} sizes="50px" />
+        <Image className="h-[50px] w-[50px] object-contain max-[700px]:h-10 max-[700px]:w-10" src={mercadoLibreImage} alt="" width={50} height={50} sizes="50px" />
       </span>
     );
   }
