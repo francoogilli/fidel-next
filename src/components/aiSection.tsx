@@ -93,7 +93,7 @@ export default function AiSection() {
               className="my-8 pb-1 text-4xl font-bold tracking-tight text-[#121212] md:text-[3.25rem] xl:text-[3.5rem]"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
-              La IA ya empezó a trabajar en Fidel.
+              La IA ya empezó a trabajar en Fidel
             </h3>
             <p
               className="mx-auto max-w-[39rem] text-center text-sm font-medium text-[#5c5c5c] md:text-lg xl:text-xl"
@@ -222,9 +222,6 @@ export default function AiSection() {
                 />
               </div>
               <div className="px-5 pt-5 sm:px-0 sm:pr-5 md:pr-8 md:pt-8">
-                <div className="inline-flex items-center gap-2 rounded-full border border-[#d6e4d3] bg-white/70 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.13em] text-[#5b8054]">
-                  <Sparkles size={13} /> Asistente IA
-                </div>
                 <h3
                   className="mt-4 text-3xl font-bold leading-[1.04] tracking-[-0.055em] text-[#333333]"
                   style={{ fontFamily: "Plus Jakarta Sans" }}

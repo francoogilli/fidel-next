@@ -19,8 +19,8 @@ export default function Home() {
       <div id="funcionalidades">
         <Functionalities />
       </div>
-      <Integration />
       <AiSection />
+      <Integration />
       <div id="planes">
         <PricingCard viewComparison />
       </div>
