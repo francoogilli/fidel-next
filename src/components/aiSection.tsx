@@ -6,39 +6,15 @@ import {
   ArrowUpRight,
   Camera,
   Check,
-  FileText,
   MessageCircle,
   Sparkles,
 } from "lucide-react";
-import { useState } from "react";
 import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
 
-type InputType = "factura" | "cheque";
-
-const documentData: Record<
-  InputType,
-  { label: string; title: string; amount: string; rows: string[] }
-> = {
-  factura: {
-    label: "Factura de compra",
-    title: "Distribuidora Norte",
-    amount: "$ 184.520,00",
-    rows: ["12 × Tornillo 8mm", "6 × Adhesivo multiuso", "2 × Caja organizadora"],
-  },
-  cheque: {
-    label: "Cheque recibido",
-    title: "Ferretería San Juan",
-    amount: "$ 92.000,00",
-    rows: ["Vencimiento · 30/09/26", "Banco · Nación", "Nº 0001842"],
-  },
-};
-
 export default function AiSection() {
-  const [inputType, setInputType] = useState<InputType>("factura");
   const shouldReduceMotion = useReducedMotion();
-  const activeDocument = documentData[inputType];
 
   const entrance = shouldReduceMotion
     ? { duration: 0 }
@@ -47,19 +23,19 @@ export default function AiSection() {
   return (
     <section
       id="ia"
-      className="relative isolate overflow-hidden bg-[radial-gradient(ellipse_48%_45%_at_12%_5%,rgba(255,184,128,0.24),transparent_68%),radial-gradient(ellipse_45%_55%_at_50%_48%,rgba(255,246,235,0.92),transparent_72%),#fffaf5] py-20 text-[#121212] md:py-18"
+      className="relative isolate overflow-hidden bg-[radial-gradient(ellipse_48%_45%_at_88%_5%,rgba(114,203,113,0.22),transparent_68%),radial-gradient(ellipse_45%_55%_at_50%_48%,rgba(236,250,237,0.92),transparent_72%),#fcfaf7] py-20 text-[#121212] md:py-28"
       aria-labelledby="ai-title"
     >
       <div
-        className="pointer-events-none absolute inset-0 z-0 opacity-[0.65] [background-image:radial-gradient(rgba(167,92,42,0.07)_0.6px,transparent_0.6px)] [background-size:5px_5px] [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0.8),transparent_75%)]"
+        className="pointer-events-none absolute inset-0 z-0 opacity-[0.65] [background-image:radial-gradient(rgba(50,91,46,0.08)_0.6px,transparent_0.6px)] [background-size:5px_5px] [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0.8),transparent_75%)]"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute -top-[190px] left-[9%] z-0 h-[360px] w-[360px] rounded-full bg-[rgba(255,175,102,0.2)] blur-[80px]"
+        className="pointer-events-none absolute -top-[190px] right-[9%] z-0 h-[360px] w-[360px] rounded-full bg-[rgba(88,190,96,0.18)] blur-[80px]"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute left-[34%] top-[360px] z-0 h-[300px] w-[560px] rounded-full bg-[rgba(255,212,146,0.18)] blur-[80px]"
+        className="pointer-events-none absolute left-[34%] top-[360px] z-0 h-[300px] w-[560px] rounded-full bg-[rgba(148,220,151,0.18)] blur-[80px]"
         aria-hidden="true"
       />
 
@@ -108,7 +84,7 @@ export default function AiSection() {
 
         <div className="mt-12 grid gap-7 lg:grid-cols-[1.15fr_0.85fr]">
           <motion.div
-            className="relative overflow-hidden rounded-[35px] border border-[#e3e8e3] bg-gradient-to-tr from-[#e9f2ea] to-[#f4f6f3] p-5 text-[#333333] shadow-[0_16px_45px_rgba(47,71,53,0.08)] md:p-8"
+            className="relative overflow-hidden rounded-[35px] border border-[#e3e8e3] bg-gradient-to-tr from-[#eef7ea] to-[#f8faf9] p-5 text-[#333333] shadow-[0_16px_45px_rgba(47,71,53,0.08)] md:p-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -116,91 +92,61 @@ export default function AiSection() {
           >
             <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-start">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#6a8b62]">
-                  Carga asistida
-                </p>
+                <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-[#cdb428]">
+                  <span className="grid h-7 w-7 place-items-center rounded-full bg-[#cdb428] text-[#f5f5f5]">
+                    <Camera size={15} />
+                  </span>
+                  <span>Sacás una foto.</span>
+                </div>
                 <h3
-                  className="mt-3 max-w-[31rem] text-3xl font-bold leading-[1.04] tracking-[-0.055em] text-[#333333] md:text-[2.75rem]"
+                  className="max-w-[31rem] text-2xl font-bold leading-[1.06] tracking-[-0.045em] text-[#333333] md:text-[2.3rem]"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
                 >
-                  Sacás una foto.
-                  <span className="block text-[#4f9944]">Fidel ayuda a leer los datos.</span>
+                  Cargás tus comprobantes en segundos.
                 </h3>
               </div>
-              <div className="flex shrink-0 rounded-full border border-[#c8d8bd] bg-white/70 p-1 text-xs font-bold">
-                {(["factura", "cheque"] as InputType[]).map((type) => (
-                  <button
-                    key={type}
-                    type="button"
-                    onClick={() => setInputType(type)}
-                    className={`rounded-full px-3 py-2 transition-colors ${inputType === type
-                      ? "bg-[#172119] text-[#edffca]"
-                      : "text-[#688064] hover:text-[#172119]"
-                      }`}
-                    aria-pressed={inputType === type}
-                  >
-                    {type === "factura" ? "Factura" : "Cheque"}
-                  </button>
-                ))}
-              </div>
             </div>
 
-            <div className="relative mt-8 grid items-center gap-5 rounded-[1.45rem] border border-[#d4e5c7] bg-gradient-to-tr from-[#dff5c5] to-[#f0f8e9] p-4 sm:grid-cols-[1.14fr_0.86fr] md:gap-7 md:p-7">
-              <div className="relative -rotate-2 overflow-hidden rounded-[0.75rem] bg-[#fffdf8] px-5 pb-5 pt-6 shadow-[0_18px_30px_rgba(34,71,28,0.15)] sm:min-h-[250px]">
-                <div className="absolute right-4 top-4 rounded-md bg-[#eaf4e2] px-2 py-1 text-[9px] font-bold uppercase tracking-[0.14em] text-[#67955a]">
-                  Vista de ejemplo
+            <div className="relative mt-6 grid grid-cols-2 gap-3 rounded-[1.45rem] border border-[#d6e4d3] bg-white/55 p-2 shadow-[0_18px_35px_rgba(47,71,53,0.07)] md:gap-4 md:p-3">
+              <motion.figure
+                className="min-w-0"
+                initial={shouldReduceMotion ? false : { opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={shouldReduceMotion ? { duration: 0 } : { ...entrance, delay: 0.08 }}
+              >
+                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.1rem]">
+                  <Image
+                    src="/ai-carga-factura.png"
+                    alt="Flujo de carga asistida de facturas en Fidel"
+                    fill
+                    sizes="(min-width: 1024px) 24vw, 46vw"
+                    className="object-cover"
+                  />
                 </div>
-                <div className="flex items-center gap-2 border-b border-[#e3eadf] pb-4">
-                  <div className="grid h-8 w-8 place-items-center rounded-lg bg-[#caff8a] text-[#375e2c]">
-                    {inputType === "factura" ? <FileText size={17} /> : <Check size={17} />}
-                  </div>
-                  <div>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#72906a]">
-                      {activeDocument.label}
-                    </p>
-                    <p className="mt-1 text-sm font-bold text-[#1e2a20]">{activeDocument.title}</p>
-                  </div>
-                </div>
-                <div className="mt-5 space-y-3 text-[11px] text-[#657263]">
-                  {activeDocument.rows.map((row) => (
-                    <div key={row} className="flex items-center justify-between border-b border-[#edf1ea] pb-2">
-                      <span>{row}</span>
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#a7f35d]" aria-hidden="true" />
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-5 flex items-center justify-between rounded-lg bg-[#f0f7ec] px-3 py-2">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#75936e]">Total</span>
-                  <span className="text-sm font-bold text-[#1e2a20]">{activeDocument.amount}</span>
-                </div>
-                <motion.div
-                  className="pointer-events-none absolute left-0 right-0 top-0 h-[2px] bg-[#8ee34d] shadow-[0_0_16px_#9eff5c]"
-                  animate={shouldReduceMotion ? undefined : { y: [18, 230, 18] }}
-                  transition={{ duration: 4.6, ease: "easeInOut", repeat: Infinity }}
-                  aria-hidden="true"
-                />
-              </div>
+                <figcaption className="mt-2 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-[#5b8054] sm:text-xs">
+                  Facturas
+                </figcaption>
+              </motion.figure>
 
-              <div className="relative rounded-[1.15rem] bg-[#333333] p-4 text-[#f5f5f5] shadow-[0_12px_28px_rgba(21,44,18,0.16)] sm:translate-y-5">
-                <div className="flex items-center justify-between border-b border-white/10 pb-3">
-                  <div className="flex items-center gap-2">
-                    <span className="grid h-7 w-7 place-items-center rounded-md bg-[#baff91] text-[#234120]"><Sparkles size={14} /></span>
-                    <span className="text-xs font-bold">Lectura con IA</span>
-                  </div>
-                  <span className="flex items-center gap-1 text-[10px] text-[#c0cfc0]"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#baff91]" /> activa</span>
+              <motion.figure
+                className="min-w-0"
+                initial={shouldReduceMotion ? false : { opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={shouldReduceMotion ? { duration: 0 } : { ...entrance, delay: 0.16 }}
+              >
+                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.1rem]">
+                  <Image
+                    src="/ai-carga-cheque.png"
+                    alt="Flujo de carga asistida de cheques con IA en Fidel"
+                    fill
+                    sizes="(min-width: 1024px) 24vw, 46vw"
+                    className="object-cover"
+                  />
                 </div>
-                <div className="mt-4 space-y-2.5 text-xs">
-                  <div className="flex items-center justify-between rounded-lg bg-white/[0.08] px-3 py-2"><span className="text-[#c1cec1]">Proveedor</span><span>Identificado</span></div>
-                  <div className="flex items-center justify-between rounded-lg bg-white/[0.08] px-3 py-2"><span className="text-[#c1cec1]">Importe</span><span>Detectado</span></div>
-                  <div className="flex items-center justify-between rounded-lg bg-white/[0.08] px-3 py-2"><span className="text-[#c1cec1]">Conceptos</span><span>Leídos</span></div>
-                </div>
-                <div className="mt-4 flex items-center gap-2 rounded-lg bg-[#baff91] px-3 py-2 text-[11px] font-bold text-[#21351e]"><Check size={14} /> Datos listos para revisar</div>
-              </div>
-            </div>
-
-            <div className="mt-5 flex items-center gap-3 text-sm font-medium text-[#577052]">
-              <span className="grid h-8 w-8 place-items-center rounded-full bg-[#212121] text-[#f3fdf2]"><Camera size={16} /></span>
-              <span>La carga se vuelve más ágil desde el primer paso.</span>
+                <figcaption className="mt-2 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-[#5b8054] sm:text-xs">
+                  Cheques con IA
+                </figcaption>
+              </motion.figure>
             </div>
           </motion.div>
 
