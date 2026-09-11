@@ -122,7 +122,7 @@ export default function Integration() {
             onFocus={() => setActiveTool(tool.name)}
           >
             <IntegrationMark mark={tool.mark} />
-            <span className="pointer-events-none absolute left-1/2 top-full z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-xl border border-white/10 bg-[#121212] px-3 py-1.5 text-xs font-semibold text-white opacity-0 shadow-[0_8px_24px_rgba(0,0,0,0.2)] transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
+            <span className="pointer-events-none absolute left-1/2 top-full z-20 mt-3 -translate-x-1/2 whitespace-nowrap rounded-xl border border-white/10 bg-[#121212] px-3 py-1.5 text-xs font-medium text-white opacity-0 shadow-[0_8px_24px_rgba(0,0,0,0.2)] transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
               {tool.name}
             </span>
           </button>
