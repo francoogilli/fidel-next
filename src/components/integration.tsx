@@ -116,7 +116,7 @@ export default function Integration() {
           <button
             key={tool.name}
             type="button"
-            className={`group absolute top-[25%] z-[5] grid h-[94px] w-[94px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-[rgba(91,184,101,0.5)] bg-[rgba(230,248,231,0.92)] p-0 text-[#29cd44] shadow-[0_0_0_9px_rgba(83,183,94,0.1),0_0_0_18px_rgba(83,183,94,0.06),0_0_36px_rgba(66,161,76,0.2),inset_0_0_0_1px_rgba(255,255,255,0.72)] transition-[border-color,color,background-color,transform] duration-[220ms] ease-in-out hover:scale-[1.08] hover:border-[rgba(70,166,82,0.75)] hover:bg-[rgba(222,246,224,0.98)] hover:text-[#32833e] focus-visible:outline-none focus-visible:shadow-[0_0_0_4px_rgba(70,166,82,0.2),inset_0_0_0_1px_rgba(255,255,255,0.76)] max-[700px]:h-[76px] max-[700px]:w-[76px] ${tool.positionClass}`}
+            className={`group absolute top-[25%] z-[5] grid h-[94px] w-[94px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-[rgba(91,184,101,0.5)] bg-[#fffafa] hover:bg-[#fff] p-0 text-[#29cd44] shadow-[0_0_0_9px_rgba(83,183,94,0.1),0_0_0_18px_rgba(83,183,94,0.06),0_0_36px_rgba(66,161,76,0.2),inset_0_0_0_1px_rgba(255,255,255,0.72)] transition-[border-color,color,background-color,transform] duration-[220ms] ease-in-out hover:scale-[1.08] hover:border-[rgba(70,166,82,0.75)] hover:text-[#32833e] focus-visible:outline-none focus-visible:shadow-[0_0_0_4px_rgba(70,166,82,0.2),inset_0_0_0_1px_rgba(255,255,255,0.76)] max-[700px]:h-[76px] max-[700px]:w-[76px] ${tool.positionClass}`}
             aria-label={`Ver integración de ${tool.name}`}
             onMouseEnter={() => setActiveTool(tool.name)}
             onFocus={() => setActiveTool(tool.name)}
