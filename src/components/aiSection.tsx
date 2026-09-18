@@ -100,13 +100,13 @@ export default function AiSection() {
                   <span className="grid h-7 w-7 place-items-center rounded-full bg-[#cdb428] text-[#f5f5f5]">
                     <Camera size={15} />
                   </span>
-                  <span>Sacás una foto.</span>
+                  <span>Sacás una foto o cargás un archivo!</span>
                 </div>
                 <h3
                   className="max-w-[31rem] text-2xl font-bold leading-[1.06] tracking-[-0.045em] text-[#333333] md:text-[2.3rem]"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
                 >
-                  Cargás tus comprobantes en segundos.
+                  Ingresá tus comprobantes en segundos
                 </h3>
               </div>
             </div>
@@ -176,7 +176,7 @@ export default function AiSection() {
                   className="mt-4 text-3xl font-bold leading-[1.04] tracking-[-0.055em] text-[#333333]"
                   style={{ fontFamily: "Plus Jakarta Sans" }}
                 >
-                  Conocé a Fidelito, tu asistente con IA.
+                  Conocé a Fidelito, tu asistente con IA
                 </h3>
                 <p className="mt-4 text-base leading-relaxed text-[#667766]" style={{ fontFamily: "Satoshi" }}>
                   Fidelito te ayuda a resolver dudas y usar Fidel al máximo, en segundos.

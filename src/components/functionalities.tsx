@@ -11,7 +11,7 @@ export default function Functionalities() {
         <GradientLine direction="left" />
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#f6f6f6] px-4 xl:px-5 py-2 animation-1">
-          <AdvantagesIcon className="size-4 md:size-5 text-[#121212]"/>
+          <AdvantagesIcon className="size-4 md:size-5 text-[#121212]" />
           <h2
             className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#121212]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
@@ -26,7 +26,7 @@ export default function Functionalities() {
         className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 tracking-tight"
         style={{ fontFamily: "Plus Jakarta Sans" }}
       >
-        Un software, todas las soluciones.
+        Un software, todas las soluciones
       </h3>
       <h4
         className="animation-1 text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[27rem] xl:w-[39rem] mx-auto pb-0 md:pb-9"

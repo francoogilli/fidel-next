@@ -48,7 +48,7 @@ export default function Hero() {
       >
         <div className="mb-8 flex justify-center">
           <div
-            className="flex w-fit max-w-full items-center gap-2 rounded-full border border-[#eeeeee] bg-white px-2 py-1.5 text-xs font-medium text-[#424242] md:text-sm"
+            className="flex w-fit max-w-full items-center gap-2 rounded-full border border-[#eeeeee] bg-white px-2 py-1.5 text-sm font-medium text-[#424242] md:text-base"
           >
             <Zap aria-hidden="true" className="size-3.5 shrink-0 " strokeWidth={2.25} />
             <span className="whitespace-nowrap">IA ya integrada en</span>
@@ -79,7 +79,7 @@ export default function Hero() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Gestionar tu negocio no tiene que ser complicado.
+              Gestionar tu negocio no tiene que ser complicado
             </motion.h2>
 
             <motion.div
