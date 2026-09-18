@@ -190,6 +190,14 @@ export default function Header() {
             </Link>
 
             <Link
+              href="/#ia"
+              onClick={scrollToSection("ia")}
+              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
+            >
+              Inteligencia Artificial
+            </Link>
+
+            <Link
               href="/pedidos-web"
               className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
