@@ -89,11 +89,11 @@ function MomentComponent({ m, i }: { m: MomentType; i: number }) {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div>
-        <div className="flex items-center gap-3 mb-4 text-xs">
-          <span className="text-5xl font-bold tracking-wider text-[#307fff] pr-2.5 py-1 rounded-md">{m.time} <span className="inline-block -ml-1.5 text-4xl">hs</span></span>
-          <span className="text-base text-gray-400 font-semibold uppercase tracking-wider">{m.label}</span>
+        <div className="flex flex-nowrap items-center gap-2 mb-4 text-xs">
+          <span className="shrink-0 whitespace-nowrap text-5xl font-bold tracking-wider text-[#307fff] pr-2.5 py-1 rounded-md">{m.time} <span className="inline-block -ml-1.5 text-4xl">hs</span></span>
+          <span className="shrink-0 whitespace-nowrap text-sm text-gray-400 font-semibold uppercase tracking-wide">{m.label}</span>
           {m.ai && (
-            <span className="text-[10px] font-bold px-2 py-0.5 rounded-full border border-purple-200 text-purple-600 bg-purple-50/50 flex items-center gap-1">
+            <span className="shrink-0 whitespace-nowrap text-[10px] font-bold px-2 py-0.5 rounded-full border border-purple-200 text-purple-600 bg-purple-50/50 flex items-center gap-1">
               <Sparkles className="size-3" /> IA
             </span>
           )}
@@ -166,7 +166,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "07:45",
       label: "Arranca la jornada",
       title: "Arranca la jornada",
-      body: "Antes de salir a recorrer clientes, Martín abre la aplicación de Fidel desde su celular. Revisa su Hoja de Ruta del día, consulta el saldo de algunos clientes y verifica que tiene la lista de precios actualizada. No necesita llamar a la oficina ni pedir información por WhatsApp. Todo está disponible desde la app.",
+      body: "Antes de salir a recorrer clientes, abrís la aplicación de Fidel desde tu celular. Revisás tu Hoja de Ruta del día, consultás el saldo de algunos clientes y verificás que tenés la lista de precios actualizada. No necesitás llamar a la oficina ni pedir información por WhatsApp. Todo está disponible desde la app.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
@@ -181,7 +181,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "08:30",
       label: "Toma de pedidos",
       title: "Primera visita, primer pedido",
-      body: "Martín llega a un autoservicio que compra mercadería todas las semanas. El cliente necesita prácticamente los mismos productos que en el pedido anterior. En lugar de cargar todo nuevamente, Martín copia el último pedido realizado y modifica únicamente algunas cantidades. En menos de un minuto el pedido está listo. Más velocidad para vender. Menos tiempo cargando información.",
+      body: "Llegás a un autoservicio que compra mercadería todas las semanas. El cliente necesita prácticamente los mismos productos que en el pedido anterior. En lugar de cargar todo nuevamente, copiás el último pedido realizado y modificás únicamente algunas cantidades. En menos de un minuto el pedido está listo. Más velocidad para vender. Menos tiempo cargando información.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
@@ -196,7 +196,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "09:15",
       label: "Consulta de stock",
       title: "Consulta de stock en tiempo real",
-      body: "Durante la visita, el cliente pregunta por un producto específico. Antes, esto implicaba llamar a la oficina para consultar disponibilidad. Ahora Martín verifica el stock desde la aplicación y confirma al instante cuántas unidades quedan disponibles. La respuesta es inmediata y el pedido se cierra sin demoras.",
+      body: "Durante la visita, el cliente pregunta por un producto específico. Antes, esto implicaba llamar a la oficina para consultar disponibilidad. Ahora verificás el stock desde la aplicación y confirmás al instante cuántas unidades quedan disponibles. La respuesta es inmediata y el pedido se cierra sin demoras.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
@@ -211,7 +211,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "10:45",
       label: "Alta de clientes",
       title: "Nuevos clientes, sin papeleo",
-      body: "Durante el recorrido surge una oportunidad. Un comercio quiere comenzar a comprarle a la distribuidora. Martín crea el nuevo cliente directamente desde la aplicación. Carga sus datos y registra la información necesaria sin volver a la oficina. Cuando finaliza, el cliente ya está disponible para toda la empresa.",
+      body: "Durante el recorrido surge una oportunidad. Un comercio quiere comenzar a comprarle a la distribuidora. Creás el nuevo cliente directamente desde la aplicación. Cargás sus datos y registrás la información necesaria sin volver a la oficina. Cuando terminás, el cliente ya está disponible para toda la empresa.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
@@ -226,7 +226,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "11:30",
       label: "Catálogos visuales",
       title: "Productos con fotos, menos errores",
-      body: "Mientras arma un pedido, el cliente tiene dudas sobre algunas presentaciones. Martín utiliza las imágenes cargadas en los productos para identificar rápidamente cada artículo. Esto evita confusiones, reduce errores y agiliza la toma de pedidos. Todos hablan del mismo producto desde el primer momento.",
+      body: "Mientras armás un pedido, el cliente tiene dudas sobre algunas presentaciones. Utilizás las imágenes cargadas en los productos para identificar rápidamente cada artículo. Esto evita confusiones, reduce errores y agiliza la toma de pedidos. Todos hablan del mismo producto desde el primer momento.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
@@ -258,7 +258,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "12:30",
       label: "Sincronización",
       title: "Los pedidos ya están en la oficina",
-      body: "Mientras Martín continúa recorriendo clientes, el equipo administrativo ya puede ver los pedidos que fue cargando durante la mañana. No hay que esperar que regrese para ingresar la información. Los pedidos se sincronizan automáticamente con el sistema en tiempo real. La preparación de la mercadería puede comenzar incluso antes de que termine el recorrido.",
+      body: "Mientras continuás recorriendo clientes, el equipo administrativo ya puede ver los pedidos que fuiste cargando durante la mañana. No hay que esperar a que regreses para ingresar la información. Los pedidos se sincronizan automáticamente con el sistema en tiempo real. La preparación de la mercadería puede comenzar incluso antes de que termines el recorrido.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
@@ -273,7 +273,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "14:00",
       label: "Cobranzas",
       title: "Un cliente realiza un pago",
-      body: "Uno de los clientes aprovecha la visita para cancelar una deuda pendiente. Martín registra el cobro desde la aplicación y genera un recibo provisorio en el momento. La información queda sincronizada automáticamente para que sea procesada por la Administración. Sin papeles. Sin cargas duplicadas.",
+      body: "Uno de los clientes aprovecha la visita para cancelar una deuda pendiente. Registrás el cobro desde la aplicación y generás un recibo provisorio en el momento. La información queda sincronizada automáticamente para que sea procesada por la Administración. Sin papeles. Sin cargas duplicadas.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
@@ -288,7 +288,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "15:30",
       label: "Información comercial siempre disponible",
       title: "Información comercial siempre disponible",
-      body: "Antes de cerrar una venta importante, el cliente consulta precios y condiciones. Martín accede desde la aplicación a las listas de precios vigentes y verifica saldos pendientes. No necesita llamar a nadie ni esperar respuestas. Toda la información está disponible donde la necesita: frente al cliente.",
+      body: "Antes de cerrar una venta importante, el cliente consulta precios y condiciones. Accedés desde la aplicación a las listas de precios vigentes y verificás saldos pendientes. No necesitás llamar a nadie ni esperar respuestas. Toda la información está disponible donde la necesitás: frente al cliente.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
@@ -303,7 +303,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "17:00",
       label: "Operaciones conectadas",
       title: "Últimas visitas del día",
-      body: "Los pedidos continúan ingresando y sincronizándose automáticamente. Desde la oficina pueden seguir la actividad comercial en tiempo real, mientras el equipo de depósito prepara la mercadería para las entregas del día siguiente. Cada área trabaja con la misma información. Sin planillas paralelas. Sin errores por transcripción.",
+      body: "Los pedidos continúan ingresando y sincronizándose automáticamente. Desde la oficina pueden seguir la actividad comercial en tiempo real, mientras el equipo de depósito prepara la mercadería para las entregas del día. Cada área trabaja con la misma información. Sin planillas paralelas. Sin errores por transcripción.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
@@ -318,7 +318,7 @@ export default function DiaConFidelDistribuidorasPage() {
       time: "18:00",
       label: "Resumen del día",
       title: "El día termina, la gestión ya está hecha",
-      body: "Martín regresa a su casa. No tiene que pasar por la oficina para entregar pedidos ni rendir papeles. Todos los pedidos fueron cargados. Los cobros quedaron registrados. Los nuevos clientes ya están en el sistema. Y la administración cuenta con toda la información necesaria para continuar trabajando. Porque cuando las ventas están en movimiento, la gestión también tiene que estarlo.",
+      body: "Terminás el recorrido y volvés a tu casa. No tenés que pasar por la oficina para entregar pedidos ni rendir papeles. Todos los pedidos fueron cargados. Los cobros quedaron registrados. Los nuevos clientes ya están en el sistema. Y la administración cuenta con toda la información necesaria para continuar trabajando. Porque cuando las ventas están en movimiento, la gestión también tiene que estarlo.",
       note: "Con Fidel, vendedores, administración y depósito trabajan conectados en tiempo real para que la distribuidora funcione de manera más rápida, ordenada y eficiente.",
       mock: <MockDistribuidoraCierre />
     },

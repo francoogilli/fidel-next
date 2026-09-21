@@ -226,7 +226,7 @@ export default function DiaConFidelDecoracionPage() {
       time: "13:00",
       label: "Sincronización constante",
       title: "La tienda sigue vendiendo mientras almorzás",
-      body: "Mientras el equipo descansa, siguen ingresando pedidos desde Tienda Nube y WooCommerce. Todas las ventas se sincronizan automáticamente. El stock se actualiza en tiempo real y evitás vender productos que ya no están disponibles. Menos errores. Mejor experiencia para tus clientes.",
+      body: "Mientras el equipo descansa, siguen ingresando pedidos desde Tienda Nube, WooCommerce y Mercado Libre. Todas las ventas se sincronizan automáticamente. El stock se actualiza en tiempo real y evitás vender productos que ya no están disponibles. Menos errores. Mejor experiencia para tus clientes.",
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
