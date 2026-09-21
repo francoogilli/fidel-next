@@ -140,7 +140,7 @@ export default function Recommend() {
                 </p>
 
                 <p className="text-sm md:text-base text-muted-foreground max-w-xl">
-                  Gana <span className="font-bold">$25.000</span> por cada
+                  Gana <span className="font-bold">$40.000</span> por cada
                   persona que se suscriba usando tu enlace.
                 </p>
               </div>
@@ -243,7 +243,7 @@ export default function Recommend() {
           </p>
 
           <p className="text-xs md:text-base text-muted-foreground max-w-xl">
-            Gana <span className="font-bold">$25.000</span> por cada persona que
+            Gana <span className="font-bold">$40.000</span> por cada persona que
             se suscriba usando tu enlace.
           </p>
           <a

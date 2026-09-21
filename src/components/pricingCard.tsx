@@ -102,7 +102,7 @@ export default function PricingCard({ viewComparison }: Props) {
 
   return (
     <div
-      className="relative w-full min-h-screen flex bg-[#ffffff] items-center justify-center overflow-hidden py-32"
+      className="relative w-full min-h-screen flex bg-[#ffffff] items-center justify-center overflow-hidden pt-4 pb-12"
       style={{
         backgroundImage: "url('/canvas.webp')",
         backgroundSize: "cover",
@@ -137,7 +137,7 @@ export default function PricingCard({ viewComparison }: Props) {
               opacity: 1,
             }}
           >
-            No importa el tamaño de tu negocio, hay un plan para vos.
+            No importa el tamaño de tu negocio, hay un plan para vos
           </h3>
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 text-[#c5c5c5] rounded-xl">
             <span className="text-xl md:text-lg text-black">
@@ -279,10 +279,10 @@ export default function PricingCard({ viewComparison }: Props) {
                                 "text-sm transition-colors duration-200",
                                 benefit.description && "cursor-pointer",
                                 benefit.highlight &&
-                                  "bg-gradient-to-tr text-black from-[#ededed] via-[#fffffff1] to-[#ededed] border border-[#ffffff] font-medium px-2 py-1 rounded-md",
+                                "bg-gradient-to-tr text-black from-[#ededed] via-[#fffffff1] to-[#ededed] border border-[#ffffff] font-medium px-2 py-1 rounded-md",
                                 openDescription?.cardName === pricing.name &&
-                                  openDescription.benefitIndex === index &&
-                                  "text-neutral-800 font-medium",
+                                openDescription.benefitIndex === index &&
+                                "text-neutral-800 font-medium",
                               )}
                             >
                               {benefit.text}
@@ -293,7 +293,7 @@ export default function PricingCard({ viewComparison }: Props) {
                                 onClick={() => {
                                   if (
                                     openDescription?.cardName ===
-                                      pricing.name &&
+                                    pricing.name &&
                                     openDescription.benefitIndex === index
                                   ) {
                                     setOpenDescription(null);
@@ -326,7 +326,7 @@ export default function PricingCard({ viewComparison }: Props) {
                                   className="size-[1.2rem] inline-block"
                                 >
                                   {openDescription?.cardName === pricing.name &&
-                                  openDescription.benefitIndex === index ? (
+                                    openDescription.benefitIndex === index ? (
                                     <path d="M6 15l6 -6l6 6" />
                                   ) : (
                                     <path d="M6 9l6 6l6 -6" />
