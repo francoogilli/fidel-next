@@ -131,8 +131,7 @@ export default function Integration() {
         <div className="absolute left-1/2 top-[51%] z-[4] w-[calc(100%_-_40px)] max-w-[600px] -translate-x-1/2 text-center max-[700px]:w-[calc(100%_-_34px)]">
           <p className="m-0 font-[var(--font-plus-jakarta-sans)] text-[0.74rem] uppercase leading-[1.3] tracking-[0.14em] text-[#32833e]">Todo conectado en un solo lugar</p>
           <p className="mx-auto mt-[13px] max-w-[590px] font-[var(--font-plus-jakarta-sans)] text-[clamp(1rem,1.45vw,1.22rem)] leading-[1.4] tracking-[-0.025em] text-[#2c201a] max-[700px]:text-[0.95rem] max-[700px]:leading-[1.55]">
-            Recibí pedidos de Mercado Libre, WooCommerce y Tienda Nube,
-            sincronizá tu stock y trabajá siempre con información actualizada.
+            Recibí pedidos de Mercado Libre, WooCommerce y Tienda Nube, sincronizá el stock, listas de precios y trabajá siempre con información actualizada.
           </p>
           <p className="sr-only" aria-live="polite">{activeTool} seleccionada</p>
         </div>

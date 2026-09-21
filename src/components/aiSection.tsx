@@ -127,7 +127,7 @@ export default function AiSection() {
                     className="object-cover"
                   />
                 </div>
-                <figcaption className="mt-2 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-[#5b8054] sm:text-xs">
+                <figcaption className="mt-2 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-[#5b8054] sm:text-base">
                   Facturas
                 </figcaption>
               </motion.figure>
@@ -147,7 +147,7 @@ export default function AiSection() {
                     className="object-cover"
                   />
                 </div>
-                <figcaption className="mt-2 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-[#5b8054] sm:text-xs">
+                <figcaption className="mt-2 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-[#5b8054] sm:text-base">
                   Cheques
                 </figcaption>
               </motion.figure>
