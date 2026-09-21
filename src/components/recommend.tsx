@@ -157,7 +157,7 @@ export default function Recommend() {
           </div>
         </div>
       </section>
-      <div className="bg-[#FCF8F2] border border-[#ffebebd4] md:bg-gradient-to-br max-w-[78.5rem] xl:max-w-[90rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
+      <div className="bg-[#FCF8F2] border border-[#ffebebd4] md:hidden md:bg-gradient-to-br max-w-[78.5rem] xl:max-w-[90rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
         <div className="block md:hidden relative py-4">
           <img
             src="coin.png"
