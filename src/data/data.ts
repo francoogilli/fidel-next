@@ -446,9 +446,9 @@ export const pricingInfo: PricingCard[] = [
       },
       { text: "Portal de clientes" },
       {
-        text: "Multimoneda en Ventas",
+        text: "Multimoneda",
         description:
-          "Manejá Ventas, Facturas E y Bono Fiscal en múltiples monedas sin problemas.",
+          "Manejá Ventas, Facturas E y Bono Fiscal en múltiples monedas sin problemas, en Ventas y Compras.",
       },
       { text: "Límite de 20.000 productos", highlight: true },
     ],
