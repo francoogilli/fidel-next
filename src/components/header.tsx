@@ -1,7 +1,5 @@
 "use client";
 
-import AdvantagesIcon from "@/icons/advantages";
-import CreditCardIcon from "@/icons/creditCard";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
@@ -13,15 +11,47 @@ import {
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import { usePathname, useRouter } from "next/navigation";
-import { Wrench, Truck, Sparkles, Settings } from "lucide-react";
+import { Wrench, Truck, Sparkles, Settings, ArrowRight } from "lucide-react";
 
 const EASE = "cubic-bezier(.2,.85,.25,1)";
 const DUR = "0.6s";
 const TR = `all ${DUR} ${EASE}`;
 
+const rubroCardContent = [
+  {
+    title: "Día en Ferreterías",
+    desc: "Conocé cómo Fidel ordena el stock, los precios y las ventas.",
+    badge: "Ferreterías",
+    bgImage: "/menu_ferreteria_bg.png",
+    href: "/dia-con-fidel-ferreterias"
+  },
+  {
+    title: "Día en Distribuidoras",
+    desc: "Seguí pedidos y stock en ruta, todo sincronizado al instante.",
+    badge: "Distribuidoras",
+    bgImage: "/menu_distribuidora_bg.png",
+    href: "/dia-con-fidel-distribuidoras"
+  },
+  {
+    title: "Día en Decoración",
+    desc: "Coordiná showroom y tienda online en un mismo lugar.",
+    badge: "Decoración",
+    bgImage: "/menu_decoracion_bg.png",
+    href: "/dia-con-fidel-decoracion"
+  },
+  {
+    title: "Día en Repuestos",
+    desc: "Consultá precios, stock y proveedores en segundos.",
+    badge: "Repuestos",
+    bgImage: "/repuestos.png",
+    href: "/dia-con-fidel-ferreterias"
+  }
+];
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeRubroIndex, setActiveRubroIndex] = useState(0);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -144,52 +174,53 @@ export default function Header() {
             style={{ justifySelf: "center", minWidth: 0 }}
           >
             <Link
-              href="#"
+              href="/#planes"
               onClick={scrollToSection("planes")}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap group"
+              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
-              <CreditCardIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
               Planes
             </Link>
 
             <Link
-              href="#"
+              href="/#funcionalidades"
               onClick={scrollToSection("funcionalidades")}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap group"
+              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
-              <AdvantagesIcon className="size-4 transition-transform group-hover:-translate-x-0.5" />
               Funcionalidades
             </Link>
 
+            <Link
+              href="/#ia"
+              onClick={scrollToSection("ia")}
+              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
+            >
+              Inteligencia Artificial
+            </Link>
+
+            <Link
+              href="/pedidos-web"
+              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
+            >
+              Pedidos Web
+            </Link>
+
             {/* Rubros dropdown */}
-            <NavigationMenu onValueChange={(v) => setMenuOpen(!!v)}>
+            <NavigationMenu
+              value={menuOpen ? "rubros" : ""}
+              onValueChange={(v) => {
+                setMenuOpen(!!v);
+              }}
+            >
               <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-[13.5px] px-3.5 py-2 bg-transparent hover:bg-black/5 text-[#2a2b30] hover:text-black gap-1.5 font-medium rounded-xl">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="size-4"
-                    >
-                      <rect width="7" height="7" x="3" y="3" rx="1" />
-                      <rect width="7" height="7" x="14" y="3" rx="1" />
-                      <rect width="7" height="7" x="14" y="14" rx="1" />
-                      <rect width="7" height="7" x="3" y="14" rx="1" />
-                    </svg>
+                <NavigationMenuItem value="rubros">
+                  <NavigationMenuTrigger className="text-[13.5px] px-3.5 py-2 bg-transparent hover:bg-black/5 text-[#2a2b30] hover:text-black font-medium rounded-xl">
                     Rubros
-                    <span className="ml-0.5 px-1.5 py-1 rounded-md bg-gradient-to-r from-[#19ff19] to-[#19ff19] text-white text-[9px] font-bold leading-none uppercase tracking-wide">
-                      Nuevo
-                    </span>
                   </NavigationMenuTrigger>
 
                   <NavigationMenuContent>
-                    <div className="w-[280px] p-2">
-                      <ul className="flex flex-col gap-1">
+                    <div className="flex w-[min(548px,calc(100vw-32px))] gap-2.5 p-2.5">
+                      {/* Left: rubros list */}
+                      <ul className="flex flex-col gap-1 flex-1 min-w-0">
                         {[
                           {
                             href: "/ferreterias",
@@ -215,8 +246,11 @@ export default function Header() {
                             label: "Repuestos",
                             desc: "Precios, stock y proveedores para repuestos.",
                           },
-                        ].map(({ href, icon, label, desc }) => (
-                          <li key={href}>
+                        ].map(({ href, icon, label, desc }, index) => (
+                          <li
+                            key={href}
+                            onMouseEnter={() => setActiveRubroIndex(index)}
+                          >
                             <NavigationMenuLink asChild>
                               <Link
                                 href={href}
@@ -238,6 +272,50 @@ export default function Header() {
                           </li>
                         ))}
                       </ul>
+
+                      {/* Divider */}
+                      <div className="w-px bg-zinc-100 self-stretch mx-1" />
+
+                      {/* Right: Un día con Fidel panel */}
+                      <div className="group relative flex min-h-[248px] w-[216px] shrink-0 flex-col justify-between overflow-hidden rounded-[18px]  bg-[#19232b] p-3.5 shadow-[0_12px_28px_-18px_rgba(0,0,0,0.8)] transition-all duration-300">
+                        <div
+                          aria-hidden="true"
+                          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
+                          style={{
+                            backgroundImage: rubroCardContent[activeRubroIndex]?.bgImage
+                              ? `url(${rubroCardContent[activeRubroIndex].bgImage})`
+                              : "none",
+                            backgroundColor: rubroCardContent[activeRubroIndex]?.bgImage ? "transparent" : "#f1f5f9",
+                          }}
+                        />
+                        <div
+                          aria-hidden="true"
+                          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,13,20,0.04)_0%,rgba(7,13,20,0.16)_34%,rgba(7,13,20,0.72)_67%,rgba(7,13,20,0.96)_100%)]"
+                        />
+
+                        <div className="relative z-10 flex h-full min-h-[220px] flex-col justify-between gap-8">
+                          <span className="self-start rounded-full bg-gradient-to-r from-[#59ff22] via-[#d7ff73] to-[#59ff22] px-2.5 py-1 text-[10px] font-semibold leading-none text-[#17210e] shadow-[0_3px_12px_-6px_rgba(216,255,115,0.9)]">
+                            {rubroCardContent[activeRubroIndex]?.badge || "Ferreterías"}
+                          </span>
+
+                          <div>
+                            <h4 className="text-[17px] font-semibold leading-tight tracking-[-0.02em] text-white drop-shadow-[0_2px_5px_rgba(0,0,0,0.65)]">
+                              {rubroCardContent[activeRubroIndex]?.title || "Día en Ferreterías"}
+                            </h4>
+                            <p className="mt-1.5 text-[12px] leading-[1.35] text-white/90 drop-shadow-[0_1px_4px_rgba(0,0,0,0.7)]">
+                              {rubroCardContent[activeRubroIndex]?.desc || ""}
+                            </p>
+                            <Link
+                              href={rubroCardContent[activeRubroIndex]?.href || "/dia-con-fidel-ferreterias"}
+                              onClick={() => setMenuOpen(false)}
+                              className="group/btn mt-3 inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-white px-3 py-2.5 text-xs font-bold text-[#10171d] no-underline shadow-[0_8px_18px_-10px_rgba(0,0,0,0.9)] transition-colors hover:bg-[#d8ff73] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#19232b]"
+                            >
+                              Ver el día
+                              <ArrowRight className="size-3.5 transition-transform group-hover/btn:translate-x-0.5" />
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
