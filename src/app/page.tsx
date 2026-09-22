@@ -1,7 +1,9 @@
 import AppMobile from "@/components/appmobile";
+import AiSection from "@/components/aiSection";
 import ContactSection from "@/components/contact";
 import Functionalities from "@/components/functionalities";
 import Hero from "@/components/hero";
+import Integration from "@/components/integration";
 import PricingCard from "@/components/pricingCard";
 import { QuestionsAnswers } from "@/components/questionAnswers";
 import Recommend from "@/components/recommend";
@@ -17,6 +19,8 @@ export default function Home() {
       <div id="funcionalidades">
         <Functionalities />
       </div>
+      <AiSection />
+      <Integration />
       <div id="planes">
         <PricingCard viewComparison />
       </div>
