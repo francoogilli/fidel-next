@@ -178,7 +178,7 @@ export default function Header() {
               onClick={scrollToSection("planes")}
               className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
-              Planes
+              Precios
             </Link>
 
             <Link
