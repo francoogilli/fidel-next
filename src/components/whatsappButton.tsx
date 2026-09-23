@@ -19,15 +19,12 @@ export default function WhatsAppButton() {
         aria-label="Contactar por WhatsApp"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
+        className="flex items-center gap-[10px] no-underline print:hidden"
         style={{
           position: "fixed",
           bottom: "28px",
           right: "28px",
           zIndex: 9999,
-          display: "flex",
-          alignItems: "center",
-          gap: "10px",
-          textDecoration: "none",
         }}
       >
         {/* Tooltip */}

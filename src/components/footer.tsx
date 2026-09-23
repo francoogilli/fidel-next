@@ -13,7 +13,7 @@ export default function Footer() {
     }
   };
 
-    const handleScrollToFuncionalidades = (e: React.MouseEvent) => {
+  const handleScrollToFuncionalidades = (e: React.MouseEvent) => {
     e.preventDefault();
     const section = document.getElementById("funcionalidades");
     if (section) {
@@ -21,7 +21,7 @@ export default function Footer() {
     }
   };
 
-    const handleScrollToHome = (e: React.MouseEvent) => {
+  const handleScrollToHome = (e: React.MouseEvent) => {
     e.preventDefault();
     const section = document.getElementById("home");
     if (section) {
@@ -29,7 +29,7 @@ export default function Footer() {
     }
   };
 
-    const handleScrollToContacto = (e: React.MouseEvent) => {
+  const handleScrollToContacto = (e: React.MouseEvent) => {
     e.preventDefault();
     const section = document.getElementById("contacto");
     if (section) {
@@ -37,7 +37,7 @@ export default function Footer() {
     }
   };
   return (
-    <footer className="w-full p-8">
+    <footer className="w-full p-8 print:hidden">
       <div className="mx-auto max-w-[88.5rem] rounded-[30px] bg-[#f6f6f6] border border-[#e6eee6] px-12 py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Company Info */}
@@ -92,9 +92,9 @@ export default function Footer() {
                 onClick={() =>
                   window.open(
                     "https://api.whatsapp.com/send?phone=543564222935&text=" +
-                      encodeURIComponent(
-                        "¡Hola! Estoy viendo la web de Fidel y me gustaría acceder a una cuenta de prueba para conocer mejor el sistema."
-                      ),
+                    encodeURIComponent(
+                      "¡Hola! Estoy viendo la web de Fidel y me gustaría acceder a una cuenta de prueba para conocer mejor el sistema."
+                    ),
                     "_blank"
                   )
                 }
@@ -128,19 +128,19 @@ export default function Footer() {
               </li>
               <li>
                 <span
-                  onClick={handleScrollToPlanes}
-                  className="text-sm text-gray-600 hover:text-gray-900 cursor-pointer"
-                >
-                  Planes
-                </span>
-              </li>
-              <li>
-                <span
                   onClick={handleScrollToContacto}
                   className="text-sm text-gray-600 hover:text-gray-900 cursor-pointer"
                 >
                   Contacto
                 </span>
+              </li>
+              <li>
+                <Link
+                  href="/acuerdo-confidencialidad"
+                  className="text-sm text-gray-600 hover:text-gray-900"
+                >
+                  Confidencialidad
+                </Link>
               </li>
             </ul>
           </div>

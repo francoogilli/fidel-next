@@ -75,6 +75,7 @@ export default function Header() {
     <>
       {/* Ambient blue glow — visible only when scrolled */}
       <div
+        className="print:hidden"
         aria-hidden="true"
         style={{
           position: "fixed",
@@ -119,13 +120,12 @@ export default function Header() {
 
       {/* Fixed header wrapper */}
       <div
+        className="flex justify-center print:hidden"
         style={{
           position: "fixed",
           top: 0,
           left: 0,
           right: 0,
-          display: "flex",
-          justifyContent: "center",
           zIndex: 50,
           pointerEvents: "none",
           padding: scrolled ? "12px 24px" : "12px 20px",
