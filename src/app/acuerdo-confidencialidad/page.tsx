@@ -155,19 +155,18 @@ const indexItems = clauses.map((clause, index) => ({
 
 export default function ConfidencialidadPage() {
   return (
-    <main className="min-h-screen px-4 pb-20 pt-28 text-[#202722] sm:px-6 sm:pt-32 lg:px-8 print:min-h-0 print:bg-white print:p-0 print:text-[#111]">
+    <main className="min-h-screen px-4 pb-20 pt-28 text-[#202722] sm:px-6 sm:pt-16 lg:px-8 print:min-h-0 print:bg-white print:p-0 print:text-[#111]">
       <div className="mx-auto max-w-[1240px]">
         <div className="border-b border-[#dfe5dc] pb-8 sm:pb-10 print:hidden">
           <h1 className="max-w-[790px] font-satoshi text-[2.3rem] font-semibold leading-[1.08] tracking-[-0.045em] text-[#202722] sm:text-5xl lg:text-[3.6rem]">
-            Acuerdo de confidencialidad
-            <span className="mt-1 block font-medium text-[#202722]">
-              y protección de datos
-            </span>
+            Contrato de Confidencialidad
           </h1>
           <div className="mt-5 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <p className="max-w-[670px] text-sm leading-6 text-[#657068] sm:text-base">
-              Entre AGENCIA PROGRAMARTE S.A.S. y EL CLIENTE. El documento
-              conserva los campos que deben completarse antes de la firma.
+              Entre AGENCIA PROGRAMARTE S.A.S. y EL CLIENTE.
+              <span className="block italic">
+                El documento conserva los campos que deben completarse antes de la firma.
+              </span>
             </p>
             <PrintButton />
           </div>
