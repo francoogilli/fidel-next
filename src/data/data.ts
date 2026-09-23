@@ -683,7 +683,7 @@ export const footerLinks = [
     links: [
       { text: "Inicio", href: "" },
       { text: "Funcionalidades", href: "/funcionalidades" },
-      { text: "Planes", href: "/planes" },
+      { text: "Precios", href: "/planes" },
       { text: "Contacto", href: "/contacto" },
     ],
   },
@@ -763,7 +763,7 @@ export const navLinks = [
     label: "Funcionalidades",
     icon: FunctionalitiesIcon,
   },
-  { href: "/planes", label: "Planes", icon: CreditCardIcon },
+  { href: "/planes", label: "Precios", icon: CreditCardIcon },
   { href: "/contacto", label: "Contacto", icon: MailIcon },
 ];
 
