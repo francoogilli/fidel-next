@@ -148,9 +148,28 @@ function headingParts(heading: string) {
   };
 }
 
+function sidebarTitleCase(label: string) {
+  const words = label.toLocaleLowerCase("es").split(/\s+/);
+  const lowercaseWords = new Set([
+    "a", "al", "con", "de", "del", "e", "el", "en", "la", "las", "lo", "los", "o", "para", "por", "y",
+  ]);
+
+  return words
+    .map((word, index) => {
+      const isDefinedParty =
+        word === "el" &&
+        words[index - 1] === "de" &&
+        ["cliente", "proveedor"].includes(words[index + 1]);
+
+      if (index > 0 && lowercaseWords.has(word) && !isDefinedParty) return word;
+      return word.charAt(0).toLocaleUpperCase("es") + word.slice(1);
+    })
+    .join(" ");
+}
+
 const indexItems = clauses.map((clause, index) => ({
   id: `clausula-${index + 1}`,
-  label: `${index + 1}. ${headingParts(clause.heading).label}`,
+  label: `${index + 1}. ${sidebarTitleCase(headingParts(clause.heading).label)}`,
 }));
 
 export default function ConfidencialidadPage() {
