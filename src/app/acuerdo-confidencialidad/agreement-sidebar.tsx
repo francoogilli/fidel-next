@@ -156,7 +156,7 @@ export default function AgreementSidebar({
               <a
                 aria-current={activeIndex === index ? "location" : undefined}
                 className={`-ml-2 block rounded-md px-2 py-1.5 text-[13px] leading-[1.45] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4b8c40] focus-visible:outline-offset-4 ${activeIndex === index
-                  ? "bg-[#e9f5e5] font-semibold text-[#315a2b]"
+                  ? "bg-[#e9f5e5] font-semibold text-black"
                   : "text-[#69736b] hover:bg-[#f2f6f0] hover:text-[#315a2b]"
                   }`}
                 href={`#${item.id}`}
