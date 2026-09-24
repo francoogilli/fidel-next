@@ -7,10 +7,70 @@ type IndexItem = {
   label: string;
 };
 
+const HIGHLIGHT_CLASSES = ["bg-[#f9fff5]", "shadow-[0_0_0_12px_#f5faf2]"] as const;
+
 export default function AgreementSidebar({ items }: { items: IndexItem[] }) {
   const [activeIndex, setActiveIndex] = useState(-1);
   const navRef = useRef<HTMLElement>(null);
   const linksRef = useRef<(HTMLAnchorElement | null)[]>([]);
+  const highlightFrameRef = useRef<number | null>(null);
+  const highlightTimerRef = useRef<number | null>(null);
+  const highlightedSectionRef = useRef<HTMLElement | null>(null);
+
+  const clearHighlight = () => {
+    if (highlightFrameRef.current !== null) {
+      window.cancelAnimationFrame(highlightFrameRef.current);
+      highlightFrameRef.current = null;
+    }
+    if (highlightTimerRef.current !== null) {
+      window.clearTimeout(highlightTimerRef.current);
+      highlightTimerRef.current = null;
+    }
+    highlightedSectionRef.current?.classList.remove(...HIGHLIGHT_CLASSES);
+    highlightedSectionRef.current = null;
+  };
+
+  const highlightAfterScroll = (section: HTMLElement) => {
+    let lastScrollY = window.scrollY;
+    let stableSince = performance.now();
+    const startedAt = stableSince;
+
+    const checkArrival = (now: number) => {
+      const scrollY = window.scrollY;
+      if (Math.abs(scrollY - lastScrollY) > 0.5) stableSince = now;
+      lastScrollY = scrollY;
+
+      const bounds = section.getBoundingClientRect();
+      const isVisible = bounds.top < window.innerHeight && bounds.bottom > 0;
+
+      if (isVisible && now - stableSince >= 140) {
+        highlightFrameRef.current = null;
+        highlightedSectionRef.current = section;
+        section.classList.add(...HIGHLIGHT_CLASSES);
+        highlightTimerRef.current = window.setTimeout(() => {
+          section.classList.remove(...HIGHLIGHT_CLASSES);
+          highlightedSectionRef.current = null;
+          highlightTimerRef.current = null;
+        }, 1000);
+      } else if (now - startedAt < 3500) {
+        highlightFrameRef.current = window.requestAnimationFrame(checkArrival);
+      } else {
+        highlightFrameRef.current = null;
+      }
+    };
+
+    highlightFrameRef.current = window.requestAnimationFrame(checkArrival);
+  };
+
+  useEffect(() => () => {
+    if (highlightFrameRef.current !== null) {
+      window.cancelAnimationFrame(highlightFrameRef.current);
+    }
+    if (highlightTimerRef.current !== null) {
+      window.clearTimeout(highlightTimerRef.current);
+    }
+    highlightedSectionRef.current?.classList.remove(...HIGHLIGHT_CLASSES);
+  }, []);
 
   useEffect(() => {
     const sections = items.map((item) => document.getElementById(item.id));
@@ -91,13 +151,26 @@ export default function AgreementSidebar({ items }: { items: IndexItem[] }) {
             <li key={item.id}>
               <a
                 aria-current={activeIndex === index ? "location" : undefined}
-                className={`-ml-2 block rounded-md px-2 py-1.5 text-[13px] leading-[1.45] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4b8c40] focus-visible:outline-offset-4 ${
-                  activeIndex === index
-                    ? "bg-[#e9f5e5] font-semibold text-[#315a2b]"
-                    : "text-[#69736b] hover:bg-[#f2f6f0] hover:text-[#315a2b]"
-                }`}
+                className={`-ml-2 block rounded-md px-2 py-1.5 text-[13px] leading-[1.45] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4b8c40] focus-visible:outline-offset-4 ${activeIndex === index
+                  ? "bg-[#e9f5e5] font-semibold text-[#315a2b]"
+                  : "text-[#69736b] hover:bg-[#f2f6f0] hover:text-[#315a2b]"
+                  }`}
                 href={`#${item.id}`}
-                onClick={() => setActiveIndex(index)}
+                onClick={(event) => {
+                  const section = document.getElementById(item.id);
+                  if (!section) return;
+
+                  event.preventDefault();
+                  clearHighlight();
+                  section.scrollIntoView({
+                    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+                      ? "auto"
+                      : "smooth",
+                    block: "start",
+                  });
+                  window.history.pushState(null, "", `#${item.id}`);
+                  highlightAfterScroll(section);
+                }}
                 ref={(node) => {
                   linksRef.current[index] = node;
                 }}

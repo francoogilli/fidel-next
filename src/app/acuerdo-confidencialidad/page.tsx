@@ -212,7 +212,7 @@ export default function ConfidencialidadPage() {
                 return (
                   <section
                     aria-labelledby={`clausula-titulo-${index + 1}`}
-                    className="scroll-mt-28"
+                    className="scroll-mt-28 rounded-xl transition-[background-color,box-shadow] duration-300 motion-reduce:transition-none print:!bg-transparent print:!shadow-none"
                     id={`clausula-${index + 1}`}
                     key={clause.heading}
                   >
