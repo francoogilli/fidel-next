@@ -9,7 +9,13 @@ type IndexItem = {
 
 const HIGHLIGHT_CLASSES = ["bg-[#f9fff5]", "shadow-[0_0_0_12px_#f5faf2]"] as const;
 
-export default function AgreementSidebar({ items }: { items: IndexItem[] }) {
+export default function AgreementSidebar({
+  items,
+  title = "En este acuerdo",
+}: {
+  items: IndexItem[];
+  title?: string;
+}) {
   const [activeIndex, setActiveIndex] = useState(-1);
   const navRef = useRef<HTMLElement>(null);
   const linksRef = useRef<(HTMLAnchorElement | null)[]>([]);
@@ -143,9 +149,7 @@ export default function AgreementSidebar({ items }: { items: IndexItem[] }) {
         className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto border-l border-[#dfe5dc] pl-5 pr-2"
         ref={navRef}
       >
-        <p className="mb-4 text-sm font-semibold text-[#263229]">
-          En este acuerdo
-        </p>
+        <p className="mb-4 text-sm font-semibold text-[#263229]">{title}</p>
         <ol className="grid gap-1">
           {items.map((item, index) => (
             <li key={item.id}>
