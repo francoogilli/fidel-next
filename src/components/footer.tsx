@@ -119,6 +119,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/pedidos-web"
+                  className="text-sm text-gray-600 hover:text-gray-900"
+                >
+                  Pedidos Web
+                </Link>
+              </li>
+              <li>
                 <span
                   onClick={handleScrollToFuncionalidades}
                   className="cursor-pointer text-sm text-gray-600 hover:text-gray-900"
