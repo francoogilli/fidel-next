@@ -50,7 +50,7 @@ export default function Integration() {
 
   return (
     <section
-      className="relative isolate min-h-[900px] overflow-hidden bg-[radial-gradient(ellipse_48%_45%_at_88%_5%,rgba(114,203,113,0.3),transparent_68%),radial-gradient(ellipse_45%_55%_at_50%_48%,rgba(236,250,237,0.92),transparent_72%),#fcfaf7] text-[#231813] max-[700px]:min-h-[790px]"
+      className="relative isolate overflow-hidden bg-[radial-gradient(ellipse_48%_45%_at_88%_5%,rgba(114,203,113,0.3),transparent_68%),radial-gradient(ellipse_45%_55%_at_50%_48%,rgba(236,250,237,0.92),transparent_72%),#fcfaf7] text-[#231813] max-[700px]:min-h-[790px]"
       aria-labelledby="integration-title"
     >
       <div
@@ -87,8 +87,8 @@ export default function Integration() {
           className="animation-1 text-4xl md:text-[3.25rem] xl:text-[3.5rem] leading-[2.8rem] sm:leading-[3.7rem] font-bold text-center my-8 pb-4 tracking-tight text-[#121212]"
           style={{ fontFamily: "Plus Jakarta Sans" }}
         >
-          <span className="block">Integra tu tienda online</span>
-          <span className="block">y hacé crecer tu negocio</span>
+          <span className="block">Integrá tu Tienda Online</span>
+          <span className="block">y hacé crecer tu Negocio</span>
         </h3>
         <h4
           className="text-center text-sm md:text-lg xl:text-xl text-[#5c5c5c] font-medium w-[20rem] md:w-[27rem] xl:w-[39rem] mx-auto "
@@ -99,7 +99,7 @@ export default function Integration() {
         </h4>
       </div>
 
-      <div className="relative mx-auto mt-[38px] h-[510px] w-full max-w-[1600px] max-[700px]:mt-7 max-[700px]:h-[430px]" aria-label="Integraciones disponibles">
+      <div className="relative mx-auto mt-[38px] h-[400px] w-full max-w-[1600px] max-[700px]:mt-7 max-[700px]:h-[430px]" aria-label="Integraciones disponibles">
         <svg
           className="pointer-events-none absolute inset-x-0 top-[22px] h-[430px] w-full overflow-visible max-[700px]:top-[10px] max-[700px]:h-[380px]"
           viewBox="0 0 1600 430"
@@ -114,7 +114,7 @@ export default function Integration() {
           <button
             key={tool.name}
             type="button"
-            className={`group absolute top-[25%] z-[5] grid h-[94px] w-[94px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-[rgba(91,184,101,0.5)] bg-[#fffafa] hover:bg-[#fff] p-0 text-[#29cd44] shadow-[0_0_0_9px_rgba(83,183,94,0.1),0_0_0_18px_rgba(83,183,94,0.06),0_0_36px_rgba(66,161,76,0.2),inset_0_0_0_1px_rgba(255,255,255,0.72)] transition-[border-color,color,background-color,transform] duration-[220ms] ease-in-out hover:scale-[1.08] hover:border-[rgba(70,166,82,0.75)] hover:text-[#32833e] focus-visible:outline-none focus-visible:shadow-[0_0_0_4px_rgba(70,166,82,0.2),inset_0_0_0_1px_rgba(255,255,255,0.76)] max-[700px]:h-[76px] max-[700px]:w-[76px] ${tool.positionClass}`}
+            className={`group absolute top-[128px] z-[5] grid h-[94px] w-[94px] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-[rgba(91,184,101,0.5)] bg-[#fffafa] hover:bg-[#fff] p-0 text-[#29cd44] shadow-[0_0_0_9px_rgba(83,183,94,0.1),0_0_0_18px_rgba(83,183,94,0.06),0_0_36px_rgba(66,161,76,0.2),inset_0_0_0_1px_rgba(255,255,255,0.72)] transition-[border-color,color,background-color,transform] duration-[220ms] ease-in-out hover:scale-[1.08] hover:border-[rgba(70,166,82,0.75)] hover:text-[#32833e] focus-visible:outline-none focus-visible:shadow-[0_0_0_4px_rgba(70,166,82,0.2),inset_0_0_0_1px_rgba(255,255,255,0.76)] max-[700px]:top-[25%] max-[700px]:h-[76px] max-[700px]:w-[76px] ${tool.positionClass}`}
             aria-label={`Ver integración de ${tool.name}`}
             onMouseEnter={() => setActiveTool(tool.name)}
             onFocus={() => setActiveTool(tool.name)}
@@ -126,7 +126,7 @@ export default function Integration() {
           </button>
         ))}
 
-        <div className="absolute left-1/2 top-[51%] z-[4] w-[calc(100%_-_40px)] max-w-[600px] -translate-x-1/2 text-center max-[700px]:w-[calc(100%_-_34px)]">
+        <div className="absolute left-1/2 top-[260px] z-[4] w-[calc(100%_-_40px)] max-w-[600px] -translate-x-1/2 text-center max-[700px]:top-[51%] max-[700px]:w-[calc(100%_-_34px)]">
           <p className="m-0 font-[var(--font-plus-jakarta-sans)] text-[0.74rem] uppercase leading-[1.3] tracking-[0.14em] text-[#32833e]">Todo conectado en un solo lugar</p>
           <p className="mx-auto mt-[13px] max-w-[590px] font-[var(--font-plus-jakarta-sans)] text-[clamp(1rem,1.45vw,1.22rem)] leading-[1.4] tracking-[-0.025em] text-[#2c201a] max-[700px]:text-[0.95rem] max-[700px]:leading-[1.55]">
             Recibí pedidos de Mercado Libre, WooCommerce y Tienda Nube, sincronizá el stock, listas de precios y trabajá siempre con información actualizada.
