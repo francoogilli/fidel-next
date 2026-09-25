@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -20,6 +21,11 @@ import {
 import GradientLine from "@/components/gradientLine";
 import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
+
+type MontosPedidosWeb = {
+  MontoInicialPedidosWeb: string;
+  MontoMensualPedidosWeb: string;
+};
 
 const productDetails = [
   {
@@ -105,6 +111,34 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 }
 
 export default function PedidosWebPage() {
+  const [montos, setMontos] = useState<MontosPedidosWeb | null>(null);
+  const [loadingMontos, setLoadingMontos] = useState(true);
+
+  useEffect(() => {
+    const obtenerMontos = async () => {
+      try {
+        const response = await fetch("/Home/ObtenerMontosPedidosWeb");
+        if (!response.ok) {
+          throw new Error(`Error HTTP ${response.status}`);
+        }
+
+        const data: MontosPedidosWeb | null = await response.json();
+        setMontos(data);
+      } catch (error) {
+        console.error("Error obteniendo los montos de Pedidos Web", error);
+      } finally {
+        setLoadingMontos(false);
+      }
+    };
+
+    obtenerMontos();
+  }, []);
+
+  const montoInicial = montos?.MontoInicialPedidosWeb?.trim();
+  const montoMensual = montos?.MontoMensualPedidosWeb?.trim();
+  const mostrarMontoInicial = Boolean(montoInicial && montoInicial !== "-");
+  const mostrarMontoMensual = Boolean(montoMensual && montoMensual !== "-");
+
   return (
     <main className="min-h-screen bg-[#fcfbf9] px-4 pb-20 pt-12 text-[#252525] selection:bg-[#d8ff73] selection:text-[#0b0b0c] md:px-6 md:pt-20">
       <section className="mx-auto max-w-7xl">
@@ -350,7 +384,8 @@ export default function PedidosWebPage() {
                       className="max-w-[15ch] text-3xl font-bold leading-[1.05] tracking-[-0.04em] md:text-5xl"
                       style={{ fontFamily: "Plus Jakarta Sans" }}
                     >
-                      $ 500.000 <span className="whitespace-nowrap text-xl text-white/60 md:text-2xl">+ IVA</span>
+                      {loadingMontos ? "Cargando..." : mostrarMontoInicial ? `$ ${montoInicial}` : "Consultar"}
+                      {mostrarMontoInicial && <span className="whitespace-nowrap text-xl text-white/60 md:text-2xl"> + IVA</span>}
                     </p>
                   </div>
                 </div>
@@ -374,7 +409,8 @@ export default function PedidosWebPage() {
                     className="max-w-[15ch] text-3xl font-bold leading-[1.05] tracking-[-0.04em] text-[#252525] md:text-5xl"
                     style={{ fontFamily: "Plus Jakarta Sans" }}
                   >
-                    $ 54.000 <span className="whitespace-nowrap text-xl text-[#6d8d73] md:text-2xl">+ IVA</span>
+                    {loadingMontos ? "Cargando..." : mostrarMontoMensual ? `$ ${montoMensual}` : "Consultar"}
+                    {mostrarMontoMensual && <span className="whitespace-nowrap text-xl text-[#6d8d73] md:text-2xl"> + IVA</span>}
                   </p>
                 </div>
               </div>
