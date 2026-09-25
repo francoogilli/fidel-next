@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import mercadoLibreImage from "../../public/mercado-libre.png";
 import TiendaNubeIcon from "../icons/tiendaNube";
 import IntegrationIcon from "../icons/integration";
@@ -99,6 +100,14 @@ export default function Integration() {
           Conectá <span className="text-[#0f0f0f]">Mercado Libre</span>, <span className="text-[#0f0f0f]">WooCommerce</span> y <span className="text-[#0f0f0f]">Tienda Nube</span> en un solo lugar y
           centralizá tus pedidos, ventas y stock desde cualquier dispositivo.
         </h4>
+        <div className="mt-7 text-center">
+          <Link
+            href="/integraciones-ecommerce"
+            className="inline-flex items-center rounded-full border border-[#b8d9b8] bg-white px-5 py-2.5 text-sm font-semibold text-[#205d2a] transition-colors hover:bg-[#eaf8e8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#205d2a]"
+          >
+            Conocé la integración E-Commerce
+          </Link>
+        </div>
       </div>
 
       <div className="relative mx-auto mt-[38px] h-[510px] w-full max-w-[1600px] max-[700px]:mt-7 max-[700px]:h-[430px]" aria-label="Integraciones disponibles">

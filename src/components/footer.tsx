@@ -127,6 +127,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/integraciones-ecommerce"
+                  className="text-sm text-gray-600 hover:text-gray-900"
+                >
+                  Integraciones E-Commerce
+                </Link>
+              </li>
+              <li>
                 <span
                   onClick={handleScrollToFuncionalidades}
                   className="cursor-pointer text-sm text-gray-600 hover:text-gray-900"

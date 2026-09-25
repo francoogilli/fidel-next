@@ -11,7 +11,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
-import { Wrench, Truck, Sparkles, Settings, ArrowRight } from "lucide-react";
+import { Wrench, Truck, Sparkles, Settings, ArrowRight, Menu, X } from "lucide-react";
 
 const EASE = "cubic-bezier(.2,.85,.25,1)";
 const DUR = "0.6s";
@@ -51,6 +51,7 @@ const rubroCardContent = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeRubroIndex, setActiveRubroIndex] = useState(0);
   const pathname = usePathname();
   const router = useRouter();
@@ -141,7 +142,7 @@ export default function Header() {
             alignItems: "center",
             gap: scrolled ? 6 : 16,
             width: "100%",
-            maxWidth: scrolled ? 860 : 1600,
+            maxWidth: scrolled ? 1020 : 1600,
             padding: scrolled ? "4px 7px 4px 18px" : "10px 18px",
             borderRadius: scrolled ? 999 : 28,
             background: scrolled
@@ -170,7 +171,7 @@ export default function Header() {
 
           {/* Nav */}
           <nav
-            className="hidden sm:flex items-center gap-0.5 px-0.5"
+            className="hidden lg:flex items-center gap-0.5 px-0.5"
             style={{ justifySelf: "center", minWidth: 0 }}
           >
             <Link
@@ -202,6 +203,13 @@ export default function Header() {
               className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
               Pedidos Web
+            </Link>
+
+            <Link
+              href="/integraciones-ecommerce"
+              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
+            >
+              Integraciones
             </Link>
 
             {/* Rubros dropdown */}
@@ -335,6 +343,16 @@ export default function Header() {
               transition: TR,
             }}
           >
+            <button
+              type="button"
+              className="inline-flex size-10 items-center justify-center rounded-full text-[#252525] hover:bg-black/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1b8c2b] lg:hidden"
+              aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation"
+              onClick={() => setMobileMenuOpen((open) => !open)}
+            >
+              {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+            </button>
             <Link
               href="#"
               target="_blank"
@@ -362,6 +380,37 @@ export default function Header() {
           </div>
         </header>
       </div>
+      {mobileMenuOpen && (
+        <nav
+          id="mobile-navigation"
+          aria-label="Navegación principal"
+          className="fixed inset-x-4 top-[72px] z-50 rounded-[24px] border border-[#e6eee6] bg-white p-3 shadow-[0_16px_42px_-20px_rgba(0,0,0,0.3)] lg:hidden"
+        >
+          {[
+            { label: "Precios", href: "/#planes", section: "planes" },
+            { label: "Funcionalidades", href: "/#funcionalidades", section: "funcionalidades" },
+            { label: "Inteligencia Artificial", href: "/#ia", section: "ia" },
+            { label: "Pedidos Web", href: "/pedidos-web" },
+            { label: "Integraciones E-Commerce", href: "/integraciones-ecommerce" },
+            { label: "Ferreterías", href: "/ferreterias" },
+            { label: "Distribuidoras", href: "/distribuidoras" },
+            { label: "Decoración", href: "/casas-de-decoracion" },
+            { label: "Repuestos", href: "/casas-de-repuestos" },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={(e) => {
+                if (item.section) scrollToSection(item.section)(e);
+                setMobileMenuOpen(false);
+              }}
+              className="block rounded-xl px-4 py-2.5 text-sm font-medium text-[#252525] hover:bg-[#f7fbf5] focus-visible:outline-2 focus-visible:outline-[#1b8c2b]"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+      )}
       {/* Blur overlay when menu is open */}
       <div
         aria-hidden="true"
@@ -369,13 +418,13 @@ export default function Header() {
           position: "fixed",
           inset: 0,
           zIndex: 40,
-          backdropFilter: menuOpen ? "blur(3px)" : "blur(0px)",
-          WebkitBackdropFilter: menuOpen ? "blur(3px)" : "blur(0px)",
-          background: menuOpen ? "rgba(182, 182, 182, 0.08)" : "rgba(0,0,0,0)",
-          pointerEvents: menuOpen ? "auto" : "none",
+          backdropFilter: menuOpen || mobileMenuOpen ? "blur(3px)" : "blur(0px)",
+          WebkitBackdropFilter: menuOpen || mobileMenuOpen ? "blur(3px)" : "blur(0px)",
+          background: menuOpen || mobileMenuOpen ? "rgba(182, 182, 182, 0.08)" : "rgba(0,0,0,0)",
+          pointerEvents: menuOpen || mobileMenuOpen ? "auto" : "none",
           transition: "backdrop-filter 0.25s ease, -webkit-backdrop-filter 0.25s ease, background 0.25s ease",
         }}
-        onClick={() => setMenuOpen(false)}
+        onClick={() => { setMenuOpen(false); setMobileMenuOpen(false); }}
       />
 
       {/* Spacer so content doesn't hide behind the fixed header */}
