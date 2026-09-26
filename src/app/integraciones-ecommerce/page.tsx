@@ -107,20 +107,23 @@ export default function IntegracionesEcommercePage() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-[24px] border border-[#e3eddc] bg-[#f7fbf5] p-5 sm:p-7" aria-label="Esquema de integración entre la tienda online y Fidel">
+          <div className="relative overflow-hidden rounded-[24px] border border-[#e3eddc] bg-[#f7fbf5] p-5 sm:p-7" aria-label="Esquema de integración entre los canales de venta online y Fidel">
             <div className="flex items-center justify-between gap-3 border-b border-[#dce9d8] pb-4">
-              <span className="text-sm font-semibold text-[#305d36]" style={{ fontFamily: "Plus Jakarta Sans" }}>Tienda Nube o WooCommerce</span>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-[#e2f6df] px-3 py-1 text-xs font-medium text-[#225d2b]">
+              <span className="text-sm font-semibold text-[#305d36]" style={{ fontFamily: "Plus Jakarta Sans" }}>Tienda Nube, Mercado Libre y WooCommerce</span>
+              <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-[#e2f6df] px-3 py-1 text-xs font-medium text-[#225d2b]">
                 <span className="size-1.5 rounded-full bg-[#3dba50]" aria-hidden="true" />
                 Sincronizada
               </span>
             </div>
-            <div className="mt-5 grid grid-cols-2 gap-3">
-              <div className="flex min-h-20 items-center justify-center rounded-2xl border border-[#e8eee5] bg-white px-4">
+            <div className="mt-5 grid grid-cols-3 gap-2 sm:gap-3">
+              <div className="flex min-h-20 items-center justify-center rounded-2xl border border-[#e8eee5] bg-white px-2 sm:px-4">
                 <TiendaNubeIcon className="h-10 w-32 max-w-full" fill="#2673d9" />
                 <span className="sr-only">Tienda Nube</span>
               </div>
-              <div className="flex min-h-20 items-center justify-center rounded-2xl border border-[#e8eee5] bg-white px-4">
+              <div className="flex min-h-20 items-center justify-center rounded-2xl border border-[#e8eee5] bg-white px-2 sm:px-4">
+                <Image src="/mercado-libre.png" alt="Mercado Libre" width={72} height={72} className="h-16 w-16 max-w-full object-contain" />
+              </div>
+              <div className="flex min-h-20 items-center justify-center rounded-2xl border border-[#e8eee5] bg-white px-2 sm:px-4">
                 <Image src="/woocommerce.svg" alt="WooCommerce" width={150} height={70} className="h-12 w-auto max-w-full object-contain" />
               </div>
             </div>
