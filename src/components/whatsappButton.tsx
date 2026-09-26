@@ -1,14 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const WHATSAPP_NUMBER = "5491100000000";
 const WHATSAPP_MESSAGE = "Hola! Me interesa saber más sobre Fidel.";
 
 export default function WhatsAppButton() {
   const [hovered, setHovered] = useState(false);
+  const pathname = usePathname();
 
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  const url = pathname === "/integraciones-ecommerce"
+    ? "https://wa.me/message/2OLNOPTCUKLTO1"
+    : `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   return (
     <>
