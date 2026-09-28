@@ -63,12 +63,6 @@ export default function Hero() {
               />
               <span>Fidel</span>
             </span>
-            <span
-              aria-hidden="true"
-              className="ml-1 flex size-5 shrink-0 items-center justify-center rounded-full bg-[#252525] text-white"
-            >
-              <ChevronRight className="size-3" strokeWidth={2.25} />
-            </span>
           </div>
         </div>
 
