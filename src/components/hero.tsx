@@ -56,7 +56,7 @@ export default function Hero() {
             <span className="whitespace-nowrap">IA ya integrada en</span>
             <span className="inline-flex shrink-0 items-center gap-1 font-semibold text-[#252525]">
               <img
-                src="/fidel1.svg"
+                src="/fidel/fidel1.svg"
                 alt=""
                 aria-hidden="true"
                 className="size-5"
