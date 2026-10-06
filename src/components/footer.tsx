@@ -72,11 +72,9 @@ export default function Footer() {
               </a>
             </p>
             <p className="text-sm text-[#101010]">
-              <span className="whitespace-nowrap">
-                Fidel pertenece a{" "}
-                <span className="font-medium text-[#252525]">
-                  AGENCIA PROGRAMARTE SAS
-                </span>
+              Fidel pertenece a{" "}
+              <span className="font-medium text-[#252525]">
+                AGENCIA PROGRAMARTE SAS
               </span>
               <br />
               CUIT 30-71584333-8
