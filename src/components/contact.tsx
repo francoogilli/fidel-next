@@ -6,7 +6,7 @@ import ThreeStripesLeft from "../icons/threeStripesLeft";
 import ThreeStripesRight from "../icons/threeStripesRight";
 import GradientLine from "./gradientLine";
 import * as Yup from "yup";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ScheduleMeetButton } from "./scheduleMeetButton";
 import { Contact } from "@/api/types";
 import CheckToast from "@/icons/checkToast";
@@ -24,7 +24,7 @@ interface Props {
 
 const validationSchema = Yup.object({
   firstname: Yup.string().required("El nombre es requerido"),
-  email: Yup.string().email("Email inválido").required("El email es requerido"),
+  email: Yup.string().trim().email("Email inválido").required("El email es requerido"),
   phone: Yup.string().required("El teléfono es requerido"),
 });
 
@@ -122,19 +122,18 @@ export default function ContactSection({ viewPage }: Props) {
     const response = await fetch('/Home/EnviarDatosHubSpot', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ firstname, email, phone, llamada, hs_lead_status: "NEW", canal: "Página Web" }),
+      body: JSON.stringify({ firstname, email: email.trim().toLowerCase(), phone, llamada, hs_lead_status: "NEW", canal: "Página Web" }),
     });
     
     const result = await response.json();
     
-    if (result.success) {
+    if (response.ok && result.success) {
       setToastType("success");
       setToastMessage("Tu mensaje se ha enviado correctamente.");
       resetForm();
     } else {
-      setToastType("warning");
+      setToastType("error");
       setToastMessage(result.message || "Hubo un error");
-      resetForm();
     }
   } catch (error: unknown) {
     setToastType("error");
@@ -215,7 +214,7 @@ export default function ContactSection({ viewPage }: Props) {
         validateOnChange={false}
         validateOnBlur={false}
       >
-        {({ errors, touched, handleChange, handleBlur, values }) => (
+        {({ errors, touched, handleChange, handleBlur, values, isSubmitting }) => (
           <Form className=" text-black font-sans flex items-center justify-center p-4">
             <div className="container max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start py-12">
               <div className="space-y-8">
@@ -405,9 +404,10 @@ export default function ContactSection({ viewPage }: Props) {
 
                 <button
                   type="submit"
+                  disabled={isSubmitting}
                   className="group flex justify-center items-center bg-[#d2fac9] hover:bg-[#87fa6d] w-full text-[#000000] text-sm xl:text-base font-semibold rounded-xl px-5 py-3.5 transition-colors duration-500"
                 >
-                  Enviar mensaje
+                  {isSubmitting ? "Enviando..." : "Enviar mensaje"}
                 </button>
               </div>
             </div>
