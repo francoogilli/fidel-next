@@ -7,7 +7,7 @@ export const privacyPolicy: LegalDocument = {
   summary: "Qué datos recopilamos, para qué los usamos y cómo podés ejercer tus derechos.",
   opening:
     "Esta política describe el tratamiento de datos personales en el sitio web de Fidel y, cuando corresponda, durante la prestación del servicio. Las condiciones específicas de los datos que cada cliente carga en Fidel también se rigen por el contrato y el Acuerdo de Confidencialidad.",
-  updatedAt,
+  updatedAt: "14 de octubre de 2026",
   sections: [
     {
       heading: "Responsable del tratamiento",
@@ -28,6 +28,10 @@ export const privacyPolicy: LegalDocument = {
         {
           type: "paragraph",
           text: "El sitio utiliza Meta Pixel para registrar vistas de página. Al cargar una página, esa herramienta puede recibir información técnica y de navegación, como la dirección de la página, el momento de la visita y datos asociados al navegador o dispositivo. Meta puede usar cookies o identificadores similares para medir campañas y actividad; el detalle depende de la configuración del navegador y de Meta.",
+        },
+        {
+          type: "paragraph",
+          text: "El sitio también carga Google Tag Manager para administrar etiquetas de medición de campañas. Las etiquetas que se configuren y publiquen en ese contenedor determinan qué eventos se registran, qué datos se envían a los proveedores y qué cookies o identificadores se utilizan. Podés consultar más información en nuestra página de Cookies y Seguimiento.",
         },
         {
           type: "paragraph",
@@ -121,7 +125,7 @@ export const cookiesPolicy: LegalDocument = {
   summary: "Qué herramientas de medición usa este sitio y qué opciones tenés para gestionarlas.",
   opening:
     "Esta página informa qué tecnologías de seguimiento utiliza actualmente el sitio de Fidel. Los nombres y el funcionamiento de cookies de terceros pueden cambiar según la configuración del proveedor y de tu navegador.",
-  updatedAt,
+  updatedAt: "14 de octubre de 2026",
   sections: [
     {
       heading: "Qué son las cookies y tecnologías similares",
@@ -149,11 +153,27 @@ export const cookiesPolicy: LegalDocument = {
       ],
     },
     {
-      heading: "Herramientas que no detectamos en este sitio",
+      heading: "Google Tag Manager",
       blocks: [
         {
           type: "paragraph",
-          text: "La implementación actual del sitio no incluye Google Analytics ni el código de seguimiento de HubSpot. HubSpot sí recibe los datos que enviás en el formulario de contacto para gestionar la consulta; ese uso como sistema de contactos no equivale a instalar su herramienta de seguimiento web.",
+          text: "El sitio carga el contenedor GTM-T2LDQ68W de Google Tag Manager para administrar etiquetas de medición de campañas. La instalación del contenedor permite configurar y publicar etiquetas, por ejemplo de Google Analytics o Google Ads. Las mediciones, los datos enviados y las cookies utilizadas dependen de las etiquetas y los activadores que se publiquen en Google Tag Manager.",
+        },
+        {
+          type: "link",
+          lead: "Podés consultar más información en la",
+          label: "información de privacidad de Google Tag Manager",
+          href: "https://support.google.com/tagmanager/answer/9323295?hl=es",
+          tail: ".",
+        },
+      ],
+    },
+    {
+      heading: "HubSpot y el formulario de contacto",
+      blocks: [
+        {
+          type: "paragraph",
+          text: "La implementación del sitio no incluye el código de seguimiento de HubSpot. HubSpot sí recibe los datos que enviás en el formulario de contacto para gestionar la consulta; ese uso como sistema de contactos no equivale a instalar su herramienta de seguimiento web.",
         },
       ],
     },
@@ -162,7 +182,7 @@ export const cookiesPolicy: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Podés consultar, bloquear o eliminar cookies desde los ajustes de tu navegador. También podés revisar las opciones de privacidad y anuncios que ofrece Meta. Si bloqueás tecnologías de terceros, la medición de campañas puede dejar de funcionar o ser menos precisa.",
+          text: "Podés consultar, bloquear o eliminar cookies desde los ajustes de tu navegador. También podés revisar las opciones de privacidad y anuncios que ofrecen Meta y Google. Si bloqueás tecnologías de terceros, la medición de campañas puede dejar de funcionar o ser menos precisa.",
         },
         {
           type: "paragraph",
