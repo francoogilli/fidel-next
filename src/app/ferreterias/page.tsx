@@ -71,6 +71,21 @@ const detailSections = [
     reverse: false,
   },
   {
+    icon: Package,
+    badge: "Acopio de mercadería y entregas parciales",
+    title: "Reservá mercadería y organizá los retiros de cada cliente",
+    description:
+      "¿Tus clientes compran grandes cantidades de materiales, pero necesitan retirarlos en diferentes momentos? Con Fidel, registrás la venta o el presupuesto y reservás los productos a nombre del cliente para que pueda retirarlos cuando los necesite.",
+    items: [
+      "Reservá mercadería sin descontarla del stock físico hasta el momento de la entrega",
+      "Evitá vender productos que ya están comprometidos con otro cliente",
+      "Registrá entregas parciales o totales según las necesidades de cada cliente",
+      "Llevá un control organizado de la mercadería acopiada y pendiente de retirar",
+    ],
+    image: "/acopio-ferreteria.png",
+    reverse: true,
+  },
+  {
     icon: Bell,
     badge: "Control inteligente de stock",
     title: "Nunca más te quedés sin mercadería ni tengas sobrestock",
@@ -82,7 +97,7 @@ const detailSections = [
       "Generá órdenes de compra de forma rápida",
     ],
     image: "/ferreteria2.png",
-    reverse: true,
+    reverse: false,
   },
   {
     icon: Users,
@@ -96,7 +111,7 @@ const detailSections = [
       "Compará precios y tomá mejores decisiones",
     ],
     image: "/ferreteria3.png",
-    reverse: false,
+    reverse: true,
   },
 ];
 
