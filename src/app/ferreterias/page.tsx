@@ -125,7 +125,7 @@ export default function FidelFeaturesSection() {
               className="text-xs md:text-sm font-medium text-[#121212]"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
-              Fidel para Ferreterías
+              Fidel para Corralones y Ferreterías
             </span>
           </div>
           <ThreeStripesRight />
@@ -140,7 +140,7 @@ export default function FidelFeaturesSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          El sistema de gestión pensado para el día a día de tu ferretería
+          El sistema de gestión pensado para el día a día de tu negocio
         </motion.h1>
 
         {/* Subtitle */}

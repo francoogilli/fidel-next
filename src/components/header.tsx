@@ -233,7 +233,7 @@ export default function Header() {
                           {
                             href: "/ferreterias",
                             icon: <Wrench className="size-4" />,
-                            label: "Ferreterías",
+                            label: "Corralones y Ferreterías",
                             desc: "Control de stock, listas de precios y ventas rápidas.",
                           },
                           {
