@@ -43,8 +43,8 @@ const rubroCardContent = [
     title: "Día en Repuestos",
     desc: "Consultá precios, stock y proveedores en segundos.",
     badge: "Repuestos",
-    bgImage: "/repuestos.png",
-    href: "/dia-con-fidel-ferreterias"
+    bgImage: "/fidel/dia-repuestos-02.webp",
+    href: "/dia-con-fidel-repuestos"
   }
 ];
 
