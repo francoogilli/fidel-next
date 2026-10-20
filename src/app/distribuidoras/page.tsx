@@ -13,6 +13,8 @@ import {
   ImageIcon,
   Wallet,
   BarChart3,
+  Package,
+  MapPin,
 } from "lucide-react";
 import InstagramReel from "@/components/InstagramReel";
 
@@ -110,6 +112,35 @@ const detailSections = [
       "Todo queda sincronizado con el sistema y la caja",
     ],
     image: "/fidel/distribuidoras4.png",
+    reverse: true,
+  },
+  {
+    icon: Package,
+    badge: "Control de partidas y vencimientos",
+    title: "Controlá las partidas y los vencimientos de tus productos",
+    description:
+      "¿Manejás productos con fecha de vencimiento y necesitás tener el stock bajo control? Con Fidel, organizás cada producto por partidas, con su propia fecha de vencimiento, para seguir la mercadería con más precisión y reducir pérdidas.",
+    items: [
+      "Registrá diferentes partidas para un mismo producto, cada una con su fecha de vencimiento",
+      "Descontá primero la mercadería de la partida que vence antes al realizar una venta",
+      "Mantené la trazabilidad e identificá en el comprobante de qué partida salió cada producto",
+      "Llevá un control más ordenado del stock y los vencimientos",
+    ],
+    image: "/fidel/distribuidoras-partidas.png",
+    reverse: false,
+  },
+  {
+    icon: MapPin,
+    badge: "Geolocalización de preventistas",
+    title: "Conocé dónde están tus preventistas y qué recorridos realizan",
+    description:
+      "¿Tenés vendedores en la calle y necesitás saber dónde están y qué recorrido realizan? Desde la app móvil de Fidel, podés consultar su ubicación y visualizar los recorridos que hacen durante la jornada.",
+    items: [
+      "Consultá dónde se encuentran tus vendedores",
+      "Mejorá el seguimiento y la organización del equipo comercial",
+      "Obtené mayor visibilidad sobre la actividad de tus preventistas en la calle",
+    ],
+    image: "/fidel/distribuidoras-geolocalizacion.png",
     reverse: true,
   },
 ];
