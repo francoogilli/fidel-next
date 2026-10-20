@@ -20,7 +20,7 @@ import TiendaNubeIcon from "@/icons/tiendaNube";
 export const metadata: Metadata = {
   title: "Integraciones E-Commerce | Fidel",
   description:
-    "Vinculá masivamente tus productos de Fidel con Tienda Nube o WooCommerce. Mantené actualizados el stock y los precios, y recibí las ventas como pedidos listos para facturar.",
+    "Vinculá masivamente tus productos de Fidel con Tienda Nube, Mercado Libre y WooCommerce. Mantené actualizados el stock y los precios, y recibí las ventas como pedidos listos para facturar.",
 };
 
 
@@ -35,7 +35,7 @@ const syncedDetails = [
 const setupSteps = [
   {
     title: "Acceso a tu tienda",
-    text: "Una vez que contrates Fidel, pasanos el acceso a la cuenta de Tienda Nube o WooCommerce que quieras vincular.",
+    text: "Una vez que contrates Fidel, pasanos el acceso a la cuenta de Tienda Nube, Mercado Libre o WooCommerce que quieras vincular.",
   },
   {
     title: "Productos y categorías",
@@ -85,11 +85,11 @@ export default function IntegracionesEcommercePage() {
             Integraciones E-Commerce
           </h1>
           <p className="mt-4 text-base text-[#5c5c5c] md:text-lg" style={{ fontFamily: "Satoshi" }}>
-            Tienda Nube y WooCommerce conectadas con Fidel.
+            Tienda Nube, Mercado Libre y WooCommerce conectadas con Fidel.
           </p>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-6xl items-center gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(360px,1.1fr)] md:gap-14 lg:mt-20">
+        <div className="mx-auto mt-12 grid max-w-6xl items-center gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(360px,1.1fr)] md:gap-14 lg:mt-16">
           <div className="max-w-xl">
             <h2
               className="text-3xl font-bold leading-tight tracking-[-0.035em] md:text-4xl"
@@ -99,7 +99,7 @@ export default function IntegracionesEcommercePage() {
             </h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-[#5c5c5c] md:text-lg" style={{ fontFamily: "Satoshi" }}>
               <p>
-                Fidel se integra con Tienda Nube y WooCommerce para mantener actualizados el stock y la lista de precios de tus productos.
+                Fidel se integra con Tienda Nube, Mercado Libre y WooCommerce para mantener actualizados el stock y la lista de precios de tus productos.
               </p>
               <p>
                 Las ventas ingresan automáticamente como pedidos en Fidel, con el cliente ya cargado, para que solo tengas que facturar.
@@ -129,7 +129,7 @@ export default function IntegracionesEcommercePage() {
             </div>
             <div className="relative mx-auto flex h-16 w-fit items-center justify-center" aria-hidden="true">
               <span className="absolute top-0 h-16 w-px bg-[#b9d8b4]" />
-              <span className="relative flex size-9 items-center justify-center rounded-full border border-[#c9e4c4] bg-white text-[#31823b] shadow-[0_5px_16px_-9px_rgba(49,130,59,0.6)]">
+              <span className="ecommerce-float relative flex size-9 items-center justify-center rounded-full border border-[#c9e4c4] bg-white text-[#31823b] shadow-[0_5px_16px_-9px_rgba(49,130,59,0.6)]">
                 <ArrowDownUp className="size-4" />
               </span>
             </div>
@@ -154,16 +154,16 @@ export default function IntegracionesEcommercePage() {
         </div>
       </section>
 
-      <section className="mx-auto mt-28 max-w-7xl md:mt-40" aria-labelledby="sync-title">
+      <section className="mx-auto mt-20 max-w-7xl md:mt-28" aria-labelledby="sync-title">
         <div className="mx-auto max-w-4xl text-center">
           <h2 id="sync-title" className="text-3xl font-bold leading-tight tracking-[-0.035em] md:text-5xl" style={{ fontFamily: "Plus Jakarta Sans" }}>
             ¿Qué se sincroniza?
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[#5c5c5c] md:text-lg" style={{ fontFamily: "Satoshi" }}>
-            Desde Fidel, podés vincular masivamente tus productos a Tienda Nube o WooCommerce. En la tienda se reflejan:
+            Desde Fidel, podés vincular masivamente tus productos a Tienda Nube, Mercado Libre o WooCommerce. En la tienda se reflejan:
           </p>
         </div>
-        <div className="mx-auto mt-14 grid max-w-6xl items-stretch gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(300px,0.85fr)] lg:gap-12">
+        <div className="mx-auto mt-10 grid max-w-6xl items-stretch gap-8 md:mt-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(300px,0.85fr)] lg:gap-12">
           <div className="rounded-[28px] border border-[#e3eddc] bg-[#f7fbf5] px-6 py-6 md:px-8 md:py-8">
             <ul className="divide-y divide-[#dfead9]">
               {syncedDetails.map(({ label, icon: Icon }, index) => (
@@ -184,13 +184,48 @@ export default function IntegracionesEcommercePage() {
             </p>
           </div>
         </div>
+
+        <div className="mx-auto mt-10 grid max-w-6xl gap-5 md:grid-cols-2 md:gap-6">
+          <figure className="group overflow-hidden rounded-[28px] border border-[#e3eddc] bg-white shadow-[0_18px_40px_-34px_rgba(37,37,37,0.45)]">
+            <div className="overflow-hidden bg-[#f7fbf5]">
+              <Image
+                src="/pedidos-web-hero-v2.png"
+                alt="Vista ilustrativa de una tienda online con catálogo de productos y carrito"
+                width={1536}
+                height={1024}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none"
+              />
+            </div>
+            <figcaption className="p-5 md:p-6">
+              <h3 className="text-lg font-bold" style={{ fontFamily: "Plus Jakarta Sans" }}>En tu tienda online</h3>
+              <p className="mt-1 text-sm leading-relaxed text-[#5c5c5c]" style={{ fontFamily: "Satoshi" }}>Tus clientes ven el catálogo con precios y disponibilidad actualizados.</p>
+            </figcaption>
+          </figure>
+          <figure className="group overflow-hidden rounded-[28px] border border-[#e3eddc] bg-white shadow-[0_18px_40px_-34px_rgba(37,37,37,0.45)]">
+            <div className="overflow-hidden bg-[#f7fbf5]">
+              <Image
+                src="/pedidos-web-workflow-products.png"
+                alt="Listado de productos administrado desde Fidel"
+                width={1672}
+                height={941}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="aspect-[16/10] w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none"
+              />
+            </div>
+            <figcaption className="p-5 md:p-6">
+              <h3 className="text-lg font-bold" style={{ fontFamily: "Plus Jakarta Sans" }}>En Fidel</h3>
+              <p className="mt-1 text-sm leading-relaxed text-[#5c5c5c]" style={{ fontFamily: "Satoshi" }}>Administrás los productos desde un solo lugar y los vinculás con tus canales de venta.</p>
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section className="mx-auto mt-28 max-w-7xl md:mt-40" aria-labelledby="steps-title">
+      <section className="mx-auto mt-20 max-w-7xl md:mt-28" aria-labelledby="steps-title">
         <div className="mx-auto max-w-4xl text-center">
           <h2 id="steps-title" className="text-3xl font-bold leading-tight tracking-[-0.035em] md:text-5xl" style={{ fontFamily: "Plus Jakarta Sans" }}>¿Cómo empezar?</h2>
         </div>
-        <ol className="mx-auto mt-12 max-w-6xl overflow-hidden rounded-[28px] border border-[#e3eddc] bg-[#f7fbf5] md:mt-16">
+        <ol className="mx-auto mt-10 max-w-6xl overflow-hidden rounded-[28px] border border-[#e3eddc] bg-[#f7fbf5] md:mt-12">
           {setupSteps.map((step, index) => (
             <li key={step.title} className="grid gap-4 border-b border-[#dfead9] p-6 last:border-b-0 md:grid-cols-[auto_minmax(0,1fr)] md:gap-6 md:p-8">
               <span className={`flex size-11 items-center justify-center rounded-2xl text-lg font-bold ${index % 2 ? "bg-[#fff0d5] text-[#a86119]" : "bg-[#d4ffcc] text-[#1b8c2b]"}`} aria-hidden="true">{index + 1}</span>
@@ -203,12 +238,12 @@ export default function IntegracionesEcommercePage() {
         </ol>
       </section>
 
-      <section className="mx-auto mt-28 max-w-7xl md:mt-40" aria-labelledby="pricing-title">
+      <section className="mx-auto mt-20 max-w-7xl md:mt-28" aria-labelledby="pricing-title">
         <div className="mx-auto max-w-6xl">
           <div className="overflow-hidden rounded-[36px] border border-[#d8e9d9] bg-[#eff9ec] px-5 py-8 md:px-10 md:py-12">
             <h2 id="pricing-title" className="text-3xl font-bold leading-tight tracking-[-0.035em] md:text-5xl" style={{ fontFamily: "Plus Jakarta Sans" }}>Costos y planes</h2>
             <p className="mt-2 text-base text-[#405d43]" style={{ fontFamily: "Satoshi" }}>La integración está disponible desde el Plan Inicial.</p>
-            <div className="mt-10 grid gap-4 md:grid-cols-[0.9fr_1.1fr]">
+            <div className="mt-8 grid gap-4 md:grid-cols-[0.9fr_1.1fr]">
               <div className="flex flex-col justify-between gap-10 rounded-[28px] bg-[#252525] p-6 text-white shadow-[0_18px_30px_-22px_rgba(37,37,37,0.9)] md:p-8">
                 <div>
                   <p className="text-lg font-semibold md:text-xl" style={{ fontFamily: "Plus Jakarta Sans" }}>Costo de implementación</p>
@@ -233,7 +268,7 @@ export default function IntegracionesEcommercePage() {
             </div>
             <div className="mt-6 flex items-start gap-3 border-t border-[#d8e9d9] pt-5 text-sm leading-relaxed text-[#405d43] md:text-base" style={{ fontFamily: "Satoshi" }}>
               <CircleHelp className="mt-0.5 size-5 shrink-0 text-[#32833e]" aria-hidden="true" />
-              <p>Si tenés productos variantes, cada variante cuenta como un producto al vincular Tienda Nube. Para sumar más productos, podés cambiar de plan.</p>
+              <p>Si tenés productos con variantes, cada variante cuenta como un producto al vincular Mercado Libre o WooCommerce. Para sumar más productos, podés cambiar de plan.</p>
             </div>
             <a href="https://mejorasfidel.vercel.app/planes" target="_blank" rel="noopener noreferrer" className="mt-4 flex w-fit items-center gap-2 text-sm font-semibold text-[#205d2a] underline decoration-[#7ebf78] underline-offset-4 hover:text-[#123d19] focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#205d2a]">
               Conocé los planes de Fidel <ArrowRight className="size-4" aria-hidden="true" />
@@ -242,7 +277,7 @@ export default function IntegracionesEcommercePage() {
         </div>
       </section>
 
-      <section className="mx-auto mt-28 max-w-5xl text-center md:mt-40" aria-labelledby="contact-title">
+      <section className="mx-auto mt-20 max-w-5xl text-center md:mt-28" aria-labelledby="contact-title">
         <h2 id="contact-title" className="text-4xl font-bold leading-tight tracking-[-0.04em] md:text-6xl" style={{ fontFamily: "Plus Jakarta Sans" }}>Vendé sin complicaciones</h2>
         <p className="mx-auto mt-5 max-w-xl text-base text-[#5c5c5c] md:text-lg" style={{ fontFamily: "Satoshi" }}>Si tenés dudas o querés avanzar con la implementación, estamos para ayudarte.</p>
         <a href="https://wa.me/message/2OLNOPTCUKLTO1" target="_blank" rel="noopener noreferrer" className="mt-9 inline-flex items-center gap-2 rounded-full bg-[#0b0b0c] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_24px_-16px_rgba(0,0,0,0.7)] hover:bg-[#2b2b2d] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1b8c2b] md:text-base">
