@@ -41,7 +41,7 @@ export default function Footer() {
   return (
     <footer className="w-full p-8">
       <div className="mx-auto max-w-[88.5rem] rounded-[30px] bg-[#f6f6f6] border border-[#e6eee6] px-12 py-16">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Company Info */}
           <div className="space-y-3.5">
             <div className="flex items-center space-x-2">
@@ -106,8 +106,55 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Información */}
+          <div className="space-y-4 md:col-start-2">
+            <h3 className="text-lg font-medium">Información</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/acuerdo-confidencialidad"
+                  className="text-sm text-gray-600 hover:text-gray-900"
+                >
+                  Acuerdo de Confidencialidad
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/politica-de-privacidad"
+                  className="text-sm text-gray-600 hover:text-gray-900"
+                >
+                  Política de Privacidad
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cookies-y-seguimiento"
+                  className="text-sm text-gray-600 hover:text-gray-900"
+                >
+                  Cookies y Seguimiento
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terminos-del-servicio"
+                  className="text-sm text-gray-600 hover:text-gray-900"
+                >
+                  Términos del Servicio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/seguridad-y-gestion-de-datos"
+                  className="text-sm text-gray-600 hover:text-gray-900"
+                >
+                  Seguridad y Gestión de Datos
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Recursos */}
-          <div className="space-y-4 md:col-start-4">
+          <div className="space-y-4 md:col-start-3">
             <h3 className="text-lg font-medium">Recursos</h3>
             <ul className="space-y-2">
               <li>

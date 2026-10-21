@@ -1,0 +1,124 @@
+ACUERDO DE CONFIDENCIALIDAD Y PROTECCIÓN DE DATOS
+Entre AGENCIA PROGRAMARTE S.A.S., CUIT 30-71584333-8, con domicilio en San Luis 733, San Francisco, Provincia de Córdoba, República Argentina, en adelante, “EL PROVEEDOR”, en su carácter de prestador del servicio de software denominado comercialmente “Fidel”; y [NOMBRE O RAZÓN SOCIAL DEL CLIENTE], CUIT/DNI [●], con domicilio en [●], en adelante, “EL CLIENTE”; conjuntamente denominadas “LAS PARTES”, acuerdan celebrar el presente Acuerdo de Confidencialidad y Protección de Datos, sujeto a las siguientes cláusulas.
+1. Objeto y alcance
+El presente Acuerdo establece las obligaciones de confidencialidad, protección de la información y tratamiento de datos que LAS PARTES asumen con motivo de la prestación y utilización del sistema de gestión empresarial Fidel.
+Su alcance comprende, según corresponda, el acceso y uso del software, la implementación, configuración, soporte técnico, mantenimiento, actualización, capacitación, asistencia y demás servicios asociados.
+El presente Acuerdo complementa el contrato de prestación de servicios, la propuesta comercial, los términos y condiciones y los demás instrumentos que LAS PARTES hayan aceptado. En caso de contradicción, se aplicarán los criterios de interpretación y prelación establecidos en la cláusula 17, sin perjuicio de las normas legales imperativas que correspondan.
+2. Acceso a la información
+Para prestar los servicios contratados, EL PROVEEDOR podrá acceder a información almacenada en Fidel cuando resulte razonablemente necesario para realizar tareas de soporte, mantenimiento, diagnóstico, implementación, configuración, actualización, capacitación o asistencia técnica.
+Dicho acceso deberá limitarse a la información necesaria para la tarea correspondiente y ser realizado por personal, colaboradores o terceros autorizados, sujetos a obligaciones de confidencialidad adecuadas.
+Cuando las funcionalidades y la infraestructura lo permitan, determinadas acciones podrán quedar registradas mediante mecanismos de registro de actividad u otros medios disponibles.
+EL PROVEEDOR procurará que los accesos se realicen de manera compatible con las finalidades del servicio y las medidas de seguridad aplicables.
+3. Información confidencial
+Se considera Información Confidencial toda información no pública de una Parte a la que la otra Parte acceda o que reciba como consecuencia de la relación comercial, cualquiera sea su formato o medio de comunicación, y que por su contenido, naturaleza o circunstancias de divulgación deba razonablemente considerarse confidencial.
+Se incluye, entre otros:
+a) Información comercial, administrativa, contable, financiera, fiscal y operativa.
+b) Datos de clientes, proveedores, empleados, usuarios y otros terceros.
+c) Productos, precios, listas de precios, ventas, compras, inventarios, cobranzas, pagos y cuentas corrientes.
+d) Facturas, comprobantes electrónicos y demás información tributaria.
+e) Datos personales incorporados al sistema.
+f) Usuarios, credenciales, permisos, configuraciones e información vinculada con la seguridad de las cuentas.
+g) Información técnica, documentación, procedimientos, desarrollos, funcionalidades, arquitectura y conocimientos de negocio de cada Parte que no sean públicos.
+h) Cualquier otra información que, por su naturaleza o por las circunstancias en que se comunica, deba razonablemente mantenerse reservada.
+No se considerará Información Confidencial aquella respecto de la cual la Parte receptora pueda acreditar que:
+a) Es de dominio público sin que ello derive de un incumplimiento del presente Acuerdo.
+b) Ya era legítimamente conocida por la Parte receptora antes de recibirla de la otra Parte y no estaba sujeta a una obligación de confidencialidad.
+c) Fue obtenida legítimamente de un tercero autorizado para divulgarla y sin restricciones de confidencialidad.
+d) Fue desarrollada de manera independiente, sin utilizar ni acceder a la Información Confidencial de la otra Parte.
+Si una Parte estuviera legalmente obligada a revelar Información Confidencial, podrá hacerlo en la medida exigida por la autoridad competente o la normativa aplicable. Cuando legalmente sea posible, procurará informar previamente a la otra Parte y limitar la divulgación a lo estrictamente requerido.
+4. Obligaciones de el proveedor
+EL PROVEEDOR se obliga a:
+a) Mantener la confidencialidad de la Información Confidencial de EL CLIENTE.
+b) Utilizar dicha información para prestar los servicios contratados, cumplir las obligaciones correspondientes y atender otras finalidades legítimas previstas en el contrato o exigidas por la normativa aplicable.
+c) No divulgar ni poner la Información Confidencial a disposición de terceros, salvo cuando resulte necesario para prestar, mantener o proteger el servicio, exista autorización válida o medie una obligación legal.
+d) Limitar el acceso a la información a las personas que necesiten conocerla para cumplir sus funciones y procurar que estén sujetas a obligaciones de confidencialidad.
+e) Adoptar medidas técnicas y organizativas razonables, acordes con la naturaleza del servicio y los riesgos asociados, para proteger la información bajo su responsabilidad.
+f) Colaborar razonablemente con EL CLIENTE en el análisis de incidentes que involucren información bajo responsabilidad de EL PROVEEDOR, en la medida en que existan datos y registros disponibles.
+La responsabilidad de cada Parte se determinará de acuerdo con sus obligaciones contractuales, las circunstancias del caso y la normativa aplicable. Las acciones u omisiones atribuibles a EL CLIENTE, sus usuarios o terceros bajo su responsabilidad serán consideradas al determinar la atribución de responsabilidad, sin excluir las obligaciones legales o contractuales que correspondan a EL PROVEEDOR.
+5. Obligaciones de el cliente
+EL CLIENTE se obliga a:
+a) Proporcionar información veraz y actualizada cuando sea necesaria para la prestación del servicio.
+b) Proteger las credenciales de acceso de sus usuarios y evitar su divulgación o utilización por personas no autorizadas.
+c) Administrar adecuadamente las altas, bajas y permisos de los usuarios de su cuenta.
+d) Procurar que la información incorporada a Fidel se obtenga y utilice de manera lícita y que cuente con las facultades, autorizaciones o bases legales que correspondan.
+e) Informar a EL PROVEEDOR, tan pronto como razonablemente sea posible, sobre accesos sospechosos, incidentes o situaciones que puedan comprometer la información almacenada en el sistema.
+f) No permitir el acceso a personas no autorizadas ni transferir, sublicenciar o poner el servicio a disposición de terceros fuera de las condiciones contratadas.
+g) Colaborar razonablemente en la investigación y resolución de incidentes de seguridad o problemas relacionados con el servicio.
+h) Utilizar Fidel de conformidad con la normativa aplicable y las condiciones contractuales aceptadas.
+6. Tratamiento de datos personales
+Cuando EL PROVEEDOR trate datos personales por cuenta de EL CLIENTE para prestar los servicios contratados, deberá hacerlo dentro de las finalidades previstas en el contrato y conforme a las instrucciones lícitas de EL CLIENTE, en la medida en que corresponda a la función efectivamente desempeñada por cada Parte.
+EL CLIENTE será responsable de determinar las finalidades para las que incorpora datos personales a Fidel, de contar con la base legal que corresponda y de cumplir las obligaciones que le resulten aplicables como responsable de dichos datos, cuando ese sea su rol.
+EL PROVEEDOR deberá utilizar los datos personales tratados por cuenta de EL CLIENTE únicamente para prestar los servicios, cumplir las obligaciones correspondientes y atender los supuestos permitidos por la normativa aplicable. No deberá utilizarlos para finalidades propias incompatibles con las instrucciones y condiciones contractuales aplicables.
+LAS PARTES se comprometen a cumplir la Ley 25.326 de Protección de los Datos Personales, su reglamentación y las demás normas aplicables según las funciones y responsabilidades que efectivamente desempeñe cada una.
+Cuando la prestación requiera condiciones adicionales para regular el tratamiento de datos por cuenta de EL CLIENTE, LAS PARTES deberán documentarlas en el contrato principal o en un anexo específico.
+7. Infraestructura y terceros proveedores
+Para prestar, mantener y proteger Fidel, EL PROVEEDOR podrá utilizar infraestructura propia o servicios de terceros especializados, incluidos servicios de alojamiento, almacenamiento, conectividad, comunicaciones, monitoreo, seguridad, procesamiento y respaldo.
+EL PROVEEDOR podrá permitir a dichos terceros acceder a información cuando resulte necesario para las funciones que desempeñan, procurando que el acceso sea limitado y que existan obligaciones de confidencialidad y seguridad adecuadas.
+Los proveedores tecnológicos podrán modificarse o reemplazarse cuando resulte necesario para la operación, seguridad, continuidad o evolución del servicio, respetando las obligaciones contractuales y legales aplicables.
+Cuando intervengan proveedores ubicados fuera de la República Argentina o se produzcan transferencias internacionales de datos personales, estas deberán gestionarse conforme a los requisitos legales que correspondan.
+8. Seguridad y copias de respaldo
+EL PROVEEDOR adoptará medidas técnicas y organizativas razonables destinadas a proteger la información bajo su responsabilidad frente a accesos, usos, alteraciones, pérdidas o divulgaciones no autorizadas.
+Podrán utilizarse copias de respaldo, mecanismos de replicación u otras medidas orientadas a facilitar la recuperación de información y la continuidad del servicio, de acuerdo con la infraestructura y las condiciones operativas vigentes.
+La frecuencia, retención, disponibilidad y recuperación de las copias de respaldo dependerán de las características del servicio. Los compromisos específicos sobre estos aspectos, si existieran, se regirán por el contrato o acuerdo de nivel de servicio correspondiente.
+Estas medidas no constituyen una garantía de seguridad absoluta ni aseguran que no puedan producirse incidentes, interrupciones o pérdidas de información.
+EL CLIENTE podrá mantener exportaciones propias de la información que considere necesaria para su operación y sus obligaciones.
+9. Incidentes de seguridad
+Cuando EL PROVEEDOR tome conocimiento de un incidente de seguridad que afecte de manera significativa información de EL CLIENTE bajo su responsabilidad, evaluará las circunstancias y adoptará las medidas razonables que correspondan.
+Cuando resulte aplicable, EL PROVEEDOR procurará informar a EL CLIENTE sin demoras indebidas y facilitar la información disponible que resulte relevante para comprender y gestionar el incidente, de acuerdo con las circunstancias y las obligaciones legales y contractuales correspondientes.
+La comunicación podrá incluir, en la medida en que se encuentre disponible, una descripción del incidente, su alcance conocido, las posibles consecuencias y las medidas adoptadas o previstas.
+La notificación de un incidente no determinará por sí sola la atribución de responsabilidad, que deberá evaluarse según los hechos, las obligaciones asumidas y la normativa aplicable.
+EL CLIENTE podrá comunicar incidentes o sospechas de acceso no autorizado a través de los canales de soporte de Fidel o mediante el correo electrónico info@fidel.com.ar.
+10. Exportación de información
+Durante la vigencia del servicio, EL CLIENTE podrá exportar la información mediante las funcionalidades disponibles en Fidel o solicitar asistencia a EL PROVEEDOR cuando corresponda.
+La disponibilidad, el formato, el alcance y las condiciones de exportación dependerán de las funcionalidades existentes y de las características de los datos. Cualquier servicio adicional de extracción, transformación o entrega de información podrá estar sujeto a las condiciones comerciales que LAS PARTES hayan acordado.
+La exportación de datos de EL CLIENTE no incluye la transferencia de derechos sobre el software, el código fuente u objeto, la arquitectura, los algoritmos, las funcionalidades, la documentación técnica, las herramientas ni otros elementos de propiedad intelectual de EL PROVEEDOR.
+11. Finalización del servicio y conservación de información
+Al finalizar la relación contractual, LAS PARTES deberán atender las obligaciones de devolución, conservación, eliminación o anonimización de la información que correspondan según el contrato, la naturaleza de los datos y la normativa aplicable.
+Cuando EL PROVEEDOR trate datos personales por cuenta de EL CLIENTE, la finalización del servicio deberá gestionarse conforme al régimen legal aplicable al tratamiento por encargo y a las instrucciones válidas de EL CLIENTE. Cualquier conservación posterior deberá contar con el fundamento legal o la autorización que corresponda.
+La eliminación de información podrá comprender distintos sistemas y copias de respaldo, cuyos ciclos operativos pueden impedir una eliminación simultánea e inmediata de todos los soportes. En tales casos, la información remanente deberá permanecer protegida y no utilizarse para finalidades incompatibles con las obligaciones aplicables.
+EL PROVEEDOR podrá conservar la información que resulte necesaria para cumplir obligaciones legales, fiscales, contables o regulatorias, atender reclamos o cumplir otras obligaciones legítimas, siempre dentro de los límites establecidos por la normativa aplicable.
+Los plazos, procedimientos y modalidades concretas de exportación y eliminación deberán ajustarse a las condiciones del servicio y a las disposiciones legales aplicables.
+12. Propiedad intelectual
+La utilización de Fidel no implica transferencia de derechos de propiedad intelectual a favor de EL CLIENTE, salvo los derechos de uso expresamente concedidos en las condiciones de contratación.
+Los derechos sobre el software Fidel, su código fuente y objeto, arquitectura, interfaces, diseños, funcionalidades, documentación, metodologías, herramientas, marcas, nombres comerciales y demás elementos propios de EL PROVEEDOR o de sus respectivos titulares continuarán perteneciendo a sus titulares.
+EL CLIENTE conserva los derechos que legalmente le correspondan sobre la información y los datos que incorpore al sistema. Esto no implica transferencia de derechos sobre el software, su infraestructura ni sus componentes.
+LAS PARTES deberán respetar los derechos de propiedad intelectual de la otra Parte y abstenerse de utilizar o divulgar materiales protegidos fuera de los permisos otorgados.
+13. Información estadística y anonimizada
+EL PROVEEDOR podrá utilizar información estadística, técnica o de funcionamiento del servicio que se encuentre adecuadamente agregada o anonimizada de forma que no permita identificar razonablemente a EL CLIENTE ni a personas determinadas, siempre que dicho uso resulte compatible con la normativa aplicable y con las condiciones contractuales.
+Este uso podrá tener como finalidad analizar el rendimiento, la seguridad, el funcionamiento y la evolución general de Fidel.
+La información que permita identificar directa o indirectamente a una persona o a EL CLIENTE no se considerará anónima por el solo hecho de haber sido agrupada o modificada parcialmente, y quedará sujeta a las obligaciones que correspondan.
+14. Responsabilidad
+Cada Parte responderá por el cumplimiento de las obligaciones que haya asumido en el presente Acuerdo y en los demás instrumentos contractuales aplicables, de acuerdo con la normativa vigente.
+La adopción de medidas razonables de seguridad no constituye una garantía de invulnerabilidad absoluta frente a todas las amenazas posibles.
+Las limitaciones de responsabilidad, si fueran aplicables, se regirán por el contrato principal y por las normas legales correspondientes. Ninguna disposición de este Acuerdo deberá interpretarse como una exclusión de responsabilidad cuando dicha exclusión esté prohibida por la normativa aplicable.
+La atribución de responsabilidad por un incidente o incumplimiento deberá evaluarse atendiendo a sus circunstancias, a las obligaciones de cada Parte y a los daños que legalmente correspondan.
+15. Vigencia de la confidencialidad
+Las obligaciones de confidencialidad comenzarán a regir desde el inicio de la relación entre LAS PARTES.
+Respecto de datos personales, secretos comerciales y otra información que deba permanecer protegida por disposición legal o que conserve legítimamente su carácter confidencial, las obligaciones subsistirán durante el plazo exigido por la normativa aplicable o mientras se mantengan las condiciones que justifican su protección.
+La finalización del Acuerdo no extinguirá las obligaciones que, por su naturaleza o por disposición legal, deban continuar vigentes.
+16. No renuncia
+La falta de ejercicio o la demora en el ejercicio de un derecho previsto en este Acuerdo no constituirá una renuncia a dicho derecho ni impedirá su ejercicio posterior, salvo que la normativa aplicable establezca lo contrario.
+17. Integridad, modificaciones y prelación
+El presente Acuerdo, junto con los documentos contractuales que expresamente lo complementen, constituye el entendimiento de LAS PARTES respecto de las materias aquí reguladas.
+Cualquier modificación deberá realizarse por escrito y ser aceptada por ambas Partes, sin perjuicio de los mecanismos de actualización válidamente previstos en el contrato principal.
+En caso de contradicción, prevalecerán las condiciones particulares expresamente aceptadas por LAS PARTES sobre las condiciones generales incompatibles. Respecto de las condiciones comerciales, económicas y operativas del servicio, se aplicará el contrato principal o instrumento que regule específicamente esas materias. En materia de confidencialidad y protección de datos, se aplicará el presente Acuerdo en cuanto no contradiga disposiciones imperativas ni condiciones específicas posteriores aceptadas por ambas Partes.
+Si alguna disposición fuera considerada inválida o inaplicable, ello no afectará la validez del resto del Acuerdo, en la medida en que sus disposiciones puedan subsistir de manera independiente.
+18. Legislación aplicable y jurisdicción
+El presente Acuerdo se regirá por las leyes de la República Argentina.
+Para cualquier controversia derivada de su interpretación, cumplimiento o ejecución, LAS PARTES se someterán a la jurisdicción que corresponda conforme a la normativa aplicable y, cuando resulte válido, a la jurisdicción expresamente pactada en el contrato principal.
+En prueba de conformidad, LAS PARTES suscriben el presente Acuerdo en [cantidad] ejemplares de un mismo tenor y a un solo efecto, en la ciudad de [●], a los [●] días del mes de [●] de [●].
+EL PROVEEDOR
+AGENCIA PROGRAMARTE S.A.S.
+CUIT: 30-71584333-8
+Firma: ______________________________
+Nombre y apellido: ___________________
+DNI: ________________________________
+Cargo: ______________________________
+
+EL CLIENTE
+Nombre o razón social: _______________
+CUIT/DNI: ____________________________
+Firma: ______________________________
+Nombre y apellido: ___________________
+DNI: ________________________________
+Cargo: ______________________________
