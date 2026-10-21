@@ -216,8 +216,38 @@ html {
   animation: ecommerce-float 4s ease-in-out infinite;
 }
 
+@keyframes ecommerce-glow-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(8px, -6px, 0) scale(1.04);
+  }
+}
+
+.ecommerce-glow-drift {
+  animation: ecommerce-glow-drift 9s ease-in-out infinite;
+}
+
+@keyframes ecommerce-circle-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.14);
+  }
+}
+
+.ecommerce-circle-pulse {
+  animation: ecommerce-circle-pulse 1.8s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .ecommerce-float {
+  .ecommerce-float,
+  .ecommerce-glow-drift,
+  .ecommerce-circle-pulse {
     animation: none;
   }
 }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
+  ArrowDownRight,
   BadgeDollarSign,
   BadgePercent,
   Check,
@@ -16,10 +17,12 @@ import {
   Save,
   UserRoundCheck,
   Wrench,
+  Instagram as InstagramIcon,
 } from "lucide-react";
 import GradientLine from "@/components/gradientLine";
 import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
+import Whatsapp from "@/icons/whatsapp";
 
 const productDetails = [
   {
@@ -393,22 +396,49 @@ export default function PedidosWebPage() {
         </div>
       </section>
 
-      <section className="mx-auto mt-28 max-w-5xl text-center md:mt-40">
-        <h2
-          className="text-4xl font-bold leading-tight tracking-[-0.04em] text-[#252525] md:text-6xl"
-          style={{ fontFamily: "Plus Jakarta Sans" }}
-        >
-          Vendé sin complicaciones
-        </h2>
-        <div className="mt-10 inline-flex rounded-full bg-[#0b0b0c] px-6 py-3.5 shadow-[0_12px_24px_-16px_rgba(0,0,0,0.7)]">
-          <a
-            href="https://wa.me/543564212129"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-semibold text-white md:text-base"
-          >
-            Pedí tu demo gratis
-          </a>
+      <section className="mx-auto mt-20 max-w-6xl md:mt-28" aria-labelledby="contact-title">
+        <div className="relative isolate overflow-hidden rounded-[34px] border border-white/80 bg-white px-5 pb-8 pt-16 text-center shadow-[0_35px_90px_-55px_rgba(0,0,0,0.35)] sm:px-8 md:rounded-[40px] md:py-14">
+          <div className="ecommerce-glow-drift pointer-events-none absolute -left-28 -top-32 -z-10 size-[22rem] rounded-full bg-[#76bf54]/20 blur-[100px]" aria-hidden="true" />
+          <div className="ecommerce-glow-drift pointer-events-none absolute -bottom-36 -right-24 -z-10 size-[26rem] rounded-full bg-[#f2b43e]/25 blur-[110px] [animation-delay:1.2s]" aria-hidden="true" />
+          <Image
+            src="/fidel1.svg"
+            alt="Fidel"
+            width={58}
+            height={58}
+            className="absolute right-6 top-6 size-10 sm:right-9 sm:top-9 sm:size-12 md:right-12 md:top-12 md:size-14"
+          />
+
+          <div className="relative mx-auto max-w-5xl">
+            <h2 id="contact-title" className="text-4xl font-bold leading-[1.04] tracking-[-0.055em] sm:text-5xl md:text-6xl" style={{ fontFamily: "Plus Jakarta Sans" }}>
+              Vendé sin complicaciones
+            </h2>
+            <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-[#252525] md:text-lg" style={{ fontFamily: "Satoshi" }}>
+              Si tenés dudas o querés avanzar con la implementación, estamos para ayudarte.
+            </p>
+            <a
+              href="https://wa.me/543564212129"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative mt-8 inline-flex min-h-[56px] items-center justify-center rounded-full bg-[#050505] py-3.5 pl-[3.75rem] pr-7 text-sm font-bold text-white shadow-[0_14px_28px_-14px_rgba(0,0,0,0.45)] transition duration-300 hover:-translate-y-1 hover:bg-[#181818] hover:shadow-[0_20px_34px_-16px_rgba(0,0,0,0.42)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d08236] active:translate-y-0 motion-reduce:transition-none md:text-base"
+            >
+              <span className="ecommerce-circle-pulse absolute -left-3 flex size-12 items-center justify-center rounded-full bg-[#f2b43e] text-white shadow-[0_8px_18px_-8px_rgba(208,130,54,0.75)] transition-colors duration-300 group-hover:bg-[#eaa523] motion-reduce:transition-none" aria-hidden="true">
+                <ArrowDownRight className="size-6" strokeWidth={2.25} />
+              </span>
+              Pedí tu demo gratis
+            </a>
+
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-[#252525]" style={{ fontFamily: "Satoshi" }}>
+              <a href="https://wa.me/543564212129" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 transition-colors hover:text-[#205d2a] focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#205d2a] motion-reduce:transition-none">
+                <Whatsapp className="size-5 shrink-0" strokeWidth="2" />
+                <span>+54 3564 21-2129</span>
+              </a>
+              <span className="hidden h-5 w-px bg-[#252525]/25 sm:block" aria-hidden="true" />
+              <a href="https://www.instagram.com/fidelsistema/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 transition-colors hover:text-[#205d2a] focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#205d2a] motion-reduce:transition-none">
+                <InstagramIcon className="size-5 shrink-0" strokeWidth={1.9} aria-hidden="true" />
+                <span>@fidelsistema</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
