@@ -3,7 +3,8 @@ import PrintButton from "@/app/acuerdo-confidencialidad/print-button";
 
 export type LegalBlock =
   | { type: "paragraph"; text: string }
-  | { type: "list"; items: string[] }
+  | { type: "subheading"; text: string }
+  | { type: "list"; items: Array<string | { label: string; href: string; suffix?: string }> }
   | { type: "link"; lead: string; label: string; href: string; tail?: string };
 
 export type LegalSection = {
@@ -14,7 +15,7 @@ export type LegalSection = {
 export type LegalDocument = {
   title: string;
   summary: string;
-  opening: string;
+  opening: string | string[];
   sidebarTitle?: string;
   updatedAt: string;
   sections: LegalSection[];
@@ -28,11 +29,37 @@ function DocumentBlocks({ blocks }: { blocks: LegalBlock[] }) {
           return (
             <ul className="my-3 grid list-none gap-[0.65rem] p-0" key={`list-${index}`}>
               {block.items.map((item, itemIndex) => (
-                <li className="print:break-inside-avoid" key={`${itemIndex}-${item}`}>
-                  {item}
+                <li
+                  className="print:break-inside-avoid"
+                  key={`${itemIndex}-${typeof item === "string" ? item : item.label}`}
+                >
+                  {typeof item === "string" ? item : (
+                    <>
+                      <a
+                        className="font-medium text-[#315a2b] underline decoration-[#9cb998] underline-offset-4 hover:text-[#203f1c]"
+                        href={item.href}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        {item.label}
+                      </a>
+                      {item.suffix}
+                    </>
+                  )}
                 </li>
               ))}
             </ul>
+          );
+        }
+
+        if (block.type === "subheading") {
+          return (
+            <h3
+              className="mb-3 mt-5 font-satoshi text-base font-semibold tracking-[-0.01em] text-[#263229] sm:text-lg print:break-after-avoid print:text-[#111]"
+              key={`subheading-${index}`}
+            >
+              {block.text}
+            </h3>
           );
         }
 
@@ -48,13 +75,15 @@ function DocumentBlocks({ blocks }: { blocks: LegalBlock[] }) {
               >
                 {block.label}
               </a>
-              {block.tail ? ` ${block.tail}` : null}
+              {block.tail
+                ? (/^[,.;:!?]/.test(block.tail) ? block.tail : ` ${block.tail}`)
+                : null}
             </p>
           );
         }
 
         return (
-          <p className="mb-4 last:mb-0" key={`paragraph-${index}`}>
+          <p className="mb-4 last:mb-0 whitespace-pre-line" key={`paragraph-${index}`}>
             {block.text}
           </p>
         );
@@ -64,6 +93,9 @@ function DocumentBlocks({ blocks }: { blocks: LegalBlock[] }) {
 }
 
 export default function LegalDocumentPage({ document }: { document: LegalDocument }) {
+  const openingParagraphs = Array.isArray(document.opening)
+    ? document.opening
+    : [document.opening];
   const sidebarTitle = document.sidebarTitle ?? "En esta página";
   const items = document.sections.map((section, index) => ({
     id: `documento-seccion-${index + 1}`,
@@ -117,7 +149,11 @@ export default function LegalDocumentPage({ document }: { document: LegalDocumen
                 {document.title}
               </h2>
               <div className="text-[15px] leading-[1.8] text-[#4f5852] sm:text-base print:text-[10.5pt] print:leading-[1.55] print:text-[#111]">
-                <p>{document.opening}</p>
+                {openingParagraphs.map((paragraph, index) => (
+                  <p className="mb-4 last:mb-0" key={`opening-${index}`}>
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             </div>
 

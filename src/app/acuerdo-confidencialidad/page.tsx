@@ -15,8 +15,7 @@ const source = readFileSync(
   "utf8",
 );
 
-const clausePattern =
-  /^(?:PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA|SEXTA|SÉPTIMA|OCTAVA|NOVENA|DÉCIMA(?:\s+(?:PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA|SEXTA|SÉPTIMA|OCTAVA))?)\.\s+/;
+const clausePattern = /^\d{1,2}\.\s+/;
 
 type TextBlock = { kind: "paragraph"; text: string } | { kind: "list"; lines: string[] };
 
@@ -178,7 +177,7 @@ export default function ConfidencialidadPage() {
       <div className="mx-auto max-w-[1240px]">
         <div className="border-b border-[#dfe5dc] pb-8 sm:pb-10 print:hidden">
           <h1 className="max-w-[790px] font-satoshi text-[2.3rem] font-semibold leading-[1.08] tracking-[-0.045em] text-[#202722] sm:text-5xl lg:text-[3.6rem]">
-            Contrato de Confidencialidad
+            Acuerdo de Confidencialidad y Protección de Datos
           </h1>
           <div className="mt-5 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <p className="max-w-[670px] text-sm leading-6 text-[#657068] sm:text-base">

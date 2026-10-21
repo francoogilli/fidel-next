@@ -160,7 +160,7 @@ export default function Footer() {
                   href="/acuerdo-confidencialidad"
                   className="text-sm text-gray-600 hover:text-gray-900"
                 >
-                  Confidencialidad
+                  Acuerdo de Confidencialidad
                 </Link>
               </li>
               <li>
