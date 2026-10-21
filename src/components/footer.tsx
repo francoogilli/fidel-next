@@ -184,7 +184,7 @@ export default function Footer() {
                   href="/terminos-del-servicio"
                   className="text-sm text-gray-600 hover:text-gray-900"
                 >
-                  Términos del Servicio
+                  Términos y Condiciones de Servicio
                 </Link>
               </li>
               <li>
