@@ -369,271 +369,308 @@ export const cookiesPolicy: LegalDocument = {
 };
 
 export const serviceTerms: LegalDocument = {
-  title: "Términos del Servicio",
-  summary: "Condiciones generales para contratar, usar y solicitar la baja de Fidel.",
-  opening:
-    "Estos términos describen las reglas generales del sitio y del sistema Fidel, ofrecido por AGENCIA PROGRAMARTE S.A.S. Los alcances, precios, plazos y condiciones particulares de cada cuenta se completan en la propuesta comercial y el contrato aceptados por el cliente.",
-  updatedAt,
+  title: "Términos y Condiciones de Servicio",
+  summary: "Condiciones de acceso, contratación y uso del software de gestión Fidel.",
+  opening: [
+    'Los presentes Términos y Condiciones regulan las condiciones de acceso y uso del servicio de software brindado por Agencia Programarte S.A.S., sociedad constituida y existente de conformidad con las leyes de la República Argentina (en adelante, la "Sociedad"), comercializadora del software de gestión denominado Fidel (en adelante, el "Servicio").',
+    'Al registrarse, realizar el pago de activación, acceder o utilizar el Servicio, el usuario (en adelante, el "Cliente") acepta de manera plena, libre e incondicional la totalidad de las cláusulas previstas en el presente documento.',
+  ],
+  updatedAt: "2 de enero de 2026",
   sections: [
     {
-      heading: "Quién presta el servicio",
+      heading: "Registro y Aceptación",
       blocks: [
         {
           type: "paragraph",
-          text: "Fidel es un sistema de gestión empresarial prestado por AGENCIA PROGRAMARTE S.A.S. (CUIT 30-71584333-8), con domicilio en San Luis 733, San Francisco, Provincia de Córdoba, Argentina. El servicio puede incluir acceso al software, implementación, configuración, soporte, mantenimiento, actualización, capacitación y asistencia, según lo acordado para cada cliente.",
+          text: "El presente documento constituye el acuerdo integral, exclusivo y vinculante entre la Sociedad y el Cliente respecto al objeto aquí regulado. Sustituye y deja sin efecto cualquier comunicación, oferta, negociación o propuesta previa o contemporánea, ya sea verbal o escrita, celebrada entre las partes.",
         },
       ],
     },
     {
-      heading: "Contratación y alcance",
+      heading: "Descripción del Servicio",
       blocks: [
         {
           type: "paragraph",
-          text: "Antes de activar el servicio, el cliente acepta una propuesta comercial, contrato u otro documento que identifica el plan, sus módulos, límites, cantidad de usuarios, servicios incluidos y fecha de inicio. La contratación queda sujeta a ese documento y a estos términos generales. Una consulta o demostración solicitada desde el sitio no activa por sí sola una suscripción.",
-        },
-        {
-          type: "paragraph",
-          text: "Si existe una diferencia entre estos términos y el contrato o propuesta aceptados, prevalecen las condiciones particulares para el plan, precio, pago, nivel de servicio y duración que hayan sido acordadas por escrito.",
+          text: "La Sociedad otorga al Cliente una licencia de uso no exclusiva, revocable e intransferible para acceder y utilizar el Servicio bajo la modalidad de Software como Servicio (SaaS, por sus siglas en inglés). El Servicio consiste en una plataforma de gestión administrativa e informática en línea accesible a través de una interfaz web, diseñada para la administración integral de la información comercial y operativa del Cliente.",
         },
       ],
     },
     {
-      heading: "Precio y pagos",
+      heading: "Condiciones de Uso",
       blocks: [
-        {
-          type: "paragraph",
-          text: "El valor, moneda, impuestos, periodicidad de facturación, medio de pago y vencimientos se informan antes de contratar y quedan establecidos en la propuesta o contrato aceptados. Los importes publicados en el sitio pueden describir planes de referencia; revisá la propuesta vigente para conocer el precio y alcance aplicables a tu cuenta.",
-        },
-        {
-          type: "paragraph",
-          text: "Los cambios de plan, ampliaciones de usuarios o servicios adicionales pueden modificar el precio y se informarán antes de su aplicación, de acuerdo con las condiciones comerciales aceptadas.",
-        },
-      ],
-    },
-    {
-      heading: "Cuentas y uso permitido",
-      blocks: [
-        {
-          type: "paragraph",
-          text: "El cliente administra las cuentas, permisos y credenciales de sus usuarios. Debe mantenerlas bajo resguardo, informar incidentes y dar acceso solo a personas autorizadas. El sistema se usa para la actividad propia del cliente y dentro del plan contratado.",
-        },
         {
           type: "list",
           items: [
-            "No compartir credenciales ni permitir accesos no autorizados.",
-            "No usar el servicio para infringir la ley, vulnerar derechos de terceros o intentar acceder a sistemas o datos ajenos.",
-            "No copiar, revender, sublicenciar, descompilar ni interferir con el software, salvo autorización expresa o cuando la ley lo permita.",
-            "Mantener información de contacto y datos de la cuenta actualizados.",
+            "Responsabilidad sobre el Contenido: El Cliente ostenta el derecho de uso del Servicio y asume la responsabilidad exclusiva respecto de la totalidad del contenido y datos ingresados en la plataforma.",
+            "Uso Lícito e Indemnidad Legal: El Servicio debe ser utilizado únicamente con fines estrictamente lícitos y en el marco del giro comercial del Cliente. Es responsabilidad exclusiva del Cliente dar cumplimiento cabal a sus obligaciones laborales, fiscales, impositivas, previsionales y de seguridad social. La Sociedad no asume responsabilidad alguna por el incumplimiento de tales normativas por parte del Cliente.",
+            "Requisitos Técnicos: El Cliente es responsable de contar con la infraestructura tecnológica, conectividad a Internet, dispositivos y configuraciones necesarias para asegurar la compatibilidad y el óptimo funcionamiento del Servicio.",
+            "Modificaciones y Mejoras: La Sociedad se reserva el derecho de realizar actualizaciones, modificaciones, optimizaciones o mejoras en el Servicio en cualquier momento, con el fin de evolucionar la plataforma o responder a cambios normativos o tecnológicos, sin que ello constituya un incumplimiento de las condiciones acordadas.",
+            "Sanción por Incumplimiento: El incumplimiento de cualquiera de las obligaciones dispuestas en estos Términos facultará a la Sociedad a suspender temporalmente o rescindir de pleno derecho el Servicio, sin perjuicio del derecho a reclamar los daños y perjuicios correspondientes.",
           ],
         },
       ],
     },
     {
-      heading: "Información del cliente y propiedad intelectual",
+      heading: "Cuenta del Cliente y Usuarios",
       blocks: [
         {
-          type: "paragraph",
-          text: "El cliente conserva los derechos que le correspondan sobre la información que incorpora a Fidel y es responsable por contar con autorización para usarla. AGENCIA PROGRAMARTE S.A.S. trata esos datos para prestar y mantener el servicio, conforme al contrato y al Acuerdo de Confidencialidad.",
-        },
-        {
-          type: "paragraph",
-          text: "El software, su código, arquitectura, funcionalidades, diseños, marcas y documentación pertenecen a AGENCIA PROGRAMARTE S.A.S. o a sus titulares. La contratación otorga únicamente el derecho de uso necesario para operar el servicio durante la vigencia acordada.",
+          type: "list",
+          items: [
+            "Carácter Personal e Intransferible: La cuenta asignada al Cliente es de uso personal e intransferible. Queda prohibida su cesión, transferencia o venta a terceros sin la previa autorización expresa y por escrito de la Sociedad.",
+            "Credenciales de Acceso: El Cliente es responsable exclusivo del resguardo, confidencialidad y buen uso de sus nombres de usuario y contraseñas. Toda actividad realizada dentro de la cuenta del Cliente se presumirá efectuada por este. El Cliente debe notificar inmediatamente a la Sociedad ante cualquier sospecha de acceso no autorizado o brecha de seguridad.",
+            "Usuarios Adicionales y Habilitados: En caso de que el Cliente habilite accesos a terceros o dependientes dentro de su suscripción, asume la obligación de instruirlos en el cumplimiento estricto de estos Términos. El Cliente responderá solidariamente ante la Sociedad por cualquier uso indebido o daño derivado del accionar de dichos usuarios.",
+          ],
         },
       ],
     },
     {
-      heading: "Disponibilidad, soporte y cambios",
+      heading: "Confidencialidad y Protección de Datos",
       blocks: [
         {
           type: "paragraph",
-          text: "Trabajamos para mantener el servicio disponible, seguro y actualizado. Puede haber tareas de mantenimiento, interrupciones de conectividad o incidentes técnicos. Los horarios de soporte, tiempos de respuesta y compromisos específicos de disponibilidad, si existen, se establecen en la propuesta o acuerdo de nivel de servicio correspondiente.",
-        },
-        {
-          type: "paragraph",
-          text: "Fidel puede evolucionar y actualizar sus funciones. Si un cambio afecta una condición esencial que haya sido acordada con el cliente, se aplicará el mecanismo previsto en el contrato y la normativa vigente.",
-        },
-      ],
-    },
-    {
-      heading: "Baja y finalización",
-      blocks: [
-        {
-          type: "paragraph",
-          text: "Para solicitar la baja, el cliente puede escribir a info@fidel.com.ar o usar el canal de contratación que corresponda a su cuenta. La solicitud debe permitir identificar la empresa y el servicio; no es necesario incluir contraseñas. Cuando resulte aplicable la normativa de defensa del consumidor para contrataciones a distancia, la baja puede solicitarse por el mismo medio de contratación y se respetan los derechos legales de revocación. La fecha efectiva, los importes pendientes y cualquier otra condición de cierre se rigen por la propuesta o contrato aceptados y por la normativa aplicable.",
-        },
-        {
-          type: "paragraph",
-          text: "Antes del cierre, el cliente puede solicitar o realizar la exportación de su información mediante las funciones disponibles o pedir asistencia. Tras la finalización, algunos datos podrán conservarse temporalmente por obligaciones legales, reclamos, obligaciones pendientes o ciclos de respaldo; luego se eliminarán o anonimizarán según corresponda. La eliminación no necesariamente es inmediata en las copias de respaldo.",
+          text: "Se considera Información Confidencial toda aquella información técnica, operativa, contable o comercial ingresada o generada por el Cliente en el Servicio.",
         },
         {
           type: "link",
-          lead: "Para iniciar una solicitud de baja por email, escribí a",
-          label: "info@fidel.com.ar",
-          href: "mailto:info@fidel.com.ar?subject=Solicitud%20de%20baja%20de%20Fidel",
-          tail: "con el nombre de la empresa y el plan contratado.",
+          lead: "Para más información, consultá el",
+          label: "Acuerdo de Confidencialidad",
+          href: "/acuerdo-confidencialidad",
+          tail: ".",
         },
-      ],
-    },
-    {
-      heading: "Normativa y consultas",
-      blocks: [
+        { type: "subheading", text: "La Sociedad se compromete a:" },
+        {
+          type: "list",
+          items: [
+            "No utilizar la Información Confidencial para fines distintos a los estrictamente requeridos para la correcta prestación y mantenimiento del Servicio.",
+            "Mantener absoluta reserva y abstenerse de divulgar la Información Confidencial a terceros, salvo mandato expreso de autoridad judicial o administrativa competente.",
+            "Implementar medidas de seguridad técnicas, organizativas y físicas razonables para resguardar la integridad y confidencialidad de la información alojada.",
+          ],
+        },
         {
           type: "paragraph",
-          text: "Estos términos se interpretan conforme a las leyes de la República Argentina. Las condiciones de jurisdicción, cuando corresponda, se rigen por el contrato principal y la normativa aplicable. Para consultas sobre el servicio o estos términos, contactá a info@fidel.com.ar.",
+          text: "Estas obligaciones no aplicarán a información que sea de dominio público por causas ajenas a la Sociedad o cuyo develamiento sea exigido por ley.",
         },
         {
           type: "link",
-          lead: "La normativa vigente sobre baja y arrepentimiento en contrataciones a distancia puede consultarse en la",
-          label: "Disposición 954/2025",
-          href: "https://www.argentina.gob.ar/normativa/nacional/norma-417152/texto",
+          lead: "El tratamiento de datos personales se ajustará estrictamente a los términos de la Ley N° 25.326 de Protección de Datos Personales de la República Argentina y a la",
+          label: "Política de Privacidad",
+          href: "/politica-de-privacidad",
           tail: ".",
         },
       ],
     },
+    {
+      heading: "Integración con Servicios y Plataformas de Terceros",
+      blocks: [
+        {
+          type: "paragraph",
+          text: "El Servicio puede ofrecer integraciones o interactuar con plataformas, servicios y APIs provistas por terceros, tales como ARCA, plataformas de e-commerce como Mercado Libre, Tiendanube y WooCommerce, y pasarelas de pago como Mercado Pago, entre otras.",
+        },
+        {
+          type: "list",
+          items: [
+            "Ausencia de Garantía sobre Terceros: La Sociedad no garantiza la disponibilidad ininterrumpida, el correcto funcionamiento ni la continuidad de aquellas funciones del Servicio que dependan operativamente de plataformas o servidores pertenecientes a terceros.",
+            "Eximición de Responsabilidad: Las caídas, errores, demoras o interrupciones atribuibles a las plataformas externas mencionadas no serán consideradas, bajo ningún supuesto, como un incumplimiento contractual de la Sociedad.",
+            "Esfuerzos Razonables: Ante incidencias en servicios de terceros, la Sociedad dispondrá de sus mejores esfuerzos técnicos para adaptar o restablecer la integración a la mayor brevedad posible.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Condiciones de Contratación Inicial y Facturación",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Formalización y Alta: Tras la validación de las funcionalidades del Servicio acordes al negocio del Cliente, se remitirá un formulario digital de registro. El Cliente deberá completarlo con los datos fidedignos para la emisión de la factura correspondiente.",
+            "Pago de Activación e Inicial: Para formalizar la contratación del Servicio, el Cliente deberá abonar por adelantado el valor equivalente a tres (3) meses del Plan seleccionado, el cual otorga una cobertura de cuatro (4) meses de servicio, incluyendo el primer mes bonificado al 100%.",
+            "Inicio de Prestación: Desde la emisión y envío de los accesos iniciales, el Cliente queda habilitado para ingresar a la plataforma.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Precios, Modalidad de Pago y Ajuste de Tarifas",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Modalidad de Pago: El Cliente abonará la tarifa correspondiente al Servicio por período adelantado, adicionando los impuestos legalmente aplicables (IVA u otros tributos vigentes). Los pagos deberán efectuarse mediante los medios habilitados por la Sociedad (transferencias, depósitos bancarios u otros medios informados).",
+            "Datos de Facturación: La Sociedad emitirá las facturas y comprobantes fiscales utilizando exclusivamente los datos ingresados por el Cliente en el formulario de alta o actualización administrativa. Es responsabilidad exclusiva del Cliente mantener dicha información fidedigna y actualizada.",
+            "Irretroactividad en la Facturación: Las modificaciones en los datos de facturación aplicarán únicamente para comprobantes emitidos con posterioridad a la solicitud del cambio. No se realizarán refacturaciones sobre períodos pasados ni sobre comprobantes ya emitidos, revistiendo estos carácter definitivo e inalterable.",
+            "Ajuste de Tarifas: La Sociedad realizará modificaciones de las tarifas de manera semestral en los meses de enero y junio de cada año. En caso de no aceptar las nuevas condiciones económicas, el Cliente mantendrá la facultad de rescindir el contrato antes del inicio del siguiente período de facturación.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Política de Reembolsos y Evaluación Previa",
+      blocks: [
+        {
+          type: "subheading",
+          text: "Modelo de Asignación Inmediata de Recursos",
+        },
+        {
+          type: "paragraph",
+          text: "El Servicio opera bajo un modelo de facturación adelantada por ciclos de treinta (30) días calendario. Al iniciarse cada período o ciclo abonado, la Sociedad asigna de forma inmediata los recursos técnicos y operativos necesarios para garantizar el Servicio, incluyendo:",
+        },
+        {
+          type: "list",
+          items: [
+            "Infraestructura de servidores dedicada a la cuenta del Cliente.",
+            "Creación y configuración de bases de datos personalizadas (Migración Inicial).",
+            "Habilitación de accesos, usuarios y funcionalidades contratadas.",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Dado que dichos recursos y la habilitación de acceso se ponen a disposición desde el primer día, el costo correspondiente se considera devengado e invertido en su totalidad desde el momento en que se efectúa el pago.",
+        },
+        { type: "subheading", text: "Política de No Reembolso" },
+        {
+          type: "paragraph",
+          text: "Una vez abonada la factura o realizado el pago correspondiente a la activación o renovación, no se realizarán reembolsos de dinero bajo ninguna circunstancia. Esta norma aplica de forma irrestricta a:",
+        },
+        {
+          type: "list",
+          items: [
+            "Cancelación de la suscripción antes de que finalice el período abonado.",
+            "Subutilización o falta de uso del Servicio por parte del Cliente.",
+            "Desacuerdo posterior con funcionalidades existentes o actualizaciones del producto.",
+            "Cambio de decisión comercial tras la contratación.",
+            "Solicitud de baja durante un período en curso.",
+          ],
+        },
+        { type: "subheading", text: "Marco Legal y Derecho de Arrepentimiento" },
+        {
+          type: "paragraph",
+          text: "De conformidad con el artículo 34 de la Ley N° 24.240 de Defensa del Consumidor de la República Argentina, el derecho de revocación o arrepentimiento resulta aplicable únicamente en contratos a distancia siempre que la prestación no haya comenzado a ejecutarse. Dado que la Sociedad inicia la ejecución del Servicio de forma inmediata a la confirmación del pago mediante la asignación de recursos y provisión de accesos, el derecho de arrepentimiento no resulta aplicable.",
+        },
+        { type: "subheading", text: "Excepción Técnica" },
+        {
+          type: "paragraph",
+          text: "Únicamente se evaluarán solicitudes de devolución o acreditación en casos excepcionales demostrados de cobros duplicados o errores en la facturación imputables de manera directa a la plataforma o sistemas de la Sociedad.",
+        },
+        { type: "subheading", text: "Evaluación Previa a la Contratación" },
+        {
+          type: "paragraph",
+          text: "Para garantizar una decisión informada, la Sociedad pone a disposición del Cliente diversos recursos de evaluación gratuita previos a la contratación, tales como pruebas gratuitas, demostraciones en vivo (demos), asesoramiento personalizado con el equipo comercial, tutoriales audiovisuales y documentación técnica en línea. Al contratar el Servicio y realizar el pago, el Cliente declara haber contado con la oportunidad de evaluar el Servicio y aceptar expresamente esta Política de No Reembolso.",
+        },
+      ],
+    },
+    {
+      heading: "Vigencia, Cancelación, Suspensión y Reactivación del Servicio",
+      blocks: [
+        {
+          type: "list",
+          items: [
+            "Vigencia: El Servicio entra en vigencia a partir de la aceptación de los presentes Términos con el Pago de Activación y mantendrá una duración de plazo indeterminado, renovable automáticamente por períodos mensuales consecutivos mediante el pago del abono correspondiente.",
+            "Baja Solicitada por el Cliente: El Cliente podrá solicitar la baja definitiva del Servicio en cualquier momento a través de los canales formales de atención al cliente.",
+            "Efectos de la baja: La deshabilitación del acceso a la plataforma y de las sincronizaciones con servicios externos tendrá efecto al finalizar el plazo del último mes abonado, límite que será informado por Asesoría al confirmar la baja del servicio. No se reembolsarán importes correspondientes a períodos o abonos en curso ya abonados. La Sociedad emitirá una constancia de recepción del pedido de baja dentro de las 72 horas hábiles en caso de ser requerida.",
+            "Política de Retención y Exportación de Datos: Tras concretarse la baja, los datos e información del Cliente permanecerán disponibles para su exportación hasta la fecha límite informada por Asesoría. Vencido dicho plazo, la Sociedad no procederá a la eliminación definitiva de toda la información almacenada en sus servidores, sino que el Cliente podrá solicitar la descarga de la información en plazos futuros realizando el abono del monto de un mes del Plan contratado para proceder a la descarga de la información. En caso de que la cuenta haya sido suspendida por falta de pago, el Cliente deberá abonar la totalidad de la deuda para poder acceder a su información.",
+            "Rescisión Unilateral por la Sociedad: La Sociedad podrá rescindir la prestación del Servicio notificando fehacientemente al Cliente con una antelación mínima de treinta (30) días corridos, sin que dicha facultad genere derecho a indemnización o resarcimiento alguno a favor del Cliente en caso de incumplimiento de los Términos y Condiciones.",
+            "Mecanismo de Congelamiento de Cuenta (Implementación y Crédito de Tiempo): Al contratar el Servicio Fidel, la cuenta abona un pago de activación que concede un crédito de tiempo asignado para realizar el proceso de configuración inicial, migración de datos y capacitación.",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Si durante dicho proceso el Cliente manifestara falta de disponibilidad temporal, podrá solicitar expresamente el Congelamiento de Cuenta. Este procedimiento suspende de forma preventiva el consumo del crédito de tiempo abonado.",
+        },
+        {
+          type: "paragraph",
+          text: "El congelamiento no amplía la duración del crédito pagado, sino que suspende temporalmente su cómputo. A partir de la fecha de congelamiento, el Cliente dispondrá de un plazo máximo e improrrogable de cuatro (4) meses para notificar la reactivación de su proceso. Si el Cliente notifica la reactivación dentro de dicho plazo, se restablecerá el acceso y el remanente del crédito de tiempo volverá a computarse. Transcurrido el plazo de cuatro meses sin que mediare comunicación expresa del Cliente, la cuenta se considerará abandonada, por lo que será dada de baja, y el crédito de tiempo previamente abonado caducará de forma definitiva, sin derecho a reintegro o reclamación alguna.",
+        },
+        {
+          type: "paragraph",
+          text: "Suspensión por Falta de Pago: La Sociedad podrá rescindir la prestación del Servicio de manera inmediata ante la falta de pago de dos (2) meses acumulados, con notificación previa del Área Administrativa y de Asesoría sobre la fecha en la que se procederá a suspender su cuenta e impedir el uso del servicio. El Cliente podrá subsanar esta situación abonando, con anterioridad a la fecha indicada, el monto de su deuda informado por Administración. Caso contrario, retomará el uso del servicio una vez abonado el saldo total de su deuda y el pago del mes en curso, sin poder reclamar el reembolso por los días en que el servicio se encontró suspendido.",
+        },
+      ],
+    },
+    {
+      heading: "Obligaciones de la Sociedad",
+      blocks: [
+        { type: "subheading", text: "La Sociedad se obliga a:" },
+        {
+          type: "list",
+          items: [
+            "Suministrar y mantener activo el Servicio disponiendo de una infraestructura técnica y de servidores adecuada para garantizar estándares operativos razonables, admitiendo suspensiones breves e intermitencias programadas para tareas de mantenimiento, actualización o seguridad.",
+            "Velar por el cumplimiento de las condiciones operativas y de confidencialidad estipuladas en el presente acuerdo.",
+            "Prestar asistencia y soporte técnico a través de los canales institucionales habilitados a tal efecto.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Limitación de Responsabilidad",
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Tope Máximo de Indemnización: Toda responsabilidad eventual imputable a la Sociedad originada en deficiencias, interrupciones o incumplimientos en la prestación del Servicio estará estrictamente limitada, como tope máximo, al importe equivalente al valor de un (1) abono mensual efectivamente pagado por el Cliente correspondiente al período en que ocurriera el evento.",
+        },
+        { type: "subheading", text: "Exclusiones de Responsabilidad" },
+        {
+          type: "paragraph",
+          text: "La Sociedad no será responsable bajo ninguna circunstancia por:",
+        },
+        {
+          type: "list",
+          items: [
+            "Interrupciones, fallas técnicas o caídas derivadas de plataformas, servicios de infraestructura o integraciones con terceros (conforme la Sección 6).",
+            "La veracidad, exactitud, calidad, integridad o legalidad de los datos ingresados por el Cliente o sus usuarios.",
+            "Accesos no autorizados, pérdida de datos o incidentes de seguridad derivados de negligencia, descuido o mala gestión del Cliente en la custodia de sus credenciales.",
+            "Daños indirectos, lucro cesante, pérdida de ingresos, pérdida de oportunidades de negocio o contingencias derivadas de la actividad comercial propia del Cliente.",
+            "Demoras o fallas causadas por eventos imprevisibles correspondientes a caso fortuito o fuerza mayor.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Indemnidad a Cargo del Cliente",
+      blocks: [
+        {
+          type: "paragraph",
+          text: "El Cliente asume la obligación de indemnizar y mantener indemne a la Sociedad, sus socios, administradores, empleados y representantes frente a cualquier reclamo, demanda, investigación administrativa, sanción o acción judicial entablada por terceros o por organismos públicos, derivada de:",
+        },
+        {
+          type: "list",
+          items: [
+            "El uso indebido, negligente o ilícito del Servicio por parte del Cliente o de sus usuarios autorizados.",
+            "El incumplimiento de obligaciones legales, impositivas, laborales o comerciales aplicables a la actividad del Cliente.",
+            "La infracción de derechos de propiedad intelectual, confidencialidad o protección de datos de terceros a raíz de la información ingresada a la plataforma.",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Esta obligación de indemnidad comprende la cobertura de honorarios profesionales, costos legales, costas judiciales y cualquier erogación razonable en la que deba incurrir la Sociedad, y subsistirá aun finalizada la relación contractual.",
+        },
+      ],
+    },
+    {
+      heading: "Propiedad Intelectual",
+      blocks: [
+        {
+          type: "paragraph",
+          text: "Todos los derechos de propiedad intelectual e industrial sobre el Servicio, la marca Fidel, el software, sus desarrollos, códigos fuente, diseños, interfaces, marcas registradas, logotipos y documentación asociada son de titularidad exclusiva de Agencia Programarte S.A.S. La aceptación de estos Términos otorga únicamente un derecho de uso del software bajo modalidad SaaS y en ningún caso implica la venta, cesión o transferencia de derecho alguno de propiedad intelectual al Cliente. Queda estrictamente prohibida la reproducción, modificación, descompilación, ingeniería inversa o creación de obras derivadas basadas en el Servicio.",
+        },
+      ],
+    },
+    {
+      heading: "Soporte Técnico y Mantenimiento",
+      blocks: [
+        {
+          type: "paragraph",
+          text: "La Sociedad proveerá soporte técnico orientado a atender consultas operativas e incidencias del Servicio a través de sus canales oficiales de atención (WhatsApp de soporte), dentro de los días y horarios hábiles administrativos que determine la Sociedad (de lunes a viernes de 8:00 a 18:00 hs). Las interrupciones del Servicio motivadas en mantenimientos programados o actualizaciones críticas del sistema serán notificadas previamente al Cliente siempre que la urgencia técnica lo permita.",
+        },
+      ],
+    },
+    {
+      heading: "Modificación de los Términos y Condiciones",
+      blocks: [
+        {
+          type: "paragraph",
+          text: "La Sociedad se reserva el derecho de modificar o actualizar los presentes Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigencia desde su publicación en el sitio web oficial. La continuidad en el uso del Servicio con posterioridad a la entrada en vigencia de las modificaciones implicará la aceptación expresa de los nuevos Términos por parte del Cliente.",
+        },
+      ],
+    },
   ],
-};
-
-export const dataSecurity: LegalDocument = {
-  "title": "Seguridad y Gestión de Datos",
-  "summary": "Cómo cuidamos la información, qué función cumplen los respaldos y qué pasa con tus datos.",
-  "opening": [
-    "En Fidel, trabajamos para proteger la información que se encuentra bajo nuestra responsabilidad y contribuir a la continuidad del servicio mediante medidas técnicas y organizativas razonables, acordes con la naturaleza de la plataforma y los riesgos asociados.",
-    "Las medidas específicas pueden evolucionar con el servicio, la infraestructura utilizada y las necesidades de seguridad. Cuando existan condiciones particulares acordadas con un cliente, prevalecerán los términos establecidos en su contrato y, si corresponde, en el acuerdo de nivel de servicio aplicable."
-  ],
-  updatedAt,
-  "sections": [
-    {
-      "heading": "Medidas de protección",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Adoptamos medidas orientadas a reducir los riesgos de acceso, uso, modificación, pérdida o divulgación no autorizados de la información."
-        },
-        {
-          "type": "paragraph",
-          "text": "El acceso a los datos por parte de nuestro personal y colaboradores debe responder a necesidades vinculadas con la prestación, el mantenimiento, el soporte o la seguridad del servicio, y estar sujeto a las obligaciones de confidencialidad correspondientes."
-        },
-        {
-          "type": "paragraph",
-          "text": "Por razones de seguridad, no publicamos detalles sensibles de la infraestructura ni de los mecanismos internos de protección. Las medidas concretas pueden variar según las características del servicio y las condiciones acordadas con cada cliente."
-        }
-      ]
-    },
-    {
-      "heading": "Accesos y responsabilidades",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Cuando resulta necesario acceder a información para brindar soporte, diagnosticar problemas, realizar tareas de mantenimiento o gestionar incidentes, procuramos limitar el acceso a lo estrictamente necesario para la tarea y restringirlo a personas autorizadas."
-        },
-        {
-          "type": "paragraph",
-          "text": "Determinadas acciones pueden quedar registradas cuando la funcionalidad y la infraestructura utilizadas lo permiten."
-        },
-        {
-          "type": "paragraph",
-          "text": "Cada cliente es responsable de administrar los usuarios y permisos de su cuenta, proteger sus credenciales, evitar compartir accesos y comunicar oportunamente cualquier actividad sospechosa que detecte. También debe procurar la seguridad de los dispositivos, las cuentas y las conexiones desde las que utiliza Fidel."
-        }
-      ]
-    },
-    {
-      "heading": "Proveedores tecnológicos",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Para prestar, mantener y proteger Fidel, podemos recurrir a proveedores especializados en alojamiento, almacenamiento, conectividad, comunicaciones, monitoreo, seguridad y respaldo, entre otros servicios tecnológicos."
-        },
-        {
-          "type": "paragraph",
-          "text": "Ubicación de los servidores: Fidel utiliza servidores internacionales ubicados en San Pablo, Brasil, y Florida, Estados Unidos. Por este motivo, la información gestionada a través de la plataforma puede almacenarse o procesarse en dichas ubicaciones, según la infraestructura y los servicios utilizados."
-        },
-        {
-          "type": "paragraph",
-          "text": "Cuando estos proveedores intervienen en el tratamiento de información, procuramos limitar su acceso a lo necesario para prestar, mantener o proteger el servicio, bajo condiciones adecuadas de confidencialidad y seguridad."
-        },
-        {
-          "type": "paragraph",
-          "text": "La utilización de infraestructura ubicada fuera de Argentina puede implicar transferencias internacionales de datos personales. En esos casos, dichas transferencias deberán cumplir con la normativa argentina aplicable y contar con las condiciones o garantías que correspondan según el destino y el tipo de tratamiento."
-        }
-      ]
-    },
-    {
-      "heading": "Copias de respaldo y recuperación",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Se realizan copias de respaldo periódicas con el objetivo de facilitar la recuperación de información y contribuir a la continuidad del servicio ante determinadas fallas o incidentes."
-        },
-        {
-          "type": "paragraph",
-          "text": "La frecuencia, el período de conservación de los respaldos y los tiempos de recuperación dependen de la configuración y las condiciones operativas del servicio. Cuando existan compromisos específicos sobre estos aspectos, se establecerán en el contrato o acuerdo de nivel de servicio correspondiente."
-        },
-        {
-          "type": "paragraph",
-          "text": "Las copias de respaldo reducen el impacto de determinados incidentes, pero no eliminan por completo el riesgo de interrupciones o pérdida de información. Por eso, recomendamos que cada cliente mantenga exportaciones propias de los datos que considere necesarios para su operación y sus obligaciones."
-        }
-      ]
-    },
-    {
-      "heading": "Gestión de incidentes de seguridad",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Ante un incidente de seguridad que afecte o pueda afectar de manera significativa información de un cliente bajo nuestra responsabilidad, evaluaremos la situación y adoptaremos las medidas que correspondan según su naturaleza y alcance."
-        },
-        {
-          "type": "paragraph",
-          "text": "Cuando resulte aplicable, informaremos al cliente afectado sin demoras indebidas, de acuerdo con las circunstancias y las obligaciones legales o contractuales correspondientes. La información comunicada dependerá de los datos disponibles y podrá incluir el alcance conocido del incidente, sus posibles consecuencias y las medidas adoptadas o previstas."
-        },
-        {
-          "type": "link",
-          "lead": "Si detectas una actividad sospechosa, un posible acceso no autorizado o cualquier situación que te genere preocupación, podés comunicarte con nosotros a través de",
-          "label": "info@fidel.com.ar",
-          "href": "mailto:info@fidel.com.ar?subject=Consulta%20de%20seguridad",
-          "tail": ", indicando en el asunto “Consulta de seguridad”."
-        }
-      ]
-    },
-    {
-      "heading": "Exportación, conservación y eliminación de información",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Durante la vigencia del servicio, los clientes pueden utilizar las funcionalidades de exportación disponibles en Fidel o solicitar asistencia cuando corresponda."
-        },
-        {
-          "type": "paragraph",
-          "text": "Al finalizar la relación contractual, la información podrá conservarse durante el tiempo necesario para cumplir obligaciones legales o contractuales, atender reclamos o completar los ciclos operativos de eliminación de copias de respaldo."
-        },
-        {
-          "type": "paragraph",
-          "text": "Cuando dejen de existir motivos legítimos para conservarla, la información será eliminada o, cuando corresponda, anonimizada, de acuerdo con los procedimientos aplicables y la normativa vigente. Los plazos y las condiciones concretas podrán depender del tipo de información, de las obligaciones aplicables y de las características de los respaldos."
-        }
-      ]
-    },
-    {
-      "heading": "Alcance y consultas",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Ningún sistema conectado a Internet puede garantizar una seguridad absoluta frente a todas las amenazas. Por eso, trabajamos para reducir los riesgos mediante medidas razonables y revisar su adecuación a medida que Fidel evoluciona."
-        },
-        {
-          "type": "paragraph",
-          "text": "Los clientes son responsables de la información que incorporan a la plataforma y de los permisos que asignan a sus usuarios, sin perjuicio de las responsabilidades que correspondan a Fidel por la prestación del servicio y el tratamiento de datos bajo su responsabilidad."
-        },
-        {
-          "type": "link",
-          "lead": "Para realizar consultas sobre seguridad, gestión de datos o privacidad, podés escribirnos a",
-          "label": "info@fidel.com.ar",
-          "href": "mailto:info@fidel.com.ar?subject=Consulta%20de%20seguridad",
-          "tail": "."
-        },
-        {
-          "type": "paragraph",
-          "text": "Responsable: AGENCIA PROGRAMARTE S.A.S.\nCUIT: 30-71584333-8\nDomicilio: San Luis 733, San Francisco, Provincia de Córdoba, Argentina."
-        }
-      ]
-    }
-  ]
 };
