@@ -674,3 +674,147 @@ export const serviceTerms: LegalDocument = {
     },
   ],
 };
+export const dataSecurity: LegalDocument = {
+  "title": "Seguridad y Gestión de Datos",
+  "summary": "Cómo cuidamos la información, qué función cumplen los respaldos y qué pasa con tus datos.",
+  "opening": [
+    "En Fidel, trabajamos para proteger la información que se encuentra bajo nuestra responsabilidad y contribuir a la continuidad del servicio mediante medidas técnicas y organizativas razonables, acordes con la naturaleza de la plataforma y los riesgos asociados.",
+    "Las medidas específicas pueden evolucionar con el servicio, la infraestructura utilizada y las necesidades de seguridad. Cuando existan condiciones particulares acordadas con un cliente, prevalecerán los términos establecidos en su contrato y, si corresponde, en el acuerdo de nivel de servicio aplicable."
+  ],
+  updatedAt,
+  "sections": [
+    {
+      "heading": "Medidas de protección",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Adoptamos medidas orientadas a reducir los riesgos de acceso, uso, modificación, pérdida o divulgación no autorizados de la información."
+        },
+        {
+          "type": "paragraph",
+          "text": "El acceso a los datos por parte de nuestro personal y colaboradores debe responder a necesidades vinculadas con la prestación, el mantenimiento, el soporte o la seguridad del servicio, y estar sujeto a las obligaciones de confidencialidad correspondientes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Por razones de seguridad, no publicamos detalles sensibles de la infraestructura ni de los mecanismos internos de protección. Las medidas concretas pueden variar según las características del servicio y las condiciones acordadas con cada cliente."
+        }
+      ]
+    },
+    {
+      "heading": "Accesos y responsabilidades",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Cuando resulta necesario acceder a información para brindar soporte, diagnosticar problemas, realizar tareas de mantenimiento o gestionar incidentes, procuramos limitar el acceso a lo estrictamente necesario para la tarea y restringirlo a personas autorizadas."
+        },
+        {
+          "type": "paragraph",
+          "text": "Determinadas acciones pueden quedar registradas cuando la funcionalidad y la infraestructura utilizadas lo permiten."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cada cliente es responsable de administrar los usuarios y permisos de su cuenta, proteger sus credenciales, evitar compartir accesos y comunicar oportunamente cualquier actividad sospechosa que detecte. También debe procurar la seguridad de los dispositivos, las cuentas y las conexiones desde las que utiliza Fidel."
+        }
+      ]
+    },
+    {
+      "heading": "Proveedores tecnológicos",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Para prestar, mantener y proteger Fidel, podemos recurrir a proveedores especializados en alojamiento, almacenamiento, conectividad, comunicaciones, monitoreo, seguridad y respaldo, entre otros servicios tecnológicos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ubicación de los servidores: Fidel utiliza servidores internacionales ubicados en San Pablo, Brasil, y Florida, Estados Unidos. Por este motivo, la información gestionada a través de la plataforma puede almacenarse o procesarse en dichas ubicaciones, según la infraestructura y los servicios utilizados."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando estos proveedores intervienen en el tratamiento de información, procuramos limitar su acceso a lo necesario para prestar, mantener o proteger el servicio, bajo condiciones adecuadas de confidencialidad y seguridad."
+        },
+        {
+          "type": "paragraph",
+          "text": "La utilización de infraestructura ubicada fuera de Argentina puede implicar transferencias internacionales de datos personales. En esos casos, dichas transferencias deberán cumplir con la normativa argentina aplicable y contar con las condiciones o garantías que correspondan según el destino y el tipo de tratamiento."
+        }
+      ]
+    },
+    {
+      "heading": "Copias de respaldo y recuperación",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Se realizan copias de respaldo periódicas con el objetivo de facilitar la recuperación de información y contribuir a la continuidad del servicio ante determinadas fallas o incidentes."
+        },
+        {
+          "type": "paragraph",
+          "text": "La frecuencia, el período de conservación de los respaldos y los tiempos de recuperación dependen de la configuración y las condiciones operativas del servicio. Cuando existan compromisos específicos sobre estos aspectos, se establecerán en el contrato o acuerdo de nivel de servicio correspondiente."
+        },
+        {
+          "type": "paragraph",
+          "text": "Las copias de respaldo reducen el impacto de determinados incidentes, pero no eliminan por completo el riesgo de interrupciones o pérdida de información. Por eso, recomendamos que cada cliente mantenga exportaciones propias de los datos que considere necesarios para su operación y sus obligaciones."
+        }
+      ]
+    },
+    {
+      "heading": "Gestión de incidentes de seguridad",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Ante un incidente de seguridad que afecte o pueda afectar de manera significativa información de un cliente bajo nuestra responsabilidad, evaluaremos la situación y adoptaremos las medidas que correspondan según su naturaleza y alcance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando resulte aplicable, informaremos al cliente afectado sin demoras indebidas, de acuerdo con las circunstancias y las obligaciones legales o contractuales correspondientes. La información comunicada dependerá de los datos disponibles y podrá incluir el alcance conocido del incidente, sus posibles consecuencias y las medidas adoptadas o previstas."
+        },
+        {
+          "type": "link",
+          "lead": "Si detectas una actividad sospechosa, un posible acceso no autorizado o cualquier situación que te genere preocupación, podés comunicarte con nosotros a través de",
+          "label": "info@fidel.com.ar",
+          "href": "mailto:info@fidel.com.ar?subject=Consulta%20de%20seguridad",
+          "tail": ", indicando en el asunto “Consulta de seguridad”."
+        }
+      ]
+    },
+    {
+      "heading": "Exportación, conservación y eliminación de información",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Durante la vigencia del servicio, los clientes pueden utilizar las funcionalidades de exportación disponibles en Fidel o solicitar asistencia cuando corresponda."
+        },
+        {
+          "type": "paragraph",
+          "text": "Al finalizar la relación contractual, la información podrá conservarse durante el tiempo necesario para cumplir obligaciones legales o contractuales, atender reclamos o completar los ciclos operativos de eliminación de copias de respaldo."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando dejen de existir motivos legítimos para conservarla, la información será eliminada o, cuando corresponda, anonimizada, de acuerdo con los procedimientos aplicables y la normativa vigente. Los plazos y las condiciones concretas podrán depender del tipo de información, de las obligaciones aplicables y de las características de los respaldos."
+        }
+      ]
+    },
+    {
+      "heading": "Alcance y consultas",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Ningún sistema conectado a Internet puede garantizar una seguridad absoluta frente a todas las amenazas. Por eso, trabajamos para reducir los riesgos mediante medidas razonables y revisar su adecuación a medida que Fidel evoluciona."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los clientes son responsables de la información que incorporan a la plataforma y de los permisos que asignan a sus usuarios, sin perjuicio de las responsabilidades que correspondan a Fidel por la prestación del servicio y el tratamiento de datos bajo su responsabilidad."
+        },
+        {
+          "type": "link",
+          "lead": "Para realizar consultas sobre seguridad, gestión de datos o privacidad, podés escribirnos a",
+          "label": "info@fidel.com.ar",
+          "href": "mailto:info@fidel.com.ar?subject=Consulta%20de%20seguridad",
+          "tail": "."
+        },
+        {
+          "type": "paragraph",
+          "text": "Responsable: AGENCIA PROGRAMARTE S.A.S.\nCUIT: 30-71584333-8\nDomicilio: San Luis 733, San Francisco, Provincia de Córdoba, Argentina."
+        }
+      ]
+    }
+  ]
+};
