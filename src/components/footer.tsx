@@ -173,14 +173,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/cookies-y-seguimiento"
-                  className="text-sm text-gray-600 hover:text-gray-900"
-                >
-                  Cookies y Seguimiento
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/terminos-del-servicio"
                   className="text-sm text-gray-600 hover:text-gray-900"
                 >
