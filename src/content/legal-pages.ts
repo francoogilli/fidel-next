@@ -9,7 +9,7 @@ export const privacyPolicy: LegalDocument = {
     "En Fidel nos comprometemos a proteger la privacidad y los datos personales de quienes visitan nuestro sitio web y utilizan nuestros servicios. Esta Política de Privacidad explica qué información recopilamos, con qué finalidad la utilizamos, cómo la protegemos y cuáles son los derechos de sus titulares.",
     "Esta política se aplica al sitio web de Fidel y, en lo pertinente, a la prestación de nuestro software de gestión y facturación en la nube. El tratamiento de los datos que nuestros clientes incorporan al sistema también se rige por las condiciones del servicio, los acuerdos contractuales y las instrucciones aplicables a cada relación."
   ],
-  "updatedAt": "[completar fecha]",
+  "updatedAt": "2 de enero de 2026",
   "sections": [
     {
       "heading": "Responsable del tratamiento",

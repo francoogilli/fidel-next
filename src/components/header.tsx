@@ -11,7 +11,7 @@ import {
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import { usePathname, useRouter } from "next/navigation";
-import { Wrench, Truck, Sparkles, Settings, ArrowRight } from "lucide-react";
+import { Wrench, Truck, Sparkles, Settings, ArrowRight, Menu, X } from "lucide-react";
 
 const EASE = "cubic-bezier(.2,.85,.25,1)";
 const DUR = "0.6s";
@@ -22,21 +22,21 @@ const rubroCardContent = [
     title: "Día en Ferreterías",
     desc: "Conocé cómo Fidel ordena el stock, los precios y las ventas.",
     badge: "Ferreterías",
-    bgImage: "/menu_ferreteria_bg.png",
+    bgImage: "/fidel/ferreterias1.png",
     href: "/dia-con-fidel-ferreterias"
   },
   {
     title: "Día en Distribuidoras",
     desc: "Seguí pedidos y stock en ruta, todo sincronizado al instante.",
     badge: "Distribuidoras",
-    bgImage: "/menu_distribuidora_bg.png",
+    bgImage: "/fidel/distribuidoras.png",
     href: "/dia-con-fidel-distribuidoras"
   },
   {
     title: "Día en Decoración",
     desc: "Coordiná showroom y tienda online en un mismo lugar.",
     badge: "Decoración",
-    bgImage: "/menu_decoracion_bg.png",
+    bgImage: "/fidel/deco.png",
     href: "/dia-con-fidel-decoracion"
   },
   {
@@ -51,6 +51,7 @@ const rubroCardContent = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeRubroIndex, setActiveRubroIndex] = useState(0);
   const pathname = usePathname();
   const router = useRouter();
@@ -128,7 +129,7 @@ export default function Header() {
           justifyContent: "center",
           zIndex: 50,
           pointerEvents: "none",
-          padding: scrolled ? "12px 24px" : "12px 20px",
+          padding: scrolled ? "12px 16px" : "12px 20px",
           transition: TR,
         }}
       >
@@ -141,7 +142,7 @@ export default function Header() {
             alignItems: "center",
             gap: scrolled ? 6 : 16,
             width: "100%",
-            maxWidth: scrolled ? 860 : 1600,
+            maxWidth: scrolled ? 1040 : 1600,
             padding: scrolled ? "4px 7px 4px 18px" : "10px 18px",
             borderRadius: scrolled ? 999 : 28,
             background: scrolled
@@ -170,13 +171,13 @@ export default function Header() {
 
           {/* Nav */}
           <nav
-            className="hidden sm:flex items-center gap-0.5 px-0.5"
+            className="hidden lg:flex items-center gap-0.5 px-0.5"
             style={{ justifySelf: "center", minWidth: 0 }}
           >
             <Link
               href="/#planes"
               onClick={scrollToSection("planes")}
-              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
+              className="inline-flex items-center px-2 xl:px-3.5 py-2 text-[12px] xl:text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
               Precios
             </Link>
@@ -184,7 +185,7 @@ export default function Header() {
             <Link
               href="/#funcionalidades"
               onClick={scrollToSection("funcionalidades")}
-              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
+              className="inline-flex items-center px-2 xl:px-3.5 py-2 text-[12px] xl:text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
               Funcionalidades
             </Link>
@@ -192,16 +193,23 @@ export default function Header() {
             <Link
               href="/#ia"
               onClick={scrollToSection("ia")}
-              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
+              className="inline-flex items-center px-2 xl:px-3.5 py-2 text-[12px] xl:text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
               Inteligencia Artificial
             </Link>
 
             <Link
               href="/pedidos-web"
-              className="inline-flex items-center px-3.5 py-2 text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
+              className="inline-flex items-center px-2 xl:px-3.5 py-2 text-[12px] xl:text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
             >
               Pedidos Web
+            </Link>
+
+            <Link
+              href="/integraciones-ecommerce"
+              className="inline-flex items-center px-2 xl:px-3.5 py-2 text-[12px] xl:text-[13.5px] font-medium text-[#2a2b30] rounded-xl hover:bg-black/5 hover:text-black transition-colors whitespace-nowrap"
+            >
+              Integraciones
             </Link>
 
             {/* Rubros dropdown */}
@@ -213,7 +221,7 @@ export default function Header() {
             >
               <NavigationMenuList>
                 <NavigationMenuItem value="rubros">
-                  <NavigationMenuTrigger className="text-[13.5px] px-3.5 py-2 bg-transparent hover:bg-black/5 text-[#2a2b30] hover:text-black font-medium rounded-xl">
+                  <NavigationMenuTrigger className="text-[12px] xl:text-[13.5px] px-2 xl:px-3.5 py-2 bg-transparent hover:bg-black/5 text-[#2a2b30] hover:text-black font-medium rounded-xl">
                     Rubros
                   </NavigationMenuTrigger>
 
@@ -333,6 +341,16 @@ export default function Header() {
               transition: TR,
             }}
           >
+            <button
+              type="button"
+              aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation"
+              onClick={() => setMobileMenuOpen((open) => !open)}
+              className="inline-flex size-9 items-center justify-center rounded-full border border-black/10 text-[#0b0b0c] transition-colors hover:bg-black/5 lg:hidden"
+            >
+              {mobileMenuOpen ? <X className="size-4" /> : <Menu className="size-4" />}
+            </button>
             <a
               href="/Home/Entrar"
               className="inline-flex items-center gap-1.5 px-4 py-2 text-[13.5px] font-medium text-white bg-[#0b0b0c] hover:bg-[#1a1a1d] rounded-full border border-black whitespace-nowrap flex-shrink-0 transition-colors"
@@ -357,6 +375,78 @@ export default function Header() {
               <span className="inline">Ingresar</span>
             </a>
           </div>
+
+          {mobileMenuOpen && (
+            <nav
+              id="mobile-navigation"
+              aria-label="Navegación principal"
+              className="absolute left-0 right-0 top-[calc(100%+8px)] z-50 flex flex-col gap-1 rounded-2xl border border-black/10 bg-white/95 p-2 shadow-xl backdrop-blur-xl lg:hidden"
+            >
+              <Link
+                href="/#planes"
+                onClick={(e) => {
+                  scrollToSection("planes")(e);
+                  setMobileMenuOpen(false);
+                }}
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-[#2a2b30] hover:bg-black/5"
+              >
+                Precios
+              </Link>
+              <Link
+                href="/#funcionalidades"
+                onClick={(e) => {
+                  scrollToSection("funcionalidades")(e);
+                  setMobileMenuOpen(false);
+                }}
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-[#2a2b30] hover:bg-black/5"
+              >
+                Funcionalidades
+              </Link>
+              <Link
+                href="/#ia"
+                onClick={(e) => {
+                  scrollToSection("ia")(e);
+                  setMobileMenuOpen(false);
+                }}
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-[#2a2b30] hover:bg-black/5"
+              >
+                Inteligencia Artificial
+              </Link>
+              <Link
+                href="/pedidos-web"
+                onClick={() => setMobileMenuOpen(false)}
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-[#2a2b30] hover:bg-black/5"
+              >
+                Pedidos Web
+              </Link>
+              <Link
+                href="/integraciones-ecommerce"
+                onClick={() => setMobileMenuOpen(false)}
+                className="rounded-xl px-3 py-2.5 text-sm font-medium text-[#2a2b30] hover:bg-black/5"
+              >
+                Integraciones
+              </Link>
+              <div className="my-1 border-t border-black/10" />
+              <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                Rubros
+              </span>
+              {[
+                ["Ferreterías", "/ferreterias"],
+                ["Distribuidoras", "/distribuidoras"],
+                ["Decoración", "/casas-de-decoracion"],
+                ["Repuestos", "/casas-de-repuestos"],
+              ].map(([label, href]) => (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="rounded-xl px-3 py-2 text-sm text-[#2a2b30] hover:bg-black/5"
+                >
+                  {label}
+                </Link>
+              ))}
+            </nav>
+          )}
         </header>
       </div>
 

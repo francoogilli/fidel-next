@@ -437,7 +437,7 @@ export default function PedidosWebPage() {
           <div className="ecommerce-glow-drift pointer-events-none absolute -left-28 -top-32 -z-10 size-[22rem] rounded-full bg-[#76bf54]/20 blur-[100px]" aria-hidden="true" />
           <div className="ecommerce-glow-drift pointer-events-none absolute -bottom-36 -right-24 -z-10 size-[26rem] rounded-full bg-[#f2b43e]/25 blur-[110px] [animation-delay:1.2s]" aria-hidden="true" />
           <Image
-            src="/fidel1.svg"
+            src="/fidel/fidel1.svg"
             alt="Fidel"
             width={58}
             height={58}
