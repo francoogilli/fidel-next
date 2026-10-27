@@ -32,6 +32,22 @@ export const metadata: Metadata = {
     description:
       "Gestioná ventas, stock, compras y facturación electrónica desde un solo sistema. Fidel acompaña a ferreterías, repuesteras, distribuidoras y otros comercios.",
   }),
+  title: "Fidel - Sistema Web de Gestión y Facturación Electrónica",
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    siteName: "Fidel",
+    title: "Fidel: Sistema Web de Gestión para Empresas",
+    description:
+      "Gestioná ventas, stock, compras y facturación electrónica desde un solo sistema. Fidel acompaña a ferreterías, repuesteras, distribuidoras y otros comercios.",
+    url: FIDEL_SITE_ROOT.toString(),
+    images: [
+      {
+        url: "https://fidel.com.ar/fidel/hero-poster.webp",
+        alt: "Panel de gestión de Fidel",
+      },
+    ],
+  },
   metadataBase: FIDEL_SITE_ROOT,
   robots: { index: true, follow: true },
 };
