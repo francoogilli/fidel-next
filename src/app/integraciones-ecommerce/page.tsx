@@ -124,7 +124,7 @@ export default function IntegracionesEcommercePage() {
                 <span className="sr-only">Tienda Nube</span>
               </div>
               <div className="flex min-h-20 items-center justify-center rounded-2xl border border-[#e8eee5] bg-white px-2 sm:px-4">
-                <Image src="/fidel/mercado-libre.png" alt="Mercado Libre" width={72} height={72} className="h-16 w-16 max-w-full object-contain" />
+                <Image src="/fidel/mercado-libre.webp" alt="Mercado Libre" width={72} height={72} className="h-16 w-16 max-w-full object-contain" />
               </div>
               <div className="flex min-h-20 items-center justify-center rounded-2xl border border-[#e8eee5] bg-white px-2 sm:px-4">
                 <Image src="/fidel/woocommerce.svg" alt="WooCommerce" width={150} height={70} className="h-12 w-auto max-w-full object-contain" />
@@ -192,7 +192,7 @@ export default function IntegracionesEcommercePage() {
           <figure className="group overflow-hidden rounded-[28px] border border-[#e3eddc] bg-white shadow-[0_18px_40px_-34px_rgba(37,37,37,0.45)]">
             <div className="overflow-hidden bg-[#f7fbf5]">
               <Image
-                src="/fidel/pedidos-web-hero-v2.png"
+                src="/fidel/pedidos-web-hero-v2.webp"
                 alt="Vista ilustrativa de una tienda online con catálogo de productos y carrito"
                 width={1536}
                 height={1024}
@@ -208,7 +208,7 @@ export default function IntegracionesEcommercePage() {
           <figure className="group overflow-hidden rounded-[28px] border border-[#e3eddc] bg-white shadow-[0_18px_40px_-34px_rgba(37,37,37,0.45)]">
             <div className="overflow-hidden bg-[#f7fbf5]">
               <Image
-                src="/fidel/pedidos-web-workflow-products.png"
+                src="/fidel/pedidos-web-workflow-products.webp"
                 alt="Listado de productos administrado desde Fidel"
                 width={1672}
                 height={941}

@@ -61,28 +61,28 @@ const workflowDetails = [
   {
     title: "Inicio de sesión para clientes:",
     icon: LogIn,
-    image: "/fidel/pedidos-web-workflow-login.png",
+    image: "/fidel/pedidos-web-workflow-login.webp",
     description:
       "Si el Cliente no inicia sesión pueden ver productos y fotos, pero no stock y precios.",
   },
   {
     title: "Listado de Productos con Precio, Stock (opcional) y Fotos:",
     icon: ListFilter,
-    image: "/fidel/pedidos-web-workflow-products.png",
+    image: "/fidel/pedidos-web-workflow-products.webp",
     description:
       "El cliente podrá realizar las búsquedas por diferentes filtros (nombre, código, marca, categoría, precio).",
   },
   {
     title: "Pedido Parcial",
     icon: Save,
-    image: "/fidel/pedidos-web-workflow-order.png",
+    image: "/fidel/pedidos-web-workflow-order.webp",
     description:
       "Se puede ir guardando parcialmente (en diferentes días) el Pedido y al finalizar la carga se confirma y se envía. En Fidel se recepcionará desde el menú Ventas → Pedidos, listo para facturarlo o presupuestarlo al Cliente.",
   },
   {
     title: "Nuevo pedido en Fidel",
     icon: FilePlus2,
-    image: "/fidel/pedidos-web-workflow-fidel-order.png",
+    image: "/fidel/pedidos-web-workflow-fidel-order.webp",
     description:
       "Ingresa un nuevo Pedido en Fidel para Facturar o Presupuestar, se puede habilitar una opción para que, al confirmar el Pedido el Cliente, se envíe por Email una copia al Cliente y otra a la Empresa.",
   },
@@ -190,7 +190,7 @@ export default function PedidosWebPage() {
 
           <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
             <Image
-              src="/fidel/pedidos-web-hero-v2.png"
+              src="/fidel/pedidos-web-hero-v2.webp"
               alt=""
               width={1536}
               height={1024}
@@ -254,7 +254,7 @@ export default function PedidosWebPage() {
 
           <div className="relative aspect-[4/5] w-full max-w-[380px] self-center overflow-hidden rounded-[32px] border border-[#D08236]/25 bg-[#fff9ef] lg:aspect-auto lg:min-h-[420px] lg:self-stretch lg:justify-self-end">
             <Image
-              src="/fidel/pedidos-web-section-v2.png"
+              src="/fidel/pedidos-web-section-v2.webp"
               alt="PedidosWeb"
               fill
               sizes="(min-width: 1024px) 380px, 100vw"
@@ -397,7 +397,7 @@ export default function PedidosWebPage() {
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-lg font-semibold leading-tight text-[#252525] md:text-xl" style={{ fontFamily: "Plus Jakarta Sans" }}>
-                        Mantenimiento mensual
+                        Mantenimiento
                       </p>
                       <p className="mt-1 text-sm text-[#527257]" style={{ fontFamily: "Satoshi" }}>
                         Adicional al plan elegido en Fidel

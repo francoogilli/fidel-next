@@ -120,7 +120,7 @@ export default function AiSection() {
               >
                 <div className="relative aspect-[4/3] overflow-hidden rounded-[1.1rem]">
                   <Image
-                    src="/fidel/ai-carga-factura.png"
+                    src="/fidel/ai-carga-factura.webp"
                     alt="Flujo de carga asistida de facturas en Fidel"
                     fill
                     sizes="(min-width: 1024px) 24vw, 46vw"
@@ -140,7 +140,7 @@ export default function AiSection() {
               >
                 <div className="relative aspect-[4/3] overflow-hidden rounded-[1.1rem]">
                   <Image
-                    src="/fidel/ai-carga-cheque.png"
+                    src="/fidel/ai-carga-cheque.webp"
                     alt="Flujo de carga asistida de cheques con IA en Fidel"
                     fill
                     sizes="(min-width: 1024px) 24vw, 46vw"
@@ -164,7 +164,7 @@ export default function AiSection() {
             <div className="grid items-start gap-5 sm:grid-cols-[0.8fr_1.2fr] sm:gap-6">
               <div className="relative mx-0 aspect-[464/496] w-full max-w-[13rem] overflow-hidden rounded-br-[1.5rem] sm:max-w-none">
                 <Image
-                  src="/fidel/fidelito-transparente.png"
+                  src="/fidel/fidelito-transparente.webp"
                   alt="Fidelito, el asistente con IA de Fidel"
                   fill
                   sizes="(min-width: 640px) 40vw, 70vw"

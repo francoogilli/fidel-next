@@ -768,7 +768,7 @@ export const navLinks = [
 ];
 
 export const headerData = {
-  logoSrc: "/fidelnew.svg",
+  logoSrc: "/fidel/fidelnew.svg",
   logoAlt: "Logo",
   logoText: "Fidel",
   buttonText: "Ingresar",

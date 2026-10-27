@@ -55,7 +55,7 @@ const detailSections = [
       "Imprimís etiquetas de envío en pocos clics",
       "Cada venta crea un nuevo cliente en tu base de datos",
     ],
-    image: "/fidel/deco1.png",
+    image: "/fidel/deco1.webp",
     reverse: false,
   },
   {
@@ -69,7 +69,7 @@ const detailSections = [
       "Usá códigos de barra y lector para agilizar las ventas",
       "Menos consultas repetitivas, más foco en atender y vender",
     ],
-    image: "/fidel/deco2.png",
+    image: "/fidel/deco2.webp",
     reverse: true,
   },
   {
@@ -83,7 +83,7 @@ const detailSections = [
       "Personalizalos para cada cliente o segmento",
       "Enviálos por WhatsApp en pocos segundos",
     ],
-    image: "/fidel/deco3.png",
+    image: "/fidel/deco3.webp",
     reverse: false,
   },
 ];
@@ -174,7 +174,7 @@ export default function CasasDeDecoracionPage() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <img
-            src="/fidel/deco.png"
+            src="/fidel/deco.webp"
             alt="Sistema Fidel para casas de decoración"
             className="w-full h-auto"
           />
@@ -360,7 +360,7 @@ export default function CasasDeDecoracionPage() {
                 url="https://www.instagram.com/reel/DLiB4MXuhp1/"
                 width={320}
                 title="Fidel para Casas de Decoración"
-                thumbnail="/fidel/reels/decoracion.jpg"
+                thumbnail="/fidel/reels/decoracion.webp"
               />
             </div>
           </div>

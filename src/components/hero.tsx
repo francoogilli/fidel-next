@@ -126,7 +126,7 @@ export default function Hero() {
               playsInline
               preload="none"
               className="w-[100%] transition-colors duration-300 md:mt-6"
-              poster="/fidel/hero-poster.png"
+              poster="/fidel/hero-poster.webp"
             >
               {loadVideo && (
                 <>

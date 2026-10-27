@@ -22,21 +22,21 @@ const rubroCardContent = [
     title: "Día en Ferreterías",
     desc: "Conocé cómo Fidel ordena el stock, los precios y las ventas.",
     badge: "Ferreterías",
-    bgImage: "/fidel/ferreterias1.png",
+    bgImage: "/fidel/ferreterias1.webp",
     href: "/dia-con-fidel-ferreterias"
   },
   {
     title: "Día en Distribuidoras",
     desc: "Seguí pedidos y stock en ruta, todo sincronizado al instante.",
     badge: "Distribuidoras",
-    bgImage: "/fidel/distribuidoras.png",
+    bgImage: "/fidel/distribuidoras.webp",
     href: "/dia-con-fidel-distribuidoras"
   },
   {
     title: "Día en Decoración",
     desc: "Coordiná showroom y tienda online en un mismo lugar.",
     badge: "Decoración",
-    bgImage: "/fidel/deco.png",
+    bgImage: "/fidel/deco.webp",
     href: "/dia-con-fidel-decoracion"
   },
   {

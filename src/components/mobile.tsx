@@ -59,7 +59,7 @@ export default function Mobile() {
       <div className="grid grid-cols-1 md:grid-cols-12 relative pt-10 space-y-7 md:space-y-0">
         <div className="col-span-6 relative hidden md:block">
           <motion.img
-            src="fondo.png"
+            src="/fidel/fondo.webp"
             alt=""
             className="absolute z-0 rounded-2xl w-[600px] xl:w-[680px] h-[500px] xl:h-[570px]"
             initial={{ scale: 0.9, opacity: 0 }}
@@ -69,7 +69,7 @@ export default function Mobile() {
           />
           <motion.img
             width={600}
-            src="cositas.svg"
+            src="/fidel/cositas.svg"
             alt=""
             className="p-10 relative z-10 w-[600px] xl:w-[670px]"
             initial={{ x: -50, opacity: 0 }}
@@ -84,7 +84,7 @@ export default function Mobile() {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <img src="papelitoderecho.png" className="w-16" alt="" />
+            <img src="/fidel/papelitoderecho.webp" className="w-16" alt="" />
           </motion.div>
           <motion.div
             className="absolute flex justify-center -top-5 -left-6"
@@ -93,7 +93,7 @@ export default function Mobile() {
             transition={{ duration: 0.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <img src="papelitoizquierdo.png" className="w-16" alt="" />
+            <img src="/fidel/papelitoizquierdo.webp" className="w-16" alt="" />
           </motion.div>
           <motion.div
             className="absolute inset-0 flex justify-center items-center z-20 xl:top-[1.9rem]"
@@ -103,7 +103,7 @@ export default function Mobile() {
             viewport={{ once: true }}
           >
             <img
-              src="phone.png"
+              src="/fidel/phone.webp"
               alt="Imagen de celular"
               width={500}
               className="overflow-hidden w-[500px] xl:w-[550px]"
@@ -112,7 +112,7 @@ export default function Mobile() {
         </div>
         <div className="col-span-6 md:hidden flex justify-center items-center mx-auto">
           <motion.img
-            src="mobileimage.png"
+            src="/fidel/mobileimage.webp"
             alt="Imagen para móviles"
             className="w-full h-auto"
             initial={{ opacity: 0, y: 50 }}

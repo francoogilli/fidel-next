@@ -169,7 +169,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diadi1.png"
+            src="/fidel/diadi1.webp"
             alt="Arranca la jornada"
             className="w-full h-auto object-cover"
           />
@@ -184,7 +184,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diadi2.png"
+            src="/fidel/diadi2.webp"
             alt="Primera visita, primer pedido"
             className="w-full h-auto object-cover"
           />
@@ -199,7 +199,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diadi3.png"
+            src="/fidel/diadi3.webp"
             alt="Consulta de stock en tiempo real"
             className="w-full h-auto object-cover"
           />
@@ -214,7 +214,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diadi4.png"
+            src="/fidel/diadi4.webp"
             alt="Nuevos clientes sin papeleo"
             className="w-full h-auto object-cover"
           />
@@ -229,7 +229,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diadi5.png"
+            src="/fidel/diadi5.webp"
             alt="Productos con fotos, menos errores"
             className="w-full h-auto object-cover"
           />
@@ -246,7 +246,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diadi6.png"
+            src="/fidel/diadi6.webp"
             alt="Llega nueva mercadería y la cargás en minutos"
             className="w-full h-auto object-cover"
           />
@@ -261,7 +261,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diadi7.png"
+            src="/fidel/diadi7.webp"
             alt="Pedidos en la oficina en tiempo real"
             className="w-full h-auto object-cover"
           />
@@ -276,7 +276,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diadi8.png"
+            src="/fidel/diadi8.webp"
             alt="Un cliente realiza un pago"
             className="w-full h-auto object-cover"
           />
@@ -291,7 +291,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diadi9.png"
+            src="/fidel/diadi9.webp"
             alt="Información comercial siempre disponible"
             className="w-full h-auto object-cover"
           />
@@ -306,7 +306,7 @@ export default function DiaConFidelDistribuidorasPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/distribuidoras.png"
+            src="/fidel/distribuidoras.webp"
             alt="Últimas visitas del día"
             className="w-full h-auto object-cover"
           />

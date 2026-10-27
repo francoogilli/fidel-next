@@ -230,7 +230,7 @@ export default function DiaConFidelRepuestosPage() {
       mock: (
         <div className="relative pb-12 sm:pb-14">
           <Screenshot
-            src="/fidel/dia-repuestos-01.png"
+            src="/fidel/dia-repuestos-01.webp"
             alt="Vista del inventario de una casa de repuestos en Fidel"
             className="shadow-xl"
           />
@@ -250,7 +250,7 @@ export default function DiaConFidelRepuestosPage() {
       body: "En el rubro repuestos, los precios cambian constantemente. Y cuando trabajás con miles de artículos, actualizar cada uno manualmente puede convertirse en una tarea interminable. Con Fidel, importás la lista de precios desde Excel y actualizás los valores de forma masiva, utilizando los códigos de proveedor para identificar los productos correspondientes. En segundos, tenés los precios actualizados sin tener que modificar artículo por artículo. Así podés dedicarte a atender el mostrador sin preocuparte por mantener cientos de precios al día de forma manual.",
       mock: (
         <Screenshot
-          src="/fidel/dia-repuestos-03.png"
+          src="/fidel/dia-repuestos-03.webp"
           alt="Importación y actualización masiva de una lista de precios en Fidel"
         />
       ),
@@ -289,7 +289,7 @@ export default function DiaConFidelRepuestosPage() {
       body: "El proveedor acaba de entregar un pedido y es momento de registrar la compra. En lugar de cargar manualmente cada artículo, cantidad y precio, subís a Fidel una foto o el archivo PDF de la factura de compra. La inteligencia artificial identifica al proveedor y extrae los productos, las cantidades, los precios y el total de la factura para cargarlos automáticamente en el sistema. En pocos pasos, transformás una tarea administrativa repetitiva en un proceso mucho más ágil. Llega la mercadería, cargás la factura y Fidel te ayuda con el resto. Menos carga manual, menos errores y más tiempo para seguir trabajando.",
       mock: (
         <Screenshot
-          src="/fidel/dia-repuestos-08.png"
+          src="/fidel/dia-repuestos-08.webp"
           alt="Factura de compra procesada en Fidel con inteligencia artificial"
         />
       ),
@@ -301,7 +301,7 @@ export default function DiaConFidelRepuestosPage() {
       body: "Un cliente necesita algunas unidades de un repuesto que compraste en cajas cerradas. No hace falta sacar la calculadora ni hacer cuentas cada vez que vendés. Fidel permite gestionar la compra por bulto y la venta por unidad, calculando los costos y precios correspondientes y ajustando el stock automáticamente. Así podés manejar distintas presentaciones sin complicar la operación diaria. Vos te concentrás en la venta. El sistema se ocupa de los cálculos.",
       mock: (
         <Screenshot
-          src="/fidel/dia-repuestos-09.png"
+          src="/fidel/dia-repuestos-09.webp"
           alt="Configuración de compra por bulto y stock en unidades"
         />
       ),

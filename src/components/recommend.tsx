@@ -31,7 +31,7 @@ export default function Recommend() {
             <div className="relative w-full flex justify-center">
               <div className="absolute top-[3.25rem] right-16 rotate-[5deg] blur-[3px] opacity-70">
                 <img
-                  src="/fidel/coin3.png"
+                  src="/fidel/coin3.webp"
                   alt=""
                   className="size-20"
                   style={{ animation: "levitate 40s ease infinite" }}
@@ -39,7 +39,7 @@ export default function Recommend() {
               </div>
               <div className="absolute -top-24 right-0 rotate-[30deg]">
                 <img
-                  src="/fidel/coin2.png"
+                  src="/fidel/coin2.webp"
                   alt=""
                   className="size-32"
                   style={{ animation: "levitate 40s ease infinite" }}
@@ -47,7 +47,7 @@ export default function Recommend() {
               </div>
               <div className="absolute -top-10 right-52 rotate-[30deg]">
                 <img
-                  src="/fidel/coin3.png"
+                  src="/fidel/coin3.webp"
                   alt=""
                   className="size-20 blur-[3px]"
                   style={{ animation: "levitate 33s ease infinite" }}
@@ -55,7 +55,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-36 right-24">
                 <img
-                  src="/fidel/coin3.png"
+                  src="/fidel/coin3.webp"
                   alt=""
                   className="size-24"
                   style={{ animation: "levitate 34s ease infinite" }}
@@ -63,7 +63,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-32 -right-14 -rotate-[20deg]">
                 <img
-                  src="/fidel/coin4.png"
+                  src="/fidel/coin4.webp"
                   alt=""
                   className="size-20 "
                   style={{ animation: "levitate 30s ease infinite" }}
@@ -71,7 +71,7 @@ export default function Recommend() {
               </div>
               <div className="absolute -top-7 right-[21rem] -rotate-[250deg]">
                 <img
-                  src="/fidel/coin4.png"
+                  src="/fidel/coin4.webp"
                   alt=""
                   className="size-20 "
                   style={{ animation: "levitate 39s ease infinite" }}
@@ -79,7 +79,7 @@ export default function Recommend() {
               </div>
               <div className="absolute -top-7 right-[28rem] rotate-[140deg]">
                 <img
-                  src="/fidel/coin5.png"
+                  src="/fidel/coin5.webp"
                   alt=""
                   className="size-20 blur-[5px]"
                   style={{ animation: "levitate 33s ease infinite" }}
@@ -87,7 +87,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-36 right-[2rem] rotate-[190deg]">
                 <img
-                  src="/fidel/coin4.png"
+                  src="/fidel/coin4.webp"
                   alt=""
                   className="size-10 blur-[3px]"
                   style={{ animation: "levitate 32s ease infinite" }}
@@ -95,7 +95,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-24 right-60 rotate-[240deg]">
                 <img
-                  src="/fidel/coin5.png"
+                  src="/fidel/coin5.webp"
                   alt=""
                   className="size-28"
                   style={{ animation: "levitate 38s ease infinite" }}
@@ -103,7 +103,7 @@ export default function Recommend() {
               </div>
               <div className="absolute top-24 right-[25rem] ">
                 <img
-                  src="/fidel/coin.png"
+                  src="/fidel/coin.webp"
                   alt=""
                   className="size-[5.5rem] blur-[3px]"
                   style={{ animation: "levitate 35s ease infinite" }}
@@ -160,67 +160,67 @@ export default function Recommend() {
       <div className="bg-[#FCF8F2] border border-[#ffebebd4] md:bg-gradient-to-br max-w-[78.5rem] xl:max-w-[90rem] mx-4 xl:mx-auto mt-10 mb-10 px-4 space-y-7 rounded-3xl">
         <div className="block md:hidden relative py-4">
           <img
-            src="/fidel/coin.png"
+            src="/fidel/coin.webp"
             alt=""
             className="mx-auto rotate-[47deg] size-28 mb-6"
           />
           <img
-            src="/fidel/coin4.png"
+            src="/fidel/coin4.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-16 top-16 transform -translate-y-1/2 size-8"
           />
           <img
-            src="/fidel/coin7.png"
+            src="/fidel/coin7.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-8 top-16 transform -translate-y-1/2 w-4 rotate-45"
           />
           <img
-            src="/fidel/coin5.png"
+            src="/fidel/coin5.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-1 top-7 transform -translate-y-1/2 size-9"
           />
           <img
-            src="/fidel/coin4.png"
+            src="/fidel/coin4.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-14 top-24 transform -translate-y-1/2 w-4 blur-[3px] rotate-[20deg]"
           />
           <img
-            src="/fidel/coin.png"
+            src="/fidel/coin.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute right-0 top-28 transform -translate-y-1/2 size-8"
           />
 
           <img
-            src="/fidel/coin2.png"
+            src="/fidel/coin2.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute -left-1 top-8 transform -translate-y-1/2 size-9"
           />
           <img
-            src="/fidel/coin82.png"
+            src="/fidel/coin82.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute left-14 top-14 rotate-[175deg] transform -translate-y-1/2 size-8"
           />
           <img
-            src="/fidel/coin7.png"
+            src="/fidel/coin7.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute left-4 top-20 transform -translate-y-1/2 w-5"
           />
           <img
-            src="/fidel/coin4.png"
+            src="/fidel/coin4.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute left-14 top-24 transform rotate-[-20deg] -translate-y-1/2 size-5 blur-[4px]"
           />
           <img
-            src="/fidel/coin3.png"
+            src="/fidel/coin3.webp"
             alt="Moneda"
             draggable="false"
             className="select-none absolute -left-1 top-28 transform -translate-y-1/2 size-8"

@@ -69,7 +69,7 @@ const detailSections = [
       "Se sincronizan automáticamente con el sistema.",
       "La facturación y preparación de pedidos comienza al instante",
     ],
-    image: "/fidel/distribuidoras1.png",
+    image: "/fidel/distribuidoras1.webp",
     reverse: false,
   },
   {
@@ -83,7 +83,7 @@ const detailSections = [
       "Editá o eliminá productos en segundos",
       "Cerrá ventas mucho más rápido con clientes habituales",
     ],
-    image: "/fidel/distribuidoras2.png",
+    image: "/fidel/distribuidoras2.webp",
     reverse: true,
   },
   {
@@ -97,7 +97,7 @@ const detailSections = [
       "Asigná bonificaciones y condiciones comerciales",
       "Enviá el detalle del pedido por WhatsApp al instante",
     ],
-    image: "/fidel/distribuidoras3.png",
+    image: "/fidel/distribuidoras3.webp",
     reverse: false,
   },
   {
@@ -111,7 +111,7 @@ const detailSections = [
       "El área de cobranzas procesa la información automáticamente",
       "Todo queda sincronizado con el sistema y la caja",
     ],
-    image: "/fidel/distribuidoras4.png",
+    image: "/fidel/distribuidoras4.webp",
     reverse: true,
   },
   {
@@ -126,7 +126,7 @@ const detailSections = [
       "Mantené la trazabilidad e identificá en el comprobante de qué partida salió cada producto",
       "Llevá un control más ordenado del stock y los vencimientos",
     ],
-    image: "/fidel/distribuidoras-partidas.png",
+    image: "/fidel/distribuidoras-partidas.webp",
     reverse: false,
   },
   {
@@ -140,7 +140,7 @@ const detailSections = [
       "Mejorá el seguimiento y la organización del equipo comercial",
       "Obtené mayor visibilidad sobre la actividad de tus preventistas en la calle",
     ],
-    image: "/fidel/distribuidoras-geolocalizacion.png",
+    image: "/fidel/distribuidoras-geolocalizacion.webp",
     reverse: true,
   },
 ];
@@ -232,7 +232,7 @@ export default function DistribuidorasPage() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <img
-            src="/fidel/distribuidoras.png"
+            src="/fidel/distribuidoras.webp"
             alt="Sistema Fidel para distribuidoras"
             className="w-full h-auto"
           />
@@ -418,7 +418,7 @@ export default function DistribuidorasPage() {
                 url="https://www.instagram.com/fidelsistema/reel/DFOpX2fP0l4/"
                 width={320}
                 title="Fidel para Distribuidoras"
-                thumbnail="/fidel/reels/distribuidoras.jpg"
+                thumbnail="/fidel/reels/distribuidoras.webp"
               />
             </div>
           </div>

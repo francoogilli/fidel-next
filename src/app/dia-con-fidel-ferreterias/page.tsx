@@ -165,7 +165,7 @@ export default function DiaConFidelPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diaf1.png"
+            src="/fidel/diaf1.webp"
             alt="Apertura de caja"
             className="w-full h-auto object-cover"
           />
@@ -180,7 +180,7 @@ export default function DiaConFidelPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diaf2.png"
+            src="/fidel/diaf2.webp"
             alt="Actualización masiva"
             className="w-full h-auto object-cover"
           />
@@ -195,7 +195,7 @@ export default function DiaConFidelPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diaf3.png"
+            src="/fidel/diaf3.webp"
             alt="Un cliente necesita un taladro"
             className="w-full h-auto object-cover"
           />
@@ -210,7 +210,7 @@ export default function DiaConFidelPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diaf4.png"
+            src="/fidel/diaf4.webp"
             alt="Descubrís que un producto está por agotarse"
             className="w-full h-auto object-cover"
           />
@@ -225,7 +225,7 @@ export default function DiaConFidelPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diaf5.png"
+            src="/fidel/diaf5.webp"
             alt="Vendés por unidad lo que compraste por bulto"
             className="w-full h-auto object-cover"
           />
@@ -240,7 +240,7 @@ export default function DiaConFidelPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diaf6.png"
+            src="/fidel/diaf6.webp"
             alt="Emitís una factura en segundos"
             className="w-full h-auto object-cover"
           />
@@ -255,7 +255,7 @@ export default function DiaConFidelPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diaf7.png"
+            src="/fidel/diaf7.webp"
             alt="Un cliente pide una lista de precios"
             className="w-full h-auto object-cover"
           />
@@ -270,7 +270,7 @@ export default function DiaConFidelPage() {
       mock: (
         <div className="rounded-[24px] overflow-hidden border border-[#e9e9e9d3] bg-white/40">
           <img
-            src="/fidel/diaf8.png"
+            src="/fidel/diaf8.webp"
             alt="Un cliente pide una lista de precios"
             className="w-full h-auto object-cover"
           />

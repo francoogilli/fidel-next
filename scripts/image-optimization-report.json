@@ -1,0 +1,1259 @@
+{
+  "beforeBytes": 84801459,
+  "afterBytes": 12471469,
+  "images": [
+    {
+      "from": "public/a.jpg",
+      "to": "public/a.webp",
+      "beforeBytes": 31942,
+      "afterBytes": 17902,
+      "width": 663,
+      "height": 303,
+      "alpha": false,
+      "sha256": "613c9f791ead70301ef06f728241338d4593857572c643e3f7593bc983a2844d"
+    },
+    {
+      "from": "public/aaa.avif",
+      "to": "public/aaa.avif",
+      "beforeBytes": 122255,
+      "afterBytes": 100357,
+      "width": 2048,
+      "height": 1035,
+      "alpha": true,
+      "sha256": "5b722f2184016105038d2b601451fcc97b9a9f84f2d6eb94de7151676eabc8a4"
+    },
+    {
+      "from": "public/acopio-ferreteria.png",
+      "to": "public/acopio-ferreteria.webp",
+      "beforeBytes": 2089999,
+      "afterBytes": 165296,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "e16e3c1dadc846f16ebad1687721352ee2b5ad003c0c157420f4d0c59ba8c51c"
+    },
+    {
+      "from": "public/ai-carga-cheque.png",
+      "to": "public/ai-carga-cheque.webp",
+      "beforeBytes": 1126984,
+      "afterBytes": 44706,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "33e5a59dd01bf503209ebac206b701ef2342c7353213e61dca260061351a7eb5"
+    },
+    {
+      "from": "public/ai-carga-factura.png",
+      "to": "public/ai-carga-factura.webp",
+      "beforeBytes": 1137187,
+      "afterBytes": 52922,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "1b0b3b24007ad06b50d14a775f78374821f1065a1176fcdc44b150f98f243c28"
+    },
+    {
+      "from": "public/arrow.png",
+      "to": "public/arrow.webp",
+      "beforeBytes": 8776,
+      "afterBytes": 2684,
+      "width": 111,
+      "height": 220,
+      "alpha": true,
+      "sha256": "f143d7e575a1689f3df816997a86846c15735575607a3a5cd0fc1f17afbbf1eb"
+    },
+    {
+      "from": "public/b.jpg",
+      "to": "public/b.webp",
+      "beforeBytes": 33112,
+      "afterBytes": 17956,
+      "width": 564,
+      "height": 307,
+      "alpha": false,
+      "sha256": "49d8052de820fd42ca8b370c7d3cc90e9a85023d83a5c17e12dcb5d8c2f1dd8c"
+    },
+    {
+      "from": "public/background.svg",
+      "to": "public/background.svg",
+      "beforeBytes": 535199,
+      "afterBytes": 447656,
+      "sha256": "6b6c7d976050648dbda021875e3336c5017cf94b9eb82356ccf7ed4b8ccbd482"
+    },
+    {
+      "from": "public/background1.svg",
+      "to": "public/background1.svg",
+      "beforeBytes": 1802,
+      "afterBytes": 1802,
+      "sha256": "a052ac95772636ffca825a727a040cf026417e69f62d65c8b170cfe09759a618"
+    },
+    {
+      "from": "public/canvas.webp",
+      "to": "public/canvas.avif",
+      "beforeBytes": 1422208,
+      "afterBytes": 645795,
+      "width": 1746,
+      "height": 901,
+      "alpha": true,
+      "sha256": "2d5c28ae88bab7fdd0dff6bbe2de26e848e383dc8f5bb08cc3bd88ab6f6ec82a"
+    },
+    {
+      "from": "public/coin.png",
+      "to": "public/coin.webp",
+      "beforeBytes": 552134,
+      "afterBytes": 270590,
+      "width": 756,
+      "height": 756,
+      "alpha": true,
+      "sha256": "548c5faeeec30c158d9daaff84b29f4175ffcf2aaa0a1b123837df36d4031b52"
+    },
+    {
+      "from": "public/coin2.png",
+      "to": "public/coin2.webp",
+      "beforeBytes": 468644,
+      "afterBytes": 231006,
+      "width": 699,
+      "height": 698,
+      "alpha": true,
+      "sha256": "30836d2d25edeba45dfc3d81437ad91e3044c9dd6b71fe2ee4e2bd2359335140"
+    },
+    {
+      "from": "public/coin3.png",
+      "to": "public/coin3.webp",
+      "beforeBytes": 761357,
+      "afterBytes": 367352,
+      "width": 993,
+      "height": 974,
+      "alpha": true,
+      "sha256": "9b119e23a950f5c51002900ca651e3b0f2d334219cc1092dc61f0a056c5a8a25"
+    },
+    {
+      "from": "public/coin4.png",
+      "to": "public/coin4.webp",
+      "beforeBytes": 316748,
+      "afterBytes": 140568,
+      "width": 786,
+      "height": 788,
+      "alpha": true,
+      "sha256": "5881ed12115ebbf3496fb6911ad3e38dff171ee57a38a8e8d13d82e97ea92698"
+    },
+    {
+      "from": "public/coin5.png",
+      "to": "public/coin5.webp",
+      "beforeBytes": 297996,
+      "afterBytes": 128026,
+      "width": 427,
+      "height": 585,
+      "alpha": true,
+      "sha256": "b46c4e404a2620e9303c8491d507e6bc455e47481c695533c2c389470444e016"
+    },
+    {
+      "from": "public/coin6.png",
+      "to": "public/coin6.webp",
+      "beforeBytes": 691221,
+      "afterBytes": 336062,
+      "width": 863,
+      "height": 865,
+      "alpha": true,
+      "sha256": "49835c237dd2d402f54ad42f78d59379dbaadc703fb9cb19b35891a3b3003e1c"
+    },
+    {
+      "from": "public/coin7.png",
+      "to": "public/coin7.webp",
+      "beforeBytes": 68464,
+      "afterBytes": 36296,
+      "width": 435,
+      "height": 146,
+      "alpha": true,
+      "sha256": "64cd8e71fcad11aa1a6a13a9e4ed90c177bca39b69d216bff5dc4d839fbb70a4"
+    },
+    {
+      "from": "public/coin8.png",
+      "to": "public/coin8.webp",
+      "beforeBytes": 443400,
+      "afterBytes": 214568,
+      "width": 874,
+      "height": 780,
+      "alpha": true,
+      "sha256": "c6b0ce3f3ce89d607d5dcb6ba7292661692228519bf410457b20f360b6006d65"
+    },
+    {
+      "from": "public/coin82.png",
+      "to": "public/coin82.webp",
+      "beforeBytes": 163168,
+      "afterBytes": 77030,
+      "width": 529,
+      "height": 472,
+      "alpha": true,
+      "sha256": "bc9b2452e03e340508022c385672b78cdb103e8803df88ed21898266ba66d25a"
+    },
+    {
+      "from": "public/cositas.svg",
+      "to": "public/cositas.svg",
+      "beforeBytes": 19937,
+      "afterBytes": 19285,
+      "sha256": "c228cefccae0d1eb2c170776a79e48f6de93ab7603c24439608daf714dc95331"
+    },
+    {
+      "from": "public/deco.png",
+      "to": "public/deco.webp",
+      "beforeBytes": 1724388,
+      "afterBytes": 145778,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "3f160173e1d42e354a0ad234b8022845e53d85bcb6f23bbb8d78d91b5ef93d20"
+    },
+    {
+      "from": "public/deco1.png",
+      "to": "public/deco1.webp",
+      "beforeBytes": 2014831,
+      "afterBytes": 165300,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "dee30859ed53bb8fbf700b36274b6bf2f570eed2f2c954f0013c9dc40ad5f949"
+    },
+    {
+      "from": "public/deco2.png",
+      "to": "public/deco2.webp",
+      "beforeBytes": 2011110,
+      "afterBytes": 146652,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "a8c32c5cd2b3ce26a4b31c18ff955d016ee1c65e5bdabd56b84e957e0ce87776"
+    },
+    {
+      "from": "public/deco3.png",
+      "to": "public/deco3.webp",
+      "beforeBytes": 2024007,
+      "afterBytes": 146364,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "88dbc296b762fbecbe7495a2f3a582167a069b467452e570054c4121fb07e0aa"
+    },
+    {
+      "from": "public/dia-repuestos-01.png",
+      "to": "public/dia-repuestos-01.webp",
+      "beforeBytes": 116347,
+      "afterBytes": 70176,
+      "width": 1587,
+      "height": 571,
+      "alpha": false,
+      "sha256": "14a9158bddbc1847b16dc0cb3924251cd1134ce3bbe0fda6e18c59ed4ba072c0"
+    },
+    {
+      "from": "public/dia-repuestos-02.webp",
+      "to": "public/dia-repuestos-02.webp",
+      "beforeBytes": 128608,
+      "afterBytes": 112228,
+      "width": 1024,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "b208584637fdcc3810fce071f0a1c03c6c6b3fe8452d5dab78eeef092b85862f"
+    },
+    {
+      "from": "public/dia-repuestos-03.png",
+      "to": "public/dia-repuestos-03.webp",
+      "beforeBytes": 1004936,
+      "afterBytes": 61250,
+      "width": 1701,
+      "height": 924,
+      "alpha": false,
+      "sha256": "778aec32b93c27b165da43b2c40f71812616ba3e5670c0a2b60d11e6ff95ac19"
+    },
+    {
+      "from": "public/dia-repuestos-04.webp",
+      "to": "public/dia-repuestos-04.webp",
+      "beforeBytes": 440240,
+      "afterBytes": 440240,
+      "width": 1110,
+      "height": 1200,
+      "alpha": false,
+      "sha256": "6412f98351a41550105c16286c6b7d9613aec9e7900609314d41ef1657ea7897"
+    },
+    {
+      "from": "public/dia-repuestos-07.webp",
+      "to": "public/dia-repuestos-07.webp",
+      "beforeBytes": 206256,
+      "afterBytes": 178664,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "5b5f7142898e1ebe4b0da6436931967d284d837d454429090b6e3f4b1c0af3ef"
+    },
+    {
+      "from": "public/dia-repuestos-08.png",
+      "to": "public/dia-repuestos-08.webp",
+      "beforeBytes": 886849,
+      "afterBytes": 51340,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "201efe5ab7c8059eb0c68c3c38c08fb26dee04860f1d14d8f8187f993f9630f2"
+    },
+    {
+      "from": "public/dia-repuestos-09.png",
+      "to": "public/dia-repuestos-09.webp",
+      "beforeBytes": 860443,
+      "afterBytes": 24930,
+      "width": 1842,
+      "height": 854,
+      "alpha": false,
+      "sha256": "024866b5df52b931d5f80cd402f06aa4686b481957b586cb8c68fe1bb4422321"
+    },
+    {
+      "from": "public/dia-repuestos-10.webp",
+      "to": "public/dia-repuestos-10.webp",
+      "beforeBytes": 192626,
+      "afterBytes": 171096,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "86a74b52ccd6ea72b4581b01922b4bcafb377b9ef49684e67bdf1a977d642969"
+    },
+    {
+      "from": "public/dia-repuestos-18h.webp",
+      "to": "public/dia-repuestos-18h.webp",
+      "beforeBytes": 241910,
+      "afterBytes": 241910,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "5fca1a518b4a1ab10d4aee60f62884738edc0549d5825a9a1e5a3c2ddbddca95"
+    },
+    {
+      "from": "public/diade1.png",
+      "to": "public/diade1.webp",
+      "beforeBytes": 1112855,
+      "afterBytes": 65864,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "516032c6f8668c780b04da97d782ab9efb2905f864420348fce91d9b5b3bf8a6"
+    },
+    {
+      "from": "public/diade2.png",
+      "to": "public/diade2.webp",
+      "beforeBytes": 1002842,
+      "afterBytes": 40900,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "6245eee4179943b8b0ab1207d19ad183e051b55dc37719494c4bd47685645710"
+    },
+    {
+      "from": "public/diade4.png",
+      "to": "public/diade4.webp",
+      "beforeBytes": 985354,
+      "afterBytes": 45250,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "f0830d08e742648736e9b5466d0962f6b4b22af8c1e15dd2f8b442677827615c"
+    },
+    {
+      "from": "public/diade6.png",
+      "to": "public/diade6.webp",
+      "beforeBytes": 1024669,
+      "afterBytes": 49706,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "bc1615fa7e01b67b63b51ac6f3edab33a0fb0b42185ca9a07f800520a90ca708"
+    },
+    {
+      "from": "public/diade7.png",
+      "to": "public/diade7.webp",
+      "beforeBytes": 889598,
+      "afterBytes": 32946,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "e2e397283e6f3155dfdb3b4e3dfcdb25e8e82c63bf551600d53150b63ca381ff"
+    },
+    {
+      "from": "public/diadi1.png",
+      "to": "public/diadi1.webp",
+      "beforeBytes": 1325100,
+      "afterBytes": 59938,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "0249b23babe6e4653a293151e2d9ac94c70b34e38bbd8c9735e9bccaa9853d4e"
+    },
+    {
+      "from": "public/diadi2.png",
+      "to": "public/diadi2.webp",
+      "beforeBytes": 1219024,
+      "afterBytes": 54404,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "d7ec46915f9af690b377395c22cacba9f296d21baaa3228ed7973945ddabb18d"
+    },
+    {
+      "from": "public/diadi3.png",
+      "to": "public/diadi3.webp",
+      "beforeBytes": 1228078,
+      "afterBytes": 65986,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "94188ca3ea40b6e9e5a35b441dc05453fb743ad05d6a2edbadcdd0929b3568d2"
+    },
+    {
+      "from": "public/diadi4.png",
+      "to": "public/diadi4.webp",
+      "beforeBytes": 1137336,
+      "afterBytes": 23954,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "318fe8d2bbcd23965a40162990b72f7d1cf7069a41ce02219ec7eeaf83e1d946"
+    },
+    {
+      "from": "public/diadi5.png",
+      "to": "public/diadi5.webp",
+      "beforeBytes": 1361226,
+      "afterBytes": 54460,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "2fcad986af982fdaff1e817454436772109b6b25b8871f02264c14486eaab2de"
+    },
+    {
+      "from": "public/diadi6.png",
+      "to": "public/diadi6.webp",
+      "beforeBytes": 1122578,
+      "afterBytes": 51340,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "201efe5ab7c8059eb0c68c3c38c08fb26dee04860f1d14d8f8187f993f9630f2"
+    },
+    {
+      "from": "public/diadi7.png",
+      "to": "public/diadi7.webp",
+      "beforeBytes": 995090,
+      "afterBytes": 57404,
+      "width": 1774,
+      "height": 887,
+      "alpha": false,
+      "sha256": "8198e5a5d632d9244949d714f8db1a1514f0fec15052ba314a5003e14d3921db"
+    },
+    {
+      "from": "public/diadi8.png",
+      "to": "public/diadi8.webp",
+      "beforeBytes": 1178020,
+      "afterBytes": 32962,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "339105de242fff274efd736430a77e074350f4106d7b0e170cd82eab2165019a"
+    },
+    {
+      "from": "public/diadi9.png",
+      "to": "public/diadi9.webp",
+      "beforeBytes": 1174378,
+      "afterBytes": 34582,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "7ba50e75953b7816cbdbdf25a6f28ab4131d73a806e90a25f44a9a759e94cc6c"
+    },
+    {
+      "from": "public/diaf1.png",
+      "to": "public/diaf1.webp",
+      "beforeBytes": 1311644,
+      "afterBytes": 62194,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "bd4f2e965aa5bf1caebf82ca52dba69c718b7e18ca4490df33983d05cb4f69b9"
+    },
+    {
+      "from": "public/diaf2.png",
+      "to": "public/diaf2.webp",
+      "beforeBytes": 1028680,
+      "afterBytes": 61250,
+      "width": 1701,
+      "height": 924,
+      "alpha": false,
+      "sha256": "778aec32b93c27b165da43b2c40f71812616ba3e5670c0a2b60d11e6ff95ac19"
+    },
+    {
+      "from": "public/diaf3.png",
+      "to": "public/diaf3.webp",
+      "beforeBytes": 924781,
+      "afterBytes": 30190,
+      "width": 1745,
+      "height": 901,
+      "alpha": false,
+      "sha256": "74b02173df4e197628266a02e5151a4bf456da922a38b1cee251c892e6e48dd7"
+    },
+    {
+      "from": "public/diaf4.png",
+      "to": "public/diaf4.webp",
+      "beforeBytes": 985934,
+      "afterBytes": 38808,
+      "width": 1690,
+      "height": 931,
+      "alpha": false,
+      "sha256": "20a4ba95ff04c6e9ff0df5858e5ea8532e6c5f8e8315a3992b326a692f51167d"
+    },
+    {
+      "from": "public/diaf5.png",
+      "to": "public/diaf5.webp",
+      "beforeBytes": 894499,
+      "afterBytes": 24930,
+      "width": 1842,
+      "height": 854,
+      "alpha": false,
+      "sha256": "024866b5df52b931d5f80cd402f06aa4686b481957b586cb8c68fe1bb4422321"
+    },
+    {
+      "from": "public/diaf6.png",
+      "to": "public/diaf6.webp",
+      "beforeBytes": 998442,
+      "afterBytes": 44680,
+      "width": 1731,
+      "height": 909,
+      "alpha": false,
+      "sha256": "40f1e5d71d44592876fef20ee2a3a9fdbeab5d328e6ba0b2d29303799cf120d9"
+    },
+    {
+      "from": "public/diaf7.png",
+      "to": "public/diaf7.webp",
+      "beforeBytes": 1213015,
+      "afterBytes": 42628,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "5b9b107a58c20320aa7b7c75fbb8acb5ac3489fad4f881ae0d32f0ceceb3fae5"
+    },
+    {
+      "from": "public/diaf8.png",
+      "to": "public/diaf8.webp",
+      "beforeBytes": 1153010,
+      "afterBytes": 37462,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "d5d8dbedd68d8d93586752de6bc8330b1767b6c09b7bf5fa4a7dfff0f71a2946"
+    },
+    {
+      "from": "public/distribuidoras-geolocalizacion.png",
+      "to": "public/distribuidoras-geolocalizacion.webp",
+      "beforeBytes": 2014169,
+      "afterBytes": 157068,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "6f151dad225257c4473b27e2cba7db49c3fdc31f00d2a47599deab5f46ee3ff7"
+    },
+    {
+      "from": "public/distribuidoras-partidas.png",
+      "to": "public/distribuidoras-partidas.webp",
+      "beforeBytes": 2073463,
+      "afterBytes": 167740,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "f1b790e01191a73e9fd511ab649b4eb3f976a6bf977f2f3be55096c20a6515da"
+    },
+    {
+      "from": "public/distribuidoras.png",
+      "to": "public/distribuidoras.webp",
+      "beforeBytes": 1886858,
+      "afterBytes": 159756,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "e3cb50e68f3ce250f8738b32c12d5898cb86c697ea6dd8af0b6983c6fe56fe40"
+    },
+    {
+      "from": "public/distribuidoras1.png",
+      "to": "public/distribuidoras1.webp",
+      "beforeBytes": 298425,
+      "afterBytes": 136358,
+      "width": 440,
+      "height": 332,
+      "alpha": true,
+      "sha256": "d6d74634d18eaad94b7bf58adb0503a1be833760358a1266f61da821f307b7b4"
+    },
+    {
+      "from": "public/distribuidoras2.png",
+      "to": "public/distribuidoras2.webp",
+      "beforeBytes": 243181,
+      "afterBytes": 109938,
+      "width": 440,
+      "height": 331,
+      "alpha": true,
+      "sha256": "706fee58ab979e4a43c5600890247737fa6574697813a05a3862f0b5d0b82dbf"
+    },
+    {
+      "from": "public/distribuidoras3.png",
+      "to": "public/distribuidoras3.webp",
+      "beforeBytes": 257433,
+      "afterBytes": 119190,
+      "width": 437,
+      "height": 327,
+      "alpha": true,
+      "sha256": "fb3476197604a45cc9be7acbbef13e87efd60221af4bf1b085fe53f1a785d545"
+    },
+    {
+      "from": "public/distribuidoras4.png",
+      "to": "public/distribuidoras4.webp",
+      "beforeBytes": 1859981,
+      "afterBytes": 99104,
+      "width": 1447,
+      "height": 1087,
+      "alpha": false,
+      "sha256": "70124764e398f3580d42bf85625ac2886a82a80daa35b79aaa1ee4f86c50859f"
+    },
+    {
+      "from": "public/ferreteria1.png",
+      "to": "public/ferreteria1.webp",
+      "beforeBytes": 2124442,
+      "afterBytes": 179962,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "ddc6af9a3bc8907362c791531c8ae9af952bf7dc325bc052c43ca85aa0d14f89"
+    },
+    {
+      "from": "public/ferreteria2.png",
+      "to": "public/ferreteria2.webp",
+      "beforeBytes": 1907070,
+      "afterBytes": 133206,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "a4cc2749aeaecc8527e6e0c9f193d9e63d14086915461ce9994b0608a9b0630a"
+    },
+    {
+      "from": "public/ferreteria3.png",
+      "to": "public/ferreteria3.webp",
+      "beforeBytes": 2108401,
+      "afterBytes": 182662,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "5c3ee9d7a38eae0437bd35aa12459e8649c42f1f1936f83a3a1b7de90d653152"
+    },
+    {
+      "from": "public/ferreterias1.png",
+      "to": "public/ferreterias1.webp",
+      "beforeBytes": 2064965,
+      "afterBytes": 219914,
+      "width": 1677,
+      "height": 938,
+      "alpha": false,
+      "sha256": "20d787c169a551cf6967acde19118655ca0b897c3dc1dd39aa248be766cbb476"
+    },
+    {
+      "from": "public/fidel1.svg",
+      "to": "public/fidel1.svg",
+      "beforeBytes": 1591,
+      "afterBytes": 1423,
+      "sha256": "366df83b0c527f3da27cfc4a29a22ea3c9912a6f2fc583e83e927d61172e2e55"
+    },
+    {
+      "from": "public/fidelapp1.webp",
+      "to": "public/fidelapp1.webp",
+      "beforeBytes": 117372,
+      "afterBytes": 117372,
+      "width": 944,
+      "height": 613,
+      "alpha": true,
+      "sha256": "cb0e2a5305723c4cf0768fc1473672cc86f14a5c742a3df6216b2c96b597f22e"
+    },
+    {
+      "from": "public/fidelapp2.webp",
+      "to": "public/fidelapp2.webp",
+      "beforeBytes": 62320,
+      "afterBytes": 62320,
+      "width": 956,
+      "height": 629,
+      "alpha": true,
+      "sha256": "27f2bfb0ee08d74eddd56e00f5b0b3fe98b8d48618ab662d0e2ba9cda0ea20e4"
+    },
+    {
+      "from": "public/fidelapp3.webp",
+      "to": "public/fidelapp3.webp",
+      "beforeBytes": 80320,
+      "afterBytes": 80320,
+      "width": 1296,
+      "height": 1030,
+      "alpha": true,
+      "sha256": "876b1c68d901b84d502d9a9d43b61ddc2e0099328328a83f6c6709bc7a32f50b"
+    },
+    {
+      "from": "public/fidelapp4.webp",
+      "to": "public/fidelapp4.webp",
+      "beforeBytes": 180836,
+      "afterBytes": 180836,
+      "width": 1296,
+      "height": 1030,
+      "alpha": true,
+      "sha256": "2a2b651ed1f04447fd51337be369746ffa57c2a111ee1f6dbb228eb98319f16e"
+    },
+    {
+      "from": "public/fidelito-transparente.png",
+      "to": "public/fidelito-transparente.webp",
+      "beforeBytes": 293681,
+      "afterBytes": 136452,
+      "width": 464,
+      "height": 496,
+      "alpha": true,
+      "sha256": "39cc92dd70893f61c57c6177f640d99ef5a3aeda9afa12cf6a7d7c7be4faedf4"
+    },
+    {
+      "from": "public/fidelnew.svg",
+      "to": "public/fidelnew.svg",
+      "beforeBytes": 3784,
+      "afterBytes": 3337,
+      "sha256": "1554b4587f8247c85c173a514d1852cc52ba68ba998de8fa6179275e895dfd61"
+    },
+    {
+      "from": "public/fondo.avif",
+      "to": "public/fondo.avif",
+      "beforeBytes": 8529,
+      "afterBytes": 8529,
+      "width": 1996,
+      "height": 1984,
+      "alpha": true,
+      "sha256": "2abf52571ff4a76938255b20ed9976b97d38b86019e3b1610c1d0eefedaf3294"
+    },
+    {
+      "from": "public/fondo.png",
+      "to": "public/fondo.webp",
+      "beforeBytes": 457155,
+      "afterBytes": 98624,
+      "width": 1996,
+      "height": 1984,
+      "alpha": true,
+      "sha256": "1b3cd3aa4f8fb0e2b8fef32df46b0861fc96de44ec088188d61cfdea4e37b76d"
+    },
+    {
+      "from": "public/fondointe.avif",
+      "to": "public/fondointe.avif",
+      "beforeBytes": 87828,
+      "afterBytes": 38587,
+      "width": 855,
+      "height": 764,
+      "alpha": true,
+      "sha256": "28b9756c7c188a237dccdf822eba053ea72144e05441c8a19284366fc7e29056"
+    },
+    {
+      "from": "public/fondointe.svg",
+      "to": "public/fondointe.svg",
+      "beforeBytes": 257912,
+      "afterBytes": 256882,
+      "sha256": "35305537b2cd5bb60ca4ef26461f24fd9a3c0a6b67e71560f10a69147d8b7e60"
+    },
+    {
+      "from": "public/func1.webp",
+      "to": "public/func1.webp",
+      "beforeBytes": 12316,
+      "afterBytes": 12316,
+      "width": 640,
+      "height": 412,
+      "alpha": true,
+      "sha256": "948295e45ec57f563e93b08a04c205442478389e80cc34ac4fe910cd5896f55a"
+    },
+    {
+      "from": "public/funcionalidades/app.webp",
+      "to": "public/funcionalidades/app.webp",
+      "beforeBytes": 29866,
+      "afterBytes": 15904,
+      "width": 360,
+      "height": 467,
+      "alpha": true,
+      "sha256": "0b2b77b51c836d539f19e763685988d8c8abd22b3807d50cbe978df261b2f399"
+    },
+    {
+      "from": "public/funcionalidades/bancos.webp",
+      "to": "public/funcionalidades/bancos.webp",
+      "beforeBytes": 35854,
+      "afterBytes": 21710,
+      "width": 424,
+      "height": 493,
+      "alpha": true,
+      "sha256": "17daccd44dd768d110d98ed87d60fed2fa999766591753dcb479d42753a1122a"
+    },
+    {
+      "from": "public/funcionalidades/estadisticas.webp",
+      "to": "public/funcionalidades/estadisticas.webp",
+      "beforeBytes": 27888,
+      "afterBytes": 12238,
+      "width": 400,
+      "height": 383,
+      "alpha": true,
+      "sha256": "962a8bdc87f12c3a0e72b99033be52000cbbc9028528bf026019176c2c210ae2"
+    },
+    {
+      "from": "public/funcionalidades/integracion.webp",
+      "to": "public/funcionalidades/integracion.webp",
+      "beforeBytes": 56064,
+      "afterBytes": 40944,
+      "width": 418,
+      "height": 426,
+      "alpha": true,
+      "sha256": "a28907d77f75db5f5139c4f0666f929d79ddb25ec8bb04b759a5a4893cc497da"
+    },
+    {
+      "from": "public/funcionalidades/productos.webp",
+      "to": "public/funcionalidades/productos.webp",
+      "beforeBytes": 22262,
+      "afterBytes": 6688,
+      "width": 479,
+      "height": 397,
+      "alpha": true,
+      "sha256": "8328531568bedca1cf504c469e32851eeed45e13fcf7a2d7f68a3b1438cc0aea"
+    },
+    {
+      "from": "public/funcionalidades/proveedores.webp",
+      "to": "public/funcionalidades/proveedores.webp",
+      "beforeBytes": 27578,
+      "afterBytes": 11750,
+      "width": 465,
+      "height": 528,
+      "alpha": true,
+      "sha256": "e8e349ea51096824e1f41b48923b2417f8ce5714a2fe4bf2fc0be346a193016d"
+    },
+    {
+      "from": "public/funcionalidades/ventas.webp",
+      "to": "public/funcionalidades/ventas.webp",
+      "beforeBytes": 44596,
+      "afterBytes": 27680,
+      "width": 433,
+      "height": 436,
+      "alpha": true,
+      "sha256": "ed62813a3cbab60fc9cd603567c1d8cbe2727f60b119257a0be8bfe61c4a9c12"
+    },
+    {
+      "from": "public/hero-poster.png",
+      "to": "public/hero-poster.webp",
+      "beforeBytes": 230332,
+      "afterBytes": 104082,
+      "width": 956,
+      "height": 677,
+      "alpha": true,
+      "sha256": "75a5b94aeffb1a9790bbe5a9b8c8e28a87ae1a2f5d3bf2a9c3cfc41d7286e7e1"
+    },
+    {
+      "from": "public/image.png",
+      "to": "public/image.webp",
+      "beforeBytes": 46149,
+      "afterBytes": 33410,
+      "width": 1080,
+      "height": 689,
+      "alpha": false,
+      "sha256": "88c9656713207ac86e7bb6a04fb66c3128516dc811c27404ee221d5d3549f3c5"
+    },
+    {
+      "from": "public/image1.svg",
+      "to": "public/image1.svg",
+      "beforeBytes": 205015,
+      "afterBytes": 71038,
+      "sha256": "e9f13230f4362c4df053844339405446ddc404e065b481a8a07be3705f76064b"
+    },
+    {
+      "from": "public/image2.svg",
+      "to": "public/image2.svg",
+      "beforeBytes": 44960,
+      "afterBytes": 41810,
+      "sha256": "e8d767bd3ca5dc0013ff816b2c3d585dbf3667efc6239ad7051f5fee7b211650"
+    },
+    {
+      "from": "public/image3.svg",
+      "to": "public/image3.svg",
+      "beforeBytes": 291535,
+      "afterBytes": 146695,
+      "sha256": "f05a166a98ee9ce5c0dd8ca1acb1bee9df18020b856f70bf9a0a37a5e5b158a0"
+    },
+    {
+      "from": "public/image4.svg",
+      "to": "public/image4.svg",
+      "beforeBytes": 125094,
+      "afterBytes": 41419,
+      "sha256": "6521234b413143c0929690d1b014f1a1d449c0e9b1aada9ede6e5dc579addbf5"
+    },
+    {
+      "from": "public/integrationimage.png",
+      "to": "public/integrationimage.webp",
+      "beforeBytes": 427900,
+      "afterBytes": 153170,
+      "width": 851,
+      "height": 733,
+      "alpha": true,
+      "sha256": "37ca0f954d11935d5b5f93529c2cbf43504c7a78ce736a75a218423319ea374a"
+    },
+    {
+      "from": "public/iphone4.png",
+      "to": "public/iphone4.webp",
+      "beforeBytes": 247147,
+      "afterBytes": 86360,
+      "width": 833,
+      "height": 1695,
+      "alpha": true,
+      "sha256": "3bdda0a78287b3281d16a9b2baef6df7072a195d8527fa33207e9bd18af17e9b"
+    },
+    {
+      "from": "public/mercado-libre.png",
+      "to": "public/mercado-libre.webp",
+      "beforeBytes": 653670,
+      "afterBytes": 400404,
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "sha256": "ba8e78c5ceb49d5a1f45f0042efdb9b599862cc674fa5d3668c9df180f3c80aa"
+    },
+    {
+      "from": "public/mesage.png",
+      "to": "public/mesage.webp",
+      "beforeBytes": 298635,
+      "afterBytes": 155606,
+      "width": 1885,
+      "height": 771,
+      "alpha": true,
+      "sha256": "3375ea3347d865d24f6f9a8f2ba748c9ec09a8f456c7ac28fc58b700f07f223a"
+    },
+    {
+      "from": "public/mobileimage.png",
+      "to": "public/mobileimage.webp",
+      "beforeBytes": 228234,
+      "afterBytes": 102758,
+      "width": 807,
+      "height": 658,
+      "alpha": true,
+      "sha256": "a81f952f60c9bf3989609d73c4b0b5ad211f1f8653d2e60134fc7cc7b84e2f82"
+    },
+    {
+      "from": "public/papelitoderecho.avif",
+      "to": "public/papelitoderecho.avif",
+      "beforeBytes": 30873,
+      "afterBytes": 21256,
+      "width": 268,
+      "height": 256,
+      "alpha": true,
+      "sha256": "2d38a12e7e0fd56fe8dc247965c4593693f638b824496daa78e3f05262577a5b"
+    },
+    {
+      "from": "public/papelitoderecho.png",
+      "to": "public/papelitoderecho.webp",
+      "beforeBytes": 110204,
+      "afterBytes": 64712,
+      "width": 268,
+      "height": 256,
+      "alpha": true,
+      "sha256": "9cb396eaf10530c054869f92d5eb6d3536e1c6420f21560b19e26ccded2648e4"
+    },
+    {
+      "from": "public/papelitoizquierdo.avif",
+      "to": "public/papelitoizquierdo.avif",
+      "beforeBytes": 31244,
+      "afterBytes": 21691,
+      "width": 272,
+      "height": 256,
+      "alpha": true,
+      "sha256": "9f00e6535aa6660f7b250f176fa5af080db532ebfbc06ca921b19449002879d7"
+    },
+    {
+      "from": "public/papelitoizquierdo.png",
+      "to": "public/papelitoizquierdo.webp",
+      "beforeBytes": 112744,
+      "afterBytes": 66030,
+      "width": 272,
+      "height": 256,
+      "alpha": true,
+      "sha256": "d9c33a60503d533bad22c49a10b496cb4e2dcd59f794b46833504353006259f6"
+    },
+    {
+      "from": "public/pedidos-web-hero-v2.png",
+      "to": "public/pedidos-web-hero-v2.webp",
+      "beforeBytes": 1229339,
+      "afterBytes": 56816,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "06e90738bd4e4eb0d43b8050050853878b7bd49cfcfcf979da396c2d5ba9e380"
+    },
+    {
+      "from": "public/pedidos-web-section-v2.png",
+      "to": "public/pedidos-web-section-v2.webp",
+      "beforeBytes": 1313492,
+      "afterBytes": 71484,
+      "width": 1122,
+      "height": 1402,
+      "alpha": false,
+      "sha256": "740f32a0506eceef7e44a65ac2e734e41dcaa0bf17fd4ce7b08a679b56b14dd2"
+    },
+    {
+      "from": "public/pedidos-web-workflow-fidel-order.png",
+      "to": "public/pedidos-web-workflow-fidel-order.webp",
+      "beforeBytes": 1308855,
+      "afterBytes": 106596,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "73930544789823e8f2a68cfc356376abc2d2a959fe1e16d609acc627a3544c23"
+    },
+    {
+      "from": "public/pedidos-web-workflow-login.png",
+      "to": "public/pedidos-web-workflow-login.webp",
+      "beforeBytes": 954268,
+      "afterBytes": 45352,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "924b96ce0a8fa80654a55320de5efacd90975e003bc50d4b23ac2a463afb04a6"
+    },
+    {
+      "from": "public/pedidos-web-workflow-order.png",
+      "to": "public/pedidos-web-workflow-order.webp",
+      "beforeBytes": 1144035,
+      "afterBytes": 84408,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "4265dc0292514ea51be50a268e9036cd2bcdbbec34de4a5fad52847f018563e5"
+    },
+    {
+      "from": "public/pedidos-web-workflow-products.png",
+      "to": "public/pedidos-web-workflow-products.webp",
+      "beforeBytes": 1141588,
+      "afterBytes": 77014,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "66f95f553dce3e8e53bf034ca862a51c7e245dacfbb59014ee79a07fa0f72d20"
+    },
+    {
+      "from": "public/people.svg",
+      "to": "public/people.svg",
+      "beforeBytes": 72644,
+      "afterBytes": 38705,
+      "sha256": "4fa0e1df8d50bd8178cb17ea247dfb7e56b9a4027c995d2dcc3982d3b800d69d"
+    },
+    {
+      "from": "public/phone.avif",
+      "to": "public/phone.avif",
+      "beforeBytes": 29452,
+      "afterBytes": 25322,
+      "width": 1021,
+      "height": 1024,
+      "alpha": true,
+      "sha256": "cdd0a4426719eed5bed92ec3be45122e5ef84845fc699d19c3853f55d96bb4dd"
+    },
+    {
+      "from": "public/phone.png",
+      "to": "public/phone.webp",
+      "beforeBytes": 258673,
+      "afterBytes": 85892,
+      "width": 1021,
+      "height": 1024,
+      "alpha": true,
+      "sha256": "c5efc135333fd35f2c23788533d4859b2aa2015e23e996f75f5a61913efbc9d8"
+    },
+    {
+      "from": "public/pruebaa.avif",
+      "to": "public/pruebaa.avif",
+      "beforeBytes": 64441,
+      "afterBytes": 54520,
+      "width": 988,
+      "height": 1024,
+      "alpha": true,
+      "sha256": "57ea64c5433dee0e0adeaa40b275d4cb503d7ec19d3aa5bebf0c55e50d2fdb26"
+    },
+    {
+      "from": "public/reel.jpg",
+      "to": "public/reel.webp",
+      "beforeBytes": 46725,
+      "afterBytes": 37236,
+      "width": 540,
+      "height": 960,
+      "alpha": false,
+      "sha256": "2db8528902e13140d68491601a18bcadc5bb5d8064c6cae43e302aba9c69b814"
+    },
+    {
+      "from": "public/reels/decoracion.jpg",
+      "to": "public/reels/decoracion.webp",
+      "beforeBytes": 47202,
+      "afterBytes": 32136,
+      "width": 540,
+      "height": 960,
+      "alpha": false,
+      "sha256": "cdf370ee135f26b645f39635b2c1bb0989a3bc913d302611d8d5783779bab46d"
+    },
+    {
+      "from": "public/reels/distribuidoras.jpg",
+      "to": "public/reels/distribuidoras.webp",
+      "beforeBytes": 84424,
+      "afterBytes": 62156,
+      "width": 540,
+      "height": 960,
+      "alpha": false,
+      "sha256": "5e8473dd44cc3245af2b1ede6625db2b1f065bddb5bb6072c24aba55f061b4e7"
+    },
+    {
+      "from": "public/reels/ferreterias.jpg",
+      "to": "public/reels/ferreterias.webp",
+      "beforeBytes": 83447,
+      "afterBytes": 64124,
+      "width": 540,
+      "height": 960,
+      "alpha": false,
+      "sha256": "eb8cf7008d4d77ac376bedc3ff6b7efd74312d3f50904897e3ae32eee4dccbe9"
+    },
+    {
+      "from": "public/reels/repuestos.jpg",
+      "to": "public/reels/repuestos.webp",
+      "beforeBytes": 68789,
+      "afterBytes": 48696,
+      "width": 540,
+      "height": 960,
+      "alpha": false,
+      "sha256": "340d420d19224c22e6f440f61b514c59c49bac659268da46f9f125be4acbd517"
+    },
+    {
+      "from": "public/repuestos.png",
+      "to": "public/repuestos.webp",
+      "beforeBytes": 1919662,
+      "afterBytes": 197344,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "4eea32974497f0584e8ebbe037eecf67a56a91ad67ea7783a59df1e872052a18"
+    },
+    {
+      "from": "public/repuestos1.png",
+      "to": "public/repuestos1.webp",
+      "beforeBytes": 2184969,
+      "afterBytes": 217582,
+      "width": 1535,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "166d26465dae33de440d14e44a2ab25327cda7c46fa4bc1999a0c590234a09e6"
+    },
+    {
+      "from": "public/repuestos2.png",
+      "to": "public/repuestos2.webp",
+      "beforeBytes": 1985237,
+      "afterBytes": 165378,
+      "width": 1448,
+      "height": 1086,
+      "alpha": false,
+      "sha256": "1b35303a5b1e6b980c9af7469d6701d0d67eb2033393330005fca595d678e9dd"
+    },
+    {
+      "from": "public/repuestos3.png",
+      "to": "public/repuestos3.webp",
+      "beforeBytes": 2096485,
+      "afterBytes": 176544,
+      "width": 1536,
+      "height": 1024,
+      "alpha": false,
+      "sha256": "6493d083e34f69dfb4bb75a93af423952f678d1e5037136605e04beb6724be18"
+    },
+    {
+      "from": "public/repuestos4.png",
+      "to": "public/repuestos4.webp",
+      "beforeBytes": 249774,
+      "afterBytes": 42144,
+      "width": 440,
+      "height": 333,
+      "alpha": false,
+      "sha256": "25e78addacb467be9579aafb37ae9a5939c9d49143931257d35f80b4bcafa9db"
+    },
+    {
+      "from": "public/star.svg",
+      "to": "public/star.svg",
+      "beforeBytes": 554,
+      "afterBytes": 396,
+      "sha256": "9883f77b5a27f2acdd7eafc78bd1fc0ec99c043b62dd44e69643cfaeee502501"
+    },
+    {
+      "from": "public/vector1.svg",
+      "to": "public/vector1.svg",
+      "beforeBytes": 247,
+      "afterBytes": 211,
+      "sha256": "c77c3dba53cc45fde3bac9e4c338bf1abee57e29302bc840b01fc89aeb5743b9"
+    },
+    {
+      "from": "public/vector2.svg",
+      "to": "public/vector2.svg",
+      "beforeBytes": 247,
+      "afterBytes": 205,
+      "sha256": "aad6e8d3ad0ccdc1478c0b3f75992399daebe6fa9c826cdc2daa88a097bf5c54"
+    },
+    {
+      "from": "public/vector3.svg",
+      "to": "public/vector3.svg",
+      "beforeBytes": 241,
+      "afterBytes": 211,
+      "sha256": "47eef5cf451461862f3299ba58497a0d64b285f650bec8f68f2cece1e33d606f"
+    },
+    {
+      "from": "public/ventajas1.png",
+      "to": "public/ventajas1.webp",
+      "beforeBytes": 175969,
+      "afterBytes": 88336,
+      "width": 2620,
+      "height": 1259,
+      "alpha": true,
+      "sha256": "bfb3cebc091af04241a939548603b0c63e8f3af163bbeeeae1c7d79d9165e743"
+    },
+    {
+      "from": "public/ventajas2.png",
+      "to": "public/ventajas2.webp",
+      "beforeBytes": 89537,
+      "afterBytes": 40522,
+      "width": 2753,
+      "height": 1267,
+      "alpha": true,
+      "sha256": "1792ce36ad9484eacfa92d61f062514cc740bb7cdafa5e26f067f2f8bb22ac5d"
+    },
+    {
+      "from": "public/ventajas3.png",
+      "to": "public/ventajas3.webp",
+      "beforeBytes": 96244,
+      "afterBytes": 46124,
+      "width": 2619,
+      "height": 1412,
+      "alpha": true,
+      "sha256": "5eea4bc25b80f1ed4e0af8b395f48d2bf4677088cd6810bc7a5877b074f2a424"
+    },
+    {
+      "from": "public/vite.svg",
+      "to": "public/vite.svg",
+      "beforeBytes": 1492,
+      "afterBytes": 1253,
+      "sha256": "46e0a03aab08f09408a3afc17b486583083a8ca4ec1f9c1814d6b29116fc856e"
+    },
+    {
+      "from": "public/woocommerce.svg",
+      "to": "public/woocommerce.svg",
+      "beforeBytes": 3105,
+      "afterBytes": 2793,
+      "sha256": "a9f715570d8842e0fd27fe6c2722d8e74069d0d3ec9ab0d398cbf45b957b0ac6"
+    },
+    {
+      "from": "src/app/favicon.ico",
+      "to": "src/app/favicon.ico",
+      "beforeBytes": 5083,
+      "afterBytes": 3357,
+      "sha256": "e3382a9dd960757fc768952328cb809b9433932b171ad4923f11f913afc59b62"
+    },
+    {
+      "from": "src/assets/react.svg",
+      "to": "src/assets/react.svg",
+      "beforeBytes": 4126,
+      "afterBytes": 3736,
+      "sha256": "8572cf3b62881ea4c96377b3af2131f9c441f41bb7da24b9a19499e2c8dd647e"
+    }
+  ]
+}

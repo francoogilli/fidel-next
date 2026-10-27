@@ -67,7 +67,7 @@ const detailSections = [
       "Evita errores manuales y te ahorra horas de carga",
       "En pocos segundos, tus precios quedan listos para vender",
     ],
-    image: "/fidel/ferreteria1.png",
+    image: "/fidel/ferreteria1.webp",
     reverse: false,
   },
   {
@@ -82,7 +82,7 @@ const detailSections = [
       "Registrá entregas parciales o totales según las necesidades de cada cliente",
       "Llevá un control organizado de la mercadería acopiada y pendiente de retirar",
     ],
-    image: "/fidel/acopio-ferreteria.png",
+    image: "/fidel/acopio-ferreteria.webp",
     reverse: true,
   },
   {
@@ -96,7 +96,7 @@ const detailSections = [
       "Recibí alertas automáticas cuando el stock baja",
       "Generá órdenes de compra de forma rápida",
     ],
-    image: "/fidel/ferreteria2.png",
+    image: "/fidel/ferreteria2.webp",
     reverse: false,
   },
   {
@@ -110,7 +110,7 @@ const detailSections = [
       "Consultá el historial de compras fácilmente",
       "Compará precios y tomá mejores decisiones",
     ],
-    image: "/fidel/ferreteria3.png",
+    image: "/fidel/ferreteria3.webp",
     reverse: true,
   },
 ];
@@ -202,7 +202,7 @@ export default function FidelFeaturesSection() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <img
-            src="/fidel/ferreterias1.png"
+            src="/fidel/ferreterias1.webp"
             alt="Sistema Fidel para ferreterías"
             className="w-full h-auto"
           />
@@ -388,7 +388,7 @@ export default function FidelFeaturesSection() {
                 url="https://www.instagram.com/fidelsistema/reel/DABaUHuxGc7/"
                 width={320}
                 title="Fidel para Ferreterías"
-                thumbnail="/fidel/reels/ferreterias.jpg"
+                thumbnail="/fidel/reels/ferreterias.webp"
               />
             </div>
           </div>

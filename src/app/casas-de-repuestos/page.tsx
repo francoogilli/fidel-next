@@ -67,7 +67,7 @@ const detailSections = [
       "Actualizá precios de forma masiva usando el código de proveedor",
       "Sin errores manuales y en pocos segundos",
     ],
-    image: "/fidel/repuestos1.png",
+    image: "/fidel/repuestos1.webp",
     reverse: false,
   },
   {
@@ -81,7 +81,7 @@ const detailSections = [
       "Determina el precio por unidad sin intervención manual",
       "Ajusta el stock de forma automática en cada venta",
     ],
-    image: "/fidel/repuestos2.png",
+    image: "/fidel/repuestos2.webp",
     reverse: true,
   },
   {
@@ -95,7 +95,7 @@ const detailSections = [
       "Compará precios fácilmente desde un solo lugar",
       "Consultá el historial de compras por proveedor",
     ],
-    image: "/fidel/repuestos3.png",
+    image: "/fidel/repuestos3.webp",
     reverse: false,
   },
   {
@@ -109,7 +109,7 @@ const detailSections = [
       "Asigná ubicación específica a cada producto",
       "Encontrá cualquier repuesto al instante, incluso si también vendés online",
     ],
-    image: "/fidel/repuestos4.png",
+    image: "/fidel/repuestos4.webp",
     reverse: true,
   },
 ];
@@ -202,7 +202,7 @@ export default function CasasDeRepuestosPage() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <img
-            src="/fidel/repuestos.png"
+            src="/fidel/repuestos.webp"
             alt="Sistema Fidel para casas de repuestos"
             className="w-full h-auto"
           />
@@ -388,7 +388,7 @@ export default function CasasDeRepuestosPage() {
                 url="https://www.instagram.com/reel/DSc4kkBjnUk/"
                 width={320}
                 title="Fidel para Casas de Repuestos"
-                thumbnail="/fidel/reels/repuestos.jpg"
+                thumbnail="/fidel/reels/repuestos.webp"
               />
             </div>
           </div>

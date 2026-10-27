@@ -68,7 +68,7 @@ function AdvantageCard({
 }) {
   return (
     <motion.div
-      className="col-span-1 py-10 xl:py-12 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fondointe.avif')] bg-cover bg-center"
+      className="col-span-1 py-10 xl:py-12 bg-[#f8faf9] border border-[#e7e7e7] flex flex-col justify-center items-center rounded-3xl p-4 bg-[url('/fidel/fondointe.avif')] bg-cover bg-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
