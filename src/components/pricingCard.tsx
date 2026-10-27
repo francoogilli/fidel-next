@@ -87,11 +87,16 @@ interface Plan {
 
 interface Props {
   viewComparison?: boolean;
+  headingLevel?: "h1" | "h2";
 }
 
 // ── Componente principal ──────────────────────────────────────────────────────
 
-export default function PricingCard({ viewComparison }: Props) {
+export default function PricingCard({
+  viewComparison,
+  headingLevel = "h2",
+}: Props) {
+  const PageHeading = headingLevel;
   // Lógica del Archivo 2: contexto de ventas y fetch de precios
   const { nroVentas } = useSales();
   const [plans, setPlans] = useState<Plan[]>([]);
@@ -158,24 +163,24 @@ export default function PricingCard({ viewComparison }: Props) {
           <ThreeStripesLeft />
           <div className="flex items-center rounded-full bg-[#f6f6f6] px-4 xl:px-5 py-2 animation-1">
             <CreditCardIcon className="size-4 md:size-5 text-[#121212]" />
-            <h2
+            <p
               className="text-xs md:text-sm xl:text-base font-medium text-center ml-2 text-[#121212]"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
               Precios
-            </h2>
+            </p>
           </div>
           <ThreeStripesRight />
           <GradientLine direction="right" />
         </div>
 
         <div className="text-center mb-16">
-          <h3
+          <PageHeading
             className="animation-1 max-w-6xl mx-auto text-4xl leading-[2.8rem] sm:leading-[3.7rem] md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 xl:pb-2.5 tracking-tighter"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             No importa el tamaño de tu negocio, hay un plan para vos.
-          </h3>
+          </PageHeading>
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 text-[#c5c5c5] rounded-xl">
             <span className="text-xl md:text-lg text-black">
               Soporte y actualizaciones constantes.

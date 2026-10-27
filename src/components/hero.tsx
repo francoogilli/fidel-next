@@ -60,7 +60,7 @@ export default function Hero() {
 
         <div className="flex flex-col space-y-6 lg:flex-row lg:space-y-0">
           <div className="flex-1 pt-0 text-center lg:text-left">
-            <motion.h2
+            <motion.h1
               className="font-bold text-[#252525] text-4xl md:text-6xl lg:text-6xl lg:leading-[1.1em] xl:text-7xl xl:leading-[1.2em] tracking-tighter"
               style={{ fontFamily: "Plus Jakarta Sans" }}
               initial={{ opacity: 0, scale: 0.8 }}
@@ -68,7 +68,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               Gestionar tu negocio no tiene que ser complicado
-            </motion.h2>
+            </motion.h1>
 
             <motion.div
               className="mx-auto mt-4 w-full max-w-[36rem] lg:mx-0"

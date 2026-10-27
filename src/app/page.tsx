@@ -29,7 +29,7 @@ export default function Home() {
       <Recommend />
       <QuestionsAnswers />
       <div id="contacto">
-        <ContactSection />
+        <ContactSection headingLevel="h2" />
       </div>
     </>
   );

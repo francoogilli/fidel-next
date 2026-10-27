@@ -188,12 +188,12 @@ function SectionHeading({
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#f6f6f6] px-4 py-2 xl:px-5">
           <Sparkles className="size-4 text-[#121212] md:size-5" />
-          <h2
+          <p
             className="ml-2 text-center text-xs font-medium uppercase text-[#121212] md:text-sm xl:text-base"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             {eyebrow}
-          </h2>
+          </p>
         </div>
         <ThreeStripesRight />
         <GradientLine direction="right" />

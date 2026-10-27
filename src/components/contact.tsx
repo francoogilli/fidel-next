@@ -20,6 +20,7 @@ import MessageIcon from "../icons/message";
 import { useSales } from "@/context/SalesContext";
 interface Props {
   viewPage?: boolean;
+  headingLevel?: "h1" | "h2";
 }
 
 const validationSchema = Yup.object({
@@ -28,7 +29,11 @@ const validationSchema = Yup.object({
   phone: Yup.string().required("El teléfono es requerido"),
 });
 
-export default function ContactSection({ viewPage }: Props) {
+export default function ContactSection({
+  viewPage,
+  headingLevel = "h1",
+}: Props) {
+  const HeadingTag = headingLevel;
   const [toastVisible, setToastVisible] = useState<boolean>(false);
   const [toastMessage, setToastMessage] = useState<string>("");
   const [toastType, setToastType] = useState<"success" | "warning" | "error">(
@@ -219,9 +224,9 @@ export default function ContactSection({ viewPage }: Props) {
             <div className="container max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start py-12">
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <h1 className="text-4xl md:text-5xl  xl:text-[3.25rem] font-bold leading-tight">
+                  <HeadingTag className="text-4xl md:text-5xl  xl:text-[3.25rem] font-bold leading-tight">
                     Preguntá todo lo que tengas en mente
-                  </h1>
+                  </HeadingTag>
                   <p className="text-[#5c5c5c] text-lg">
                     Si tenés preguntas o estás listo para hablar estamos acá
                     para ayudarte. Comunicate hoy mismo.

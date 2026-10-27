@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import {
   ArrowDownRight,
@@ -19,12 +18,16 @@ import ThreeStripesLeft from "@/icons/threeStripesLeft";
 import ThreeStripesRight from "@/icons/threeStripesRight";
 import TiendaNubeIcon from "@/icons/tiendaNube";
 import Whatsapp from "@/icons/whatsapp";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Integraciones E-Commerce | Fidel",
+export const metadata = createPageMetadata({
+  path: "integraciones-ecommerce",
+  title: "Integraciones de e-commerce",
   description:
-    "Vinculá masivamente tus productos de Fidel con Tienda Nube, Mercado Libre y WooCommerce. Mantené actualizados el stock y los precios, y recibí las ventas como pedidos listos para facturar.",
-};
+    "Vinculá tus productos de Fidel con Tiendanube, Mercado Libre y WooCommerce. Sincronizá stock y precios, y recibí las ventas como pedidos listos para facturar.",
+  image: "integrationimage.webp",
+  imageAlt: "Integraciones de Fidel con plataformas de comercio electrónico",
+});
 
 
 const syncedDetails = [

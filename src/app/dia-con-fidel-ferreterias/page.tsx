@@ -120,18 +120,18 @@ function SectionHeading({ eyebrow, title, sub }: { eyebrow: string; title: React
         <ThreeStripesLeft />
         <div className="flex items-center rounded-full bg-[#f6f6f6] px-4 xl:px-5 py-2">
           <Sparkles className="size-4 md:size-5 text-[#121212]" />
-          <h2
+          <p
             className="text-xs md:text-sm xl:text-base font-medium uppercase text-center ml-2 text-[#121212]"
             style={{ fontFamily: "Plus Jakarta Sans" }}
           >
             {eyebrow}
-          </h2>
+          </p>
         </div>
         <ThreeStripesRight />
         <GradientLine direction="right" />
       </div>
       <div className="text-center mb-16">
-        <h3
+        <h1
           className="max-w-6xl mx-auto text-4xl leading-[2.8rem] sm:leading-[3.7rem] md:text-[3.25rem] xl:text-[3.5rem] font-bold text-center my-8 pb-1 xl:pb-2.5 tracking-tighter text-[#252525]"
           style={{
             fontFamily: "Plus Jakarta Sans",
@@ -139,7 +139,7 @@ function SectionHeading({ eyebrow, title, sub }: { eyebrow: string; title: React
           }}
         >
           {title}
-        </h3>
+        </h1>
         {sub && (
           <div className="flex justify-center items-center p-1.5 px-3 gap-x-1 rounded-xl">
             <span

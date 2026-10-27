@@ -7,6 +7,7 @@ import Script from "next/script";
 import SmoothScroll from "@/components/smooth-scroll";
 import WhatsAppButton from "@/components/whatsappButton";
 import { SalesProvider } from "@/context/SalesContext";
+import { createPageMetadata, FIDEL_SITE_ROOT } from "@/lib/seo";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -25,28 +26,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Fidel - Sistema Web de Gestión y Facturación Electrónica",
-  description:
-    "Fidel es un sistema avanzado de gestión empresarial diseñado para optimizar procesos y mejorar la productividad.",
-  keywords: [
-    "Fidel",
-    "Sistema de Gestión",
-    "Gestión Empresarial",
-    "Productividad",
-  ],
-  openGraph: {
-    title: "Fidel: Sistema Web de Gestión para Empresas",
+  ...createPageMetadata({
+    path: "",
+    title: "Sistema de gestión para comercios",
     description:
-      "Optimiza los procesos de tu empresa con Fidel, el sistema web de gestión empresarial.",
-    url: "https://fidel.com.ar/",
-    images: [
-      {
-        url: "https://fidel.com.ar/Content/Idea/images/logo_red.png",
-        alt: "Fidel - Sistema Web de Gestión",
-      },
-    ],
-  },
-  robots: "index, follow",
+      "Gestioná ventas, stock, compras y facturación electrónica desde un solo sistema. Fidel acompaña a ferreterías, repuesteras, distribuidoras y otros comercios.",
+  }),
+  metadataBase: FIDEL_SITE_ROOT,
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

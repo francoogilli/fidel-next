@@ -1,14 +1,15 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import type { Metadata } from "next";
 import AgreementSidebar from "./agreement-sidebar";
 import PrintButton from "./print-button";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Acuerdo de confidencialidad y protección de datos | Fidel",
+export const metadata = createPageMetadata({
+  path: "acuerdo-confidencialidad",
+  title: "Acuerdo de confidencialidad y protección de datos",
   description:
     "Acuerdo de confidencialidad y protección de datos de Fidel, prestado por Agencia Programarte S.A.S.",
-};
+});
 
 const source = readFileSync(
   join(process.cwd(), "src/content/acuerdo-confidencialidad.txt"),
