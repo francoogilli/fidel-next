@@ -3,24 +3,16 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import SparklesIcon from "../icons/sparkles";
-import CreditCardIcon from "../icons/creditCard";
 import Modal from "./modal";
+import ScheduleDemoButton from "./schedule-demo-button";
 import { useSales } from "@/context/SalesContext";
-import { ChevronRight, Zap } from "lucide-react";
+import { Zap } from "lucide-react";
 
 export default function Hero() {
   const { nroVentas } = useSales();
   const [isModalOpen, setModalOpen] = useState(false);
 
   const closeModal = () => setModalOpen(false);
-  const handleScrollToPlanes = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const section = document.getElementById("planes");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const videoRef = useRef<HTMLVideoElement>(null);
   const [loadVideo, setLoadVideo] = useState(false);
 
@@ -115,14 +107,7 @@ export default function Hero() {
                   <SparklesIcon className="size-4 md:size-5" />
                   ¡Probá una demo!
                 </motion.button>
-                <motion.button
-                  onClick={handleScrollToPlanes}
-                  className="w-full md:w-auto bg-gradient-to-bl from-[#222222] via-[#383838] to-[#222222] tracking-tighter md:tracking-normal text-white gap-2 justify-center font-bold py-2.5 px-6 md:px-7 md:py-3 text-base md:text-[15px] rounded-[18px] flex items-center space-x-2 border-4 md:border-[5px] border-[#f3f3f3] hover:border-[#d4d4d4] transition-all duration-700"
-                  style={{ fontFamily: "Plus Jakarta Sans" }}
-                >
-                  <CreditCardIcon className="size-4 md:size-5" />
-                  Mirá nuestros planes
-                </motion.button>
+                <ScheduleDemoButton />
               </div>
             </motion.div>
           </div>
